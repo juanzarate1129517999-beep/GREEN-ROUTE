@@ -1,0 +1,160 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Mapa de rutas · Green Route</title>
+  <meta name="description" content="Planificador de rutas de carga de baja huella de carbono sobre la malla vial real de Barranquilla.">
+  <link rel="icon" href="img/favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Geist:wght@300..700&family=Geist+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="vendor/leaflet.css">
+  <link rel="stylesheet" href="css/estilos.css?v=3d4">
+  <link rel="stylesheet" href="css/mapa.css?v=3d4">
+</head>
+<body data-sin-pie class="pagina-mapa">
+<main class="app">
+  <div id="mapa" aria-label="Mapa del área metropolitana de Barranquilla"></div>
+  <div id="mapa3d" aria-label="Mapa 3D del área metropolitana de Barranquilla" aria-hidden="true"></div>
+
+  <div class="dock3d" id="dock3d">
+    <div class="dock3d__seg" role="group" aria-label="Tipo de vista">
+      <span class="dock3d__marca" aria-hidden="true"></span>
+      <button data-vista="2d" aria-pressed="true">2D</button>
+      <button data-vista="3d" aria-pressed="false">3D</button>
+    </div>
+    <div class="dock3d__herr" id="herr3d">
+      <button class="dock3d__ico" data-acc="rotar-izq" title="Girar a la izquierda" aria-label="Girar a la izquierda">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3 12a9 9 0 1 0 3-6.7L3 8"/><path d="M3 3v5h5"/></svg></button>
+      <button class="dock3d__ico" data-acc="rotar-der" title="Girar a la derecha" aria-label="Girar a la derecha">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12a9 9 0 1 1-3-6.7L21 8"/><path d="M21 3v5h-5"/></svg></button>
+      <button class="dock3d__ico" data-acc="inclinar" title="Vista cenital / inclinada" aria-label="Cambiar inclinación">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3 17l9 4 9-4M3 12l9 4 9-4M12 3L3 7l9 4 9-4z"/></svg></button>
+      <button data-acc="orbitar" aria-pressed="false" title="Girar alrededor del centro">Orbitar</button>
+      <button class="dock3d__vuelo" data-acc="vuelo" title="Volar siguiendo la ruta activa">
+        <svg viewBox="0 0 24 24" fill="currentColor"><path d="M7 5v14l12-7z"/></svg>Recorrer ruta</button>
+      <span class="dock3d__sep"></span>
+      <button data-capa="edificios" aria-pressed="true">Edificios</button>
+      <button data-capa="muros" aria-pressed="true" title="Altura de cada ruta proporcional a sus kg de CO₂">Muros CO₂</button>
+      <button data-capa="accidentes" aria-pressed="false">Accidentes 3D</button>
+    </div>
+  </div>
+
+  <div class="vuelo3d oculto" id="vuelo3d" role="status" aria-live="off">
+    <div class="vuelo3d__cab"><span class="punto-vivo"></span><b id="vuelo-titulo">Recorrido</b><button id="vuelo-parar" aria-label="Detener el recorrido">Detener · Esc</button></div>
+    <div class="vuelo3d__cifras">
+      <div><b id="vuelo-km">0,0</b><small>km recorridos</small></div>
+      <div><b id="vuelo-co2">0,00</b><small>kg CO₂</small></div>
+      <div><b id="vuelo-min">0</b><small>min</small></div>
+    </div>
+    <div class="vuelo3d__via" id="vuelo-via">—</div>
+    <div class="vuelo3d__barra"><i id="vuelo-barra"></i></div>
+  </div>
+
+  <div class="arranque" id="arranque" role="status" aria-live="polite">
+    <div class="arranque__caja">
+      <div class="arranque__eti">Green Route · arranque</div>
+      <h2 data-sin-dividir>Preparando el planificador de rutas</h2>
+      <ul>
+        <li data-paso="malla">Mapa base y malla vial</li>
+        <li data-paso="motor">Motor Java · A* multicriterio</li>
+        <li data-paso="puntos">Puntos logísticos</li>
+        <li data-paso="ruta">Ruta inicial · Puerto → Aeropuerto</li>
+      </ul>
+      <button class="btn btn--secundario" id="arranque-saltar">Saltar intro</button>
+    </div>
+  </div>
+  <div class="carga-barra" id="carga-barra"></div>
+
+  <aside class="panel" id="panel">
+    <div class="panel__cab">
+      <div>
+        <h1 class="panel__titulo">Planificar envío</h1>
+        <p class="panel__sub" id="estado-motor"><span class="punto"></span>Conectando con el motor Java…</p>
+      </div>
+      <button class="icono" id="btn-plegar" aria-label="Plegar panel" title="Plegar panel">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><path d="M15 6l-6 6 6 6"/></svg></button>
+    </div>
+
+    <div class="panel__cuerpo">
+      <div class="od">
+        <div class="od__fila" data-campo="origen">
+          <button class="od__pin od__pin--a" data-modo="origen" title="Fijar el origen con el próximo clic">A</button>
+          <div class="campo-busqueda">
+            <input id="in-origen" type="text" placeholder="Origen · busca o haz clic en el mapa" autocomplete="off" aria-label="Origen">
+            <ul class="sugerencias" id="sug-origen" role="listbox"></ul>
+          </div>
+        </div>
+        <div class="od__fila" data-campo="destino">
+          <button class="od__pin od__pin--b" data-modo="destino" title="Fijar el destino con el próximo clic">B</button>
+          <div class="campo-busqueda">
+            <input id="in-destino" type="text" placeholder="Destino · busca o haz clic en el mapa" autocomplete="off" aria-label="Destino">
+            <ul class="sugerencias" id="sug-destino" role="listbox"></ul>
+          </div>
+        </div>
+        <button class="icono od__swap" id="btn-swap" title="Intercambiar origen y destino" aria-label="Intercambiar origen y destino">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M7 4v16M7 4L3 8M7 4l4 4M17 20V4M17 20l4-4M17 20l-4-4"/></svg></button>
+      </div>
+      <div class="modo-clic" id="modo-clic"><span>El próximo clic en el mapa fija</span><b id="modo-txt">el origen</b></div>
+      <div class="atajos" id="atajos" aria-label="Puntos logísticos"></div>
+
+      <div class="bloque">
+        <div class="bloque__titulo">Vehículo</div>
+        <div class="vehiculos" id="vehiculos" role="radiogroup" aria-label="Vehículo"></div>
+      </div>
+
+      <div class="bloque bloque--fila">
+        <div>
+          <label class="bloque__titulo" for="in-carga">Carga <b id="lbl-carga">900 kg</b></label>
+          <input id="in-carga" type="range" min="50" max="1100" step="50" value="900">
+          <small class="ayuda" id="ayuda-carga"></small>
+        </div>
+        <div>
+          <label class="bloque__titulo" for="in-hora">Salida <b id="lbl-hora">07:00</b></label>
+          <input id="in-hora" type="range" min="0" max="23" value="7">
+          <div class="trafico" id="trafico" aria-hidden="true"></div>
+          <small class="ayuda" id="ayuda-hora">—</small>
+        </div>
+      </div>
+
+      <div class="bloque">
+        <div class="bloque__titulo">Optimizar por</div>
+        <div class="chips" id="criterios" role="radiogroup" aria-label="Criterio de optimización"></div>
+      </div>
+
+      <div class="acciones-panel">
+        <button class="btn btn--primario btn--bloque" id="btn-ruta">Calcular ruta</button>
+        <div class="acciones-panel__fila">
+          <button class="btn btn--secundario" id="btn-alternativas">5 criterios</button>
+          <button class="btn btn--secundario" id="btn-flota">Toda la flota</button>
+        </div>
+      </div>
+
+      <section class="resultado oculto" id="resultado" aria-live="polite">
+        <div class="pestanas" role="tablist">
+          <button role="tab" aria-selected="true" data-pestana="resumen">Resumen</button>
+          <button role="tab" aria-selected="false" data-pestana="pasos">Indicaciones</button>
+          <button role="tab" aria-selected="false" data-pestana="flota">Flota</button>
+        </div>
+        <div class="pestana" id="p-resumen"></div>
+        <div class="pestana oculto" id="p-pasos"></div>
+        <div class="pestana oculto" id="p-flota"><p class="vacio">Pulsa «Toda la flota» para evaluar los 7 vehículos con el mismo envío.</p></div>
+      </section>
+    </div>
+  </aside>
+  <button class="icono boton-panel oculto" id="btn-desplegar" aria-label="Mostrar panel">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><path d="M9 6l6 6-6 6"/></svg></button>
+  <div class="menu-contextual oculto" id="menu-ctx" role="menu">
+    <button data-accion="origen" role="menuitem"><i class="od__pin od__pin--a">A</i>Ruta desde aquí</button>
+    <button data-accion="destino" role="menuitem"><i class="od__pin od__pin--b">B</i>Ruta hasta aquí</button>
+    <button data-accion="centrar" role="menuitem"><i>⌖</i>Centrar el mapa aquí</button>
+  </div>
+</main>
+
+<script src="vendor/leaflet.js"></script>
+<script src="vendor/leaflet-heat.js"></script>
+<script src="js/comun.js?v=3d4"></script>
+<script src="js/mapa.js?v=3d4"></script>
+<script src="js/mapa3d.js?v=3d4"></script>
+</body>
+</html>

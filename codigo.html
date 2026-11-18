@@ -1,0 +1,150 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Código Java · Green Route</title>
+  <meta name="description" content="Código fuente Java completo de Green Route: herencia, polimorfismo, interfaces, excepciones, Swing y JOptionPane.">
+  <link rel="icon" href="img/favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Geist:wght@300..700&family=Geist+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/estilos.css?v=3d4">
+  <style>
+    .ide { display: grid; grid-template-columns: 290px minmax(0, 1fr); border: 1px solid var(--line); border-radius: var(--radius); overflow: hidden; background: var(--panel); height: min(78vh, 820px); }
+    .ide__arbol { border-right: 1px solid var(--line); overflow-y: auto; padding: 10px 0; }
+    .ide__paquete { font: 500 .72rem/1 var(--font-mono); text-transform: uppercase; letter-spacing: .08em; color: var(--muted); padding: 14px 16px 6px; display: flex; justify-content: space-between; gap: 8px; }
+    .ide__paquete small { text-transform: none; letter-spacing: 0; }
+    .ide__archivo { display: flex; align-items: center; gap: 8px; width: 100%; text-align: left; background: none; border: 0; color: var(--ink-2); padding: 6px 16px 6px 22px; font: 400 .86rem/1.3 var(--font-mono); cursor: pointer; }
+    .ide__archivo:hover { color: var(--ink); background: var(--surface); }
+    .ide__archivo[aria-current="true"] { color: var(--ink); background: var(--surface); box-shadow: inset 3px 0 0 var(--accent); }
+    .ide__archivo i { font-style: normal; font-size: .66rem; color: var(--muted); border: 1px solid var(--line); border-radius: 4px; padding: 1px 4px; }
+    .ide__archivo.tenue { opacity: .35; }
+    .ide__main { display: grid; grid-template-rows: auto auto minmax(0, 1fr); min-width: 0; }
+    .ide__barra { display: flex; flex-wrap: wrap; align-items: center; gap: 10px 16px; padding: 12px 16px; border-bottom: 1px solid var(--line); }
+    .ide__ruta { font: 500 .8rem var(--font-mono); color: var(--ink-2); overflow: hidden; text-overflow: ellipsis; white-space: nowrap; flex: 1 1 260px; }
+    .ide__decl { padding: 10px 16px; border-bottom: 1px solid var(--line); font: 500 .84rem var(--font-mono); color: var(--ink); display: flex; flex-wrap: wrap; gap: 8px; align-items: center; }
+    .ide__decl .etq { font-size: .7rem; padding: 2px 8px; border-radius: 999px; border: 1px solid var(--line-2); color: var(--ink-2); }
+    .ide__decl .etq b { color: var(--accent-ink); font-weight: 600; }
+    .codigo { overflow: auto; font: 400 .86rem/1.7 var(--font-mono); counter-reset: l; padding: 10px 0 40px; tab-size: 4; }
+    .codigo .l { display: block; white-space: pre; padding: 0 22px 0 0; }
+    .codigo .l::before { counter-increment: l; content: counter(l); display: inline-block; width: 52px; padding-right: 18px; text-align: right; color: var(--muted); opacity: .6; user-select: none; }
+    .codigo .l.marcada { background: color-mix(in srgb, var(--accent) 14%, transparent); box-shadow: inset 3px 0 0 var(--accent); }
+    .tk-c { color: var(--muted); font-style: italic; }
+    .tk-s { color: #c9a227; }
+    .tk-k { color: #6e9bff; }
+    .tk-n { color: #e58a4c; }
+    .tk-p { color: var(--accent-ink); font-weight: 600; }
+    :root[data-theme="light"] .tk-s { color: #8a6100; }
+    :root[data-theme="light"] .tk-k { color: #1f4fbf; }
+    :root[data-theme="light"] .tk-n { color: #b54708; }
+    .resumen-codigo { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 0; border: 1px solid var(--line); border-radius: var(--radius); margin-bottom: 22px; }
+    .resumen-codigo .kpi:nth-child(4n) { border-right: 0; }
+    .galeria { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 18px; }
+    .galeria figure { margin: 0; border: 1px solid var(--line); border-radius: var(--radius); overflow: hidden; background: var(--panel); }
+    .galeria img { display: block; width: 100%; height: auto; cursor: zoom-in; }
+    .galeria figcaption { padding: 12px 16px; font-size: .88rem; color: var(--ink-2); border-top: 1px solid var(--line); }
+    .galeria figcaption b { color: var(--ink); }
+    .dialogos { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 18px; align-items: start; }
+    .dialogos figure { margin: 0; }
+    .dialogos img { width: 100%; height: auto; border-radius: 10px; border: 1px solid var(--line); display: block; }
+    .dialogos figcaption { font-size: .86rem; color: var(--ink-2); margin-top: 8px; }
+    .dialogos code { font-size: .8rem; }
+    .visor { position: fixed; inset: 0; background: rgba(0,0,0,.86); display: none; place-items: center; z-index: 90; padding: 24px; cursor: zoom-out; }
+    .visor.abierto { display: grid; }
+    .visor img { max-width: 100%; max-height: 92vh; border-radius: 10px; }
+    @media (max-width: 900px) {
+      .ide { grid-template-columns: 1fr; height: auto; }
+      .ide__arbol { max-height: 260px; border-right: 0; border-bottom: 1px solid var(--line); }
+      .codigo { max-height: 70vh; }
+      .galeria, .dialogos { grid-template-columns: 1fr; }
+      .resumen-codigo { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+    }
+  </style>
+</head>
+<body>
+<header class="cab-pagina">
+  <div class="contenedor">
+    <div class="miga"><a href="index.html">Inicio</a> / Código Java</div>
+    <h1>Código fuente Java</h1>
+    <p>Todo el código del proyecto, tal como está en <code>greenroute-java/src</code>: el motor de rutas, el servidor web y la
+      aplicación de escritorio con Swing y <code>JOptionPane</code>. Elija un concepto de POO para ver en qué archivos y en qué líneas aparece.</p>
+  </div>
+</header>
+
+<main class="contenedor seccion" style="padding-top:40px">
+  <div class="resumen-codigo" id="resumen">
+    <div class="kpi"><div class="kpi__valor" id="k-archivos">—</div><div class="kpi__etq">archivos .java</div></div>
+    <div class="kpi"><div class="kpi__valor" id="k-lineas">—</div><div class="kpi__etq">líneas de código</div></div>
+    <div class="kpi"><div class="kpi__valor" id="k-herencia">—</div><div class="kpi__etq">clases que usan <code>extends</code></div></div>
+    <div class="kpi"><div class="kpi__valor" id="k-joption">—</div><div class="kpi__etq">llamadas a <code>JOptionPane</code></div></div>
+  </div>
+
+  <section class="subseccion" id="explorador" style="padding-top:0">
+    <div class="ide">
+      <nav class="ide__arbol" id="arbol" aria-label="Archivos del proyecto"></nav>
+      <div class="ide__main">
+        <div class="ide__barra">
+          <div class="chips-filtro" id="filtros" role="group" aria-label="Resaltar concepto"></div>
+          <div class="ide__ruta" id="ruta">—</div>
+        </div>
+        <div class="ide__decl" id="decl"></div>
+        <div class="codigo" id="codigo" tabindex="0" aria-label="Código fuente"></div>
+      </div>
+    </div>
+    <p style="color:var(--muted);font-size:.86rem;margin-top:10px">Las líneas resaltadas corresponden al concepto elegido. El contenido se genera
+      con <code>python analisis/07_codigo_java.py</code> a partir de los archivos reales.</p>
+  </section>
+
+  <section class="subseccion" id="escritorio">
+    <div class="etiqueta">Aplicación de escritorio</div>
+    <h2>Green Route en Java Swing</h2>
+    <p>La misma lógica del motor también tiene una interfaz de escritorio. Cada pantalla es una subclase de la clase abstracta
+      <code>Pantalla</code>, los botones heredan de <code>JButton</code>, el mapa hereda de <code>JComponent</code> y sobrescribe
+      <code>paintComponent()</code>, y el tema negro / blanco hereda de <code>DefaultMetalTheme</code>.</p>
+    <div class="galeria" id="galeria">
+      <figure><img data-base="escritorio_planificar" alt="Pantalla Planificar ruta de la aplicación de escritorio"><figcaption><b>Planificar ruta.</b> Formulario con JComboBox, JSpinner y JSlider; el mapa vectorial se dibuja con Java2D.</figcaption></figure>
+      <figure><img data-base="escritorio_flota" alt="Pantalla Comparar flota con una JTable"><figcaption><b>Comparar flota.</b> JTable con un <code>AbstractTableModel</code> propio y una celda que dibuja barras.</figcaption></figure>
+      <figure><img data-base="escritorio_herencia" alt="Árbol de herencia de los vehículos"><figcaption><b>Herencia en vivo.</b> El árbol se arma por reflexión con <code>getSuperclass()</code>; los valores verdes salen de la misma llamada polimórfica.</figcaption></figure>
+      <figure><img data-base="escritorio_codigo" alt="Visor de código con resaltado de sintaxis"><figcaption><b>Código Java.</b> Visor que lee los .java del proyecto y resalta <code>extends</code>, <code>implements</code>, <code>@Override</code> y <code>JOptionPane</code>.</figcaption></figure>
+    </div>
+  </section>
+
+  <section class="subseccion" id="joptionpane">
+    <div class="etiqueta">Cuadros de diálogo</div>
+    <h2>El asistente con JOptionPane</h2>
+    <p>La clase <code>AsistenteJOptionPane</code> planifica un envío completo solo con cuadros de diálogo: valida la carga con
+      <code>try / catch</code> y, si el motor lanza una excepción propia, el tipo de mensaje depende de la subclase capturada.</p>
+    <div class="dialogos">
+      <figure><img src="img/escritorio/joption_origen.png" alt="showInputDialog con lista de lugares"><figcaption><code>showInputDialog(...)</code> con una lista desplegable de los 12 puntos logísticos.</figcaption></figure>
+      <figure><img src="img/escritorio/joption_criterio.png" alt="showOptionDialog con un botón por criterio"><figcaption><code>showOptionDialog(...)</code> con un botón personalizado por criterio de optimización.</figcaption></figure>
+      <figure><img src="img/escritorio/joption_resultado.png" alt="showMessageDialog con el resultado de la ruta"><figcaption><code>showMessageDialog(..., INFORMATION_MESSAGE)</code> con el resultado en HTML.</figcaption></figure>
+      <figure><img src="img/escritorio/joption_error.png" alt="Mensaje de advertencia por carga excedida"><figcaption><code>CapacidadExcedidaException</code> capturada → <code>WARNING_MESSAGE</code>.</figcaption></figure>
+    </div>
+    <pre style="margin-top:22px"><code><span class="tk-c">// AsistenteJOptionPane.java · validación de la carga</span>
+<span class="tk-k">while</span> (<span class="tk-k">true</span>) {
+    String texto = <span class="tk-p">JOptionPane</span>.showInputDialog(padre, <span class="tk-s">"Peso de la carga en kilogramos:"</span>, <span class="tk-s">"600"</span>);
+    <span class="tk-k">if</span> (texto == <span class="tk-k">null</span>) <span class="tk-k">return</span> -<span class="tk-n">1</span>;                       <span class="tk-c">// Cancelar</span>
+    <span class="tk-k">try</span> {
+        <span class="tk-k">double</span> kg = Double.parseDouble(texto.trim().replace(<span class="tk-s">","</span>, <span class="tk-s">"."</span>));
+        <span class="tk-k">if</span> (kg &lt;= <span class="tk-n">0</span>) <span class="tk-k">throw new</span> NumberFormatException(<span class="tk-s">"debe ser positivo"</span>);
+        <span class="tk-k">return</span> kg;
+    } <span class="tk-k">catch</span> (NumberFormatException e) {
+        <span class="tk-p">JOptionPane</span>.showMessageDialog(padre, <span class="tk-s">"No es un peso válido"</span>, <span class="tk-s">"Dato inválido"</span>, <span class="tk-p">JOptionPane</span>.ERROR_MESSAGE);
+    }
+}</code></pre>
+  </section>
+
+  <section class="subseccion" id="ejecutar">
+    <div class="etiqueta">Ejecución</div>
+    <h2>Cómo abrir la aplicación de escritorio</h2>
+    <pre><code>.\greenroute-java\compilar.ps1      <span class="tk-c"># compila las 70 clases</span>
+.\greenroute-java\escritorio.ps1    <span class="tk-c"># abre el menú inicial (JOptionPane)</span></code></pre>
+  </section>
+</main>
+
+<div class="visor" id="visor" role="dialog" aria-label="Imagen ampliada"><img alt=""></div>
+
+<script src="js/comun.js?v=3d4"></script>
+<script src="js/codigo.js?v=3d4"></script>
+</body>
+</html>

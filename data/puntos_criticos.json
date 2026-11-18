@@ -1,0 +1,228 @@
+{
+ "total_clusters": 195,
+ "accidentes_en_clusters": 10008,
+ "eps_m": 90,
+ "min_samples": 30,
+ "puntos": [
+  {
+   "cluster": 88,
+   "lat": 10.966474,
+   "lon": -74.782772,
+   "accidentes": 128,
+   "heridos": 84,
+   "muertos": 1,
+   "indice_severidad": 305.0,
+   "sitio_frecuente": "CL 30 CR 27",
+   "ranking": 1
+  },
+  {
+   "cluster": 101,
+   "lat": 10.947117,
+   "lon": -74.771569,
+   "accidentes": 160,
+   "heridos": 56,
+   "muertos": 3,
+   "indice_severidad": 299.0,
+   "sitio_frecuente": "CL 17 CR 8",
+   "ranking": 2
+  },
+  {
+   "cluster": 62,
+   "lat": 10.947174,
+   "lon": -74.784823,
+   "accidentes": 134,
+   "heridos": 49,
+   "muertos": 7,
+   "indice_severidad": 295.0,
+   "sitio_frecuente": "CL 30 CR 8",
+   "ranking": 3
+  },
+  {
+   "cluster": 27,
+   "lat": 10.962774,
+   "lon": -74.776747,
+   "accidentes": 128,
+   "heridos": 59,
+   "muertos": 0,
+   "indice_severidad": 246.0,
+   "sitio_frecuente": "CR 38 CL 30",
+   "ranking": 4
+  },
+  {
+   "cluster": 33,
+   "lat": 10.944289,
+   "lon": -74.77177,
+   "accidentes": 106,
+   "heridos": 61,
+   "muertos": 2,
+   "indice_severidad": 246.0,
+   "sitio_frecuente": "CL 19 CR 7",
+   "ranking": 5
+  },
+  {
+   "cluster": 0,
+   "lat": 11.010567,
+   "lon": -74.838068,
+   "accidentes": 110,
+   "heridos": 55,
+   "muertos": 2,
+   "indice_severidad": 238.0,
+   "sitio_frecuente": "CL 110 CR 46",
+   "ranking": 6
+  },
+  {
+   "cluster": 4,
+   "lat": 11.026342,
+   "lon": -74.803829,
+   "accidentes": 130,
+   "heridos": 43,
+   "muertos": 1,
+   "indice_severidad": 225.0,
+   "sitio_frecuente": "VIA 40 CL 85",
+   "ranking": 7
+  },
+  {
+   "cluster": 56,
+   "lat": 10.978098,
+   "lon": -74.781869,
+   "accidentes": 116,
+   "heridos": 49,
+   "muertos": 1,
+   "indice_severidad": 223.0,
+   "sitio_frecuente": "CR 38 CL 35",
+   "ranking": 8
+  },
+  {
+   "cluster": 22,
+   "lat": 11.017308,
+   "lon": -74.819172,
+   "accidentes": 108,
+   "heridos": 53,
+   "muertos": 0,
+   "indice_severidad": 214.0,
+   "sitio_frecuente": "CL 94 CR 64",
+   "ranking": 9
+  },
+  {
+   "cluster": 66,
+   "lat": 10.999454,
+   "lon": -74.814118,
+   "accidentes": 122,
+   "heridos": 40,
+   "muertos": 0,
+   "indice_severidad": 202.0,
+   "sitio_frecuente": "CL 80 CR 45",
+   "ranking": 10
+  },
+  {
+   "cluster": 83,
+   "lat": 10.98533,
+   "lon": -74.812242,
+   "accidentes": 138,
+   "heridos": 30,
+   "muertos": 0,
+   "indice_severidad": 198.0,
+   "sitio_frecuente": "CR 38 CL 74",
+   "ranking": 11
+  },
+  {
+   "cluster": 44,
+   "lat": 10.981665,
+   "lon": -74.810352,
+   "accidentes": 94,
+   "heridos": 51,
+   "muertos": 0,
+   "indice_severidad": 196.0,
+   "sitio_frecuente": "CL 71 CR 32",
+   "ranking": 12
+  },
+  {
+   "cluster": 28,
+   "lat": 10.986045,
+   "lon": -74.821665,
+   "accidentes": 97,
+   "heridos": 45,
+   "muertos": 0,
+   "indice_severidad": 187.0,
+   "sitio_frecuente": "CR 38 CL 81",
+   "ranking": 13
+  },
+  {
+   "cluster": 42,
+   "lat": 10.961613,
+   "lon": -74.792798,
+   "accidentes": 87,
+   "heridos": 50,
+   "muertos": 0,
+   "indice_severidad": 187.0,
+   "sitio_frecuente": "CL 45 CR 21",
+   "ranking": 14
+  },
+  {
+   "cluster": 80,
+   "lat": 11.013759,
+   "lon": -74.827188,
+   "accidentes": 138,
+   "heridos": 24,
+   "muertos": 0,
+   "indice_severidad": 186.0,
+   "sitio_frecuente": "CR 53 CL 99",
+   "ranking": 15
+  },
+  {
+   "cluster": 15,
+   "lat": 11.000928,
+   "lon": -74.80772,
+   "accidentes": 106,
+   "heridos": 37,
+   "muertos": 0,
+   "indice_severidad": 180.0,
+   "sitio_frecuente": "CL 76 CR 50",
+   "ranking": 16
+  },
+  {
+   "cluster": 6,
+   "lat": 10.967879,
+   "lon": -74.785867,
+   "accidentes": 84,
+   "heridos": 42,
+   "muertos": 1,
+   "indice_severidad": 177.0,
+   "sitio_frecuente": "CL 45 CR 45",
+   "ranking": 17
+  },
+  {
+   "cluster": 36,
+   "lat": 11.014795,
+   "lon": -74.818006,
+   "accidentes": 95,
+   "heridos": 41,
+   "muertos": 0,
+   "indice_severidad": 177.0,
+   "sitio_frecuente": "CL 91 CR 64",
+   "ranking": 18
+  },
+  {
+   "cluster": 74,
+   "lat": 10.980293,
+   "lon": -74.781973,
+   "accidentes": 88,
+   "heridos": 41,
+   "muertos": 0,
+   "indice_severidad": 170.0,
+   "sitio_frecuente": "CALLE 38 CARRERA 40",
+   "ranking": 19
+  },
+  {
+   "cluster": 51,
+   "lat": 10.998221,
+   "lon": -74.807792,
+   "accidentes": 85,
+   "heridos": 40,
+   "muertos": 0,
+   "indice_severidad": 165.0,
+   "sitio_frecuente": "CL 75 CR 49",
+   "ranking": 20
+  }
+ ]
+}

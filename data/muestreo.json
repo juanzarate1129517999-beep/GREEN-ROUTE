@@ -1,0 +1,87 @@
+{
+ "N": 28865,
+ "z": 1.96,
+ "p": 0.5,
+ "error": 0.03,
+ "n0": 1067.1,
+ "n": 1030,
+ "estratos": [
+  {
+   "anio": 2018,
+   "N_h": 5898,
+   "n_h": 211
+  },
+  {
+   "anio": 2019,
+   "N_h": 5645,
+   "n_h": 201
+  },
+  {
+   "anio": 2020,
+   "N_h": 3281,
+   "n_h": 117
+  },
+  {
+   "anio": 2021,
+   "N_h": 4700,
+   "n_h": 168
+  },
+  {
+   "anio": 2022,
+   "N_h": 3683,
+   "n_h": 131
+  },
+  {
+   "anio": 2023,
+   "N_h": 1674,
+   "n_h": 60
+  },
+  {
+   "anio": 2024,
+   "N_h": 1482,
+   "n_h": 53
+  },
+  {
+   "anio": 2025,
+   "N_h": 1656,
+   "n_h": 59
+  },
+  {
+   "anio": 2026,
+   "N_h": 846,
+   "n_h": 30
+  }
+ ],
+ "pruebas": [
+  {
+   "variable": "Gravedad",
+   "chi2": 0.153,
+   "gl": 2,
+   "p_valor": 0.9262,
+   "representativa": true
+  },
+  {
+   "variable": "Clase de accidente",
+   "chi2": 0.55,
+   "gl": 4,
+   "p_valor": 0.9685,
+   "representativa": true
+  },
+  {
+   "variable": "Día de la semana",
+   "chi2": 7.062,
+   "gl": 6,
+   "p_valor": 0.3152,
+   "representativa": true
+  }
+ ],
+ "estimacion": {
+  "parametro": "Proporción de accidentes con víctimas",
+  "muestra": 0.4631,
+  "ic95": [
+   0.4332,
+   0.493
+  ],
+  "poblacion": 0.4641
+ }
+}

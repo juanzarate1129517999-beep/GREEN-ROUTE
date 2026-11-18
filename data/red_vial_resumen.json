@@ -1,0 +1,21 @@
+{
+  "nodos": 18050,
+  "aristas": 51964,
+  "km_totales": 4110.7,
+  "km_por_tipo": {
+    "residential": 3256.6,
+    "tertiary": 443.7,
+    "secondary": 148.0,
+    "unclassified": 81.9,
+    "trunk": 77.8,
+    "primary": 52.0,
+    "busway": 26.4,
+    "trunk_link": 18.9,
+    "secondary_link": 2.1,
+    "tertiary_link": 1.8,
+    "primary_link": 1.4,
+    "ladder": 0.1
+  },
+  "grado_medio": 5.76,
+  "vias_con_nombre_pct": 94.5
+}

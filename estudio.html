@@ -1,0 +1,296 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Estudio de datos · Green Route</title>
+  <meta name="description" content="Fuentes, limpieza, diseño muestral y análisis exploratorio de accidentalidad, calidad del aire y red vial de Barranquilla.">
+  <link rel="icon" href="img/favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Geist:wght@300..700&family=Geist+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/estilos.css?v=3d4">
+</head>
+<body>
+<header class="cab-pagina">
+  <div class="contenedor">
+    <div class="miga"><a href="index.html">Inicio</a> / Estudio de datos</div>
+    <h1>Estudio de datos de Barranquilla</h1>
+    <p>Análisis de datos reales y oficiales: de dónde vienen, cómo se depuraron, cómo se diseñó la muestra y qué revelan
+      sobre la movilidad de carga, la siniestralidad y la calidad del aire de la ciudad.</p>
+  </div>
+</header>
+
+<main class="contenedor seccion" style="padding-top:48px">
+  <div class="con-indice">
+    <nav class="indice-pagina" aria-label="Contenido de la página">
+      <h4>En esta página</h4>
+      <a href="#fuentes">1. Fuentes de datos</a>
+      <a href="#limpieza">2. Limpieza e integración</a>
+      <a href="#muestreo">3. Diseño muestral</a>
+      <a href="#accidentalidad">4. Accidentalidad</a>
+      <a href="#carga">5. Vehículos de carga</a>
+      <a href="#aire">6. Calidad del aire</a>
+      <a href="#red">7. Red vial</a>
+      <a href="#hallazgos">8. Hallazgos</a>
+    </nav>
+
+    <div>
+      <section class="subseccion" id="fuentes">
+        <div class="etiqueta">1 · Fuentes</div>
+        <h2>Fuentes de datos</h2>
+        <p>Se integraron cinco fuentes abiertas, todas descargadas de forma automática por el script
+          <code>01_descargar_datos.py</code> a través de sus API públicas. Ningún dato fue digitado o simulado manualmente.</p>
+        <div class="tabla-env">
+          <table>
+            <thead><tr><th>Conjunto de datos</th><th>Entidad / origen</th><th class="num">Registros</th><th>Periodo</th><th>Uso en el proyecto</th></tr></thead>
+            <tbody>
+              <tr><td><b>Accidentalidad en Barranquilla</b><br><small><code>yb9r-2dsi</code></small></td><td>Secretaría de Tránsito y Seguridad Vial · datos.gov.co</td><td class="num">28.865</td><td>2018 – sep 2026</td><td>EDA, muestreo, modelos M2-M4, mapa de riesgo</td></tr>
+              <tr><td><b>Detalle de vehículos accidentados</b><br><small><code>nfa3-wgxy</code></small></td><td>Secretaría de Tránsito · datos.gov.co</td><td class="num">52.102</td><td>2018 – sep 2026</td><td>Participación de vehículos de carga, variables de M2</td></tr>
+              <tr><td><b>Víctimas de accidentes</b><br><small><code>y628-5q9a</code></small></td><td>Secretaría de Tránsito · datos.gov.co</td><td class="num">19.666</td><td>2018 – sep 2026</td><td>Contexto de severidad</td></tr>
+              <tr><td><b>Calidad del aire en Colombia</b><br><small><code>g4t8-zkc3</code></small></td><td>SISAIRE / IDEAM · estaciones EPA Barranquilla Verde y CRA</td><td class="num">643.011</td><td>2020 – 2025</td><td>Perfil de tráfico (M1), excedencias de PM2.5</td></tr>
+              <tr><td><b>Clima horario (reanálisis ERA5)</b></td><td>Open-Meteo Archive API</td><td class="num">52.608</td><td>2020 – 2025</td><td>Variables meteorológicas de M1</td></tr>
+              <tr><td><b>Malla vial y río Magdalena</b></td><td>OpenStreetMap vía OSMnx</td><td class="num">52.144 tramos</td><td>Actual</td><td>Grafo de ruteo del motor Java</td></tr>
+            </tbody>
+          </table>
+        </div>
+        <p style="margin-top:14px;font-size:.88rem;color:var(--muted)">Factores de emisión: electricidad 0,220 kg CO₂e/kWh (UPME, Resolución 000085 de 2026,
+          factor del SIN 2024 para inventarios de GEI); diésel 2,68 kg/L, gasolina 2,31 kg/L y GNV 1,93 kg/m³ (IPCC 2006, Vol. 2, Cap. 3).</p>
+      </section>
+
+      <section class="subseccion" id="limpieza">
+        <div class="etiqueta">2 · Calidad de datos</div>
+        <h2>Limpieza e integración</h2>
+        <div class="rejilla rejilla-3" style="margin-bottom:24px">
+          <div class="tarjeta tarjeta--plana"><h4>Corrección de escala</h4><h3>Aire 2020-2023 ÷ 100</h3>
+            <p>Las concentraciones de esos años se registraron sin separador decimal (PM2.5 con mediana de 993 µg/m³, físicamente imposible).
+              Dividir entre 100 empalma las medianas con 2024-2025.</p></div>
+          <div class="tarjeta tarjeta--plana"><h4>Geocodificación</h4><h3><span data-dato="geocodificacion.tasa_pct" data-dec="1">—</span> % ubicados</h3>
+            <p>Las direcciones en texto libre («CL 87 CR 46», «CARRERA 59B CON CALLE 86») se interpretaron con expresiones regulares
+              y se ubicaron en el cruce real de ambas vías en OpenStreetMap.</p></div>
+          <div class="tarjeta tarjeta--plana"><h4>Integración</h4><h3>100 % de cruce</h3>
+            <p>Accidentes y vehículos se unieron por fecha + dirección. Así cada accidente sabe si involucró moto, bus, bicicleta o vehículo de carga.</p></div>
+        </div>
+        <div class="grafica-tarjeta"><div class="grafica" data-id="aire_correccion"></div></div>
+        <h3 style="margin-top:32px">Algoritmo de geocodificación por cruce de vías</h3>
+        <ol style="color:var(--ink-2)">
+          <li>Normalizar el texto (mayúsculas, sin tildes ni signos «#», «-», «No.»).</li>
+          <li>Reconocer tipos de vía (<code>CL</code>, <code>CLLE</code>, <code>CR</code>, <code>KR</code>, <code>DG</code>, <code>TV</code>…) y avenidas con nombre propio (Circunvalar, Murillo, Vía 40…).</li>
+          <li>Si solo hay una vía y una placa («CL 99A 55 97»), inferir la vía cruzada (Calle → Carrera).</li>
+          <li>Buscar los nodos de OSM que pertenecen a ambas vías; si no comparten nodo, tomar el par más cercano (≤ 150 m).</li>
+        </ol>
+        <div class="tabla-env" style="max-width:560px">
+          <table><thead><tr><th>Resultado</th><th class="num">Accidentes</th></tr></thead>
+            <tbody>
+              <tr><td>Cruce exacto (nodo compartido)</td><td class="num" data-dato="geocodificacion.exacta">—</td></tr>
+              <tr><td>Cruce aproximado (≤ 150 m)</td><td class="num" data-dato="geocodificacion.aproximada">—</td></tr>
+              <tr><td>No ubicado</td><td class="num" data-dato="geocodificacion.no_ubicada">—</td></tr>
+              <tr><td><b>Direcciones únicas procesadas</b></td><td class="num"><b data-dato="geocodificacion.direcciones_unicas">—</b></td></tr>
+            </tbody></table>
+        </div>
+      </section>
+
+      <section class="subseccion" id="muestreo">
+        <div class="etiqueta">3 · Muestreo</div>
+        <h2>Diseño muestral estratificado</h2>
+        <p>Para el análisis inferencial se extrajo una muestra probabilística de la población de accidentes. Se usó
+          <b>muestreo aleatorio estratificado con asignación proporcional</b>, tomando el año como estrato, porque la
+          accidentalidad cambia mucho entre años (pandemia en 2020 y descenso desde 2023).</p>
+        <div class="rejilla rejilla-2" style="align-items:start">
+          <div class="tarjeta tarjeta--plana">
+            <h4>Tamaño de muestra · fórmula de Cochran</h4>
+            <div class="formula">n<sub>0</sub> = Z² · p · (1 − p) / e² = 1,96² · 0,5 · 0,5 / 0,03² = <b data-dato="n0" data-dec="1" data-src="muestreo">—</b></div>
+            <h4>Corrección por población finita</h4>
+            <div class="formula">n = n<sub>0</sub> / (1 + (n<sub>0</sub> − 1) / N) = <b data-dato="n" data-src="muestreo">—</b></div>
+            <p style="font-size:.9rem">Con N = <b data-dato="N" data-src="muestreo">—</b> accidentes, confianza del 95 % (Z = 1,96), máxima variabilidad
+              (p = 0,5) y error máximo admisible del 3 %. En cada estrato: n<sub>h</sub> = n · N<sub>h</sub> / N.</p>
+          </div>
+          <div class="tabla-env">
+            <table><thead><tr><th>Estrato (año)</th><th class="num">N<sub>h</sub></th><th class="num">n<sub>h</sub></th><th class="num">Fracción</th></tr></thead>
+              <tbody id="tabla-estratos"></tbody></table>
+          </div>
+        </div>
+        <div class="rejilla rejilla-2" style="margin-top:20px">
+          <div class="grafica-tarjeta"><div class="grafica" data-id="muestreo_estratos"></div></div>
+          <div class="grafica-tarjeta"><div class="grafica" data-id="muestreo_gravedad"></div></div>
+        </div>
+        <h3 style="margin-top:32px">Validación de representatividad (prueba χ² de bondad de ajuste)</h3>
+        <p>H<sub>0</sub>: la distribución de la variable en la muestra es igual a la de la población. Con α = 0,05, un p-valor mayor que 0,05
+          indica que no hay evidencia de diferencia: la muestra es representativa.</p>
+        <div class="tabla-env">
+          <table><thead><tr><th>Variable</th><th class="num">χ²</th><th class="num">g.l.</th><th class="num">p-valor</th><th>Conclusión</th></tr></thead>
+            <tbody id="tabla-chi2"></tbody></table>
+        </div>
+        <div class="nota" style="margin-top:18px" id="nota-estimacion"></div>
+      </section>
+
+      <section class="subseccion" id="accidentalidad">
+        <div class="etiqueta">4 · Accidentalidad</div>
+        <h2>¿Cuándo y dónde ocurren los accidentes?</h2>
+        <p>Se analizaron <b data-dato="accidentalidad.accidentes">—</b> accidentes: <b data-dato="accidentalidad.victimas_heridos">—</b> con heridos y
+          <b data-dato="accidentalidad.con_muertos">—</b> con muertos. La serie muestra una caída marcada en 2020 (confinamiento) y un nivel
+          mucho menor desde 2023, que <b>no corresponde a una mejora real</b>, como se explica a continuación.</p>
+
+        <div class="explorador" id="explorador">
+          <div class="explorador__cab">
+            <div><h4>Explorador interactivo</h4><h3 id="exp-titulo">Todos los años · 28.865 accidentes</h3></div>
+            <div class="chips-filtro" id="exp-anios" role="group" aria-label="Elegir año"></div>
+          </div>
+          <div class="explorador__kpis">
+            <div><b id="exp-acc">—</b><small>accidentes</small></div>
+            <div><b id="exp-vic">—</b><small>% con víctimas</small></div>
+            <div><b id="exp-carga">—</b><small>% con vehículo de carga</small></div>
+            <div><b id="exp-moto">—</b><small>% con motocicleta</small></div>
+            <div><b id="exp-pico">—</b><small>hora pico</small></div>
+          </div>
+          <div class="rejilla rejilla-2">
+            <div><h4>Hora × día de la semana</h4><div id="exp-calor" class="grafica grafica--baja"></div></div>
+            <div><h4>Clase de accidente</h4><div id="exp-clases" class="grafica grafica--baja"></div></div>
+          </div>
+        </div>
+
+        <div class="rejilla rejilla-2">
+          <div class="grafica-tarjeta"><div class="grafica" data-id="acc_anual"></div></div>
+          <div class="grafica-tarjeta"><div class="grafica" data-id="acc_clase"></div></div>
+        </div>
+        <div class="nota nota--aviso" style="margin-top:18px"><strong>Cambio en el registro (hallazgo de calidad de datos).</strong>
+          Entre 2018 y 2021 solo el <span data-dato="accidentalidad.pct_victimas_2018_2021" data-dec="1">—</span> % de los accidentes registrados tenía víctimas;
+          desde 2023 la proporción es del <span data-dato="accidentalidad.pct_victimas_2023_2026" data-dec="1">—</span> %. Los choques de «solo daños» prácticamente
+          dejaron de registrarse. En cambio, los accidentes <b>con víctimas</b> se mantienen estables
+          (<span data-dato="accidentalidad.victimas_mes_2018_2022" data-dec="0">—</span> por mes en 2018-2022 frente a
+          <span data-dato="accidentalidad.victimas_mes_2023_2025" data-dec="0">—</span> en 2023-2025). Por eso los modelos M2 y M3 se ajustaron para no
+          confundir el cambio administrativo con un cambio real.</div>
+        <div class="grafica-tarjeta" style="margin-top:20px"><div class="grafica" data-id="acc_mensual"></div></div>
+        <div class="grafica-tarjeta" style="margin-top:20px"><div class="grafica grafica--alta" data-id="acc_hora_dia"></div></div>
+        <div class="nota" style="margin-top:18px"><strong>Lectura.</strong> La actividad se concentra entre las 7:00 y las 19:00 de lunes a sábado,
+          con picos a las 7:00, al mediodía y a las 17:00-18:00. El domingo es el día más tranquilo. Este patrón coincide con el perfil de
+          contaminación por CO y es la base del perfil horario de congestión que usa el motor de rutas.</div>
+        <h3 style="margin-top:32px">Puntos críticos (agrupamiento DBSCAN)</h3>
+        <div class="grafica-tarjeta"><div class="grafica grafica--alta" data-id="puntos_criticos"></div></div>
+        <div class="tabla-env" style="margin-top:20px">
+          <table><thead><tr><th>#</th><th>Sitio más frecuente</th><th class="num">Accidentes</th><th class="num">Con heridos</th><th class="num">Con muertos</th><th class="num">Índice</th></tr></thead>
+            <tbody id="tabla-criticos"></tbody></table>
+        </div>
+      </section>
+
+      <section class="subseccion" id="carga">
+        <div class="etiqueta">5 · Transporte de carga</div>
+        <h2>El papel de los vehículos de carga</h2>
+        <p>De <b data-dato="accidentalidad.vehiculos">—</b> vehículos involucrados en accidentes, <b data-dato="accidentalidad.vehiculos_carga">—</b>
+          son camiones, tractocamiones o volquetas, presentes en el <b data-dato="accidentalidad.pct_con_carga" data-dec="1">—</b> % de los accidentes.</p>
+        <div class="rejilla rejilla-2">
+          <div class="grafica-tarjeta"><div class="grafica grafica--alta" data-id="veh_clases"></div></div>
+          <div class="grafica-tarjeta"><div class="grafica grafica--alta" data-id="carga_hora"></div></div>
+        </div>
+        <div class="nota" style="margin-top:18px"><strong>Implicación logística.</strong> Los accidentes con vehículos de carga se concentran
+          en el horario laboral diurno, cuando la malla vial está más congestionada. Programar entregas fuera de las horas pico reduce
+          a la vez el tiempo, las emisiones y la exposición al riesgo.</div>
+      </section>
+
+      <section class="subseccion" id="aire">
+        <div class="etiqueta">6 · Calidad del aire</div>
+        <h2>Contaminación atmosférica y tráfico</h2>
+        <p>Se depuraron <b data-dato="aire.mediciones">—</b> mediciones horarias de PM2.5, PM10, CO y O₃ en
+          <b data-dato="aire.estaciones">—</b> estaciones. El PM2.5 promedio es de <b data-dato="aire.pm25_media" data-dec="1">—</b> µg/m³ y el PM10 de
+          <b data-dato="aire.pm10_media" data-dec="1">—</b> µg/m³.</p>
+        <div class="grafica-tarjeta"><div class="grafica" data-id="aire_pm25_mensual"></div></div>
+        <div id="huecos" style="margin-top:20px;display:grid;gap:20px">
+          <div class="grafica-tarjeta"><div class="grafica" data-id="aire_cobertura"></div></div>
+          <div class="nota nota--aviso nota--hueco">
+            <strong>¿Por qué hay huecos en los datos?</strong>
+            <p>Entre <b>junio de 2023 y febrero de 2025</b> (21 meses) el conjunto oficial <code>g4t8-zkc3</code> de datos.gov.co
+              (SISAIRE · IDEAM, reportado por EPA Barranquilla Verde) <b>no contiene ninguna medición de PM2.5</b>. En 7 de esos meses
+              (nov 2023 – feb 2024, abr 2024, nov – dic 2024) no hay dato de ningún contaminante.</p>
+            <p><b>No es un error del proyecto:</b> se consultó la API en vivo y devuelve las mismas 643.011 filas que la descarga, con 0 registros
+              de PM2.5 en ese periodo. La fuente no documenta la causa; las explicaciones habituales en una red automática son:</p>
+            <ol>
+              <li><b>Equipos fuera de servicio</b> (mantenimiento, calibración o daño). Cada contaminante se mide con un analizador distinto,
+                por eso PM2.5, PM10, CO y O₃ se apagan y vuelven en fechas diferentes.</li>
+              <li><b>Interrupción de la operación de la red</b> (contrato de operación, energía o comunicaciones): explica los meses en que
+                no llega ningún dato de ninguna estación.</li>
+              <li><b>Datos no validados</b>: el Protocolo de Monitoreo de la Calidad del Aire (MinAmbiente) exige publicar solo datos validados
+                y considera representativo un promedio con al menos el 75 % de los datos.</li>
+            </ol>
+            <p><b>Cómo se trató:</b> los meses vacíos no se interpolan (las líneas se cortan y la franja rayada los señala). El modelo M1 usa
+              CO, que tiene mejor cobertura, y solo con las semanas que sí tienen datos.</p>
+          </div>
+        </div>
+        <div class="rejilla rejilla-2" style="margin-top:20px">
+          <div class="grafica-tarjeta"><div class="grafica" data-id="aire_co_diurno"></div></div>
+          <div class="grafica-tarjeta"><div class="grafica" data-id="aire_pm25_diurno"></div></div>
+        </div>
+        <div class="nota" style="margin-top:18px"><strong>Firma del tráfico.</strong> El CO, gas emitido por la combustión de los motores, muestra
+          la doble joroba típica del tráfico urbano (mañana y noche), más marcada en días laborales que en fin de semana. Por eso se usa como
+          trazador de la actividad vehicular en el modelo M1.</div>
+        <div class="rejilla rejilla-2" style="margin-top:20px;align-items:start">
+          <div class="grafica-tarjeta"><div class="grafica" data-id="aire_excedencias"></div></div>
+          <div class="tabla-env">
+            <table><thead><tr><th>Estación</th><th class="num">PM2.5</th><th class="num">PM10</th><th>Periodo</th></tr></thead>
+              <tbody id="tabla-estaciones"></tbody></table>
+          </div>
+        </div>
+      </section>
+
+      <section class="subseccion" id="red">
+        <div class="etiqueta">7 · Infraestructura</div>
+        <h2>La red vial como grafo</h2>
+        <div class="kpis" style="margin-bottom:20px">
+          <div class="kpi"><div class="kpi__valor" data-dato="red.nodos">—</div><div class="kpi__etq">nodos (intersecciones)</div></div>
+          <div class="kpi"><div class="kpi__valor" data-dato="red.aristas">—</div><div class="kpi__etq">aristas dirigidas (tramos)</div></div>
+          <div class="kpi"><div class="kpi__valor" data-dato="red.grado_medio" data-dec="2">—</div><div class="kpi__etq">grado medio por nodo</div></div>
+          <div class="kpi"><div class="kpi__valor"><span data-dato="red.vias_con_nombre_pct" data-dec="1">—</span> %</div><div class="kpi__etq">tramos con nombre de vía</div></div>
+        </div>
+        <div class="grafica-tarjeta"><div class="grafica" data-id="red_tipos"></div></div>
+        <p style="margin-top:16px">Se conservó el componente fuertemente conexo principal de Barranquilla y Soledad, de modo que desde cualquier
+          intersección existe un camino a cualquier otra respetando el sentido de circulación. El río Magdalena se modeló como una red
+          fluvial paralela de 91 nodos (≈ 28 km), utilizable solo por la barcaza. Los 26 km de carriles exclusivos del Transmetro
+          están prohibidos para los vehículos de carga.</p>
+      </section>
+
+      <section class="subseccion" id="hallazgos">
+        <div class="etiqueta">8 · Síntesis</div>
+        <h2>Hallazgos del estudio</h2>
+        <ul class="lista-check">
+          <li><strong>La muestra estratificada es representativa:</strong> ninguna prueba χ² rechaza la igualdad de distribuciones (p &gt; 0,05).</li>
+          <li><strong>La aparente caída de la accidentalidad desde 2023 es un cambio de registro:</strong> los accidentes con víctimas se mantienen estables, solo dejaron de registrarse los de solo daños.</li>
+          <li><strong>La actividad vehicular tiene un patrón horario estable</strong> con picos a las 7-8 h y 17-19 h, visible tanto en accidentes como en CO.</li>
+          <li><strong>El transporte de carga participa en 1 de cada 8 accidentes</strong> y opera sobre todo en las horas de mayor congestión.</li>
+          <li><strong>La siniestralidad se concentra en pocos corredores</strong> (Calle 30, Vía 40, Circunvalar, Calle 17) que el ruteo seguro penaliza.</li>
+          <li><strong>El aire cumple la norma nacional, pero no la guía de la OMS</strong> en cerca de 1 de cada 5 días para PM2.5.</li>
+        </ul>
+        <p style="margin-top:24px"><a class="btn btn--primario" href="modelos.html">Continuar con los modelos de Machine Learning →</a></p>
+      </section>
+    </div>
+  </div>
+</main>
+
+<script src="vendor/plotly.min.js"></script>
+<script src="js/comun.js?v=3d4"></script>
+<script src="js/graficas.js?v=3d4"></script>
+<script src="js/explorador.js?v=3d4"></script>
+<script>
+  (async () => {
+    const [res, pc, est] = await Promise.all([GR.json("data/resumen_estudio.json"), GR.json("data/puntos_criticos.json"),
+                                             GR.json("data/estaciones_aire.json")]);
+    GR.rellenar(res);
+    const m = res.muestreo;
+    document.querySelectorAll('[data-src="muestreo"]').forEach((el) => {
+      el.textContent = GR.fmt(m[el.dataset.dato], +(el.dataset.dec || 0));
+    });
+    document.getElementById("tabla-estratos").innerHTML = m.estratos.map((e) =>
+      `<tr><td>${e.anio}${e.anio === 2026 ? "*" : ""}</td><td class="num">${GR.fmt(e.N_h)}</td><td class="num">${GR.fmt(e.n_h)}</td><td class="num">${GR.fmt(e.n_h / e.N_h * 100, 2)} %</td></tr>`).join("") +
+      `<tr><td><b>Total</b></td><td class="num"><b>${GR.fmt(m.N)}</b></td><td class="num"><b>${GR.fmt(m.estratos.reduce((s, e) => s + e.n_h, 0))}</b></td><td class="num">${GR.fmt(m.n / m.N * 100, 2)} %</td></tr>`;
+    document.getElementById("tabla-chi2").innerHTML = m.pruebas.map((p) =>
+      `<tr><td>${p.variable}</td><td class="num">${GR.fmt(p.chi2, 3)}</td><td class="num">${p.gl}</td><td class="num">${GR.fmt(p.p_valor, 4)}</td>
+       <td>${p.representativa ? '<span class="pastilla pastilla--ok">✓ No se rechaza H₀</span>' : '<span class="pastilla pastilla--no">Se rechaza H₀</span>'}</td></tr>`).join("");
+    const e = m.estimacion;
+    document.getElementById("nota-estimacion").innerHTML = `<strong>Inferencia con la muestra.</strong> ${e.parametro}: estimación muestral
+      ${GR.fmt(e.muestra * 100, 1)} % con intervalo de confianza del 95 % [${GR.fmt(e.ic95[0] * 100, 1)} %, ${GR.fmt(e.ic95[1] * 100, 1)} %].
+      El valor poblacional real (${GR.fmt(e.poblacion * 100, 1)} %) ${e.poblacion >= e.ic95[0] && e.poblacion <= e.ic95[1] ? "queda dentro del intervalo, lo que confirma la validez del diseño" : "queda fuera del intervalo"}.`;
+    document.getElementById("tabla-criticos").innerHTML = pc.puntos.slice(0, 10).map((p) =>
+      `<tr><td>${p.ranking}</td><td>${p.sitio_frecuente}</td><td class="num">${GR.fmt(p.accidentes)}</td><td class="num">${GR.fmt(p.heridos)}</td><td class="num">${GR.fmt(p.muertos)}</td><td class="num"><b>${GR.fmt(p.indice_severidad)}</b></td></tr>`).join("");
+    document.getElementById("tabla-estaciones").innerHTML = est.map((s) =>
+      `<tr><td><b>${s.estacion}</b><br><small style="color:var(--muted)">${s.entidad}</small></td><td class="num">${s.pm25 == null ? "—" : GR.fmt(s.pm25, 1)}</td><td class="num">${s.pm10 == null ? "—" : GR.fmt(s.pm10, 1)}</td><td>${s.periodo}</td></tr>`).join("");
+  })();
+</script>
+</body>
+</html>
