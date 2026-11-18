@@ -1,0 +1,1031 @@
+fecha_accidente,hora_accidente,gravedad_accidente,clase_accidente,sitio_exacto_accidente,cant_heridos_en_sitio_accidente,cant_muertos_en_sitio_accidente,cantidad_accidentes,a_o_accidente,mes_accidente,dia_accidente,fecha,hora,anio,mes,dia_semana,con_victimas,n_vehiculos,hay_carga,hay_moto,hay_bus,hay_bici,hay_publico,lat,lon,geocodificacion
+2018-05-24T00:00:00.000,05:10:00:pm,Solo daños,Choque,CALLE 30 15-216,,,1.0,2018,May,Thu,2018-05-24,17,2018,5,3,0,2,False,False,True,False,True,10.9386905,-74.78171536666666,exacta
+2018-12-16T00:00:00.000,10:30:00:pm,Con heridos,Atropello,CR 6 SUR CL 51B,1.0,,1.0,2018,December,Sun,2018-12-16,22,2018,12,6,1,1,False,False,False,False,False,10.9283623,-74.8138689,exacta
+2018-11-21T00:00:00.000,10:05:00:am,Con heridos,Choque,CR 8 CL 35,1.0,,1.0,2018,November,Wed,2018-11-21,10,2018,11,2,1,2,False,True,False,False,False,10.946283175000001,-74.79008499999999,exacta
+2018-03-26T00:00:00.000,10:55:00:am,Solo daños,Choque,CALLE 72 CARRERA 56,,,1.0,2018,March,Mon,2018-03-26,10,2018,3,0,0,2,False,False,False,False,True,11.000143000000001,-74.80005345000001,exacta
+2018-04-01T00:00:00.000,08:10:00:pm,Solo daños,Choque,CARRERA 38 CALLE 69,,,1.0,2018,April,Sun,2018-04-01,20,2018,4,6,0,2,False,False,True,False,True,10.9837322,-74.8047447,exacta
+2018-08-08T00:00:00.000,07:00:00:am,Solo daños,Choque,AVENIDA CIRCUNVALAR CALLE 46,,,1.0,2018,August,Wed,2018-08-08,7,2018,8,2,0,2,True,False,False,False,True,10.92335005,-74.80265650000001,exacta
+2018-12-20T00:00:00.000,07:50:00:am,Solo daños,Choque,CL 82 CR 59,,,1.0,2018,December,Thu,2018-12-20,7,2018,12,3,0,2,False,False,False,False,False,11.0102387,-74.8112225,exacta
+2018-05-05T00:00:00.000,05:30:00:am,Solo daños,Choque,CR 19 CL 23,,,1.0,2018,May,Sat,2018-05-05,5,2018,5,5,0,1,False,False,False,False,False,10.9369105,-74.77358480000001,exacta
+2018-11-08T00:00:00.000,05:30:00:pm,Solo daños,Choque,CR 37 63 17,,,1.0,2018,November,Thu,2018-11-08,17,2018,11,3,0,2,False,False,False,False,True,10.983082,-74.8001093,exacta
+2018-04-18T00:00:00.000,07:30:00:am,Solo daños,Choque,CARRERA 46 CALLE 112,,,1.0,2018,April,Wed,2018-04-18,7,2018,4,2,0,1,False,False,False,False,False,,,no ubicada
+2018-06-25T00:00:00.000,12:40:00:pm,Solo daños,Choque,CALLE 110 CARRERA 12,,,1.0,2018,June,Mon,2018-06-25,12,2018,6,0,0,2,True,False,False,False,False,,,no ubicada
+2018-02-15T00:00:00.000,01:00:00:pm,Solo daños,Choque,CALLE 84 CARRERA 42B,,,1.0,2018,February,Thu,2018-02-15,13,2018,2,3,0,2,False,False,False,False,False,10.9930698,-74.8253148,exacta
+2018-07-14T00:00:00.000,06:45:00:am,Solo daños,Choque,AV CIRCUNVALAR 9G 390,,,1.0,2018,July,Sat,2018-07-14,6,2018,7,5,0,2,True,False,False,False,True,,,no ubicada
+2018-05-21T00:00:00.000,07:45:00:am,Solo daños,Choque,VIA 40 CL 68 69,,,1.0,2018,May,Mon,2018-05-21,7,2018,5,0,0,2,False,False,True,False,True,,,no ubicada
+2018-08-04T00:00:00.000,10:00:00:am,Solo daños,Choque,CARRERA 27 CALLE 44,,,1.0,2018,August,Sat,2018-08-04,10,2018,8,5,0,1,False,False,False,False,True,10.969332,-74.7893605,exacta
+2018-04-02T00:00:00.000,07:30:00:pm,Solo daños,Choque,CALLE 104 CARRERA 55,,,1.0,2018,April,Mon,2018-04-02,19,2018,4,0,0,1,False,False,False,False,False,11.0175704,-74.8323629,exacta
+2018-08-16T00:00:00.000,10:50:00:am,Solo daños,Choque,GALAPA KM 114 + 960,,,1.0,2018,August,Thu,2018-08-16,10,2018,8,3,0,3,True,False,True,False,True,,,no ubicada
+2018-01-27T00:00:00.000,04:10:00:am,Solo daños,Choque,CARRERA 23 CALLE 61,,,1.0,2018,January,Sat,2018-01-27,4,2018,1,5,0,2,False,False,False,False,True,10.9699396,-74.8035619,exacta
+2018-01-05T00:00:00.000,05:50:00:am,Con heridos,Choque,CRA 45 CLLE 53,1.0,,1.0,2018,January,Fri,2018-01-05,5,2018,1,4,1,1,False,True,False,False,False,10.9877351,-74.7897434,exacta
+2018-03-27T00:00:00.000,09:23:00:am,Solo daños,Choque,CALLE 30 CARRERA 45B,,,1.0,2018,March,Tue,2018-03-27,9,2018,3,1,0,2,True,True,False,False,True,10.984363,-74.7760858,exacta
+2018-09-05T00:00:00.000,08:30:00:am,Con heridos,Choque,CARRERA 21 CALLE 53B,2.0,,1.0,2018,September,Wed,2018-09-05,8,2018,9,2,1,2,False,False,True,False,True,10.9671407,-74.799464,exacta
+2018-01-31T00:00:00.000,05:40:00:pm,Solo daños,Choque,CALLE 56 CON CARRERA 65,,,1.0,2018,January,Wed,2018-01-31,17,2018,1,2,0,2,True,False,True,False,True,10.9985054,-74.7891991,exacta
+2018-10-30T00:00:00.000,05:00:00:pm,Solo daños,Choque,CR 50B CL 43,,,1.0,2018,October,Tue,2018-10-30,17,2018,10,1,0,2,False,False,False,False,True,10.9899041,-74.7826009,exacta
+2018-11-24T00:00:00.000,08:00:00:am,Solo daños,Choque,AVENIDA CIRCUNVALAR CALLE 46,,,1.0,2018,November,Sat,2018-11-24,8,2018,11,5,0,2,False,False,True,False,True,10.92335005,-74.80265650000001,exacta
+2018-08-18T00:00:00.000,04:50:00:pm,Con heridos,Atropello,VIA 40 CR 51,2.0,,1.0,2018,August,Sat,2018-08-18,16,2018,8,5,1,1,False,True,False,False,False,10.989855866666666,-74.77675156666668,exacta
+2018-01-10T00:00:00.000,05:30:00:pm,Solo daños,Choque,VIA 40 CON 67B,,,1.0,2018,January,Wed,2018-01-10,17,2018,1,2,0,2,False,True,False,False,True,,,no ubicada
+2018-08-03T00:00:00.000,09:05:00:am,Solo daños,Choque,CR 51B CL 100 Y 98,,,1.0,2018,August,Fri,2018-08-03,9,2018,8,4,0,3,False,False,True,False,True,11.01197995,-74.83204375,exacta
+2018-08-24T00:00:00.000,10:20:00:am,Solo daños,Choque,CALLE 110 CARRERA 12-04,,,1.0,2018,August,Fri,2018-08-24,10,2018,8,4,0,2,True,False,False,False,True,,,no ubicada
+2018-09-15T00:00:00.000,05:40:00:pm,Solo daños,Choque,CALLE 87 CARRERA 71,,,1.0,2018,September,Sat,2018-09-15,17,2018,9,5,0,1,False,False,False,False,False,11.0190199,-74.8127455,exacta
+2018-09-18T00:00:00.000,07:50:00:am,Con heridos,Choque,CL 85 CR 45,1.0,,1.0,2018,September,Tue,2018-09-18,7,2018,9,1,1,2,False,True,True,False,True,11.0014672,-74.8213564,exacta
+2018-11-03T00:00:00.000,10:00:00:am,Solo daños,Choque,CL 45 CR 27,,,1.0,2018,November,Sat,2018-11-03,10,2018,11,5,0,4,False,True,False,False,True,10.954347933333333,-74.78876463333333,exacta
+2018-01-08T00:00:00.000,05:21:00:am,Solo daños,Choque,CALLE 30 CRA 20,,,1.0,2018,January,Mon,2018-01-08,5,2018,1,0,0,2,False,False,True,False,True,10.9567428,-74.78595734999999,exacta
+2018-06-18T00:00:00.000,09:50:00:pm,Con heridos,Choque,CARRERA 10 CALLE 14 URBANIZACION LA PLAYA,3.0,,1.0,2018,June,Mon,2018-06-18,21,2018,6,0,1,1,False,True,False,False,False,10.94985125,-74.770862,aproximada
+2018-05-26T00:00:00.000,03:20:00:pm,Solo daños,Choque,CARRERA 49C 84-141,,,1.0,2018,May,Sat,2018-05-26,15,2018,5,5,0,1,False,False,False,False,False,11.0031475,-74.818401,exacta
+2018-12-24T00:00:00.000,02:00:00:pm,Solo daños,Choque,CL 80B CR 40B,,,1.0,2018,December,Mon,2018-12-24,14,2018,12,0,0,2,False,True,False,False,False,,,no ubicada
+2018-01-22T00:00:00.000,07:30:00:pm,Con heridos,Choque,CR 8 CL 44,1.0,,1.0,2018,January,Mon,2018-01-22,19,2018,1,0,1,2,False,True,False,False,False,10.9461551,-74.79884215,exacta
+2018-03-14T00:00:00.000,01:00:00:pm,Solo daños,Choque,CL 84 CR 36,,,1.0,2018,March,Wed,2018-03-14,13,2018,3,2,0,2,False,False,True,False,True,10.9814253,-74.8294862,exacta
+2018-09-20T00:00:00.000,12:37:00:pm,Con heridos,Choque,CARRERA 14 CALLE 45D,1.0,,1.0,2018,September,Thu,2018-09-20,12,2018,9,3,1,2,False,True,False,False,False,10.932128899999999,-74.7922186,exacta
+2018-12-12T00:00:00.000,11:20:00:pm,Solo daños,Choque,CL 45 CR 38,,,1.0,2018,December,Wed,2018-12-12,23,2018,12,2,0,2,False,False,False,False,True,10.9798039,-74.7870637,exacta
+2018-10-22T00:00:00.000,07:40:00:am,Solo daños,Choque,AV CIRCUNVALAR CR 9,,,1.0,2018,October,Mon,2018-10-22,7,2018,10,0,0,2,False,False,True,False,True,,,no ubicada
+2018-08-31T00:00:00.000,10:45:00:am,Solo daños,Choque,CARRERA 6 SUR N°46-87,,,1.0,2018,August,Fri,2018-08-31,10,2018,8,4,0,2,False,False,True,False,True,10.930509950000001,-74.80281335000001,aproximada
+2018-03-20T00:00:00.000,09:00:00:am,Solo daños,Choque,CL 90 CR 40A,,,1.0,2018,March,Tue,2018-03-20,9,2018,3,1,0,2,False,False,False,False,False,10.9859761,-74.833325,exacta
+2018-06-05T00:00:00.000,01:30:00:pm,Solo daños,Choque,CALLE 37 CARRERA 40,,,1.0,2018,June,Tue,2018-06-05,13,2018,6,1,0,2,False,False,True,False,True,10.979799,-74.7806255,exacta
+2018-01-22T00:00:00.000,05:20:00:pm,Con heridos,Choque,VIA 40 CR 53B,1.0,,1.0,2018,January,Mon,2018-01-22,17,2018,1,0,1,2,False,False,False,True,True,10.994250999999998,-74.78098735,exacta
+2018-01-12T00:00:00.000,06:30:00:am,Solo daños,Choque,CRA 51B CALLE 84,,,1.0,2018,January,Fri,2018-01-12,6,2018,1,4,0,2,False,False,False,False,True,11.005746349999999,-74.81716575,exacta
+2018-10-08T00:00:00.000,06:00:00:pm,Con heridos,Choque,CR 38 CL 60,1.0,,1.0,2018,October,Mon,2018-10-08,18,2018,10,0,1,2,False,True,False,False,False,10.9833043,-74.7981497,exacta
+2018-11-16T00:00:00.000,10:30:00:am,Solo daños,Choque,CALLE 14 N°16-71,,,1.0,2018,November,Fri,2018-11-16,10,2018,11,4,0,2,False,False,True,False,True,10.912484450000001,-74.7646802,aproximada
+2018-04-14T00:00:00.000,05:45:00:pm,Solo daños,Choque,CALLE 79 CARRERA 42,,,1.0,2018,April,Sat,2018-04-14,17,2018,4,5,0,2,True,False,False,False,True,10.9899615,-74.8182966,exacta
+2018-07-03T00:00:00.000,08:00:00:pm,Solo daños,Choque,CL 30 CR 8 6,,,1.0,2018,July,Tue,2018-07-03,20,2018,7,1,0,2,False,False,True,False,True,10.9469833,-74.784791125,exacta
+2018-10-23T00:00:00.000,06:20:00:am,Con heridos,Choque,CR 21 CL 38C,3.0,,1.0,2018,October,Tue,2018-10-23,6,2018,10,1,1,2,False,False,True,False,True,10.9602443,-74.7895217,exacta
+2018-10-02T00:00:00.000,07:00:00:am,Solo daños,Choque,CALLE 76 CARRERA 6,,,1.0,2018,October,Tue,2018-10-02,7,2018,10,1,0,2,True,False,False,False,True,,,no ubicada
+2018-01-06T00:00:00.000,03:20:00:pm,Solo daños,Choque,CR 44 CL 42,,,1.0,2018,January,Sat,2018-01-06,15,2018,1,5,0,2,False,False,True,False,True,10.9585927,-74.7843033,exacta
+2018-08-16T00:00:00.000,06:05:00:pm,Con heridos,Choque,CARRERA 42H CALLE 90,1.0,,1.0,2018,August,Thu,2018-08-16,18,2018,8,3,1,2,False,True,False,False,False,11.0000249,-74.8261656,exacta
+2018-02-24T00:00:00.000,09:15:00:pm,Con heridos,Choque,CARRERA 27 CALLE 72,2.0,,1.0,2018,February,Sat,2018-02-24,21,2018,2,5,1,1,False,True,False,False,False,10.977459,-74.81113160000001,exacta
+2018-07-03T00:00:00.000,05:00:00:pm,Solo daños,Choque,CL 60 CR 27 60 15,,,1.0,2018,July,Tue,2018-07-03,17,2018,7,1,0,2,False,False,True,False,True,10.97536315,-74.80259205,exacta
+2018-11-06T00:00:00.000,03:00:00:pm,Con heridos,Choque,CL 30 CR 30,1.0,,1.0,2018,November,Tue,2018-11-06,15,2018,11,1,1,2,False,False,False,False,False,10.96920305,-74.78090405,exacta
+2018-10-19T00:00:00.000,09:40:00:pm,Con heridos,Choque,CR 1 CL 46,2.0,,1.0,2018,October,Fri,2018-10-19,21,2018,10,4,1,2,False,True,False,False,True,10.930482866666667,-74.80253506666666,exacta
+2018-01-26T00:00:00.000,10:30:00:am,Con heridos,Choque,CALLE 68 CRA 31,1.0,,1.0,2018,January,Fri,2018-01-26,10,2018,1,4,1,2,False,False,True,False,True,10.9795717,-74.8051936,exacta
+2018-12-01T00:00:00.000,12:52:00:pm,Solo daños,Choque,CL 17 CR 15,,,1.0,2018,December,Sat,2018-12-01,12,2018,12,5,0,2,False,False,False,False,True,10.953959000000001,-74.77390855,exacta
+2018-09-11T00:00:00.000,07:30:00:pm,Solo daños,Choque,AV CIRCUNVALAR CR 9G,,,1.0,2018,September,Tue,2018-09-11,19,2018,9,1,0,2,False,False,False,False,False,10.956302999999998,-74.8360084,exacta
+2018-12-26T00:00:00.000,06:30:00:pm,Solo daños,Choque,CR 53 CL 78 Y 79,,,1.0,2018,December,Wed,2018-12-26,18,2018,12,2,0,2,False,False,False,False,False,11.003864,-74.8068009,exacta
+2018-12-18T00:00:00.000,01:05:00:pm,Con heridos,Choque,AVENIDA CIRCUNVALAR CALLE 98,1.0,,1.0,2018,December,Tue,2018-12-18,13,2018,12,1,1,2,False,False,False,False,True,10.9288019,-74.8297145,exacta
+2018-08-13T00:00:00.000,02:40:00:pm,Con heridos,Choque,CARRERA 72 CALLE 75,1.0,,1.0,2018,August,Mon,2018-08-13,14,2018,8,0,1,1,False,False,False,False,False,11.0110455,-74.7944328,exacta
+2018-10-16T00:00:00.000,05:50:00:pm,Solo daños,Choque,CL 54 CR 54,,,1.0,2018,October,Tue,2018-10-16,17,2018,10,1,0,2,False,False,True,False,True,10.9927737,-74.79031175,exacta
+2018-07-03T00:00:00.000,01:50:00:pm,Solo daños,Choque,CR 44 CL 57,,,1.0,2018,July,Tue,2018-07-03,13,2018,7,1,0,2,False,False,False,False,False,10.9869683,-74.7944101,exacta
+2018-12-18T00:00:00.000,06:00:00:pm,Solo daños,Choque,CRA 59B CALLE 58,,,1.0,2018,December,Tue,2018-12-18,18,2018,12,1,0,2,True,False,False,False,False,10.996073200000001,-74.7913102,exacta
+2018-10-21T00:00:00.000,08:50:00:pm,Solo daños,Choque,CL 54 CR 46,,,1.0,2018,October,Sun,2018-10-21,20,2018,10,6,0,2,False,False,True,False,True,10.989113150000001,-74.79107264999999,exacta
+2018-07-18T00:00:00.000,11:10:00:am,Solo daños,Choque,AVENIDA 110 CALLE 47,,,1.0,2018,July,Wed,2018-07-18,11,2018,7,2,0,2,False,False,True,False,True,,,no ubicada
+2018-11-12T00:00:00.000,04:05:00:pm,Con heridos,Atropello,CL 45 CR 43,1.0,,1.0,2018,November,Mon,2018-11-12,16,2018,11,0,1,2,False,False,False,True,False,10.982946349999999,-74.78624205,exacta
+2018-07-17T00:00:00.000,10:00:00:am,Solo daños,Choque,CRA 46 CALLE 82,,,1.0,2018,July,Tue,2018-07-17,10,2018,7,1,0,2,False,False,False,False,True,11.0006248,-74.8167462,exacta
+2018-03-17T00:00:00.000,01:00:00:am,Con heridos,Choque,CALLE 110 CARRERA 12,2.0,,1.0,2018,March,Sat,2018-03-17,1,2018,3,5,1,2,False,False,False,False,True,,,no ubicada
+2018-07-02T00:00:00.000,07:30:00:pm,Con heridos,Choque,CIRCUNVALAR CON CORDIALIDAD,1.0,,1.0,2018,July,Mon,2018-07-02,19,2018,7,0,1,1,False,True,False,False,False,10.94333385,-74.8330163,aproximada
+2018-06-18T00:00:00.000,12:50:00:am,Con heridos,Choque,CR 14 CL 70,4.0,,1.0,2018,June,Mon,2018-06-18,0,2018,6,0,1,1,False,False,False,False,True,10.9123802,-74.80426034999999,aproximada
+2018-07-13T00:00:00.000,02:30:00:pm,Solo daños,Choque,CR 45 70 133,,,1.0,2018,July,Fri,2018-07-13,14,2018,7,4,0,2,False,False,False,False,True,10.9922236,-74.8039196,exacta
+2018-10-02T00:00:00.000,03:30:00:pm,Con heridos,Choque,CR 15 SUR CL 80,1.0,,1.0,2018,October,Tue,2018-10-02,15,2018,10,1,1,2,False,True,False,False,False,,,no ubicada
+2018-06-27T00:00:00.000,06:30:00:pm,Solo daños,Choque,CARRERA 15SUR CALLE 51B,,,1.0,2018,June,Wed,2018-06-27,18,2018,6,2,0,2,False,False,False,False,False,,,no ubicada
+2018-03-20T00:00:00.000,12:15:00:pm,Solo daños,Choque,CL 57 CR 23,,,1.0,2018,March,Tue,2018-03-20,12,2018,3,1,0,2,False,False,False,False,True,10.9699245,-74.8013311,exacta
+2018-12-19T00:00:00.000,08:20:00:pm,Con heridos,Otro,CL 30 CR 35,1.0,,1.0,2018,December,Wed,2018-12-19,20,2018,12,2,1,1,False,True,False,False,False,10.959468766666665,-74.7779726,exacta
+2018-08-06T00:00:00.000,01:30:00:pm,Con heridos,Choque,CR 33 CL 57,1.0,,1.0,2018,August,Mon,2018-08-06,13,2018,8,0,1,2,False,True,False,False,True,10.95235265,-74.7967892,exacta
+2018-08-26T00:00:00.000,07:25:00:am,Con heridos,Choque,CL 77 CR 59,1.0,,1.0,2018,August,Sun,2018-08-26,7,2018,8,6,1,2,False,True,False,False,False,11.0069385,-74.801588,exacta
+2018-09-03T00:00:00.000,09:34:00:am,Solo daños,Choque,CARRERA 49C N°79-35,,,1.0,2018,September,Mon,2018-09-03,9,2018,9,0,0,2,False,False,True,False,True,11.0000359,-74.811075,exacta
+2018-06-16T00:00:00.000,03:30:00:pm,Con heridos,Choque,CL 80 CR 38,1.0,,1.0,2018,June,Sat,2018-06-16,15,2018,6,5,1,2,False,False,False,False,True,10.98693455,-74.82002944999999,exacta
+2018-12-12T00:00:00.000,12:45:00:pm,Solo daños,Choque,CR 33 CL 72,,,1.0,2018,December,Wed,2018-12-12,12,2018,12,2,0,2,False,False,True,False,True,10.9815088,-74.812182,exacta
+2018-05-31T00:00:00.000,07:40:00:am,Con heridos,Atropello,CARRERA 35 CALLE 76,1.0,,1.0,2018,May,Thu,2018-05-31,7,2018,5,3,1,1,False,True,False,False,False,10.9841027,-74.8166584,exacta
+2018-12-24T00:00:00.000,04:54:00:pm,Solo daños,Choque,CALLE 45 CARRERA 43,,,1.0,2018,December,Mon,2018-12-24,16,2018,12,0,0,2,False,False,False,False,False,10.982946349999999,-74.78624205,exacta
+2018-08-08T00:00:00.000,05:05:00:pm,Solo daños,Choque,VIA 40 CALLE 70C,,,1.0,2018,August,Wed,2018-08-08,17,2018,8,2,0,2,True,False,False,False,True,,,no ubicada
+2018-05-05T00:00:00.000,09:45:00:am,Con heridos,Choque,CARRERA 38 CALLE 79C,1.0,,1.0,2018,May,Sat,2018-05-05,9,2018,5,5,1,2,False,True,False,False,False,10.9872193,-74.819449,exacta
+2018-02-07T00:00:00.000,09:10:00:am,Solo daños,Choque,CR 43 CL 72,,,1.0,2018,February,Wed,2018-02-07,9,2018,2,2,0,2,False,False,False,False,True,10.991643499999999,-74.80713175,exacta
+2018-09-10T00:00:00.000,10:30:00:am,Con heridos,Choque,CL 98B CR 6C,3.0,,1.0,2018,September,Mon,2018-09-10,10,2018,9,0,1,2,False,False,False,False,True,,,no ubicada
+2018-09-05T00:00:00.000,10:00:00:am,Solo daños,Choque,CALLE 85 CRA 45,,,1.0,2018,September,Wed,2018-09-05,10,2018,9,2,0,2,False,False,False,False,True,11.0014672,-74.8213564,exacta
+2018-05-08T00:00:00.000,08:30:00:pm,Solo daños,Choque,CL 45 CR 44,,,1.0,2018,May,Tue,2018-05-08,20,2018,5,1,0,1,False,False,False,False,False,10.9845762,-74.7856834,exacta
+2018-01-17T00:00:00.000,06:30:00:pm,Solo daños,Choque,CR 54 CL 53,,,1.0,2018,January,Wed,2018-01-17,18,2018,1,2,0,2,False,False,True,False,True,10.99272495,-74.78925655,exacta
+2018-12-03T00:00:00.000,08:00:00:am,Solo daños,Choque,CL 88 CR 77B,,,1.0,2018,December,Mon,2018-12-03,8,2018,12,0,0,2,False,False,False,False,True,11.0238169,-74.8093173,exacta
+2018-01-24T00:00:00.000,07:50:00:pm,Solo daños,Choque,CALLE 90 CRA 53,,,1.0,2018,January,Wed,2018-01-24,19,2018,1,2,0,2,False,False,False,False,True,11.0110504,-74.8199523,exacta
+2018-08-03T00:00:00.000,06:20:00:pm,Solo daños,Choque,CL 83 CR 42B1,,,1.0,2018,August,Fri,2018-08-03,18,2018,8,4,0,2,False,False,False,False,True,,,no ubicada
+2018-01-13T00:00:00.000,11:35:00:am,Solo daños,Choque,CRA 14 CALLR 45B,,,1.0,2018,January,Sat,2018-01-13,11,2018,1,5,0,2,False,False,False,False,False,,,no ubicada
+2018-08-03T00:00:00.000,08:30:00:pm,Con heridos,Atropello,CL 19 CR 1,1.0,,1.0,2018,August,Fri,2018-08-03,20,2018,8,4,1,1,False,False,False,False,False,,,no ubicada
+2018-07-23T00:00:00.000,10:00:00:am,Solo daños,Choque,CALLE 45 CARRERA 41,,,1.0,2018,July,Mon,2018-07-23,10,2018,7,0,0,2,False,False,False,False,True,10.981457500000001,-74.78665375,exacta
+2018-08-19T00:00:00.000,04:50:00:pm,Solo daños,Choque,CR 38 CL 28,,,1.0,2018,August,Sun,2018-08-19,16,2018,8,6,0,2,False,False,True,False,True,10.95467175,-74.77568765000001,exacta
+2018-12-25T00:00:00.000,05:10:00:pm,Solo daños,Choque,CL 99 CR 55,,,1.0,2018,December,Tue,2018-12-25,17,2018,12,1,0,2,False,False,False,False,False,11.0153964,-74.8268607,exacta
+2018-10-29T00:00:00.000,07:00:00:pm,Con heridos,Atropello,CL 28 CR 15,1.0,,1.0,2018,October,Mon,2018-10-29,19,2018,10,0,1,1,True,False,False,False,True,10.9519284,-74.7838907,exacta
+2018-12-14T00:00:00.000,05:30:00:pm,Solo daños,Choque,CALLE 10 N°5-268,,,1.0,2018,December,Fri,2018-12-14,17,2018,12,4,0,2,False,False,False,False,True,,,no ubicada
+2018-02-23T00:00:00.000,02:30:00:pm,Con heridos,Choque,TRANSV. 1D 54C-6,1.0,,1.0,2018,February,Fri,2018-02-23,14,2018,2,4,1,2,False,True,False,False,False,,,no ubicada
+2018-06-20T00:00:00.000,08:45:00:pm,Solo daños,Choque,CARRERA 41 CALLE 73B,,,1.0,2018,June,Wed,2018-06-20,20,2018,6,2,0,2,True,False,False,False,True,10.9897135,-74.810069,exacta
+2018-04-23T00:00:00.000,08:50:00:am,Con heridos,Atropello,CALLE 42 40-15,1.0,,1.0,2018,April,Mon,2018-04-23,8,2018,4,0,1,1,True,False,False,False,True,10.9805646,-74.783848,exacta
+2018-02-13T00:00:00.000,02:45:00:pm,Solo daños,Choque,AV. CIRCUNVALAR CARRERA 40B,,,1.0,2018,February,Tue,2018-02-13,14,2018,2,1,0,2,False,False,False,False,True,,,no ubicada
+2018-10-09T00:00:00.000,04:30:00:pm,Solo daños,Choque,CALLE 80 CARRERA 43B,,,1.0,2018,October,Tue,2018-10-09,16,2018,10,1,0,2,True,False,False,False,False,10.9971429,-74.8154457,exacta
+2018-12-26T00:00:00.000,04:45:00:pm,Solo daños,Choque,CR 14 CL 30,,,1.0,2018,December,Wed,2018-12-26,16,2018,12,2,0,2,False,False,True,False,True,10.931299775,-74.77907325,exacta
+2018-10-05T00:00:00.000,04:00:00:pm,Con heridos,Choque,CL 110 CR 31,1.0,,1.0,2018,October,Fri,2018-10-05,16,2018,10,4,1,2,False,True,False,False,False,,,no ubicada
+2018-08-09T00:00:00.000,12:30:00:pm,Solo daños,Choque,VIA 40 CON 76,,,1.0,2018,August,Thu,2018-08-09,12,2018,8,3,0,2,False,True,False,False,True,,,no ubicada
+2018-11-13T00:00:00.000,10:10:00:am,Solo daños,Otro,VIA 40 CL 85,,,1.0,2018,November,Tue,2018-11-13,10,2018,11,1,0,1,False,False,False,False,False,11.02635555,-74.80381395,exacta
+2018-05-19T00:00:00.000,08:30:00:am,Solo daños,Choque,CL 55 CR 59,,,1.0,2018,May,Sat,2018-05-19,8,2018,5,5,0,2,True,False,True,False,True,,,no ubicada
+2018-06-12T00:00:00.000,09:20:00:am,Solo daños,Choque,CR 56 FRENTE AL 96 67,,,1.0,2018,June,Tue,2018-06-12,9,2018,6,1,0,2,False,False,False,False,True,,,no ubicada
+2018-12-06T00:00:00.000,11:55:00:pm,Solo daños,Choque,CR 38 CL 74,,,1.0,2018,December,Thu,2018-12-06,23,2018,12,3,0,2,False,False,False,False,True,10.985607850000001,-74.81266645,exacta
+2018-07-16T00:00:00.000,05:30:00:pm,Solo daños,Choque,CR 4 CL 50,,,1.0,2018,July,Mon,2018-07-16,17,2018,7,0,0,2,False,False,False,False,False,10.9186443,-74.79519625,exacta
+2018-11-29T00:00:00.000,04:40:00:pm,Solo daños,Choque,CL 94 FRENTE 49C 274,,,1.0,2018,November,Thu,2018-11-29,16,2018,11,3,0,2,True,False,False,False,True,,,no ubicada
+2018-02-08T00:00:00.000,08:40:00:pm,Solo daños,Choque,CARRERA 46 CALLE 92,,,1.0,2018,February,Thu,2018-02-08,20,2018,2,3,0,2,False,False,False,False,True,11.0042969,-74.82611564999999,exacta
+2018-05-04T00:00:00.000,08:05:00:am,Solo daños,Choque,CALLE 110 CARRERA 6,,,1.0,2018,May,Fri,2018-05-04,8,2018,5,4,0,2,True,False,False,False,True,,,no ubicada
+2018-03-31T00:00:00.000,11:30:00:pm,Con heridos,Choque,CARRERA 54 CALLE 64,1.0,,1.0,2018,March,Sat,2018-03-31,23,2018,3,5,1,2,False,False,False,True,False,10.99575265,-74.7949177,exacta
+2018-04-18T00:00:00.000,10:00:00:am,Solo daños,Choque,CRA 38 CALLE 80B,,,1.0,2018,April,Wed,2018-04-18,10,2018,4,2,0,1,False,False,False,False,False,10.986276033333334,-74.82104836666667,exacta
+2018-08-03T00:00:00.000,10:50:00:am,Solo daños,Choque,CL 84B CR 39,,,1.0,2018,August,Fri,2018-08-03,10,2018,8,4,0,2,False,False,True,False,True,10.984358799999999,-74.8339923,exacta
+2018-07-17T00:00:00.000,12:50:00:pm,Solo daños,Choque,CRA 72 CALLE 81,,,1.0,2018,July,Tue,2018-07-17,12,2018,7,1,0,2,False,False,False,False,True,11.01666,-74.806814,exacta
+2018-05-29T00:00:00.000,10:00:00:pm,Solo daños,Choque,CARRERA 8SUR CALLE 61,,,1.0,2018,May,Tue,2018-05-29,22,2018,5,1,0,2,False,False,True,False,True,,,no ubicada
+2018-09-15T00:00:00.000,04:00:00:pm,Solo daños,Choque,CALLE 84 CRA 75B,,,1.0,2018,September,Sat,2018-09-15,16,2018,9,5,0,2,False,False,True,False,True,11.0207117,-74.8095454,exacta
+2018-12-01T00:00:00.000,01:00:00:pm,Con heridos,Choque,CL 110 36B 35,4.0,,1.0,2018,December,Sat,2018-12-01,13,2018,12,5,1,3,True,True,False,False,True,,,no ubicada
+2018-11-10T00:00:00.000,11:55:00:am,Solo daños,Choque,CALLE 30 CARRERA 14,,,1.0,2018,November,Sat,2018-11-10,11,2018,11,5,0,2,True,False,False,False,True,10.931299775,-74.77907325,exacta
+2018-04-26T00:00:00.000,04:00:00:pm,Solo daños,Choque,CR 38 110 49,,,1.0,2018,April,Thu,2018-04-26,16,2018,4,3,0,2,True,False,False,False,True,,,no ubicada
+2018-01-04T00:00:00.000,10:00:00:pm,Solo daños,Choque,CR 51B CL 90,,,1.0,2018,January,Thu,2018-01-04,22,2018,1,3,0,1,False,False,False,False,False,11.008085066666666,-74.82217940000001,exacta
+2018-07-10T00:00:00.000,10:30:00:pm,Con heridos,Choque,CL 44 CR 22,1.0,,1.0,2018,July,Tue,2018-07-10,22,2018,7,1,1,2,False,False,False,False,False,10.9638895,-74.7913764,exacta
+2018-05-17T00:00:00.000,09:47:00:am,Solo daños,Choque,CARRERA 46 CALLE 87,,,1.0,2018,May,Thu,2018-05-17,9,2018,5,3,0,2,False,False,False,False,False,11.002815349999999,-74.82289420000001,exacta
+2018-04-20T00:00:00.000,02:20:00:pm,Solo daños,Choque,CALLE 110 CARRERA 51B,,,1.0,2018,April,Fri,2018-04-20,14,2018,4,4,0,2,False,False,False,False,False,11.0156119,-74.83780390000001,aproximada
+2018-01-30T00:00:00.000,09:45:00:am,Solo daños,Choque,CARRERA 49 N°39-03,,,1.0,2018,January,Tue,2018-01-30,9,2018,1,1,0,1,False,False,False,False,False,,,no ubicada
+2018-08-08T00:00:00.000,01:00:00:pm,Solo daños,Choque,CL 34 CR 43,,,1.0,2018,August,Wed,2018-08-08,13,2018,8,2,0,2,False,False,False,False,True,10.9812417,-74.77816855,exacta
+2018-05-11T00:00:00.000,07:40:00:pm,Solo daños,Choque,CR 14 FRENTE AL 36B 21,,,1.0,2018,May,Fri,2018-05-11,19,2018,5,4,0,2,False,False,False,False,True,,,no ubicada
+2018-11-26T00:00:00.000,07:40:00:pm,Solo daños,Choque,CR 46 CL 30,,,1.0,2018,November,Mon,2018-11-26,19,2018,11,0,0,2,True,False,False,False,True,10.98570445,-74.77636875,exacta
+2018-09-05T00:00:00.000,07:20:00:am,Con heridos,Choque,CALLE 61 CARRERA 37,2.0,,1.0,2018,September,Wed,2018-09-05,7,2018,9,2,1,2,False,True,False,False,False,10.9827953,-74.7994654,exacta
+2018-08-24T00:00:00.000,11:40:00:am,Solo daños,Choque,CALLE 17 CARRERA 15,,,1.0,2018,August,Fri,2018-08-24,11,2018,8,4,0,2,True,False,False,False,True,10.953959000000001,-74.77390855,exacta
+2018-01-16T00:00:00.000,06:20:00:pm,Con heridos,Choque,CLLE 72 CRA 56,1.0,,1.0,2018,January,Tue,2018-01-16,18,2018,1,1,1,2,False,True,False,False,False,11.000143000000001,-74.80005345000001,exacta
+2018-08-29T00:00:00.000,08:40:00:am,Solo daños,Choque,CL 82 CR 71,,,1.0,2018,August,Wed,2018-08-29,8,2018,8,2,0,2,False,False,False,False,True,11.0164045,-74.8085239,exacta
+2018-06-07T00:00:00.000,05:00:00:pm,Solo daños,Choque,CARRERA 8 CALLE 6,,,1.0,2018,June,Thu,2018-06-07,17,2018,6,3,0,2,False,False,False,False,False,10.95249415,-74.82939784999999,exacta
+2018-11-22T00:00:00.000,01:20:00:pm,Con heridos,Choque,CR 14 CL 63B,1.0,,1.0,2018,November,Thu,2018-11-22,13,2018,11,3,1,2,False,True,False,False,False,10.9613401,-74.8084618,exacta
+2018-10-14T00:00:00.000,11:15:00:am,Solo daños,Choque,CL 47 CR 32,,,1.0,2018,October,Sun,2018-10-14,11,2018,10,6,0,2,False,True,False,False,False,10.9744004,-74.7898028,exacta
+2018-07-27T00:00:00.000,09:20:00:pm,Con heridos,Choque,CL 42 CR 45,3.0,,1.0,2018,July,Fri,2018-07-27,21,2018,7,4,1,2,False,False,False,False,True,10.9857184,-74.7826816,exacta
+2018-06-23T00:00:00.000,01:40:00:pm,Solo daños,Choque,CL 30 35 26,,,1.0,2018,June,Sat,2018-06-23,13,2018,6,5,0,2,False,False,True,False,True,10.959468766666665,-74.7779726,exacta
+2018-01-28T00:00:00.000,12:20:00:am,Solo daños,Choque,CARRERA 46 CALLE 73,,,1.0,2018,January,Sun,2018-01-28,0,2018,1,6,0,2,True,False,False,False,True,10.9954806,-74.806948,exacta
+2018-06-25T00:00:00.000,10:28:00:am,Solo daños,Choque,CARRERA 8 CALLE 45,,,1.0,2018,June,Mon,2018-06-25,10,2018,6,0,0,2,False,False,True,False,True,10.9315133,-74.797489,exacta
+2018-07-27T00:00:00.000,09:10:00:am,Con heridos,Choque,CL 19 CR 4B,1.0,,1.0,2018,July,Fri,2018-07-27,9,2018,7,4,1,2,False,True,True,False,True,,,no ubicada
+2018-01-12T00:00:00.000,08:50:00:am,Solo daños,Choque,AV CIRCUNVALAR,,,1.0,2018,January,Fri,2018-01-12,8,2018,1,4,0,2,False,False,True,False,True,,,no ubicada
+2018-03-03T00:00:00.000,10:20:00:am,Con heridos,Choque,CALLE 82 CARRERA 59B,1.0,,1.0,2018,March,Sat,2018-03-03,10,2018,3,5,1,1,False,False,False,False,False,11.0110429,-74.8109435,exacta
+2018-03-28T00:00:00.000,01:20:00:pm,Solo daños,Choque,CARRERA 46 76-230,,,1.0,2018,March,Wed,2018-03-28,13,2018,3,2,0,2,False,False,False,False,False,10.996780699999999,-74.8100819,exacta
+2018-09-21T00:00:00.000,01:00:00:pm,Solo daños,Choque,CR 44 CL 87,,,1.0,2018,September,Fri,2018-09-21,13,2018,9,4,0,2,False,False,True,False,True,11.001458750000001,-74.82339495,exacta
+2018-07-08T00:00:00.000,04:15:00:pm,Con heridos,Choque,AV CORDIALIDAD CR 70C,1.0,,1.0,2018,July,Sun,2018-07-08,16,2018,7,6,1,2,True,False,False,True,True,,,no ubicada
+2018-09-24T00:00:00.000,03:50:00:pm,Solo daños,Choque,CARRERA 46 CALLE 30,,,1.0,2018,September,Mon,2018-09-24,15,2018,9,0,0,2,True,False,False,False,True,10.98570445,-74.77636875,exacta
+2018-03-21T00:00:00.000,07:30:00:pm,Con heridos,Choque,CR 53 79 128,1.0,,1.0,2018,March,Wed,2018-03-21,19,2018,3,2,1,2,False,True,False,False,False,11.0043129,-74.8081159,exacta
+2018-12-04T00:00:00.000,03:30:00:pm,Solo daños,Choque,CL 76 FRENTE 48 115,,,1.0,2018,December,Tue,2018-12-04,15,2018,12,1,0,2,False,False,False,False,True,,,no ubicada
+2018-01-30T00:00:00.000,07:30:00:am,Con heridos,Choque,CARRERA 51B CALLE 93-85,3.0,,1.0,2018,January,Tue,2018-01-30,7,2018,1,1,1,3,False,False,False,False,True,11.0094549,-74.82515205000001,exacta
+2018-12-04T00:00:00.000,12:30:00:pm,Solo daños,Choque,CL 87 CR 9G,,,1.0,2018,December,Tue,2018-12-04,12,2018,12,1,0,2,False,True,False,False,False,10.9582498,-74.8249911,exacta
+2018-09-25T00:00:00.000,07:00:00:pm,Solo daños,Choque,CL 30 CR 8,,,1.0,2018,September,Tue,2018-09-25,19,2018,9,1,0,1,False,False,False,False,False,10.9469833,-74.784791125,exacta
+2018-09-19T00:00:00.000,09:20:00:am,Solo daños,Choque,CALLE 50 CARRERA 32,,,1.0,2018,September,Wed,2018-09-19,9,2018,9,2,0,2,False,False,False,False,False,10.9752215,-74.7920087,exacta
+2018-05-30T00:00:00.000,10:15:00:pm,Con heridos,Choque,CARRERA 55 CALLE 105,2.0,,1.0,2018,May,Wed,2018-05-30,22,2018,5,2,1,2,False,True,False,False,False,11.0181635,-74.8332141,exacta
+2018-06-08T00:00:00.000,09:30:00:pm,Con heridos,Choque,CARRERA 51B CALLE 96-21,1.0,,1.0,2018,June,Fri,2018-06-08,21,2018,6,4,1,2,False,False,True,False,True,11.0101902,-74.8269123,exacta
+2018-04-27T00:00:00.000,12:20:00:pm,Solo daños,Choque,CALLE 84 CARRERA 42,,,1.0,2018,April,Fri,2018-04-27,12,2018,4,4,0,1,False,False,False,False,False,10.990802699999998,-74.82685196666667,exacta
+2018-08-16T00:00:00.000,12:30:00:pm,Con heridos,Atropello,CL 110 FRENTE 20 DE JULIO,3.0,,1.0,2018,August,Thu,2018-08-16,12,2018,8,3,1,1,False,True,False,False,False,,,no ubicada
+2018-08-10T00:00:00.000,08:30:00:am,Solo daños,Choque,CARRERA 46 N°6-201,,,1.0,2018,August,Fri,2018-08-10,8,2018,8,4,0,2,True,False,True,False,True,10.9870959,-74.77076235000001,aproximada
+2018-05-08T00:00:00.000,09:00:00:am,Solo daños,Choque,AVENIDA CIRCUNVALAR CARRERA 9D,,,1.0,2018,May,Tue,2018-05-08,9,2018,5,1,0,2,True,False,False,False,True,,,no ubicada
+2018-09-30T00:00:00.000,12:05:00:pm,Solo daños,Choque,VIA CORDIALIDAD ENTRADA VILLAANDALUCIA,,,1.0,2018,September,Sun,2018-09-30,12,2018,9,6,0,1,False,False,False,False,True,,,no ubicada
+2018-03-23T00:00:00.000,07:10:00:am,Con heridos,Choque,CL 36 B CR 7C,2.0,,1.0,2018,March,Fri,2018-03-23,7,2018,3,4,1,2,False,True,False,False,True,10.9437859,-74.7918264,exacta
+2018-07-28T00:00:00.000,03:35:00:pm,Con heridos,Atropello,CR 9G CL 110,1.0,,1.0,2018,July,Sat,2018-07-28,15,2018,7,5,1,1,False,False,False,False,False,,,no ubicada
+2018-06-08T00:00:00.000,06:04:00:pm,Solo daños,Choque,CL 80 CR 51B,,,1.0,2018,June,Fri,2018-06-08,18,2018,6,4,0,1,False,False,False,False,False,11.0039353,-74.8126743,exacta
+2018-11-25T00:00:00.000,04:20:00:am,Con muertos,Atropello,VIA 40 CL 79,,1.0,1.0,2018,November,Sun,2018-11-25,4,2018,11,6,1,1,True,False,False,False,True,11.02051475,-74.7987555,exacta
+2018-10-06T00:00:00.000,03:45:00:am,Con heridos,Atropello,CALLE 17 N°20-23,1.0,,1.0,2018,October,Sat,2018-10-06,3,2018,10,5,1,1,True,False,False,False,True,10.957578250000001,-74.7741825,aproximada
+2018-03-15T00:00:00.000,01:00:00:pm,Solo daños,Choque,CARRERA 38 CALLE 107,,,1.0,2018,March,Thu,2018-03-15,13,2018,3,3,0,1,False,False,False,False,False,10.982843299999999,-74.83404265,exacta
+2018-01-18T00:00:00.000,01:30:00:pm,Solo daños,Choque,CALLE 110 CRA 31,,,1.0,2018,January,Thu,2018-01-18,13,2018,1,3,0,2,True,False,True,False,True,,,no ubicada
+2018-05-15T00:00:00.000,07:10:00:am,Solo daños,Choque,CL 100 CR 59,,,1.0,2018,May,Tue,2018-05-15,7,2018,5,1,0,2,False,True,False,False,False,,,no ubicada
+2018-06-04T00:00:00.000,08:35:00:am,Solo daños,Choque,CL 90 CR 59,,,1.0,2018,June,Mon,2018-06-04,8,2018,6,0,0,2,False,False,False,False,False,11.0140792,-74.8176836,exacta
+2018-03-24T00:00:00.000,07:45:00:am,Solo daños,Choque,CR 38 CL 36,,,1.0,2018,March,Sat,2018-03-24,7,2018,3,5,0,2,False,False,True,False,True,10.9776256,-74.7806349,exacta
+2018-11-17T00:00:00.000,03:43:00:pm,Con heridos,Atropello,CL 84 CR 64,2.0,,1.0,2018,November,Sat,2018-11-17,15,2018,11,5,1,2,False,True,False,False,False,11.0119465,-74.8107954,exacta
+2018-04-19T00:00:00.000,06:50:00:am,Con heridos,Choque,CALLE 76 CARRERA 7C,1.0,,1.0,2018,April,Thu,2018-04-19,6,2018,4,3,1,2,False,True,True,False,True,10.950546200000002,-74.82173535,exacta
+2018-03-28T00:00:00.000,09:10:00:am,Con heridos,Choque,CR 31 CL 15,1.0,,1.0,2018,March,Wed,2018-03-28,9,2018,3,2,1,2,False,False,False,False,True,10.9273528,-74.761,exacta
+2018-03-03T00:00:00.000,02:10:00:pm,Con heridos,Choque,CARRERA 38 CALLE 84B,1.0,,1.0,2018,March,Sat,2018-03-03,14,2018,3,5,1,2,False,True,False,False,False,10.982820825000001,-74.8343262,exacta
+2018-03-15T00:00:00.000,09:10:00:am,Solo daños,Choque,CL 30 CR 45,,,1.0,2018,March,Thu,2018-03-15,9,2018,3,3,0,2,False,False,True,False,True,10.968816233333333,-74.77530393333335,exacta
+2018-11-23T00:00:00.000,07:30:00:am,Solo daños,Choque,CALLE 30 CARRERA 4,,,1.0,2018,November,Fri,2018-11-23,7,2018,11,4,0,3,False,False,False,False,True,10.939723749999999,-74.7826781,exacta
+2018-12-03T00:00:00.000,03:40:00:pm,Solo daños,Choque,CR 43 CL 73,,,1.0,2018,December,Mon,2018-12-03,15,2018,12,0,0,2,False,False,False,False,False,10.9919356,-74.8076993,exacta
+2018-03-21T00:00:00.000,07:15:00:am,Con heridos,Choque,CR 32 CL 69B,1.0,,1.0,2018,March,Wed,2018-03-21,7,2018,3,2,1,2,False,True,False,False,False,10.9813333,-74.8063987,exacta
+2018-06-05T00:00:00.000,11:30:00:am,Solo daños,Choque,CALLE 68B CARRERA 63,,,1.0,2018,June,Tue,2018-06-05,11,2018,6,1,0,2,False,False,False,False,True,11.0015825,-74.7929903,exacta
+2018-03-15T00:00:00.000,05:00:00:pm,Solo daños,Choque,CALLE 61 CARRERA 25,,,1.0,2018,March,Thu,2018-03-15,17,2018,3,3,0,2,False,False,False,False,False,10.9728513,-74.8033915,exacta
+2018-03-30T00:00:00.000,03:20:00:pm,Con heridos,Atropello,CL 17 CR 21,1.0,,1.0,2018,March,Fri,2018-03-30,15,2018,3,4,1,1,False,False,False,False,True,10.944671900000001,-74.7712781,exacta
+2018-01-05T00:00:00.000,01:30:00:pm,Solo daños,Choque,CLLE 68B CRA 68,,,1.0,2018,January,Fri,2018-01-05,13,2018,1,4,0,1,False,False,False,False,False,11.0039339,-74.7902596,exacta
+2018-09-20T00:00:00.000,09:50:00:am,Solo daños,Choque,VIA 40 CALLE 85-1490,,,1.0,2018,September,Thu,2018-09-20,9,2018,9,3,0,2,True,True,False,False,True,11.02635555,-74.80381395,exacta
+2018-12-27T00:00:00.000,09:50:00:am,Solo daños,Choque,CR 29 CL 58,,,1.0,2018,December,Thu,2018-12-27,9,2018,12,3,0,2,False,True,False,False,True,10.958823166666667,-74.7992787,exacta
+2018-03-07T00:00:00.000,08:00:00:am,Solo daños,Choque,CL 110 12E 86 92,,,1.0,2018,March,Wed,2018-03-07,8,2018,3,2,0,2,True,False,False,False,True,,,no ubicada
+2018-01-24T00:00:00.000,04:50:00:pm,Con heridos,Choque,CR 49C CL 86,1.0,,1.0,2018,January,Wed,2018-01-24,16,2018,1,2,1,2,False,True,False,False,True,11.0044134,-74.8212061,exacta
+2018-11-18T00:00:00.000,12:30:00:pm,Con heridos,Choque,CR 46 CL 59,1.0,,1.0,2018,November,Sun,2018-11-18,12,2018,11,6,1,2,False,True,False,False,False,10.9901673,-74.79493415,exacta
+2018-10-31T00:00:00.000,12:30:00:pm,Con heridos,Choque,CL 61 CR 25,1.0,,1.0,2018,October,Wed,2018-10-31,12,2018,10,2,1,2,False,True,False,False,True,10.9728513,-74.8033915,exacta
+2018-02-05T00:00:00.000,07:00:00:pm,Solo daños,Choque,CR 41 CL 45,,,1.0,2018,February,Mon,2018-02-05,19,2018,2,0,0,2,False,False,True,False,True,10.981457500000001,-74.78665375,exacta
+2018-06-23T00:00:00.000,08:45:00:am,Con heridos,Choque,CARRERA 50 CALLE 45,1.0,,1.0,2018,June,Sat,2018-06-23,8,2018,6,5,1,2,False,True,False,False,False,10.989722975,-74.78396910000001,exacta
+2018-04-08T00:00:00.000,05:30:00:pm,Solo daños,Choque,CARRERA 36 72-105,,,1.0,2018,April,Sun,2018-04-08,17,2018,4,6,0,2,False,False,False,False,True,10.9845951,-74.8120514,exacta
+2018-11-13T00:00:00.000,10:30:00:am,Solo daños,Choque,CALLE 110 CARRERA 5,,,1.0,2018,November,Tue,2018-11-13,10,2018,11,1,0,2,True,False,False,False,True,,,no ubicada
+2018-11-21T00:00:00.000,05:10:00:pm,Solo daños,Choque,CL 95 CR 46,,,1.0,2018,November,Wed,2018-11-21,17,2018,11,2,0,2,False,True,True,False,True,11.005328850000001,-74.8283707,exacta
+2018-03-17T00:00:00.000,10:30:00:pm,Con heridos,Atropello,CALLE 45 CARRERA 11SUR,1.0,,1.0,2018,March,Sat,2018-03-17,22,2018,3,5,1,1,False,True,False,False,False,,,no ubicada
+2018-09-19T00:00:00.000,10:50:00:am,Solo daños,Choque,CL 70B CR 41,,,1.0,2018,September,Wed,2018-09-19,10,2018,9,2,0,1,False,False,False,False,False,10.9884878,-74.8069432,exacta
+2018-09-12T00:00:00.000,07:15:00:am,Solo daños,Choque,CL 19 CR 1E,,,1.0,2018,September,Wed,2018-09-12,7,2018,9,2,0,2,False,False,False,False,False,,,no ubicada
+2018-11-17T00:00:00.000,02:10:00:am,Solo daños,Choque,CL 84 CR 58,,,1.0,2018,November,Sat,2018-11-17,2,2018,11,5,0,1,False,False,False,False,False,11.0098807,-74.8125167,exacta
+2018-04-15T00:00:00.000,10:15:00:pm,Solo daños,Choque,CARRERA 47 CALLE 64,,,1.0,2018,April,Sun,2018-04-15,22,2018,4,6,0,2,False,False,False,False,False,10.992428,-74.7981409,exacta
+2018-10-18T00:00:00.000,08:10:00:am,Con heridos,Choque,CR 38 CL 51,1.0,,1.0,2018,October,Thu,2018-10-18,8,2018,10,3,1,3,False,True,True,False,True,10.9808873,-74.7912314,exacta
+2018-03-03T00:00:00.000,07:10:00:am,Con heridos,Choque,CALLE 64 CARRERA 31,2.0,,1.0,2018,March,Sat,2018-03-03,7,2018,3,5,1,2,False,True,False,False,False,10.9790091,-74.8038412,exacta
+2018-08-04T00:00:00.000,06:00:00:am,Con heridos,Atropello,CARRERA 46 85-43,1.0,,1.0,2018,August,Sat,2018-08-04,6,2018,8,5,1,1,False,False,False,False,False,11.002275999999998,-74.82104910000001,exacta
+2018-01-31T00:00:00.000,12:03:00:pm,Solo daños,Choque,CARRERA 19 40B-36,,,1.0,2018,January,Wed,2018-01-31,12,2018,1,2,0,2,False,False,True,False,True,10.9575734,-74.7926723,exacta
+2018-09-15T00:00:00.000,08:30:00:pm,Solo daños,Choque,CL 19 KR 6,,,1.0,2018,September,Sat,2018-09-15,20,2018,9,5,0,2,True,False,False,False,True,,,no ubicada
+2018-10-21T00:00:00.000,05:30:00:am,Solo daños,Choque,CL 84 56 50,,,1.0,2018,October,Sun,2018-10-21,5,2018,10,6,0,2,False,False,False,False,False,11.0087716,-74.8139345,exacta
+2018-04-21T00:00:00.000,06:00:00:pm,Con heridos,Choque,CARRERA 12F CALLE 104,5.0,,1.0,2018,April,Sat,2018-04-21,18,2018,4,5,1,1,False,True,False,False,False,10.9648272,-74.8337107,exacta
+2019-03-13T00:00:00.000,04:30:00:pm,Solo daños,Choque,CL 83 CR 42A,,,1.0,2019,March,Wed,2019-03-13,16,2019,3,2,0,2,False,True,False,False,False,10.99038995,-74.82501275,aproximada
+2019-04-05T00:00:00.000,09:55:00:am,Con heridos,Choque,VIA 40 67B 139,1.0,,1.0,2019,April,Fri,2019-04-05,9,2019,4,4,1,2,True,True,False,False,True,,,no ubicada
+2019-04-30T00:00:00.000,12:40:00:pm,Solo daños,Choque,CL 76 CR 46,,,1.0,2019,April,Tue,2019-04-30,12,2019,4,1,0,2,False,True,False,False,False,10.996780699999999,-74.8100819,exacta
+2019-12-25T00:00:00.000,03:00:00:am,Con heridos,Choque,CL 84 CR 56,1.0,,1.0,2019,December,Wed,2019-12-25,3,2019,12,2,1,2,False,False,False,False,True,11.0087716,-74.8139345,exacta
+2019-02-24T00:00:00.000,05:10:00:pm,Con heridos,Atropello,CR 38 CL 36,1.0,,1.0,2019,February,Sun,2019-02-24,17,2019,2,6,1,1,False,False,False,False,False,10.9776256,-74.7806349,exacta
+2019-04-04T00:00:00.000,09:40:00:am,Solo daños,Choque,CALLE 80 CRA 47,,,1.0,2019,April,Thu,2019-04-04,9,2019,4,3,0,1,False,False,False,False,False,10.9998786,-74.8138445,exacta
+2019-04-30T00:00:00.000,06:00:00:pm,Solo daños,Choque,AV CIRCUNVALAR CR 38 Y 43,,,1.0,2019,April,Tue,2019-04-30,18,2019,4,1,0,2,False,False,True,False,True,10.93527275,-74.78005865,aproximada
+2019-11-29T00:00:00.000,08:30:00:am,Con heridos,Choque,CR 51B CL 80,1.0,,1.0,2019,November,Fri,2019-11-29,8,2019,11,4,1,2,False,True,False,False,False,11.0039353,-74.8126743,exacta
+2019-05-30T00:00:00.000,07:50:00:am,Solo daños,Choque,CR 38 CL 80B,,,1.0,2019,May,Thu,2019-05-30,7,2019,5,3,0,2,False,False,True,False,True,10.986276033333334,-74.82104836666667,exacta
+2019-08-27T00:00:00.000,06:50:00:am,Con heridos,Choque,CL 17 CR 8,1.0,,1.0,2019,August,Tue,2019-08-27,6,2019,8,1,1,2,False,True,False,True,False,10.947082799999999,-74.7716757,exacta
+2019-01-31T00:00:00.000,02:00:00:pm,Solo daños,Choque,CL 82 CR 57,,,1.0,2019,January,Thu,2019-01-31,14,2019,1,3,0,2,False,False,False,False,True,11.0086647,-74.811701,exacta
+2019-05-07T00:00:00.000,11:30:00:am,Con heridos,Choque,CL 70 CR 59,1.0,,1.0,2019,May,Tue,2019-05-07,11,2019,5,1,1,2,True,True,False,False,True,11.0006513,-74.796708,exacta
+2019-10-25T00:00:00.000,08:30:00:pm,Solo daños,Choque,CR 55 CL 80,,,1.0,2019,October,Fri,2019-10-25,20,2019,10,4,0,2,False,True,False,False,False,11.006056,-74.8099831,exacta
+2019-04-13T00:00:00.000,05:15:00:pm,Solo daños,Choque,CL 19 CR 7,,,1.0,2019,April,Sat,2019-04-13,17,2019,4,5,0,2,True,False,False,False,True,10.94410335,-74.7718189,aproximada
+2019-08-04T00:00:00.000,04:00:00:pm,Solo daños,Choque,CL 45 CR 13C,,,1.0,2019,August,Sun,2019-08-04,16,2019,8,6,0,1,False,False,False,False,False,10.9537588,-74.79696835,exacta
+2019-03-30T00:00:00.000,07:10:00:pm,Con heridos,Atropello,CL 62 1 22,1.0,,1.0,2019,March,Sat,2019-03-30,19,2019,3,5,1,1,False,True,False,False,False,10.93269125,-74.81455399999999,exacta
+2019-01-03T00:00:00.000,08:40:00:am,Solo daños,Choque,CALLE 39 CRA 27,,,1.0,2019,January,Thu,2019-01-03,8,2019,1,3,0,2,False,False,True,False,True,10.9680088,-74.7862284,exacta
+2019-06-06T00:00:00.000,01:50:00:pm,Solo daños,Choque,CL 54 45 11,,,1.0,2019,June,Thu,2019-06-06,13,2019,6,3,0,2,False,False,True,False,True,10.9881685,-74.7913403,exacta
+2019-03-21T00:00:00.000,03:15:00:pm,Solo daños,Choque,CL 58 CR 19,,,1.0,2019,March,Thu,2019-03-21,15,2019,3,3,0,2,False,True,False,False,True,10.9653487,-74.8030301,exacta
+2019-03-18T00:00:00.000,07:10:00:pm,Solo daños,Choque,CR 51B 82 283,,,1.0,2019,March,Mon,2019-03-18,19,2019,3,0,0,2,False,False,True,False,True,11.0045474,-74.8143494,exacta
+2019-01-03T00:00:00.000,02:50:00:pm,Solo daños,Choque,CL 45 CR 35,,,1.0,2019,January,Thu,2019-01-03,14,2019,1,3,0,2,False,False,False,False,False,10.9771504,-74.7878424,exacta
+2019-06-28T00:00:00.000,10:05:00:am,Solo daños,Choque,CL 98 CR 52,,,1.0,2019,June,Fri,2019-06-28,10,2019,6,4,0,2,False,False,False,False,True,11.0120985,-74.8277929,exacta
+2019-11-14T00:00:00.000,10:30:00:am,Solo daños,Otro,CR 59B 58 109,,,1.0,2019,November,Thu,2019-11-14,10,2019,11,3,0,2,True,False,False,False,False,10.996073200000001,-74.7913102,exacta
+2019-10-09T00:00:00.000,08:00:00:am,Solo daños,Choque,CL 68 CR 58,,,1.0,2019,October,Wed,2019-10-09,8,2019,10,2,0,2,False,False,False,False,False,10.99849965,-74.79640599999999,exacta
+2019-02-19T00:00:00.000,12:15:00:pm,Solo daños,Choque,CL 82 CR 42F,,,1.0,2019,February,Tue,2019-02-19,12,2019,2,1,0,2,True,False,False,False,True,10.9954793,-74.8189344,exacta
+2019-07-20T00:00:00.000,08:50:00:pm,Solo daños,Choque,CRA 51B CALLE 98,,,1.0,2019,July,Sat,2019-07-20,20,2019,7,5,0,2,False,False,False,False,True,11.01106835,-74.828652775,exacta
+2019-02-18T00:00:00.000,02:00:00:am,Con heridos,Choque,CR 96 CL 99,1.0,,1.0,2019,February,Mon,2019-02-18,2,2019,2,0,1,2,False,True,False,False,False,,,no ubicada
+2019-08-09T00:00:00.000,06:30:00:pm,Solo daños,Choque,VIA 40 CL 85,,,1.0,2019,August,Fri,2019-08-09,18,2019,8,4,0,2,False,False,False,False,False,11.02635555,-74.80381395,exacta
+2019-11-21T00:00:00.000,05:00:00:pm,Solo daños,Choque,CR 41 CL 43,,,1.0,2019,November,Thu,2019-11-21,17,2019,11,3,0,2,False,False,False,False,True,10.9810567,-74.7846187,exacta
+2019-11-23T00:00:00.000,02:50:00:pm,Con heridos,Choque,CL 79 CR 44,1.0,,1.0,2019,November,Sat,2019-11-23,14,2019,11,5,1,2,False,True,True,False,True,10.9964981,-74.8129571,exacta
+2019-12-22T00:00:00.000,10:20:00:pm,Con heridos,Choque,CL 72 CR 71,1.0,,1.0,2019,December,Sun,2019-12-22,22,2019,12,6,1,2,False,False,False,False,False,11.0071592,-74.791467,exacta
+2019-02-11T00:00:00.000,07:10:00:am,Solo daños,Choque,CR 49 CL 69,,,1.0,2019,February,Mon,2019-02-11,7,2019,2,0,0,1,False,False,False,False,False,10.9948888,-74.8012798,exacta
+2019-03-15T00:00:00.000,07:05:00:am,Solo daños,Choque,CL 19 CR 1B,,,1.0,2019,March,Fri,2019-03-15,7,2019,3,4,0,2,True,False,True,False,True,,,no ubicada
+2019-03-19T00:00:00.000,10:20:00:pm,Solo daños,Choque,CR 20 CL 26,,,1.0,2019,March,Tue,2019-03-19,22,2019,3,1,0,2,False,True,False,True,False,10.9566797,-74.7810505,exacta
+2019-06-24T00:00:00.000,06:00:00:am,Solo daños,Volcamiento,AV CIRCUNVALAR CR 44,,,1.0,2019,June,Mon,2019-06-24,6,2019,6,0,0,1,True,False,False,False,True,,,no ubicada
+2019-01-25T00:00:00.000,04:00:00:pm,Solo daños,Choque,CL 48 CR 29,,,1.0,2019,January,Fri,2019-01-25,16,2019,1,4,0,2,False,True,False,False,False,10.9719691,-74.792811,exacta
+2019-04-10T00:00:00.000,11:00:00:am,Con heridos,Choque,CR 48 CL 75,4.0,,1.0,2019,April,Wed,2019-04-10,11,2019,4,2,1,2,False,False,False,False,False,10.9976365,-74.8080907,exacta
+2019-09-02T00:00:00.000,04:30:00:pm,Solo daños,Choque,CL 68 CR 23,,,1.0,2019,September,Mon,2019-09-02,16,2019,9,0,0,2,False,False,False,False,True,10.9709254,-74.8092765,exacta
+2019-11-21T00:00:00.000,12:50:00:am,Con muertos,Choque,CL 45 CR 9F,,1.0,1.0,2019,November,Thu,2019-11-21,0,2019,11,3,1,1,False,True,False,False,False,10.94985265,-74.79988155000001,exacta
+2019-02-06T00:00:00.000,06:40:00:pm,Solo daños,Choque,CL 45 23 57,,,1.0,2019,February,Wed,2019-02-06,18,2019,2,2,0,2,False,False,False,False,False,10.9430685,-74.79532577500001,exacta
+2019-12-27T00:00:00.000,05:15:00:pm,Solo daños,Choque,CL 99 CR 53,,,1.0,2019,December,Fri,2019-12-27,17,2019,12,4,0,2,False,False,False,False,True,11.01448725,-74.827468275,exacta
+2019-02-05T00:00:00.000,06:45:00:am,Solo daños,Choque,CL 76 CR 41D,,,1.0,2019,February,Tue,2019-02-05,6,2019,2,1,0,2,False,False,False,False,True,10.9916491,-74.8134315,exacta
+2019-05-22T00:00:00.000,09:45:00:am,Solo daños,Choque,CL 65 CR 27,,,1.0,2019,May,Wed,2019-05-22,9,2019,5,2,0,2,False,False,False,False,False,10.9762357,-74.806212,exacta
+2019-09-30T00:00:00.000,02:30:00:pm,Solo daños,Choque,CL 19 CR 1B,,,1.0,2019,September,Mon,2019-09-30,14,2019,9,0,0,4,True,False,False,False,True,,,no ubicada
+2019-04-15T00:00:00.000,06:50:00:am,Con heridos,Choque,CL 19 CR 8,1.0,,1.0,2019,April,Mon,2019-04-15,6,2019,4,0,1,2,False,False,True,False,True,,,no ubicada
+2019-10-14T00:00:00.000,12:41:00:pm,Solo daños,Choque,CL 75 CR 56,,,1.0,2019,October,Mon,2019-10-14,12,2019,10,0,0,2,False,False,False,False,True,11.0030319,-74.8022271,exacta
+2019-01-25T00:00:00.000,01:10:00:pm,Solo daños,Choque,CL 92 CR 45B,,,1.0,2019,January,Fri,2019-01-25,13,2019,1,4,0,2,False,False,True,False,True,11.0035828,-74.8264719,exacta
+2019-08-21T00:00:00.000,03:40:00:pm,Con heridos,Otro,AV CORDIALIDAD CON CIRCUNVALAR,1.0,,1.0,2019,August,Wed,2019-08-21,15,2019,8,2,1,1,True,False,False,False,True,10.94333385,-74.8330163,aproximada
+2019-01-25T00:00:00.000,07:08:00:am,Solo daños,Choque,CL 64 CR 63,,,1.0,2019,January,Fri,2019-01-25,7,2019,1,4,0,1,False,False,False,False,False,10.998854,-74.7914632,exacta
+2019-09-30T00:00:00.000,07:10:00:am,Solo daños,Choque,CR 43 CL 51 102,,,1.0,2019,September,Mon,2019-09-30,7,2019,9,0,0,2,True,False,True,False,True,10.9840571,-74.7905696,exacta
+2019-04-29T00:00:00.000,10:50:00:am,Solo daños,Choque,CR 32 CL 30,,,1.0,2019,April,Mon,2019-04-29,10,2019,4,0,0,2,True,False,False,False,True,10.9706124,-74.78020645000001,exacta
+2019-07-01T00:00:00.000,06:00:00:pm,Con heridos,Atropello,CR 9  DIAG 5,1.0,,1.0,2019,July,Mon,2019-07-01,18,2019,7,0,1,1,False,False,True,False,True,10.950832349999999,-74.76788834999999,aproximada
+2019-09-27T00:00:00.000,12:30:00:pm,Solo daños,Choque,CL 19 CR 8,,,1.0,2019,September,Fri,2019-09-27,12,2019,9,4,0,3,False,True,True,False,True,,,no ubicada
+2019-12-21T00:00:00.000,10:40:00:am,Solo daños,Choque,CL 79 CR 44,,,1.0,2019,December,Sat,2019-12-21,10,2019,12,5,0,2,False,False,False,False,True,10.9964981,-74.8129571,exacta
+2019-06-05T00:00:00.000,08:30:00:am,Con heridos,Choque,CL 38 CR 23,2.0,,1.0,2019,June,Wed,2019-06-05,8,2019,6,2,1,2,False,True,True,False,True,10.96372745,-74.78731475000001,exacta
+2019-10-15T00:00:00.000,09:00:00:am,Solo daños,Choque,CL 4 CR 30,,,1.0,2019,October,Tue,2019-10-15,9,2019,10,1,0,1,True,False,False,False,True,10.967438,-74.7658355,exacta
+2019-07-03T00:00:00.000,07:30:00:pm,Solo daños,Choque,AV CIRCUNVALAR CR 38,,,1.0,2019,July,Wed,2019-07-03,19,2019,7,2,0,2,False,False,False,False,True,10.93527275,-74.78005865,aproximada
+2019-05-29T00:00:00.000,11:40:00:am,Solo daños,Choque,CL 71 CR 31,,,1.0,2019,May,Wed,2019-05-29,11,2019,5,2,0,2,False,True,False,False,False,10.9802759,-74.8105721,exacta
+2019-08-19T00:00:00.000,12:50:00:pm,Solo daños,Choque,CL 76 CR 43,,,1.0,2019,August,Mon,2019-08-19,12,2019,8,0,0,2,False,False,False,False,True,10.9942415,-74.8115879,exacta
+2019-10-08T00:00:00.000,07:00:00:am,Solo daños,Choque,CL 79 CR 74,,,1.0,2019,October,Tue,2019-10-08,7,2019,10,1,0,1,False,False,False,False,False,11.0167769,-74.8027582,exacta
+2019-08-21T00:00:00.000,03:00:00:pm,Solo daños,Choque,CALLE 53 CR 46,,,1.0,2019,August,Wed,2019-08-21,15,2019,8,2,0,1,False,False,False,False,False,10.9886665,-74.78950455,exacta
+2019-02-10T00:00:00.000,10:45:00:pm,Con muertos,Choque,CL 99 CR 10,2.0,1.0,1.0,2019,February,Sun,2019-02-10,22,2019,2,6,1,1,False,True,False,False,False,,,no ubicada
+2019-10-05T00:00:00.000,03:00:00:am,Solo daños,Choque,CL 44 CR 43,,,1.0,2019,October,Sat,2019-10-05,3,2019,10,5,0,1,False,False,False,False,True,10.982698,-74.7851963,exacta
+2019-05-19T00:00:00.000,05:40:00:am,Con heridos,Choque,CL 49 CR 2G3,1.0,,1.0,2019,May,Sun,2019-05-19,5,2019,5,6,1,2,False,False,True,False,True,,,no ubicada
+2019-09-09T00:00:00.000,01:40:00:pm,Solo daños,Choque,CR 51B CL 98,,,1.0,2019,September,Mon,2019-09-09,13,2019,9,0,0,2,False,False,True,False,True,11.01106835,-74.828652775,exacta
+2019-10-13T00:00:00.000,02:50:00:pm,Solo daños,Choque,CL 64 CR 50,,,1.0,2019,October,Sun,2019-10-13,14,2019,10,6,0,2,False,False,False,False,False,10.9940769,-74.7976857,exacta
+2019-11-09T00:00:00.000,11:40:00:pm,Solo daños,Choque,CL 44 CR 24,,,1.0,2019,November,Sat,2019-11-09,23,2019,11,5,0,2,True,False,False,False,True,10.9436948,-74.78815755,exacta
+2019-11-27T00:00:00.000,03:00:00:pm,Solo daños,Choque,CALLE 80 CRA 42H,,,1.0,2019,November,Wed,2019-11-27,15,2019,11,2,0,2,False,True,False,False,False,10.9957051,-74.8163031,exacta
+2019-10-22T00:00:00.000,06:10:00:am,Solo daños,Choque,CL 110 CR 20,,,1.0,2019,October,Tue,2019-10-22,6,2019,10,1,0,2,False,False,False,False,True,,,no ubicada
+2019-05-09T00:00:00.000,05:11:00:pm,Solo daños,Choque,CL 84B CR 39C,,,1.0,2019,May,Thu,2019-05-09,17,2019,5,3,0,2,False,False,False,False,False,10.9856273,-74.8328954,exacta
+2019-03-21T00:00:00.000,08:50:00:am,Solo daños,Choque,CL 72 CR 46 05,,,1.0,2019,March,Thu,2019-03-21,8,2019,3,3,0,2,False,False,True,False,True,10.994314724999999,-74.80557390000001,exacta
+2019-08-13T00:00:00.000,11:40:00:am,Solo daños,Choque,CLLE 16 CRA 8,,,1.0,2019,August,Tue,2019-08-13,11,2019,8,1,0,2,True,False,True,False,True,,,no ubicada
+2019-11-20T00:00:00.000,01:00:00:pm,Solo daños,Choque,CR 45 CL 64,,,1.0,2019,November,Wed,2019-11-20,13,2019,11,2,0,1,False,False,False,False,False,10.9901836,-74.798749,exacta
+2019-01-01T00:00:00.000,05:45:00:pm,Solo daños,Choque,CRA 31 CALLE 68C,,,1.0,2019,January,Tue,2019-01-01,17,2019,1,1,0,1,False,False,False,False,False,10.9800799,-74.8062836,exacta
+2019-03-18T00:00:00.000,01:30:00:pm,Con heridos,Choque,CL 69 CR 47,1.0,,1.0,2019,March,Mon,2019-03-18,13,2019,3,0,1,2,False,True,False,False,False,10.9934279,-74.8017195,exacta
+2019-04-15T00:00:00.000,07:45:00:pm,Solo daños,Choque,CL 19 CR 1D,,,1.0,2019,April,Mon,2019-04-15,19,2019,4,0,0,3,True,False,True,False,True,,,no ubicada
+2019-12-11T00:00:00.000,05:00:00:pm,Con heridos,Atropello,CR 82 CL 109A,2.0,,1.0,2019,December,Wed,2019-12-11,17,2019,12,2,1,1,False,True,False,False,False,,,no ubicada
+2019-11-16T00:00:00.000,10:30:00:am,Solo daños,Choque,CR 39 CL 56,,,1.0,2019,November,Sat,2019-11-16,10,2019,11,5,0,2,False,False,True,False,True,10.9828028,-74.795072,exacta
+2019-12-02T00:00:00.000,01:45:00:pm,Solo daños,Choque,CL 40 CR 8,,,1.0,2019,December,Mon,2019-12-02,13,2019,12,0,0,1,False,False,False,False,True,10.9460698,-74.79541965,exacta
+2019-11-24T00:00:00.000,08:00:00:pm,Con heridos,Choque,CL 47 CR 22,1.0,,1.0,2019,November,Sun,2019-11-24,20,2019,11,6,1,2,False,True,False,False,True,10.965182,-74.7933941,exacta
+2019-04-06T00:00:00.000,01:30:00:pm,Solo daños,Choque,VIA 40 CL 69,,,1.0,2019,April,Sat,2019-04-06,13,2019,4,5,0,2,True,False,False,False,True,11.00663108,-74.78797394,exacta
+2019-06-05T00:00:00.000,05:10:00:pm,Solo daños,Choque,CL 45 CR 39,,,1.0,2019,June,Wed,2019-06-05,17,2019,6,2,0,2,False,False,False,False,True,10.9802781,-74.78692674999999,exacta
+2019-05-29T00:00:00.000,06:20:00:pm,Con heridos,Choque,CL 45 CR 8A,1.0,,1.0,2019,May,Wed,2019-05-29,18,2019,5,2,1,2,False,False,True,True,True,10.924682325000001,-74.79634425,exacta
+2019-03-23T00:00:00.000,08:40:00:am,Con heridos,Choque,CRA 8G CALLE 52C,2.0,,1.0,2019,March,Sat,2019-03-23,8,2019,3,5,1,2,False,True,False,False,False,10.9503797,-74.8081348,exacta
+2019-12-14T00:00:00.000,11:15:00:am,Solo daños,Choque,CL 31 CR 14,,,1.0,2019,December,Sat,2019-12-14,11,2019,12,5,0,2,False,False,True,False,True,10.9520736,-74.7874006,exacta
+2019-09-10T00:00:00.000,06:45:00:pm,Solo daños,Choque,CL 72 CR 45,,,1.0,2019,September,Tue,2019-09-10,18,2019,9,1,0,2,False,False,True,False,True,10.9934023,-74.8060598,exacta
+2019-08-03T00:00:00.000,01:00:00:pm,Solo daños,Choque,CALLE 80 CRA 72,,,1.0,2019,August,Sat,2019-08-03,13,2019,8,5,0,2,False,True,False,False,False,11.0162646,-74.8052658,exacta
+2019-05-28T00:00:00.000,12:20:00:pm,Solo daños,Choque,PUENTE LAUREANO GOMEZ,,,1.0,2019,May,Tue,2019-05-28,12,2019,5,1,0,2,True,False,False,False,True,,,no ubicada
+2019-01-17T00:00:00.000,10:30:00:am,Solo daños,Choque,CL 90D CR 59 188,,,1.0,2019,January,Thu,2019-01-17,10,2019,1,3,0,2,True,False,False,False,True,,,no ubicada
+2019-08-21T00:00:00.000,10:00:00:am,Solo daños,Choque,CR 49C CL 91,,,1.0,2019,August,Wed,2019-08-21,10,2019,8,2,0,1,False,False,False,False,False,11.0059326,-74.8243661,exacta
+2019-08-05T00:00:00.000,11:00:00:am,Solo daños,Choque,CL 34 CR 35,,,1.0,2019,August,Mon,2019-08-05,11,2019,8,0,0,2,True,False,False,False,True,10.9745064,-74.7803849,exacta
+2019-02-04T00:00:00.000,09:50:00:pm,Con heridos,Atropello,CL 42 43 38,1.0,,1.0,2019,February,Mon,2019-02-04,21,2019,2,0,1,1,False,False,False,False,True,10.9576052,-74.78421019999999,exacta
+2019-10-31T00:00:00.000,07:30:00:am,Solo daños,Choque,AVENIDA 110 CRA 26,,,1.0,2019,October,Thu,2019-10-31,7,2019,10,3,0,2,True,False,False,False,True,,,no ubicada
+2019-02-19T00:00:00.000,07:40:00:pm,Solo daños,Choque,CR 15 SUR CL 96,,,1.0,2019,February,Tue,2019-02-19,19,2019,2,1,0,2,False,True,True,False,True,,,no ubicada
+2019-01-30T00:00:00.000,05:45:00:pm,Con heridos,Choque,CL 110 CR 13,1.0,,1.0,2019,January,Wed,2019-01-30,17,2019,1,2,1,2,False,True,False,False,False,,,no ubicada
+2019-08-23T00:00:00.000,10:00:00:am,Solo daños,Choque,CRA 47 CALOLE 75,,,1.0,2019,August,Fri,2019-08-23,10,2019,8,4,0,2,False,False,False,False,False,,,no ubicada
+2019-11-27T00:00:00.000,08:30:00:am,Solo daños,Choque,CL 110 CR 28,,,1.0,2019,November,Wed,2019-11-27,8,2019,11,2,0,2,True,False,False,False,True,,,no ubicada
+2019-05-18T00:00:00.000,03:10:00:pm,Solo daños,Choque,CL 108 CR 13,,,1.0,2019,May,Sat,2019-05-18,15,2019,5,5,0,2,False,False,True,False,True,10.9671184,-74.8360292,exacta
+2019-03-30T00:00:00.000,10:50:00:pm,Con heridos,Choque,CL 63B CR 45,1.0,,1.0,2019,March,Sat,2019-03-30,22,2019,3,5,1,1,False,True,False,False,False,,,no ubicada
+2019-06-13T00:00:00.000,04:00:00:pm,Solo daños,Choque,CL 57 CR 23,,,1.0,2019,June,Thu,2019-06-13,16,2019,6,3,0,1,False,False,False,False,False,10.9699245,-74.8013311,exacta
+2019-07-29T00:00:00.000,07:50:00:am,Solo daños,Choque,CL 45 CR 7D,,,1.0,2019,July,Mon,2019-07-29,7,2019,7,0,0,2,False,False,False,False,True,10.943391900000002,-74.79959585,exacta
+2019-05-15T00:00:00.000,01:30:00:pm,Solo daños,Choque,CR 38 FRENTE 100 57,,,1.0,2019,May,Wed,2019-05-15,13,2019,5,2,0,2,False,False,False,False,True,,,no ubicada
+2019-08-31T00:00:00.000,08:20:00:am,Solo daños,Choque,AV 110 CR 27,,,1.0,2019,August,Sat,2019-08-31,8,2019,8,5,0,4,True,False,False,False,True,,,no ubicada
+2019-08-26T00:00:00.000,05:20:00:pm,Solo daños,Choque,CALLE 110 CRA 27,,,1.0,2019,August,Mon,2019-08-26,17,2019,8,0,0,2,True,False,False,False,True,,,no ubicada
+2019-08-19T00:00:00.000,03:00:00:am,Solo daños,Choque,CL 42B CR 8A,,,1.0,2019,August,Mon,2019-08-19,3,2019,8,0,0,2,False,False,False,False,False,10.9467675,-74.7976582,exacta
+2019-05-07T00:00:00.000,11:40:00:am,Solo daños,Choque,CL 107 VIA 40,,,1.0,2019,May,Tue,2019-05-07,11,2019,5,1,0,2,True,False,True,False,True,11.039236,-74.8248628,exacta
+2019-04-11T00:00:00.000,08:00:00:am,Solo daños,Choque,CR 54 72 147,,,1.0,2019,April,Thu,2019-04-11,8,2019,4,3,0,2,False,False,False,False,False,10.9989954,-74.80161550000001,exacta
+2019-08-06T00:00:00.000,03:45:00:pm,Solo daños,Choque,CRA 39 CALLE 69E,,,1.0,2019,August,Tue,2019-08-06,15,2019,8,1,0,1,False,False,False,False,False,10.9857327,-74.8065846,exacta
+2019-08-24T00:00:00.000,03:30:00:pm,Con heridos,Atropello,CR 15 SUR CL 51B,1.0,,1.0,2019,August,Sat,2019-08-24,15,2019,8,5,1,1,False,False,False,False,False,10.92251945,-74.81468849999999,aproximada
+2019-04-15T00:00:00.000,05:10:00:pm,Solo daños,Choque,AV CIRCUNVALAR CR 2A SUR,,,1.0,2019,April,Mon,2019-04-15,17,2019,4,0,0,2,True,False,False,False,True,,,no ubicada
+2019-04-25T00:00:00.000,01:20:00:pm,Solo daños,Choque,CR 38 CL 73,,,1.0,2019,April,Thu,2019-04-25,13,2019,4,3,0,2,False,False,True,False,True,10.985592,-74.81179470000001,exacta
+2019-09-16T00:00:00.000,09:40:00:am,Solo daños,Choque,CALLE 19 CRA 7,,,1.0,2019,September,Mon,2019-09-16,9,2019,9,0,0,2,True,False,False,False,True,10.94410335,-74.7718189,aproximada
+2019-03-19T00:00:00.000,03:57:00:pm,Solo daños,Choque,CL 70 CR 39,,,1.0,2019,March,Tue,2019-03-19,15,2019,3,1,0,1,False,False,False,False,False,10.9861027,-74.8073122,exacta
+2019-02-24T00:00:00.000,02:40:00:pm,Con heridos,Choque,CR 37 CL 39,1.0,,1.0,2019,February,Sun,2019-02-24,14,2019,2,6,1,2,False,True,False,False,True,,,no ubicada
+2019-02-11T00:00:00.000,10:00:00:am,Solo daños,Choque,CL 30 CR 33 45,,,1.0,2019,February,Mon,2019-02-11,10,2019,2,0,0,2,False,True,True,False,True,10.9718099,-74.7796062,exacta
+2019-07-02T00:00:00.000,01:30:00:pm,Solo daños,Choque,CL 86 CR 65,,,1.0,2019,July,Tue,2019-07-02,13,2019,7,1,0,1,False,False,False,False,True,11.0166937,-74.8128708,exacta
+2019-12-28T00:00:00.000,03:30:00:pm,Con heridos,Choque,CR 54 CL 68,1.0,,1.0,2019,December,Sat,2019-12-28,15,2019,12,5,1,2,False,True,False,False,True,10.997198350000001,-74.7975544,exacta
+2019-02-25T00:00:00.000,03:10:00:pm,Solo daños,Choque,CL 72 CR 60,,,1.0,2019,February,Mon,2019-02-25,15,2019,2,0,0,1,False,False,False,False,False,11.0024134,-74.79691869999999,exacta
+2019-05-03T00:00:00.000,09:00:00:am,Con heridos,Choque,CR 50 CL 86,1.0,,1.0,2019,May,Fri,2019-05-03,9,2019,5,4,1,3,False,False,True,False,True,11.005334,-74.8207887,exacta
+2019-02-08T00:00:00.000,04:20:00:pm,Solo daños,Choque,VIA 40 CON 85,,,1.0,2019,February,Fri,2019-02-08,16,2019,2,4,0,2,True,False,False,False,True,,,no ubicada
+2019-09-14T00:00:00.000,06:40:00:am,Solo daños,Choque,CL 110 13A 90,,,1.0,2019,September,Sat,2019-09-14,6,2019,9,5,0,2,False,False,True,False,True,,,no ubicada
+2019-06-15T00:00:00.000,01:30:00:pm,Solo daños,Choque,CL 72 CR 44 Y 43,,,1.0,2019,June,Sat,2019-06-15,13,2019,6,5,0,2,False,False,False,False,True,10.99256045,-74.80659645,exacta
+2019-04-04T00:00:00.000,10:00:00:pm,Solo daños,Choque,CR 46 CL90,,,1.0,2019,April,Thu,2019-04-04,22,2019,4,3,0,2,False,False,False,False,True,11.0035427,-74.8244899,exacta
+2019-03-07T00:00:00.000,07:20:00:am,Solo daños,Choque,CL 71 CR 32,,,1.0,2019,March,Thu,2019-03-07,7,2019,3,3,0,1,False,False,False,False,False,10.9809705,-74.8106648,exacta
+2019-07-27T00:00:00.000,01:40:00:pm,Solo daños,Choque,CL 45 CR 52,,,1.0,2019,July,Sat,2019-07-27,13,2019,7,5,0,2,False,True,False,False,False,10.99142955,-74.78335245,exacta
+2019-01-06T00:00:00.000,03:00:00:pm,Solo daños,Choque,CL 110 CR 11,,,1.0,2019,January,Sun,2019-01-06,15,2019,1,6,0,2,False,False,False,False,True,,,no ubicada
+2019-12-20T00:00:00.000,09:00:00:am,Solo daños,Choque,CL 110 CR 53 1670,,,1.0,2019,December,Fri,2019-12-20,9,2019,12,4,0,2,True,False,False,False,True,,,no ubicada
+2019-03-21T00:00:00.000,05:30:00:pm,Solo daños,Choque,CR 58 75 142,,,1.0,2019,March,Thu,2019-03-21,17,2019,3,3,0,2,False,False,True,False,True,11.00420725,-74.8006259,exacta
+2019-11-17T00:00:00.000,09:00:00:pm,Con heridos,Choque,CR 1 CL 43 Y 44,2.0,,1.0,2019,November,Sun,2019-11-17,21,2019,11,6,1,2,False,True,False,False,False,10.9299523,-74.7975323,exacta
+2019-03-21T00:00:00.000,01:10:00:pm,Solo daños,Choque,CL 65 CR 26D,,,1.0,2019,March,Thu,2019-03-21,13,2019,3,3,0,2,False,False,False,False,True,10.9757874,-74.8062974,exacta
+2019-04-30T00:00:00.000,07:30:00:am,Solo daños,Choque,CR 38 84 185,,,1.0,2019,April,Tue,2019-04-30,7,2019,4,1,0,2,False,False,False,False,True,10.9855763,-74.8305366,aproximada
+2019-07-18T00:00:00.000,10:40:00:am,Con heridos,Choque,CL 60 CR 16,1.0,,1.0,2019,July,Thu,2019-07-18,10,2019,7,3,1,2,False,True,False,False,False,10.93899945,-74.80117195,exacta
+2019-09-04T00:00:00.000,10:00:00:am,Solo daños,Choque,CALLE 110 CRA 38,,,1.0,2019,September,Wed,2019-09-04,10,2019,9,2,0,2,True,False,False,False,True,,,no ubicada
+2019-02-13T00:00:00.000,05:00:00:pm,Solo daños,Choque,CL 82 CR 51B,,,1.0,2019,February,Wed,2019-02-13,17,2019,2,2,0,2,False,False,False,False,False,11.0045474,-74.8143494,exacta
+2019-06-17T00:00:00.000,11:20:00:am,Solo daños,Choque,VIA 40 51 414,,,1.0,2019,June,Mon,2019-06-17,11,2019,6,0,0,2,False,False,False,False,False,,,no ubicada
+2019-10-08T00:00:00.000,03:40:00:pm,Con heridos,Choque,CR 49B CL 75,1.0,,1.0,2019,October,Tue,2019-10-08,15,2019,10,1,1,2,False,True,False,False,True,10.9989873,-74.8074016,exacta
+2019-10-31T00:00:00.000,08:30:00:pm,Solo daños,Choque,CL 19 CR 6,,,1.0,2019,October,Thu,2019-10-31,20,2019,10,3,0,2,False,False,True,False,True,,,no ubicada
+2019-11-24T00:00:00.000,01:00:00:pm,Solo daños,Choque,CL 74 CR 42F,,,1.0,2019,November,Sun,2019-11-24,13,2019,11,6,0,1,False,False,False,False,False,10.9926074,-74.8094851,exacta
+2019-02-24T00:00:00.000,07:40:00:pm,Solo daños,Choque,CL 30 CR 20,,,1.0,2019,February,Sun,2019-02-24,19,2019,2,6,0,2,True,False,False,False,True,10.9567428,-74.78595734999999,exacta
+2019-10-01T00:00:00.000,08:00:00:am,Solo daños,Choque,CR 51B CL 91,,,1.0,2019,October,Tue,2019-10-01,8,2019,10,1,0,2,False,False,True,False,True,11.0085378,-74.8232383,exacta
+2019-12-10T00:00:00.000,01:05:00:pm,Con heridos,Choque,CL 84 CR 42H,2.0,,1.0,2019,December,Tue,2019-12-10,13,2019,12,1,1,2,False,False,False,False,True,10.997701,-74.8204725,exacta
+2019-12-16T00:00:00.000,04:15:00:pm,Solo daños,Choque,CR 40 37 2,,,1.0,2019,December,Mon,2019-12-16,16,2019,12,0,0,2,False,False,False,False,False,10.979799,-74.7806255,exacta
+2019-11-08T00:00:00.000,04:00:00:pm,Solo daños,Choque,CL 19 CR 1F,,,1.0,2019,November,Fri,2019-11-08,16,2019,11,4,0,2,True,False,False,False,True,,,no ubicada
+2019-01-14T00:00:00.000,07:30:00:pm,Solo daños,Choque,CL 75 CR 49,,,1.0,2019,January,Mon,2019-01-14,19,2019,1,0,0,2,False,False,False,False,True,10.9983419,-74.8077308,exacta
+2019-06-21T00:00:00.000,07:30:00:pm,Con heridos,Choque,CL 45 CR 33,2.0,,1.0,2019,June,Fri,2019-06-21,19,2019,6,4,1,2,False,False,True,True,True,10.9750771,-74.78843384999999,exacta
+2019-08-27T00:00:00.000,06:20:00:am,Solo daños,Choque,VIA 40 CL 69,,,1.0,2019,August,Tue,2019-08-27,6,2019,8,1,0,2,False,False,False,False,True,11.00663108,-74.78797394,exacta
+2019-01-11T00:00:00.000,01:10:00:pm,Solo daños,Choque,CL 19 CR 1B,,,1.0,2019,January,Fri,2019-01-11,13,2019,1,4,0,2,True,False,False,False,True,,,no ubicada
+2019-01-21T00:00:00.000,08:30:00:am,Con heridos,Choque,CL 21 14 40,2.0,,1.0,2019,January,Mon,2019-01-21,8,2019,1,0,1,2,False,True,False,False,False,10.9318558,-74.77303115000001,exacta
+2019-06-25T00:00:00.000,12:00:00:pm,Solo daños,Choque,CR 15 61 4,,,1.0,2019,June,Tue,2019-06-25,12,2019,6,1,0,1,False,False,False,False,False,10.9619169,-74.8065971,exacta
+2019-12-16T00:00:00.000,07:45:00:pm,Con heridos,Choque,CR 52 C CL 96,2.0,,1.0,2019,December,Mon,2019-12-16,19,2019,12,0,1,2,False,True,False,False,False,11.0126022,-74.8250972,exacta
+2019-10-12T00:00:00.000,08:25:00:am,Solo daños,Choque,CL 72 CR 33,,,1.0,2019,October,Sat,2019-10-12,8,2019,10,5,0,2,False,False,False,False,True,10.9815088,-74.812182,exacta
+2019-03-23T00:00:00.000,01:00:00:pm,Solo daños,Choque,CRA 46 CALLE 85,,,1.0,2019,March,Sat,2019-03-23,13,2019,3,5,0,2,False,False,False,False,True,11.002275999999998,-74.82104910000001,exacta
+2019-04-26T00:00:00.000,10:30:00:am,Solo daños,Choque,VIA 40 CL 70C,,,1.0,2019,April,Fri,2019-04-26,10,2019,4,4,0,1,False,False,False,False,False,,,no ubicada
+2019-10-14T00:00:00.000,06:20:00:pm,Solo daños,Choque,CL 19 CR 7,,,1.0,2019,October,Mon,2019-10-14,18,2019,10,0,0,2,False,False,True,False,True,10.94410335,-74.7718189,aproximada
+2019-12-30T00:00:00.000,07:20:00:am,Solo daños,Choque,CL 36 CR 39,,,1.0,2019,December,Mon,2019-12-30,7,2019,12,0,0,2,False,False,True,False,True,10.9786556,-74.7803914,exacta
+2019-10-04T00:00:00.000,09:00:00:pm,Con heridos,Choque,CL 75 CR 59,2.0,,1.0,2019,October,Fri,2019-10-04,21,2019,10,4,1,2,False,False,False,False,True,11.0047908,-74.7997803,exacta
+2019-04-21T00:00:00.000,05:40:00:pm,Con heridos,Choque,AV CORDIALIDAD CR 24,1.0,,1.0,2019,April,Sun,2019-04-21,17,2019,4,6,1,2,False,True,True,False,True,10.96560395,-74.79068140000001,aproximada
+2019-01-29T00:00:00.000,09:40:00:am,Con heridos,Choque,CL 50 CR 10B,2.0,,1.0,2019,January,Tue,2019-01-29,9,2019,1,1,1,2,False,True,False,False,True,10.92870025,-74.79530715,exacta
+2019-05-15T00:00:00.000,01:00:00:pm,Solo daños,Choque,CR 8E 99D 32,,,1.0,2019,May,Wed,2019-05-15,13,2019,5,2,0,2,True,False,False,False,True,10.95396715,-74.83148735,exacta
+2019-02-01T00:00:00.000,09:00:00:pm,Solo daños,Choque,CL 76 CR 53,,,1.0,2019,February,Fri,2019-02-01,21,2019,2,4,0,2,False,False,False,False,True,11.002754,-74.8057477,exacta
+2019-03-17T00:00:00.000,02:00:00:pm,Solo daños,Choque,CR 53 CL 82,,,1.0,2019,March,Sun,2019-03-17,14,2019,3,6,0,2,False,False,True,False,True,11.0062107,-74.8132806,exacta
+2019-09-17T00:00:00.000,04:00:00:pm,Solo daños,Choque,CL 83 CR 42,,,1.0,2019,September,Tue,2019-09-17,16,2019,9,1,0,2,False,False,False,False,True,10.990700033333333,-74.82611676666666,exacta
+2019-09-11T00:00:00.000,12:30:00:pm,Con heridos,Choque,CR 59 CL 70,2.0,,1.0,2019,September,Wed,2019-09-11,12,2019,9,2,1,2,False,True,False,False,True,11.0006513,-74.796708,exacta
+2019-02-28T00:00:00.000,12:00:00:pm,Con heridos,Choque,CL 76 CR 8,2.0,,1.0,2019,February,Thu,2019-02-28,12,2019,2,3,1,2,False,True,True,False,True,10.9522586,-74.82174035,exacta
+2019-11-06T00:00:00.000,06:40:00:pm,Con heridos,Choque,AV CIRCUNVALAR CR 27,1.0,,1.0,2019,November,Wed,2019-11-06,18,2019,11,2,1,2,False,True,False,False,False,10.9746234,-74.8362161,exacta
+2019-09-10T00:00:00.000,03:30:00:pm,Solo daños,Choque,CL 6 CR 43,,,1.0,2019,September,Tue,2019-09-10,15,2019,9,1,0,2,False,False,False,False,True,10.982012566666667,-74.76974266666667,exacta
+2019-06-24T00:00:00.000,04:45:00:pm,Solo daños,Choque,AV CIRCUNVALAR CR 9G,,,1.0,2019,June,Mon,2019-06-24,16,2019,6,0,0,2,False,True,False,False,False,10.956302999999998,-74.8360084,exacta
+2019-11-15T00:00:00.000,04:45:00:pm,Solo daños,Choque,CR 38 CL 30,,,1.0,2019,November,Fri,2019-11-15,16,2019,11,4,0,2,False,True,True,False,True,10.962129866666666,-74.77711756666666,exacta
+2019-06-12T00:00:00.000,07:40:00:pm,Solo daños,Choque,CRA 44 CALLE 75B,,,1.0,2019,June,Wed,2019-06-12,19,2019,6,2,0,2,False,False,False,False,False,10.994593,-74.8101117,exacta
+2019-07-29T00:00:00.000,10:00:00:pm,Con heridos,Choque,CL 30 CR 25,2.0,,1.0,2019,July,Mon,2019-07-29,22,2019,7,0,1,2,True,True,False,False,True,10.964288849999999,-74.78306950000001,exacta
+2019-09-28T00:00:00.000,11:15:00:pm,Solo daños,Choque,CL 58 CR 70,,,1.0,2019,September,Sat,2019-09-28,23,2019,9,5,0,1,False,False,False,False,False,11.0015187,-74.7885157,aproximada
+2019-09-13T00:00:00.000,08:20:00:pm,Solo daños,Choque,CR 47 CL 85,,,1.0,2019,September,Fri,2019-09-13,20,2019,9,4,0,1,False,False,False,False,False,11.00306,-74.8207531,exacta
+2019-09-14T00:00:00.000,03:10:00:pm,Solo daños,Choque,CALLE 31 CRA 13,,,1.0,2019,September,Sat,2019-09-14,15,2019,9,5,0,2,False,False,False,False,True,,,no ubicada
+2019-02-12T00:00:00.000,09:30:00:am,Solo daños,Choque,AV CIRCUNVALAR CR 46 Y 38,,,1.0,2019,February,Tue,2019-02-12,9,2019,2,1,0,2,False,False,True,False,True,11.011267700000001,-74.8402085,aproximada
+2019-05-01T00:00:00.000,11:00:00:am,Solo daños,Choque,CL 99 CR 6,,,1.0,2019,May,Wed,2019-05-01,11,2019,5,2,0,2,False,False,False,False,False,10.9321065,-74.83009775,aproximada
+2019-04-08T00:00:00.000,10:30:00:pm,Con heridos,Choque,CR 64D CL 86,1.0,,1.0,2019,April,Mon,2019-04-08,22,2019,4,0,1,2,False,True,False,False,False,11.0159023,-74.8135572,exacta
+2019-03-13T00:00:00.000,12:20:00:am,Solo daños,Choque,CL 49 CR 3B,,,1.0,2019,March,Wed,2019-03-13,0,2019,3,2,0,2,False,False,False,False,True,10.89448085,-74.78297315,aproximada
+2019-03-15T00:00:00.000,04:00:00:pm,Solo daños,Choque,AV CIRCUNVALAR CR 6,,,1.0,2019,March,Fri,2019-03-15,16,2019,3,4,0,2,False,False,True,False,True,,,no ubicada
+2019-09-07T00:00:00.000,10:00:00:am,Solo daños,Choque,TRANSV 44 CL 99C,,,1.0,2019,September,Sat,2019-09-07,10,2019,9,5,0,2,False,False,False,False,True,11.0048447,-74.83507370000001,exacta
+2019-07-08T00:00:00.000,08:30:00:am,Solo daños,Choque,CR 38 CL 47,,,1.0,2019,July,Mon,2019-07-08,8,2019,7,0,0,1,False,False,False,False,True,10.9801254,-74.7881692,exacta
+2019-08-13T00:00:00.000,03:20:00:pm,Solo daños,Choque,CL 30 CR 27,,,1.0,2019,August,Tue,2019-08-13,15,2019,8,1,0,2,False,False,True,False,True,10.9660993,-74.7823378,exacta
+2019-06-25T00:00:00.000,08:20:00:pm,Solo daños,Choque,CR 38 CL 110,,,1.0,2019,June,Tue,2019-06-25,20,2019,6,1,0,2,False,False,True,False,True,,,no ubicada
+2019-06-18T00:00:00.000,08:00:00:pm,Con heridos,Choque,CL 76 CR 72,1.0,,1.0,2019,June,Tue,2019-06-18,20,2019,6,1,1,2,False,True,False,False,True,11.0121767,-74.7959794,exacta
+2019-03-07T00:00:00.000,03:10:00:pm,Solo daños,Choque,AV CORDIALIDAD CR 10,,,1.0,2019,March,Thu,2019-03-07,15,2019,3,3,0,2,False,False,True,False,True,10.954612449999999,-74.8076926,exacta
+2019-05-04T00:00:00.000,07:10:00:pm,Solo daños,Choque,CR 38 CL 110,,,1.0,2019,May,Sat,2019-05-04,19,2019,5,5,0,2,False,False,False,False,True,,,no ubicada
+2019-10-24T00:00:00.000,12:20:00:pm,Solo daños,Choque,AV CORDIALIDAD CR 13B,,,1.0,2019,October,Thu,2019-10-24,12,2019,10,3,0,2,False,False,False,False,True,10.95798155,-74.804199,exacta
+2019-06-11T00:00:00.000,07:05:00:am,Solo daños,Choque,CL 45 CR 21,,,1.0,2019,June,Tue,2019-06-11,7,2019,6,1,0,1,False,False,False,False,False,10.961793700000001,-74.79321555,exacta
+2019-09-25T00:00:00.000,09:30:00:am,Con heridos,Choque,CL 30 10 134,1.0,,1.0,2019,September,Wed,2019-09-25,9,2019,9,2,1,2,False,True,True,False,True,10.9479377,-74.7849801,exacta
+2019-03-14T00:00:00.000,04:40:00:pm,Solo daños,Choque,CR 46 74 73,,,1.0,2019,March,Thu,2019-03-14,16,2019,3,3,0,1,False,False,False,False,False,10.99547185,-74.80779445,exacta
+2019-11-19T00:00:00.000,04:30:00:pm,Con heridos,Atropello,AV CIRCUNVALAR CR 15 SUR,1.0,,1.0,2019,November,Tue,2019-11-19,16,2019,11,1,1,1,False,False,False,False,False,10.924804333333332,-74.81674629999999,exacta
+2019-12-31T00:00:00.000,12:10:00:pm,Solo daños,Choque,CR 43 CL 80,,,1.0,2019,December,Tue,2019-12-31,12,2019,12,1,0,2,False,False,True,False,True,10.9965036,-74.8158372,exacta
+2019-01-13T00:00:00.000,08:30:00:pm,Con heridos,Choque,CR 44 CL 44,1.0,,1.0,2019,January,Sun,2019-01-13,20,2019,1,6,1,2,True,False,False,True,True,10.9843715,-74.7847245,exacta
+2019-03-09T00:00:00.000,10:20:00:pm,Solo daños,Choque,CALLE 110 CRA 15 SUR,,,1.0,2019,March,Sat,2019-03-09,22,2019,3,5,0,2,False,False,False,False,False,,,no ubicada
+2019-11-22T00:00:00.000,02:00:00:pm,Con heridos,Choque,CL 110 CR 27,1.0,,1.0,2019,November,Fri,2019-11-22,14,2019,11,4,1,3,True,False,True,False,True,,,no ubicada
+2019-09-03T00:00:00.000,07:30:00:am,Solo daños,Choque,CRA 42B CALLE 83,,,1.0,2019,September,Tue,2019-09-03,7,2019,9,1,0,2,False,False,False,False,False,10.992326,-74.8244061,exacta
+2019-02-08T00:00:00.000,10:30:00:am,Con heridos,Choque,AV CIRCUNVALAR CL 51B,1.0,,1.0,2019,February,Fri,2019-02-08,10,2019,2,4,1,2,False,False,True,False,True,10.9227081,-74.8146168,exacta
+2019-08-04T00:00:00.000,12:30:00:pm,Con heridos,Choque,CL 45 CR 52 87,1.0,,1.0,2019,August,Sun,2019-08-04,12,2019,8,6,1,1,False,False,False,False,True,10.99142955,-74.78335245,exacta
+2019-12-16T00:00:00.000,10:50:00:am,Solo daños,Choque,VIA 40 CRA 58,,,1.0,2019,December,Mon,2019-12-16,10,2019,12,0,0,2,True,False,False,False,True,,,no ubicada
+2019-06-01T00:00:00.000,05:50:00:pm,Solo daños,Choque,CR 7 17 B 46,,,1.0,2019,June,Sat,2019-06-01,17,2019,6,5,0,1,False,False,False,False,False,10.944355999999999,-74.77178839999999,exacta
+2019-03-20T00:00:00.000,06:30:00:pm,Con heridos,Choque,CR 51B 106 60,2.0,,1.0,2019,March,Wed,2019-03-20,18,2019,3,2,1,2,False,True,False,False,True,11.014404950000001,-74.83602215,exacta
+2019-07-29T00:00:00.000,07:50:00:pm,Con heridos,Choque,CR 47 CL 69,13.0,,1.0,2019,July,Mon,2019-07-29,19,2019,7,0,1,2,False,False,True,False,True,10.9934279,-74.8017195,exacta
+2020-10-10T00:00:00.000,02:00:00:pm,Con heridos,Choque,CL 56 11 102,1.0,,1.0,2020,October,Sat,2020-10-10,14,2020,10,5,1,2,False,False,True,False,True,10.9041474,-74.793414,exacta
+2020-03-11T00:00:00.000,12:15:00:pm,Con heridos,Choque,CR 25B CL 73B,1.0,,1.0,2020,March,Wed,2020-03-11,12,2020,3,2,1,2,False,False,True,False,True,,,no ubicada
+2020-02-19T00:00:00.000,08:00:00:pm,Solo daños,Choque,CALLE 76 AVENIDA 47,,,1.0,2020,February,Wed,2020-02-19,20,2020,2,2,0,2,False,False,True,False,True,,,no ubicada
+2020-01-02T00:00:00.000,09:50:00:am,Con heridos,Choque,CL 47 CR 24,1.0,,1.0,2020,January,Thu,2020-01-02,9,2020,1,3,1,2,False,False,False,False,True,10.9671858,-74.7925545,exacta
+2020-03-04T00:00:00.000,08:00:00:am,Solo daños,Choque,CL 90 CR 50,,,1.0,2020,March,Wed,2020-03-04,8,2020,3,2,0,2,False,False,False,False,False,11.0064234,-74.8231256,exacta
+2020-02-04T00:00:00.000,07:15:00:am,Con heridos,Choque,CALLE 30 CRA 23,2.0,,1.0,2020,February,Tue,2020-02-04,7,2020,2,1,1,1,False,False,True,False,True,10.948541233333332,-74.78108423333333,exacta
+2020-09-09T00:00:00.000,07:30:00:pm,Solo daños,Choque,CL 84B CR 38 B,,,1.0,2020,September,Wed,2020-09-09,19,2020,9,2,0,2,False,False,False,False,True,10.98388525,-74.83429355,exacta
+2020-09-25T00:00:00.000,11:40:00:am,Con heridos,Choque,CR 43 CL 87,1.0,,1.0,2020,September,Fri,2020-09-25,11,2020,9,4,1,2,False,True,False,False,True,10.9999194,-74.8239662,exacta
+2020-10-20T00:00:00.000,06:30:00:am,Con heridos,Choque,CR 14 CL 45,1.0,,1.0,2020,October,Tue,2020-10-20,6,2020,10,1,1,2,False,True,True,False,True,10.920400525,-74.79443867499998,exacta
+2020-02-21T00:00:00.000,12:15:00:pm,Con heridos,Choque,CR 43 43 55,1.0,,1.0,2020,February,Fri,2020-02-21,12,2020,2,4,1,1,False,False,True,False,True,10.9824626,-74.784204,exacta
+2020-02-19T00:00:00.000,02:20:00:pm,Solo daños,Choque,CR 50B CL 43,,,1.0,2020,February,Wed,2020-02-19,14,2020,2,2,0,2,True,False,False,False,True,10.9899041,-74.7826009,exacta
+2020-10-16T00:00:00.000,05:10:00:am,Solo daños,Choque,CL 70C CR 9K,,,1.0,2020,October,Fri,2020-10-16,5,2020,10,4,0,1,False,False,False,False,False,,,no ubicada
+2020-09-14T00:00:00.000,10:50:00:pm,Con heridos,Choque,CL 45 CR 14,2.0,,1.0,2020,September,Mon,2020-09-14,22,2020,9,0,1,2,False,False,False,False,True,10.920400525,-74.79443867499998,exacta
+2020-02-18T00:00:00.000,02:00:00:pm,Solo daños,Choque,CR 38 CL 80,,,1.0,2020,February,Tue,2020-02-18,14,2020,2,1,0,2,False,False,False,False,False,10.98693455,-74.82002944999999,exacta
+2020-03-12T00:00:00.000,07:50:00:pm,Solo daños,Choque,CR 59 CL 68,,,1.0,2020,March,Thu,2020-03-12,19,2020,3,3,0,1,False,False,False,False,False,10.9990448,-74.7955179,exacta
+2020-06-10T00:00:00.000,04:40:00:pm,Solo daños,Choque,CR 36 CL 35,,,1.0,2020,June,Wed,2020-06-10,16,2020,6,2,0,2,False,False,True,False,False,10.951334,-74.7812984,exacta
+2020-07-02T00:00:00.000,11:15:00:am,Solo daños,Choque,CL 80 CR 52,,,1.0,2020,July,Thu,2020-07-02,11,2020,7,3,0,2,False,True,False,False,False,11.0047345,-74.8121174,exacta
+2020-12-12T00:00:00.000,08:00:00:am,Solo daños,Choque,CR 49C CL 91,,,1.0,2020,December,Sat,2020-12-12,8,2020,12,5,0,2,False,False,False,False,True,11.0059326,-74.8243661,exacta
+2020-12-13T00:00:00.000,07:30:00:am,Solo daños,Choque,CL 48 CR 29,,,1.0,2020,December,Sun,2020-12-13,7,2020,12,6,0,1,False,False,False,False,False,10.9719691,-74.792811,exacta
+2020-03-09T00:00:00.000,03:50:00:pm,Con heridos,Choque,AV CIRCUNVALAR 110 14 78,1.0,,1.0,2020,March,Mon,2020-03-09,15,2020,3,0,1,2,False,True,True,False,True,,,no ubicada
+2020-03-07T00:00:00.000,03:50:00:pm,Solo daños,Choque,CL 74 CR 49B,,,1.0,2020,March,Sat,2020-03-07,15,2020,3,5,0,2,False,False,False,False,False,10.9982025,-74.8055384,exacta
+2020-11-06T00:00:00.000,08:30:00:am,Solo daños,Choque,CL 83 CR 42B1,,,1.0,2020,November,Fri,2020-11-06,8,2020,11,4,0,1,False,False,False,False,False,,,no ubicada
+2020-01-23T00:00:00.000,05:15:00:pm,Solo daños,Choque,CR 42H CL 87,,,1.0,2020,January,Thu,2020-01-23,17,2020,1,3,0,1,False,False,False,False,False,10.9991104,-74.8242871,exacta
+2020-06-13T00:00:00.000,02:00:00:pm,Solo daños,Choque,VIA 40 CL 85,,,1.0,2020,June,Sat,2020-06-13,14,2020,6,5,0,2,False,False,True,False,True,11.02635555,-74.80381395,exacta
+2020-06-04T00:00:00.000,10:10:00:am,Solo daños,Choque,CL 110 CR 9D,,,1.0,2020,June,Thu,2020-06-04,10,2020,6,3,0,3,True,False,False,False,True,,,no ubicada
+2020-04-06T00:00:00.000,08:20:00:pm,Solo daños,Choque,CL 44 CR 38,,,1.0,2020,April,Mon,2020-04-06,20,2020,4,0,0,2,False,False,False,False,False,10.9795278,-74.7861143,exacta
+2020-10-24T00:00:00.000,04:00:00:pm,Solo daños,Choque,PUERTO DE BITCO,,,1.0,2020,October,Sat,2020-10-24,16,2020,10,5,0,2,True,False,False,False,True,,,no ubicada
+2020-10-07T00:00:00.000,06:40:00:pm,Solo daños,Choque,CR 9G CL 87,,,1.0,2020,October,Wed,2020-10-07,18,2020,10,2,0,2,False,True,True,False,True,10.9582498,-74.8249911,exacta
+2020-06-01T00:00:00.000,07:45:00:am,Solo daños,Choque,CL 98 CR 48,,,1.0,2020,June,Mon,2020-06-01,7,2020,6,0,0,2,False,False,True,False,True,11.0074853,-74.8306642,exacta
+2020-09-15T00:00:00.000,01:12:00:pm,Solo daños,Choque,CR 58 CL 98,,,1.0,2020,September,Tue,2020-09-15,13,2020,9,1,0,2,False,True,False,False,False,11.0169695,-74.8243293,exacta
+2020-02-20T00:00:00.000,07:30:00:am,Solo daños,Choque,VIA 40 CL 51,,,1.0,2020,February,Thu,2020-02-20,7,2020,2,3,0,2,False,False,False,False,False,,,no ubicada
+2020-01-01T00:00:00.000,08:10:00:pm,Solo daños,Choque,CL 72 CR 44 25,,,1.0,2020,January,Wed,2020-01-01,20,2020,1,2,0,1,False,False,False,False,False,10.99256045,-74.80659645,exacta
+2020-01-21T00:00:00.000,01:00:00:pm,Solo daños,Choque,CL 35 CR 43,,,1.0,2020,January,Tue,2020-01-21,13,2020,1,1,0,2,False,False,False,False,False,10.9814011,-74.7789369,exacta
+2020-12-10T00:00:00.000,04:35:00:pm,Solo daños,Choque,CR 51B CL 96A,,,1.0,2020,December,Thu,2020-12-10,16,2020,12,3,0,2,False,False,False,False,False,11.0104739,-74.8275207,exacta
+2020-09-17T00:00:00.000,04:30:00:pm,Solo daños,Otro,VIA 40 CL 79B,,,1.0,2020,September,Thu,2020-09-17,16,2020,9,3,0,2,True,False,False,False,True,11.0216225,-74.7996512,exacta
+2020-02-20T00:00:00.000,07:38:00:am,Solo daños,Choque,AVENIDA 110 CRA 15 SUR,,,1.0,2020,February,Thu,2020-02-20,7,2020,2,3,0,2,True,False,False,False,True,,,no ubicada
+2020-07-01T00:00:00.000,08:45:00:pm,Solo daños,Choque,CL 45 CR 30,,,1.0,2020,July,Wed,2020-07-01,20,2020,7,2,0,2,False,False,True,False,True,10.956262833333334,-74.7879918,exacta
+2020-02-20T00:00:00.000,08:00:00:am,Solo daños,Choque,CR 21 CL 87,,,1.0,2020,February,Thu,2020-02-20,8,2020,2,3,0,2,False,False,True,False,True,10.9700926,-74.8300146,exacta
+2020-01-22T00:00:00.000,03:10:00:pm,Con heridos,Atropello,CL 17 CR 39,1.0,,1.0,2020,January,Wed,2020-01-22,15,2020,1,2,1,1,False,False,True,False,True,10.9764008,-74.7755176,exacta
+2020-09-25T00:00:00.000,10:40:00:am,Con heridos,Choque,CL 49 CR 2 SUR,2.0,,1.0,2020,September,Fri,2020-09-25,10,2020,9,4,1,2,False,True,False,False,True,10.9299407,-74.8102002,exacta
+2020-10-18T00:00:00.000,11:50:00:am,Solo daños,Choque,CR 20 CL 45,,,1.0,2020,October,Sun,2020-10-18,11,2020,10,6,0,2,False,False,False,False,True,10.959883699999999,-74.79403769999999,exacta
+2020-02-11T00:00:00.000,08:30:00:am,Solo daños,Choque,CL 111 CR 37,,,1.0,2020,February,Tue,2020-02-11,8,2020,2,1,0,2,False,True,False,False,False,10.9813601,-74.8369732,exacta
+2020-12-10T00:00:00.000,03:30:00:pm,Con heridos,Choque,CL 69 VIA 40,1.0,,1.0,2020,December,Thu,2020-12-10,15,2020,12,3,1,2,False,True,False,False,False,11.00663108,-74.78797394,exacta
+2020-10-28T00:00:00.000,05:20:00:pm,Solo daños,Choque,CL 91 CR 57,,,1.0,2020,October,Wed,2020-10-28,17,2020,10,2,0,2,False,False,False,False,True,11.0141083,-74.8198004,exacta
+2020-02-04T00:00:00.000,08:00:00:am,Solo daños,Choque,AV CORDIALIDAD CR 21 50,,,1.0,2020,February,Tue,2020-02-04,8,2020,2,1,0,1,False,False,False,False,False,10.962964150000001,-74.79504589999999,exacta
+2020-02-10T00:00:00.000,06:20:00:pm,Solo daños,Choque,CL 84 CR 49C,,,1.0,2020,February,Mon,2020-02-10,18,2020,2,0,0,1,False,False,False,False,False,11.0031475,-74.818401,exacta
+2020-12-15T00:00:00.000,07:30:00:am,Solo daños,Choque,CR 34 CL 35,,,1.0,2020,December,Tue,2020-12-15,7,2020,12,1,0,1,False,False,False,False,True,10.9260643,-74.7820718,exacta
+2020-07-27T00:00:00.000,04:20:00:pm,Solo daños,Choque,CR 46 CL 79,,,1.0,2020,July,Mon,2020-07-27,16,2020,7,0,0,2,False,False,False,False,False,10.99794755,-74.812101,exacta
+2020-06-19T00:00:00.000,12:10:00:pm,Solo daños,Choque,CL 91 CR 59B,,,1.0,2020,June,Fri,2020-06-19,12,2020,6,4,0,1,False,False,False,False,False,11.0153012,-74.8179185,exacta
+2020-03-01T00:00:00.000,11:30:00:am,Con heridos,Choque,CL 41 CR 14,1.0,,1.0,2020,March,Sun,2020-03-01,11,2020,3,6,1,3,False,True,False,False,True,10.9243,-74.7849069,exacta
+2020-12-10T00:00:00.000,08:10:00:pm,Solo daños,Choque,CR 21B CL 64C,,,1.0,2020,December,Thu,2020-12-10,20,2020,12,3,0,2,False,False,True,False,True,10.968736849999999,-74.80802495,exacta
+2020-02-12T00:00:00.000,02:00:00:pm,Solo daños,Choque,CL 30 CR 50,,,1.0,2020,February,Wed,2020-02-12,14,2020,2,2,0,2,True,False,False,False,True,10.98740785,-74.7775299,aproximada
+2020-07-13T00:00:00.000,06:40:00:am,Solo daños,Choque,CL 30 3E 73,,,1.0,2020,July,Mon,2020-07-13,6,2020,7,0,0,2,False,False,True,False,True,10.9410978,-74.7829893,exacta
+2020-03-04T00:00:00.000,11:03:00:am,Con heridos,Choque,CALLE 80B CRA 42B,1.0,,1.0,2020,March,Wed,2020-03-04,11,2020,3,2,1,2,False,False,False,False,False,10.9912518,-74.82254725,exacta
+2020-04-03T00:00:00.000,11:10:00:am,Solo daños,Choque,CL 82 CR 47,,,1.0,2020,April,Fri,2020-04-03,11,2020,4,4,0,2,False,False,True,False,True,11.0013527,-74.8163848,exacta
+2020-12-31T00:00:00.000,11:45:00:am,Solo daños,Choque,CR 43 CL 48,,,1.0,2020,December,Thu,2020-12-31,11,2020,12,3,0,2,True,False,False,False,False,10.98357,-74.7886203,exacta
+2020-11-17T00:00:00.000,04:50:00:pm,Con heridos,Choque,CL 51B AV CIRCUNVALAR,1.0,,1.0,2020,November,Tue,2020-11-17,16,2020,11,1,1,2,False,False,True,False,True,10.9227081,-74.8146168,exacta
+2020-10-05T00:00:00.000,12:15:00:pm,Solo daños,Choque,CL 98 CR 51B,,,1.0,2020,October,Mon,2020-10-05,12,2020,10,0,0,2,True,False,False,False,True,11.01106835,-74.828652775,exacta
+2020-01-29T00:00:00.000,12:35:00:pm,Solo daños,Choque,CL 85 CR 79,,,1.0,2020,January,Wed,2020-01-29,12,2020,1,2,0,2,True,False,True,False,True,11.0249653,-74.8053724,exacta
+2020-02-11T00:00:00.000,08:50:00:am,Solo daños,Choque,CRA 59 CALLE 77,,,1.0,2020,February,Tue,2020-02-11,8,2020,2,1,0,2,False,False,True,False,True,11.0069385,-74.801588,exacta
+2020-05-04T00:00:00.000,10:18:00:am,Solo daños,Choque,CR 38 CL 37,,,1.0,2020,May,Mon,2020-05-04,10,2020,5,0,0,1,False,False,False,False,True,10.9778328,-74.781125,exacta
+2020-10-16T00:00:00.000,12:40:00:pm,Con heridos,Choque,VIA 40 CR 53B,1.0,,1.0,2020,October,Fri,2020-10-16,12,2020,10,4,1,2,False,False,True,True,True,10.994250999999998,-74.78098735,exacta
+2020-06-05T00:00:00.000,12:40:00:pm,Solo daños,Choque,CL 61 CR 23,,,1.0,2020,June,Fri,2020-06-05,12,2020,6,4,0,2,False,False,False,False,True,10.9699396,-74.8035619,exacta
+2020-12-17T00:00:00.000,01:10:00:pm,Solo daños,Choque,CL 79 CR 50,,,1.0,2020,December,Thu,2020-12-17,13,2020,12,3,0,1,False,False,False,False,False,11.0009113,-74.8104204,exacta
+2020-09-26T00:00:00.000,07:15:00:am,Solo daños,Choque,AV CIRCUNVALAR CR 6,,,1.0,2020,September,Sat,2020-09-26,7,2020,9,5,0,2,False,False,False,False,True,,,no ubicada
+2020-09-23T00:00:00.000,03:10:00:pm,Con heridos,Choque,CR 46 79 59,1.0,,1.0,2020,September,Wed,2020-09-23,15,2020,9,2,1,2,False,False,True,False,True,10.99794755,-74.812101,exacta
+2020-03-25T00:00:00.000,06:40:00:am,Con heridos,Atropello,AV CIRCUNVALAR CL 47,9.0,,1.0,2020,March,Wed,2020-03-25,6,2020,3,2,1,1,False,False,False,False,False,10.92328655,-74.80476995000001,aproximada
+2020-08-09T00:00:00.000,10:30:00:am,Solo daños,Choque,CL 34 CR 46,,,1.0,2020,August,Sun,2020-08-09,10,2020,8,6,0,2,True,False,True,False,True,10.98542705,-74.77677209999999,exacta
+2020-06-30T00:00:00.000,06:15:00:am,Con heridos,Choque,CR 44 CL 40,5.0,,1.0,2020,June,Tue,2020-06-30,6,2020,6,1,1,2,False,False,True,False,True,10.950713833333333,-74.78377266666666,exacta
+2020-01-15T00:00:00.000,06:30:00:pm,Solo daños,Choque,VIA 40 CL 78,,,1.0,2020,January,Wed,2020-01-15,18,2020,1,2,0,2,False,False,True,False,True,11.0205701,-74.7971327,exacta
+2020-02-14T00:00:00.000,02:20:00:pm,Con heridos,Choque,CR 43 CL 110,1.0,,1.0,2020,February,Fri,2020-02-14,14,2020,2,4,1,1,False,True,False,False,False,,,no ubicada
+2020-02-28T00:00:00.000,05:50:00:am,Con heridos,Choque,AVENIDA 110 CRA 26,1.0,,1.0,2020,February,Fri,2020-02-28,5,2020,2,4,1,3,True,True,False,False,False,,,no ubicada
+2020-09-19T00:00:00.000,11:20:00:pm,Solo daños,Choque,CL 49 CR 19,,,1.0,2020,September,Sat,2020-09-19,23,2020,9,5,0,2,False,True,False,False,True,10.9626672,-74.7997659,exacta
+2020-10-12T00:00:00.000,06:45:00:pm,Solo daños,Choque,CL 53D CR 20,,,1.0,2020,October,Mon,2020-10-12,18,2020,10,0,0,2,False,False,False,False,True,10.9658378,-74.8015814,exacta
+2020-10-27T00:00:00.000,03:30:00:pm,Solo daños,Choque,CR 38 70 64,,,1.0,2020,October,Tue,2020-10-27,15,2020,10,1,0,2,True,False,False,False,True,10.9845669,-74.80817834999999,exacta
+2020-12-20T00:00:00.000,08:30:00:am,Con heridos,Choque,CL 72 CR 36,5.0,,1.0,2020,December,Sun,2020-12-20,8,2020,12,6,1,1,False,False,True,False,True,10.9845951,-74.8120514,exacta
+2020-09-28T00:00:00.000,02:45:00:pm,Solo daños,Choque,CL 42 CR 24 31,,,1.0,2020,September,Mon,2020-09-28,14,2020,9,0,0,1,True,False,False,False,True,10.9659705,-74.7898612,exacta
+2020-02-19T00:00:00.000,06:30:00:am,Solo daños,Choque,CR 44 CL 41,,,1.0,2020,February,Wed,2020-02-19,6,2020,2,2,0,2,True,False,False,False,True,10.958664500000001,-74.78383905,exacta
+2020-11-16T00:00:00.000,11:55:00:am,Con heridos,Choque,CL 110 CR 43,2.0,,1.0,2020,November,Mon,2020-11-16,11,2020,11,0,1,1,False,True,False,False,False,,,no ubicada
+2020-01-28T00:00:00.000,10:45:00:am,Solo daños,Choque,CL 45 CR 17,,,1.0,2020,January,Tue,2020-01-28,10,2020,1,1,0,2,False,False,False,False,False,10.935754175,-74.79760692500001,exacta
+2020-11-09T00:00:00.000,08:30:00:am,Solo daños,Choque,CL 39 CR 41,,,1.0,2020,November,Mon,2020-11-09,8,2020,11,0,0,2,False,True,False,False,True,10.9805319,-74.7816741,exacta
+2020-01-10T00:00:00.000,04:00:00:pm,Solo daños,Choque,CRA 49C CALLE 89,,,1.0,2020,January,Fri,2020-01-10,16,2020,1,4,0,2,False,False,True,False,True,,,no ubicada
+2020-07-17T00:00:00.000,10:00:00:am,Solo daños,Choque,CL 76 CR 50,,,1.0,2020,July,Fri,2020-07-17,10,2020,7,4,0,2,False,False,False,False,False,11.0004912,-74.8082032,exacta
+2020-11-30T00:00:00.000,08:40:00:am,Solo daños,Choque,CR 38 74 61,,,1.0,2020,November,Mon,2020-11-30,8,2020,11,0,0,2,False,False,True,False,True,10.985607850000001,-74.81266645,exacta
+2020-11-17T00:00:00.000,06:15:00:pm,Con heridos,Choque,VIA 40 CL 58,1.0,,1.0,2020,November,Tue,2020-11-17,18,2020,11,1,1,2,False,True,False,False,False,11.003281325,-74.78620972499999,exacta
+2020-12-30T00:00:00.000,12:40:00:pm,Solo daños,Choque,AV CIRCUNVALAR CL 92,,,1.0,2020,December,Wed,2020-12-30,12,2020,12,2,0,3,False,False,False,False,True,,,no ubicada
+2020-11-27T00:00:00.000,06:40:00:am,Solo daños,Choque,VIA 40 CL 68,,,1.0,2020,November,Fri,2020-11-27,6,2020,11,4,0,2,False,False,True,False,True,,,no ubicada
+2020-01-13T00:00:00.000,12:50:00:pm,Con heridos,Choque,CL 98 CR 59B,1.0,,1.0,2020,January,Mon,2020-01-13,12,2020,1,0,1,2,False,True,False,False,True,11.0181557,-74.8232351,exacta
+2020-12-19T00:00:00.000,04:50:00:pm,Con heridos,Atropello,CL 110 CR 6,2.0,,1.0,2020,December,Sat,2020-12-19,16,2020,12,5,1,1,False,True,False,False,False,,,no ubicada
+2020-12-18T00:00:00.000,11:20:00:pm,Solo daños,Choque,CR 49C 84 94,,,1.0,2020,December,Fri,2020-12-18,23,2020,12,4,0,1,False,False,False,False,False,11.0031475,-74.818401,exacta
+2020-01-18T00:00:00.000,12:25:00:pm,Solo daños,Choque,CR 43 CL 87,,,1.0,2020,January,Sat,2020-01-18,12,2020,1,5,0,1,False,False,False,False,False,10.9999194,-74.8239662,exacta
+2020-02-15T00:00:00.000,04:30:00:pm,Solo daños,Choque,VIA 40 CL 79,,,1.0,2020,February,Sat,2020-02-15,16,2020,2,5,0,2,False,False,True,False,True,11.02051475,-74.7987555,exacta
+2020-02-29T00:00:00.000,06:00:00:am,Solo daños,Choque,CL 45 CR 44,,,1.0,2020,February,Sat,2020-02-29,6,2020,2,5,0,2,False,False,False,False,True,10.9845762,-74.7856834,exacta
+2020-11-24T00:00:00.000,09:50:00:am,Solo daños,Choque,CL 6 CR 38 Y CR 30,,,1.0,2020,November,Tue,2020-11-24,9,2020,11,1,0,2,True,False,False,False,True,10.974568099999999,-74.76956895000001,aproximada
+2020-01-14T00:00:00.000,07:30:00:pm,Solo daños,Choque,CL 72 CR 61,,,1.0,2020,January,Tue,2020-01-14,19,2020,1,1,0,2,False,False,False,False,True,11.00286025,-74.79629045,exacta
+2020-08-27T00:00:00.000,12:25:00:pm,Solo daños,Choque,CL 47 CR 26,,,1.0,2020,August,Thu,2020-08-27,12,2020,8,3,0,2,False,False,True,False,True,10.9683902,-74.7920901,exacta
+2020-02-18T00:00:00.000,03:30:00:pm,Solo daños,Choque,CL 81 CR 65,,,1.0,2020,February,Tue,2020-02-18,15,2020,2,1,0,1,False,False,False,False,False,11.0122131,-74.8079778,exacta
+2020-10-02T00:00:00.000,06:30:00:pm,Con heridos,Choque,AV CIRCUNVALAR CR 27,1.0,,1.0,2020,October,Fri,2020-10-02,18,2020,10,4,1,2,False,True,True,False,True,10.9746234,-74.8362161,exacta
+2020-03-18T00:00:00.000,03:50:00:pm,Solo daños,Choque,VIA 40 CL 58,,,1.0,2020,March,Wed,2020-03-18,15,2020,3,2,0,1,False,False,False,False,False,11.003281325,-74.78620972499999,exacta
+2020-12-23T00:00:00.000,07:20:00:am,Solo daños,Choque,CL 64 CR 58,,,1.0,2020,December,Wed,2020-12-23,7,2020,12,2,0,1,False,False,False,False,False,10.99595345,-74.79459015,exacta
+2020-10-20T00:00:00.000,02:00:00:pm,Con heridos,Choque,CL 69 41 209,1.0,,1.0,2020,October,Tue,2020-10-20,14,2020,10,1,1,1,False,False,False,False,False,10.9868853,-74.8039208,exacta
+2020-10-22T00:00:00.000,04:45:00:pm,Solo daños,Choque,CL 80 CR 45,,,1.0,2020,October,Thu,2020-10-22,16,2020,10,3,0,2,False,True,False,False,False,10.9985035,-74.8146502,exacta
+2020-08-01T00:00:00.000,04:10:00:pm,Con heridos,Choque,CL 31 CR 24,1.0,,1.0,2020,August,Sat,2020-08-01,16,2020,8,5,1,2,False,True,False,False,True,10.9636587,-74.7841577,exacta
+2020-09-14T00:00:00.000,06:20:00:pm,Con heridos,Choque,CR 6 CL 98,2.0,,1.0,2020,September,Mon,2020-09-14,18,2020,9,0,1,2,False,True,False,False,False,10.9316711,-74.8287333,exacta
+2020-01-25T00:00:00.000,06:00:00:am,Solo daños,Choque,CL 110 CR 9G,,,1.0,2020,January,Sat,2020-01-25,6,2020,1,5,0,2,False,False,False,False,True,,,no ubicada
+2020-02-06T00:00:00.000,10:30:00:pm,Solo daños,Choque,CRA 16 CALLE 64C,,,1.0,2020,February,Thu,2020-02-06,22,2020,2,3,0,2,False,False,False,False,True,10.9648472,-74.8096174,exacta
+2020-10-15T00:00:00.000,01:10:00:pm,Con heridos,Volcamiento,CR 20 CL 45B,1.0,,1.0,2020,October,Thu,2020-10-15,13,2020,10,3,1,1,False,True,False,False,False,10.9601759,-74.7947605,exacta
+2020-12-30T00:00:00.000,07:20:00:am,Solo daños,Choque,CR 38 CL 56,,,1.0,2020,December,Wed,2020-12-30,7,2020,12,2,0,2,False,False,True,False,True,10.982116,-74.7955016,exacta
+2020-04-15T00:00:00.000,06:55:00:am,Con heridos,Choque,CL 51B CR 8B,1.0,,1.0,2020,April,Wed,2020-04-15,6,2020,4,2,1,2,False,True,False,False,True,10.9472485,-74.8061115,exacta
+2020-05-23T00:00:00.000,03:50:00:pm,Con heridos,Choque,AV CIRCUNVALAR CR 43,1.0,,1.0,2020,May,Sat,2020-05-23,15,2020,5,5,1,2,False,True,False,False,False,10.99367105,-74.83843275,exacta
+2020-12-05T00:00:00.000,12:10:00:pm,Solo daños,Choque,CR 65 CL 75,,,1.0,2020,December,Sat,2020-12-05,12,2020,12,5,0,1,False,False,False,False,False,11.0068031,-74.7975112,exacta
+2020-02-10T00:00:00.000,08:40:00:pm,Con heridos,Choque,CR 2 CL 46,1.0,,1.0,2020,February,Mon,2020-02-10,20,2020,2,0,1,2,False,True,False,False,False,10.934170550000001,-74.80062205,aproximada
+2020-03-24T00:00:00.000,09:25:00:pm,Con heridos,Choque,CL 77D CR 21B,2.0,,1.0,2020,March,Tue,2020-03-24,21,2020,3,1,1,2,False,True,False,False,False,10.9710007,-74.822296,exacta
+2020-10-21T00:00:00.000,07:46:00:am,Solo daños,Choque,CL 110 CR 26,,,1.0,2020,October,Wed,2020-10-21,7,2020,10,2,0,3,True,False,False,False,True,,,no ubicada
+2020-02-16T00:00:00.000,01:40:00:pm,Solo daños,Choque,CRA 55 CALLE 99,,,1.0,2020,February,Sun,2020-02-16,13,2020,2,6,0,2,False,False,False,False,True,11.0153964,-74.8268607,exacta
+2020-10-31T00:00:00.000,06:10:00:pm,Solo daños,Choque,CR 53 CL 100,,,1.0,2020,October,Sat,2020-10-31,18,2020,10,5,0,1,False,False,False,False,False,11.01490445,-74.83086730000001,aproximada
+2020-11-18T00:00:00.000,04:00:00:pm,Solo daños,Choque,CR 52 CL 79,,,1.0,2020,November,Wed,2020-11-18,16,2020,11,2,0,2,False,False,False,False,False,11.0034165,-74.8085272,exacta
+2021-03-18T00:00:00.000,05:30:00:pm,Solo daños,Choque,CR 49 E CL 102,,,1.0,2021,March,Thu,2021-03-18,17,2021,3,3,0,2,False,True,False,False,False,11.0111755,-74.8349664,exacta
+2021-01-20T00:00:00.000,11:20:00:pm,Solo daños,Choque,CL 5 CR 9,,,1.0,2021,January,Wed,2021-01-20,23,2021,1,2,0,1,False,False,False,False,False,10.9536338,-74.8294386,exacta
+2021-10-02T00:00:00.000,07:20:00:pm,Solo daños,Choque,CALLE 85 CARRERA 47,,,1.0,2021,October,Sat,2021-10-02,19,2021,10,5,0,2,False,False,False,False,True,11.00306,-74.8207531,exacta
+2021-08-12T00:00:00.000,08:35:00:am,Solo daños,Choque,VIA 40 CL 85 - 85,,,1.0,2021,August,Thu,2021-08-12,8,2021,8,3,0,2,True,False,False,False,True,11.02635555,-74.80381395,exacta
+2021-11-19T00:00:00.000,09:00:00:pm,Con heridos,Choque,CR 49C CL 87,4.0,,1.0,2021,November,Fri,2021-11-19,21,2021,11,4,1,2,False,False,True,False,True,11.0047642,-74.8219643,exacta
+2021-07-23T00:00:00.000,01:45:00:pm,Solo daños,Choque,CR 36 CL 87,,,1.0,2021,July,Fri,2021-07-23,13,2021,7,4,0,2,False,False,False,False,True,10.98118395,-74.83140625,exacta
+2021-11-27T00:00:00.000,03:40:00:pm,Solo daños,Choque,CALLE 110 CARRERA 27,,,1.0,2021,November,Sat,2021-11-27,15,2021,11,5,0,2,True,False,True,False,True,,,no ubicada
+2021-08-14T00:00:00.000,08:35:00:am,Solo daños,Choque,CL 72 CR 71 BARRIO CONCEPCION,,,1.0,2021,August,Sat,2021-08-14,8,2021,8,5,0,2,False,False,False,False,True,11.0071592,-74.791467,exacta
+2021-11-29T00:00:00.000,07:00:00:am,Con heridos,Choque,CL 24 CR 15,1.0,,1.0,2021,November,Mon,2021-11-29,7,2021,11,0,1,2,False,True,False,False,False,10.926157966666667,-74.7735603,exacta
+2021-12-22T00:00:00.000,11:30:00:pm,Solo daños,Choque,AV 40 CALLE 77 B,,,1.0,2021,December,Wed,2021-12-22,23,2021,12,2,0,1,False,False,False,False,True,,,no ubicada
+2021-07-09T00:00:00.000,06:45:00:am,Con heridos,Choque,CL 92 CR 43,2.0,,1.0,2021,July,Fri,2021-07-09,6,2021,7,4,1,2,False,True,False,False,False,11.0014125,-74.82728,exacta
+2021-08-19T00:00:00.000,06:45:00:am,Solo daños,Choque,CL 84 CR 42H,,,1.0,2021,August,Thu,2021-08-19,6,2021,8,3,0,2,False,False,False,False,False,10.997701,-74.8204725,exacta
+2021-07-13T00:00:00.000,06:05:00:pm,Solo daños,Choque,CL 90 CR 51B,,,1.0,2021,July,Tue,2021-07-13,18,2021,7,1,0,2,False,False,False,False,True,11.008085066666666,-74.82217940000001,exacta
+2021-11-02T00:00:00.000,06:40:00:pm,Solo daños,Choque,CR 43 CL 38,,,1.0,2021,November,Tue,2021-11-02,18,2021,11,1,0,1,False,False,True,False,True,10.9817839,-74.7808256,exacta
+2021-04-30T00:00:00.000,04:40:00:pm,Solo daños,Choque,CR 15 CL 26 - 25,,,1.0,2021,April,Fri,2021-04-30,16,2021,4,4,0,3,True,False,False,False,True,10.9526565,-74.7802136,exacta
+2021-08-21T00:00:00.000,08:45:00:pm,Con heridos,Choque,CL 64C CR 20,1.0,,1.0,2021,August,Sat,2021-08-21,20,2021,8,5,1,2,False,True,False,False,False,10.9677544,-74.8084871,exacta
+2021-05-22T00:00:00.000,09:50:00:am,Solo daños,Choque,CL 82 CR 36,,,1.0,2021,May,Sat,2021-05-22,9,2021,5,5,0,2,True,False,True,False,True,10.98429445,-74.82459215,exacta
+2021-12-28T00:00:00.000,08:35:00:pm,Solo daños,Choque,CALLE 89 CRA 53,,,1.0,2021,December,Tue,2021-12-28,20,2021,12,1,0,2,False,False,False,False,False,11.0106867,-74.8194171,exacta
+2021-07-30T00:00:00.000,02:40:00:pm,Solo daños,Choque,CL 86 CR 51,,,1.0,2021,July,Fri,2021-07-30,14,2021,7,4,0,2,False,False,False,False,True,11.0063246,-74.81977764999999,aproximada
+2021-09-17T00:00:00.000,06:50:00:am,Con muertos,Choque,CR 15 SUR CL 95,1.0,1.0,1.0,2021,September,Fri,2021-09-17,6,2021,9,4,1,2,True,True,False,False,True,,,no ubicada
+2021-06-24T00:00:00.000,08:00:00:pm,Con heridos,Atropello,CR 5F CL 88,1.0,,1.0,2021,June,Thu,2021-06-24,20,2021,6,3,1,1,False,False,False,False,False,10.94504055,-74.82240485,exacta
+2021-03-08T00:00:00.000,06:40:00:am,Con heridos,Choque,AV 110 CL 110,2.0,,1.0,2021,March,Mon,2021-03-08,6,2021,3,0,1,2,False,True,False,False,False,,,no ubicada
+2021-10-26T00:00:00.000,07:30:00:am,Solo daños,Choque,AV CIRCUNVALAR CR 31 77,,,1.0,2021,October,Tue,2021-10-26,7,2021,10,1,0,2,True,False,True,False,True,10.9783024,-74.8361433,exacta
+2021-06-06T00:00:00.000,09:55:00:am,Con heridos,Choque,CL 85 CR 80,1.0,,1.0,2021,June,Sun,2021-06-06,9,2021,6,6,1,1,False,False,True,False,True,11.025622550000001,-74.804655,exacta
+2021-12-01T00:00:00.000,02:00:00:pm,Solo daños,Choque,CALLE 110 # 13C-126,,,1.0,2021,December,Wed,2021-12-01,14,2021,12,2,0,2,False,False,False,False,True,,,no ubicada
+2021-01-29T00:00:00.000,01:00:00:pm,Solo daños,Choque,CL 30 CR 36,,,1.0,2021,January,Fri,2021-01-29,13,2021,1,4,0,2,True,False,False,False,True,10.9750299,-74.77794800000001,exacta
+2021-12-30T00:00:00.000,07:00:00:pm,Solo daños,Choque,CALLE 94 CRA 52,,,1.0,2021,December,Thu,2021-12-30,19,2021,12,3,0,2,True,False,False,False,True,11.0106023,-74.8246223,exacta
+2021-08-14T00:00:00.000,04:50:00:pm,Solo daños,Choque,CL 90 CR 53 SOTANO CC VIVA,,,1.0,2021,August,Sat,2021-08-14,16,2021,8,5,0,2,False,False,False,False,True,11.0110504,-74.8199523,exacta
+2021-02-28T00:00:00.000,08:50:00:am,Solo daños,Choque,CL 47 KM 115 + 700,,,1.0,2021,February,Sun,2021-02-28,8,2021,2,6,0,1,False,False,False,False,False,,,no ubicada
+2021-09-04T00:00:00.000,10:50:00:am,Solo daños,Choque,CR 46 CL 48,,,1.0,2021,September,Sat,2021-09-04,10,2021,9,5,0,2,False,False,False,False,True,10.98792265,-74.78732305,aproximada
+2021-02-23T00:00:00.000,07:30:00:am,Con heridos,Choque,AV CIRCUNVALAR CL 46,1.0,,1.0,2021,February,Tue,2021-02-23,7,2021,2,1,1,2,False,True,True,False,True,10.92335005,-74.80265650000001,exacta
+2021-11-16T00:00:00.000,12:26:00:pm,Solo daños,Choque,CARRERA 38  CALLE 50,,,1.0,2021,November,Tue,2021-11-16,12,2021,11,1,0,2,False,False,True,False,True,10.9806849,-74.7903087,exacta
+2021-03-02T00:00:00.000,03:30:00:pm,Solo daños,Choque,CR 51B CL 84,,,1.0,2021,March,Tue,2021-03-02,15,2021,3,1,0,2,True,False,False,False,True,11.005746349999999,-74.81716575,exacta
+2021-08-30T00:00:00.000,07:20:00:pm,Solo daños,Choque,AV 110 CR 46,,,1.0,2021,August,Mon,2021-08-30,19,2021,8,0,0,2,True,False,False,False,False,,,no ubicada
+2021-10-17T00:00:00.000,05:50:00:pm,Con heridos,Choque,CL 30 FRENTE AL 5A 121,2.0,,1.0,2021,October,Sun,2021-10-17,17,2021,10,6,1,2,False,True,False,False,True,,,no ubicada
+2021-11-15T00:00:00.000,03:15:00:am,Con muertos,Choque,CR 8G CL 97 83,,1.0,1.0,2021,November,Mon,2021-11-15,3,2021,11,0,1,1,False,True,False,False,False,10.9546245,-74.8268244,exacta
+2021-10-10T00:00:00.000,10:10:00:am,Solo daños,Choque,CL 30 CR 3,,,1.0,2021,October,Sun,2021-10-10,10,2021,10,6,0,2,False,False,True,False,True,,,no ubicada
+2021-03-02T00:00:00.000,09:00:00:am,Solo daños,Choque,CL 112 CR 42,,,1.0,2021,March,Tue,2021-03-02,9,2021,3,1,0,1,False,False,False,False,False,10.99318955,-74.84206585,exacta
+2021-03-23T00:00:00.000,11:40:00:am,Solo daños,Choque,CR 11 CL 64B,,,1.0,2021,March,Tue,2021-03-23,11,2021,3,1,0,2,False,False,False,False,True,10.9593245,-74.8119644,exacta
+2021-08-03T00:00:00.000,02:00:00:pm,Solo daños,Choque,CR 50 CL 87,,,1.0,2021,August,Tue,2021-08-03,14,2021,8,1,0,1,False,False,False,False,False,11.0056815,-74.8215212,exacta
+2021-12-23T00:00:00.000,10:00:00:am,Con heridos,Choque,CALLE 17 CARRERA 22,2.0,,1.0,2021,December,Thu,2021-12-23,10,2021,12,3,1,2,False,False,True,True,True,10.945788633333331,-74.77114046666668,exacta
+2021-02-09T00:00:00.000,02:30:00:pm,Solo daños,Choque,CL 110 CR 9G,,,1.0,2021,February,Tue,2021-02-09,14,2021,2,1,0,1,False,False,False,False,False,,,no ubicada
+2021-01-28T00:00:00.000,06:40:00:am,Con heridos,Choque,CL 84 CR 65,1.0,,1.0,2021,January,Thu,2021-01-28,6,2021,1,3,1,2,False,True,False,False,False,11.0130729,-74.809992,exacta
+2021-08-29T00:00:00.000,06:30:00:pm,Solo daños,Choque,CR 41 CL 68,,,1.0,2021,August,Sun,2021-08-29,18,2021,8,6,0,2,False,False,False,False,True,10.986673,-74.8031344,exacta
+2021-06-30T00:00:00.000,03:00:00:pm,Solo daños,Choque,CL 40 CR 33,,,1.0,2021,June,Wed,2021-06-30,15,2021,6,2,0,2,False,False,False,False,False,10.9735998,-74.7843896,exacta
+2021-07-14T00:00:00.000,09:15:00:am,Con heridos,Choque,CR 50 CL 64,1.0,,1.0,2021,July,Wed,2021-07-14,9,2021,7,2,1,2,False,True,False,False,False,10.9940769,-74.7976857,exacta
+2021-05-06T00:00:00.000,02:20:00:pm,Solo daños,Choque,CR 50 84,,,1.0,2021,May,Thu,2021-05-06,14,2021,5,3,0,2,False,False,True,False,True,11.0040524,-74.8179737,exacta
+2021-06-06T00:00:00.000,07:15:00:pm,Solo daños,Choque,CL 76 CR 50,,,1.0,2021,June,Sun,2021-06-06,19,2021,6,6,0,2,False,False,False,False,True,11.0004912,-74.8082032,exacta
+2021-12-14T00:00:00.000,05:10:00:pm,Solo daños,Choque,CARRERA 43 CON CALLE 57,,,1.0,2021,December,Tue,2021-12-14,17,2021,12,1,0,1,False,False,False,False,False,10.9852815,-74.7948794,exacta
+2021-12-23T00:00:00.000,11:50:00:am,Solo daños,Choque,CRA 96 CALLE 110 MALVINAS,,,1.0,2021,December,Thu,2021-12-23,11,2021,12,3,0,2,False,False,False,False,True,,,no ubicada
+2021-12-10T00:00:00.000,12:40:00:pm,Solo daños,Choque,CALLE 84 CARRERA 51,,,1.0,2021,December,Fri,2021-12-10,12,2021,12,4,0,1,False,False,False,False,False,11.0049424,-74.8175439,exacta
+2021-02-22T00:00:00.000,09:05:00:am,Solo daños,Choque,CR 10 CL 5,,,1.0,2021,February,Mon,2021-02-22,9,2021,2,0,0,2,False,False,True,False,True,10.9573542,-74.8907075,exacta
+2021-01-06T00:00:00.000,11:50:00:am,Solo daños,Choque,TRANSV 43C 102 153,,,1.0,2021,January,Wed,2021-01-06,11,2021,1,2,0,1,False,False,False,False,False,,,no ubicada
+2021-10-05T00:00:00.000,09:39:00:am,Solo daños,Choque,CR 59B CL 77B,,,1.0,2021,October,Tue,2021-10-05,9,2021,10,1,0,2,False,False,False,False,False,11.0072354,-74.80260255,exacta
+2021-11-16T00:00:00.000,07:15:00:am,Con heridos,Choque,CL 53D CR 26,1.0,,1.0,2021,November,Tue,2021-11-16,7,2021,11,1,1,2,False,True,False,True,False,10.97317335,-74.7975373,exacta
+2021-02-27T00:00:00.000,12:30:00:pm,Con heridos,Choque,CL 40B CR 18 25,2.0,,1.0,2021,February,Sat,2021-02-27,12,2021,2,5,1,1,False,True,False,False,False,10.955981,-74.7933832,exacta
+2021-11-19T00:00:00.000,07:15:00:pm,Solo daños,Choque,AV. CINCUNVALAR CON CARRERA 6 P,,,1.0,2021,November,Fri,2021-11-19,19,2021,11,4,0,2,False,False,True,False,True,,,no ubicada
+2021-11-23T00:00:00.000,03:30:00:pm,Solo daños,Choque,CR 43 CL 93,,,1.0,2021,November,Tue,2021-11-23,15,2021,11,1,0,2,False,False,False,False,False,11.0017562,-74.8281187,exacta
+2021-10-30T00:00:00.000,09:50:00:am,Solo daños,Choque,CALLE 79 CON CARRERA 70,,,1.0,2021,October,Sat,2021-10-30,9,2021,10,5,0,2,True,False,False,False,True,11.0145855,-74.8040591,exacta
+2021-02-11T00:00:00.000,04:00:00:pm,Solo daños,Choque,CL 118 CR 11C,,,1.0,2021,February,Thu,2021-02-11,16,2021,2,3,0,2,False,False,True,False,True,10.9607391,-74.8413481,exacta
+2021-09-21T00:00:00.000,07:30:00:am,Solo daños,Choque,AVENIDA CORDIALIDAD CL 91,,,1.0,2021,September,Tue,2021-09-21,7,2021,9,1,0,2,True,False,False,False,True,10.9447328,-74.82470485,exacta
+2021-05-27T00:00:00.000,09:20:00:am,Solo daños,Choque,CR 27 CL 31,,,1.0,2021,May,Thu,2021-05-27,9,2021,5,3,0,2,True,False,False,False,True,10.966376,-74.7828947,exacta
+2021-01-18T00:00:00.000,06:20:00:pm,Solo daños,Choque,CR 42 CL 83,,,1.0,2021,January,Mon,2021-01-18,18,2021,1,0,0,2,False,False,True,False,True,10.990700033333333,-74.82611676666666,exacta
+2021-05-12T00:00:00.000,01:00:00:pm,Solo daños,Choque,CR 38 CL 30,,,1.0,2021,May,Wed,2021-05-12,13,2021,5,2,0,1,False,False,True,False,True,10.962129866666666,-74.77711756666666,exacta
+2021-12-15T00:00:00.000,11:20:00:am,Solo daños,Choque,CALLE 71 CON CARRERA 29,,,1.0,2021,December,Wed,2021-12-15,11,2021,12,2,0,2,False,False,True,False,True,10.9788642,-74.8103831,exacta
+2021-10-25T00:00:00.000,07:40:00:pm,Con heridos,Atropello,CL 84B CR 42G,1.0,,1.0,2021,October,Mon,2021-10-25,19,2021,10,0,1,1,False,False,False,False,False,10.9972977,-74.8221049,exacta
+2021-01-19T00:00:00.000,11:00:00:am,Solo daños,Choque,CR 64 84 02,,,1.0,2021,January,Tue,2021-01-19,11,2021,1,1,0,3,True,False,False,False,True,11.0119465,-74.8107954,exacta
+2021-12-04T00:00:00.000,01:00:00:pm,Solo daños,Choque,CARRERA 27 CALLE 102,,,1.0,2021,December,Sat,2021-12-04,13,2021,12,5,0,2,False,False,True,False,True,10.976011,-74.8329589,aproximada
+2021-02-27T00:00:00.000,01:40:00:pm,Solo daños,Choque,CR 46 CL 76,,,1.0,2021,February,Sat,2021-02-27,13,2021,2,5,0,2,False,False,False,False,False,10.996780699999999,-74.8100819,exacta
+2021-06-22T00:00:00.000,07:50:00:am,Con heridos,Atropello,VIA 40 CL 85 B SIAPE,1.0,,1.0,2021,June,Tue,2021-06-22,7,2021,6,1,1,2,False,True,False,False,False,,,no ubicada
+2021-01-12T00:00:00.000,12:05:00:pm,Con heridos,Choque,CL 110 CR 43,1.0,,1.0,2021,January,Tue,2021-01-12,12,2021,1,1,1,2,False,False,True,False,True,,,no ubicada
+2021-07-17T00:00:00.000,01:00:00:pm,Solo daños,Choque,CL 45 CR 33,,,1.0,2021,July,Sat,2021-07-17,13,2021,7,5,0,2,False,True,False,False,False,10.9750771,-74.78843384999999,exacta
+2021-07-28T00:00:00.000,10:30:00:am,Con heridos,Otro,CR 33 CL 34,1.0,,1.0,2021,July,Wed,2021-07-28,10,2021,7,2,1,1,False,False,True,False,True,10.9723757,-74.7811361,exacta
+2021-07-17T00:00:00.000,11:30:00:pm,Solo daños,Choque,CL 84 CR 56B,,,1.0,2021,July,Sat,2021-07-17,23,2021,7,5,0,2,False,False,False,False,False,,,no ubicada
+2021-08-28T00:00:00.000,01:00:00:pm,Con heridos,Choque,CL 19 CR 25,1.0,,1.0,2021,August,Sat,2021-08-28,13,2021,8,5,1,2,False,True,True,False,True,10.9419389,-74.77036675,exacta
+2021-07-23T00:00:00.000,07:50:00:am,Con heridos,Choque,CR 25 CL 65,2.0,,1.0,2021,July,Fri,2021-07-23,7,2021,7,4,1,2,False,True,False,False,False,10.9736074,-74.80690715,aproximada
+2021-03-07T00:00:00.000,09:15:00:am,Con heridos,Choque,CL 76 CR 47,1.0,,1.0,2021,March,Sun,2021-03-07,9,2021,3,6,1,2,False,False,False,False,True,10.9974463,-74.8096911,exacta
+2021-06-17T00:00:00.000,07:50:00:pm,Solo daños,Choque,CL 75 CR 44,,,1.0,2021,June,Thu,2021-06-17,19,2021,6,3,0,2,False,False,False,False,True,10.9943311,-74.8097768,exacta
+2021-12-30T00:00:00.000,09:00:00:pm,Solo daños,Choque,CALLE 19 CON CRA 4C,,,1.0,2021,December,Thu,2021-12-30,21,2021,12,3,0,2,True,False,False,False,True,,,no ubicada
+2021-01-13T00:00:00.000,08:00:00:am,Solo daños,Choque,CR 44 CL 36,,,1.0,2021,January,Wed,2021-01-13,8,2021,1,2,0,2,False,False,True,False,True,10.9832206,-74.7793535,exacta
+2021-06-25T00:00:00.000,08:05:00:pm,Solo daños,Choque,CL 65 28 56,,,1.0,2021,June,Fri,2021-06-25,20,2021,6,4,0,2,True,False,False,False,True,10.9769981,-74.8057561,exacta
+2021-11-20T00:00:00.000,01:40:00:pm,Solo daños,Choque,CALLE 110 CARRERA 9 G,,,1.0,2021,November,Sat,2021-11-20,13,2021,11,5,0,2,False,False,False,False,True,,,no ubicada
+2021-06-14T00:00:00.000,04:30:00:pm,Solo daños,Choque,CL 84 CR 54,,,1.0,2021,June,Mon,2021-06-14,16,2021,6,0,0,2,False,False,True,False,True,11.007869,-74.8153967,exacta
+2021-07-06T00:00:00.000,11:25:00:am,Solo daños,Choque,CL 110 CR 38,,,1.0,2021,July,Tue,2021-07-06,11,2021,7,1,0,2,False,False,False,False,True,,,no ubicada
+2021-09-21T00:00:00.000,09:40:00:am,Con heridos,Choque,CR 44 CL 42,1.0,,1.0,2021,September,Tue,2021-09-21,9,2021,9,1,1,2,False,True,False,False,False,10.9585927,-74.7843033,exacta
+2021-07-18T00:00:00.000,03:00:00:pm,Solo daños,Choque,CR 46 CL 110,,,1.0,2021,July,Sun,2021-07-18,15,2021,7,6,0,2,False,False,False,False,True,11.01055785,-74.83809285000001,aproximada
+2021-10-16T00:00:00.000,01:25:00:pm,Solo daños,Choque,CL 61 CR 29B,,,1.0,2021,October,Sat,2021-10-16,13,2021,10,5,0,2,False,True,False,False,False,10.9773554,-74.8023185,exacta
+2021-12-06T00:00:00.000,04:10:00:am,Con heridos,Choque,CALLE 84 CON CARRERA 42 B1,1.0,,1.0,2021,December,Mon,2021-12-06,4,2021,12,0,1,2,False,True,False,False,False,10.990802699999998,-74.82685196666667,exacta
+2021-05-15T00:00:00.000,02:35:00:pm,Solo daños,Choque,CL 110 AV 110,,,1.0,2021,May,Sat,2021-05-15,14,2021,5,5,0,2,False,False,False,False,True,,,no ubicada
+2021-05-04T00:00:00.000,11:30:00:am,Con heridos,Choque,CL 19 CR 3B,1.0,,1.0,2021,May,Tue,2021-05-04,11,2021,5,1,1,3,False,False,True,True,True,,,no ubicada
+2021-03-29T00:00:00.000,05:50:00:pm,Con heridos,Choque,CL 48 CR 44,1.0,,1.0,2021,March,Mon,2021-03-29,17,2021,3,0,1,2,False,True,False,False,False,10.9851515,-74.7880251,exacta
+2021-07-12T00:00:00.000,01:10:00:pm,Solo daños,Choque,CL 71  CR 45,,,1.0,2021,July,Mon,2021-07-12,13,2021,7,0,0,2,False,False,False,False,True,,,no ubicada
+2021-05-15T00:00:00.000,05:10:00:pm,Con heridos,Choque,CR 43 CL 72,1.0,,1.0,2021,May,Sat,2021-05-15,17,2021,5,5,1,2,False,False,True,False,True,10.991643499999999,-74.80713175,exacta
+2021-06-05T00:00:00.000,04:10:00:pm,Con heridos,Choque,CL 34 CR 46,1.0,,1.0,2021,June,Sat,2021-06-05,16,2021,6,5,1,2,True,False,False,False,True,10.98542705,-74.77677209999999,exacta
+2021-01-13T00:00:00.000,07:45:00:am,Solo daños,Choque,CL 44 CR 21,,,1.0,2021,January,Wed,2021-01-13,7,2021,1,2,0,2,False,True,False,False,True,10.9614673,-74.7924625,exacta
+2021-12-25T00:00:00.000,11:30:00:am,Solo daños,Choque,CALLE 36 # 1J - 2,,,1.0,2021,December,Sat,2021-12-25,11,2021,12,5,0,2,True,False,False,False,False,,,no ubicada
+2021-08-30T00:00:00.000,07:40:00:pm,Con heridos,Atropello,CL 24 CR 17B,2.0,,1.0,2021,August,Mon,2021-08-30,19,2021,8,0,1,1,False,False,False,False,True,10.9550382,-74.7790346,exacta
+2021-10-05T00:00:00.000,07:00:00:am,Solo daños,Choque,CALLE 45 CON CARRERA 20,,,1.0,2021,October,Tue,2021-10-05,7,2021,10,1,0,2,False,False,False,False,True,10.959883699999999,-74.79403769999999,exacta
+2021-04-19T00:00:00.000,02:45:00:pm,Solo daños,Choque,VIA 40 CL 79B,,,1.0,2021,April,Mon,2021-04-19,14,2021,4,0,0,2,False,False,True,False,True,11.0216225,-74.7996512,exacta
+2021-03-28T00:00:00.000,02:40:00:pm,Solo daños,Choque,VIA 40 CL 85,,,1.0,2021,March,Sun,2021-03-28,14,2021,3,6,0,1,False,False,False,False,False,11.02635555,-74.80381395,exacta
+2021-07-19T00:00:00.000,05:35:00:am,Con heridos,Choque,CL 70 CR 41,1.0,,1.0,2021,July,Mon,2021-07-19,5,2021,7,0,1,2,False,True,False,False,True,10.9880998,-74.8061859,exacta
+2021-12-21T00:00:00.000,01:00:00:pm,Solo daños,Choque,CARRERA 49C CALLE 85,,,1.0,2021,December,Tue,2021-12-21,13,2021,12,1,0,2,False,False,False,False,False,11.0040172,-74.8203027,exacta
+2021-09-23T00:00:00.000,10:20:00:am,Solo daños,Choque,CR 52 CL 80,,,1.0,2021,September,Thu,2021-09-23,10,2021,9,3,0,2,False,True,False,False,False,11.0047345,-74.8121174,exacta
+2021-05-23T00:00:00.000,10:45:00:am,Solo daños,Choque,CL 70C CR 24,,,1.0,2021,May,Sun,2021-05-23,10,2021,5,6,0,3,False,False,False,False,True,10.9726682,-74.8105781,exacta
+2021-08-10T00:00:00.000,02:00:00:pm,Solo daños,Choque,CL 6 CR 44,,,1.0,2021,August,Tue,2021-08-10,14,2021,8,1,0,2,False,False,True,False,True,10.98342435,-74.76993155,exacta
+2021-03-02T00:00:00.000,03:45:00:pm,Con heridos,Choque,VIA 40 CR 50,1.0,,1.0,2021,March,Tue,2021-03-02,15,2021,3,1,1,2,False,True,False,False,False,10.98780595,-74.7776556,aproximada
+2021-11-21T00:00:00.000,02:50:00:am,Solo daños,Choque,CL 76 CR 48,,,1.0,2021,November,Sun,2021-11-21,2,2021,11,6,0,1,False,False,False,False,False,10.9982306,-74.8092377,exacta
+2021-07-25T00:00:00.000,03:20:00:am,Con heridos,Choque,CL 47 CR 21,3.0,,1.0,2021,July,Sun,2021-07-25,3,2021,7,6,1,2,False,True,False,False,True,,,no ubicada
+2021-06-22T00:00:00.000,06:00:00:am,Con heridos,Atropello,CR 41B CL 84B,1.0,,1.0,2021,June,Tue,2021-06-22,6,2021,6,1,1,1,False,False,True,False,True,10.987398500000001,-74.83120105,exacta
+2021-11-13T00:00:00.000,01:30:00:pm,Con heridos,Choque,CALLE 46  AV CIRCUNVALAR,2.0,,1.0,2021,November,Sat,2021-11-13,13,2021,11,5,1,1,False,True,False,False,False,10.92335005,-74.80265650000001,exacta
+2021-05-10T00:00:00.000,12:30:00:pm,Solo daños,Choque,CL 40 CR 24,,,1.0,2021,May,Mon,2021-05-10,12,2021,5,0,0,2,False,True,False,False,False,10.9654143,-74.788527,exacta
+2021-12-22T00:00:00.000,12:05:00:pm,Solo daños,Choque,CALLE 37 CARRERA 38,,,1.0,2021,December,Wed,2021-12-22,12,2021,12,2,0,2,False,False,True,False,True,10.9778328,-74.781125,exacta
+2021-02-17T00:00:00.000,05:25:00:pm,Solo daños,Choque,CR 43 CL 6 CORREDOR PORTUARIO,,,1.0,2021,February,Wed,2021-02-17,17,2021,2,2,0,2,True,False,False,False,True,10.982012566666667,-74.76974266666667,exacta
+2021-03-04T00:00:00.000,08:30:00:pm,Solo daños,Choque,CR 21B CL 57,,,1.0,2021,March,Thu,2021-03-04,20,2021,3,3,0,2,False,False,True,False,True,10.968406,-74.801415,exacta
+2021-03-25T00:00:00.000,06:15:00:am,Con muertos,Atropello,CR 9 CL 11,,1.0,1.0,2021,March,Thu,2021-03-25,6,2021,3,3,1,1,True,False,False,False,True,10.949856350000001,-74.7700931,aproximada
+2021-07-16T00:00:00.000,08:30:00:pm,Con heridos,Choque,CR 39 CL 48,1.0,,1.0,2021,July,Fri,2021-07-16,20,2021,7,4,1,2,False,False,False,False,False,10.9808582,-74.7892594,exacta
+2021-01-22T00:00:00.000,05:15:00:pm,Solo daños,Choque,CL 30 CR 33,,,1.0,2021,January,Fri,2021-01-22,17,2021,1,4,0,2,True,False,True,False,True,10.9718099,-74.7796062,exacta
+2021-05-12T00:00:00.000,08:40:00:am,Con heridos,Choque,CL 110 43-508,1.0,,1.0,2021,May,Wed,2021-05-12,8,2021,5,2,1,1,False,False,False,False,False,,,no ubicada
+2021-03-20T00:00:00.000,08:43:00:am,Solo daños,Choque,CLL 76B CRA 42F,,,1.0,2021,March,Sat,2021-03-20,8,2021,3,5,0,2,False,False,True,False,True,10.9937345,-74.8137838,exacta
+2021-06-13T00:00:00.000,01:20:00:am,Solo daños,Choque,CL 79 CR 45,,,1.0,2021,June,Sun,2021-06-13,1,2021,6,6,0,2,False,False,False,False,True,10.997266,-74.8125034,exacta
+2021-09-17T00:00:00.000,05:00:00:am,Solo daños,Choque,CL 72 CR 68,,,1.0,2021,September,Fri,2021-09-17,5,2021,9,4,0,2,False,False,False,False,True,11.00667945,-74.7929532,exacta
+2021-01-25T00:00:00.000,07:30:00:pm,Solo daños,Choque,CR 22 CL 51,,,1.0,2021,January,Mon,2021-01-25,19,2021,1,0,0,2,False,False,False,False,True,10.9671701,-74.7963653,exacta
+2021-04-11T00:00:00.000,12:30:00:pm,Con heridos,Choque,CL 75 CR 53,1.0,,1.0,2021,April,Sun,2021-04-11,12,2021,4,6,1,2,False,False,False,False,True,11.0012649,-74.8046926,exacta
+2021-05-27T00:00:00.000,01:40:00:pm,Con heridos,Choque,CL 99 CR 9C,1.0,,1.0,2021,May,Thu,2021-05-27,13,2021,5,3,1,2,False,True,False,False,False,10.95632935,-74.8312392,exacta
+2021-07-28T00:00:00.000,08:46:00:am,Solo daños,Choque,CR 58 72 96,,,1.0,2021,July,Wed,2021-07-28,8,2021,7,2,0,2,False,True,False,False,False,11.0013035,-74.79845642500001,exacta
+2021-05-23T00:00:00.000,09:10:00:am,Solo daños,Choque,CL 31 CR 22,,,1.0,2021,May,Sun,2021-05-23,9,2021,5,6,0,1,False,False,False,False,False,10.9613577,-74.7850785,exacta
+2021-09-02T00:00:00.000,03:05:00:pm,Solo daños,Choque,CL 51B AV 110,,,1.0,2021,September,Thu,2021-09-02,15,2021,9,3,0,2,False,False,False,False,False,,,no ubicada
+2021-05-07T00:00:00.000,01:00:00:pm,Solo daños,Choque,CL 31 CR 31,,,1.0,2021,May,Fri,2021-05-07,13,2021,5,4,0,2,False,False,False,False,True,,,no ubicada
+2021-01-25T00:00:00.000,03:20:00:pm,Con heridos,Choque,CL 96 CR 47,1.0,,1.0,2021,January,Mon,2021-01-25,15,2021,1,0,1,2,False,False,True,False,True,11.0064053,-74.8289865,exacta
+2021-10-31T00:00:00.000,12:15:00:pm,Solo daños,Choque,CARRERA 44 CALLE 70,,,1.0,2021,October,Sun,2021-10-31,12,2021,10,6,0,1,False,False,False,False,False,10.9913274,-74.8043921,exacta
+2021-07-30T00:00:00.000,02:30:00:pm,Con heridos,Choque,CR 38 CL 74 Y 76,2.0,,1.0,2021,July,Fri,2021-07-30,14,2021,7,4,1,2,False,True,False,False,False,10.985607850000001,-74.81266645,exacta
+2021-05-20T00:00:00.000,05:30:00:pm,Solo daños,Choque,CR 10 CL 26,,,1.0,2021,May,Thu,2021-05-20,17,2021,5,3,0,2,False,False,True,False,True,10.9493361,-74.779512,exacta
+2021-04-28T00:00:00.000,07:10:00:am,Solo daños,Choque,CR 51B CL 85,,,1.0,2021,April,Wed,2021-04-28,7,2021,4,2,0,2,False,False,False,False,False,11.0066186,-74.81903955,exacta
+2021-03-18T00:00:00.000,04:30:00:pm,Solo daños,Choque,VIA 40 CL 62-234,,,1.0,2021,March,Thu,2021-03-18,16,2021,3,3,0,1,False,False,False,False,False,,,no ubicada
+2021-05-20T00:00:00.000,06:20:00:pm,Solo daños,Choque,CL 100 CR 44,,,1.0,2021,May,Thu,2021-05-20,18,2021,5,3,0,2,False,False,False,False,True,,,no ubicada
+2021-11-22T00:00:00.000,05:45:00:pm,Solo daños,Choque,CL 44 CR 35,,,1.0,2021,November,Mon,2021-11-22,17,2021,11,0,0,2,False,False,False,False,True,10.9769656,-74.7868563,exacta
+2021-06-07T00:00:00.000,08:05:00:pm,Con heridos,Choque,CR 43 CL 66,1.0,,1.0,2021,June,Mon,2021-06-07,20,2021,6,0,1,2,False,False,False,True,True,10.9882107,-74.8008505,exacta
+2021-12-10T00:00:00.000,09:10:00:am,Con heridos,Volcamiento,CALLE 85 CRA 47,3.0,,1.0,2021,December,Fri,2021-12-10,9,2021,12,4,1,2,False,False,False,False,False,11.00306,-74.8207531,exacta
+2021-04-20T00:00:00.000,01:55:00:pm,Con heridos,Atropello,CR 38 CL 30-34,1.0,,1.0,2021,April,Tue,2021-04-20,13,2021,4,1,1,1,False,False,True,False,True,10.962129866666666,-74.77711756666666,exacta
+2021-10-05T00:00:00.000,09:40:00:am,Solo daños,Choque,AVENIDA CIRCUNVALAR CALLE 110 CARRERA 31,,,1.0,2021,October,Tue,2021-10-05,9,2021,10,1,0,2,True,False,False,False,True,10.95126885,-74.83445460000002,aproximada
+2021-12-15T00:00:00.000,12:00:00:pm,Solo daños,Choque,CARRERA 44 CON CALLE 34,,,1.0,2021,December,Wed,2021-12-15,12,2021,12,2,0,2,False,False,True,False,True,10.98287655,-74.77772175,exacta
+2021-10-14T00:00:00.000,10:12:00:am,Solo daños,Choque,CALLE 79 VIA 40,,,1.0,2021,October,Thu,2021-10-14,10,2021,10,3,0,2,False,False,True,False,True,11.02051475,-74.7987555,exacta
+2021-12-23T00:00:00.000,11:35:00:pm,Solo daños,Choque,CALLE 98 CON CARRERA 42 F,,,1.0,2021,December,Thu,2021-12-23,23,2021,12,3,0,1,False,False,False,False,False,11.00018925,-74.8334408,aproximada
+2021-05-12T00:00:00.000,03:30:00:pm,Solo daños,Choque,VIA 40 CL 84,,,1.0,2021,May,Wed,2021-05-12,15,2021,5,2,0,2,True,False,False,False,True,11.02557475,-74.80312205,exacta
+2021-11-12T00:00:00.000,09:50:00:pm,Con heridos,Choque,CALLE 74 CON CRA 55,1.0,,1.0,2021,November,Fri,2021-11-12,21,2021,11,4,1,2,False,True,False,False,False,11.001023,-74.8019302,exacta
+2021-05-25T00:00:00.000,12:20:00:pm,Con heridos,Choque,CR 8 CL 36B,1.0,,1.0,2021,May,Tue,2021-05-25,12,2021,5,1,1,2,False,True,False,False,True,10.94603145,-74.792229175,exacta
+2021-03-26T00:00:00.000,03:50:00:pm,Solo daños,Choque,AVENIDA 110 CRA 43,,,1.0,2021,March,Fri,2021-03-26,15,2021,3,4,0,2,False,False,False,False,False,,,no ubicada
+2021-01-19T00:00:00.000,08:05:00:pm,Solo daños,Choque,CR 3A 50 41,,,1.0,2021,January,Tue,2021-01-19,20,2021,1,1,0,2,False,False,True,False,True,10.9371831,-74.8061728,exacta
+2021-12-08T00:00:00.000,12:10:00:am,Solo daños,Choque,CALLE 47 # 21B-69,,,1.0,2021,December,Wed,2021-12-08,0,2021,12,2,0,2,True,False,False,False,True,,,no ubicada
+2021-12-22T00:00:00.000,03:00:00:pm,Solo daños,Choque,CALLE 72 #57-11,,,1.0,2021,December,Wed,2021-12-22,15,2021,12,2,0,2,False,False,True,False,True,11.00069375,-74.799283,exacta
+2021-10-25T00:00:00.000,04:30:00:pm,Solo daños,Choque,CALLE 76 CARRERA 44 ESQ.,,,1.0,2021,October,Mon,2021-10-25,16,2021,10,0,0,2,False,False,True,False,True,10.9953317,-74.810941,exacta
+2021-10-05T00:00:00.000,04:10:00:am,Solo daños,Choque,AVENIDA CIRCUNVALAR CON 20 DE JULIO,,,1.0,2021,October,Tue,2021-10-05,4,2021,10,1,0,1,False,False,False,False,True,10.99367105,-74.83843275,exacta
+2021-03-21T00:00:00.000,10:10:00:am,Con heridos,Choque,CL 110 CR 43 80,2.0,,1.0,2021,March,Sun,2021-03-21,10,2021,3,6,1,2,False,False,False,False,True,,,no ubicada
+2021-12-04T00:00:00.000,12:10:00:pm,Solo daños,Choque,CALLE 82 CARRERA 45,,,1.0,2021,December,Sat,2021-12-04,12,2021,12,5,0,1,False,False,False,False,True,10.9999025,-74.8170815,exacta
+2021-09-13T00:00:00.000,03:30:00:pm,Solo daños,Choque,CR 44 CL 37,,,1.0,2021,September,Mon,2021-09-13,15,2021,9,0,0,1,False,False,False,False,True,10.9833363,-74.7798828,exacta
+2021-11-07T00:00:00.000,06:30:00:pm,Solo daños,Choque,CALLE 49 CARRERA 4 SUR,,,1.0,2021,November,Sun,2021-11-07,18,2021,11,6,0,1,False,False,False,False,False,10.92859825,-74.81068085,exacta
+2021-05-15T00:00:00.000,11:00:00:am,Con heridos,Choque,CL 17 CR 19,1.0,,1.0,2021,May,Sat,2021-05-15,11,2021,5,5,1,2,False,False,True,True,True,10.936647325,-74.7697589,exacta
+2021-01-27T00:00:00.000,03:25:00:pm,Solo daños,Choque,CL 34 CR 43,,,1.0,2021,January,Wed,2021-01-27,15,2021,1,2,0,2,True,False,False,False,True,10.9812417,-74.77816855,exacta
+2021-11-04T00:00:00.000,05:10:00:pm,Solo daños,Choque,CR 53B CL 80,,,1.0,2021,November,Thu,2021-11-04,17,2021,11,3,0,1,False,False,False,False,False,,,no ubicada
+2021-04-30T00:00:00.000,08:00:00:am,Con heridos,Choque,CL 30 CR 1,1.0,,1.0,2021,April,Fri,2021-04-30,8,2021,4,4,1,2,False,True,False,False,False,,,no ubicada
+2021-03-09T00:00:00.000,05:15:00:pm,Solo daños,Choque,CR 38 CL 50,,,1.0,2021,March,Tue,2021-03-09,17,2021,3,1,0,2,True,False,False,False,False,10.9806849,-74.7903087,exacta
+2021-12-09T00:00:00.000,12:20:00:pm,Con heridos,Choque,CALLE 72 CARRERA 71,1.0,,1.0,2021,December,Thu,2021-12-09,12,2021,12,3,1,2,False,True,False,False,False,11.0071592,-74.791467,exacta
+2021-07-28T00:00:00.000,10:10:00:am,Solo daños,Choque,CR 31 CL 123,,,1.0,2021,July,Wed,2021-07-28,10,2021,7,2,0,2,True,False,False,False,True,10.9784455,-74.8457609,exacta
+2021-06-02T00:00:00.000,08:35:00:am,Solo daños,Choque,CL 53 CR 27,,,1.0,2021,June,Wed,2021-06-02,8,2021,6,2,0,2,False,False,True,False,True,10.9718853,-74.7956059,exacta
+2021-12-23T00:00:00.000,09:20:00:pm,Con heridos,Choque,CALLE 19 CARRERA 2B,1.0,,1.0,2021,December,Thu,2021-12-23,21,2021,12,3,1,2,True,True,False,False,True,,,no ubicada
+2021-06-17T00:00:00.000,07:50:00:am,Solo daños,Choque,CR 60 CL 75,,,1.0,2021,June,Thu,2021-06-17,7,2021,6,3,0,1,False,False,False,False,False,11.0053234,-74.7990468,exacta
+2021-02-21T00:00:00.000,07:00:00:pm,Solo daños,Choque,AV CIRCUNVALAR CR 26,,,1.0,2021,February,Sun,2021-02-21,19,2021,2,6,0,2,False,False,False,False,True,10.9716943,-74.83720105,exacta
+2021-07-28T00:00:00.000,05:10:00:pm,Solo daños,Choque,CL 110 CR 37,,,1.0,2021,July,Wed,2021-07-28,17,2021,7,2,0,2,False,False,True,False,True,,,no ubicada
+2022-08-16T00:00:00.000,12:30:00:pm,Solo daños,Choque,CALLE 6 CON CRA 38 Y 30,,,1.0,2022,August,Tue,2022-08-16,12,2022,8,1,0,3,True,False,False,False,True,10.974568099999999,-74.76956895000001,aproximada
+2022-05-05T00:00:00.000,11:30:00:pm,Con heridos,Choque,CALLE 46 CRA 14,1.0,,1.0,2022,May,Thu,2022-05-05,23,2022,5,3,1,2,False,False,False,False,False,10.93304395,-74.79295389999999,exacta
+2022-10-17T00:00:00.000,04:10:00:pm,Con heridos,Choque,CARRERA 44 CON CALLE 79,3.0,,1.0,2022,October,Mon,2022-10-17,16,2022,10,0,1,2,False,False,False,False,True,10.9964981,-74.8129571,exacta
+2022-01-19T00:00:00.000,02:10:00:pm,Solo daños,Choque,CALLE 82 CARRERA 56,,,1.0,2022,January,Wed,2022-01-19,14,2022,1,2,0,2,False,False,False,False,True,11.0079613,-74.812086,exacta
+2022-04-09T00:00:00.000,08:20:00:am,Solo daños,Choque,CALLE 84 CARRERA 46,,,1.0,2022,April,Sat,2022-04-09,8,2022,4,5,0,2,False,False,True,False,True,11.001601350000001,-74.8190298,exacta
+2022-09-15T00:00:00.000,09:40:00:am,Con heridos,Choque,CALLE 58 CARRERA 66,1.0,,1.0,2022,September,Thu,2022-09-15,9,2022,9,3,1,2,False,False,False,False,True,10.99986575,-74.7889897,exacta
+2022-05-16T00:00:00.000,06:40:00:pm,Con heridos,Atropello,CARRERA 5C # 23-79,1.0,,1.0,2022,May,Mon,2022-05-16,18,2022,5,0,1,1,False,True,False,False,False,10.9446835,-74.7779787,exacta
+2022-04-08T00:00:00.000,06:30:00:am,Con heridos,Choque,CALLE 35 CON CRA 33,2.0,,1.0,2022,April,Fri,2022-04-08,6,2022,4,4,1,2,False,True,True,False,True,10.9725761,-74.7816859,exacta
+2022-10-31T00:00:00.000,08:00:00:am,Con heridos,Choque,CALLE 110 CARRERA 27,1.0,,1.0,2022,October,Mon,2022-10-31,8,2022,10,0,1,3,True,True,True,False,True,,,no ubicada
+2022-02-10T00:00:00.000,09:45:00:pm,Con heridos,Choque,CALLE 83 CON CRA 25,2.0,,1.0,2022,February,Thu,2022-02-10,21,2022,2,3,1,1,False,True,False,False,False,10.9760967,-74.8249516,exacta
+2022-12-22T00:00:00.000,07:40:00:pm,Con heridos,Choque,CALLE 19 CARRERA 4,1.0,,1.0,2022,December,Thu,2022-12-22,19,2022,12,3,1,2,False,False,False,False,True,,,no ubicada
+2022-03-01T00:00:00.000,05:40:00:pm,Solo daños,Choque,CRA 53 CON CALLE 99,,,1.0,2022,March,Tue,2022-03-01,17,2022,3,1,0,2,False,False,True,False,True,11.01448725,-74.827468275,exacta
+2022-12-12T00:00:00.000,01:20:00:am,Con heridos,Choque,CALLE 17 CARRERA 25,1.0,,1.0,2022,December,Mon,2022-12-12,1,2022,12,0,1,2,False,False,False,True,True,10.95414038,-74.77266942000001,exacta
+2022-03-11T00:00:00.000,03:00:00:pm,Con heridos,Atropello,CARRERA 52 CON CALLE 76,1.0,,1.0,2022,March,Fri,2022-03-11,15,2022,3,4,1,1,False,False,False,False,False,11.0021782,-74.8065363,exacta
+2022-05-23T00:00:00.000,08:30:00:pm,Solo daños,Choque,CARRERA 59B CALLE 82,,,1.0,2022,May,Mon,2022-05-23,20,2022,5,0,0,2,False,False,False,False,False,11.0110429,-74.8109435,exacta
+2022-03-16T00:00:00.000,12:40:00:pm,Solo daños,Choque,CALLE 70C # 24C-13,,,1.0,2022,March,Wed,2022-03-16,12,2022,3,2,0,2,False,False,False,False,True,10.973882,-74.810316,exacta
+2022-03-18T00:00:00.000,08:55:00:am,Solo daños,Choque,CALLE 59 CARRERA 44,,,1.0,2022,March,Fri,2022-03-18,8,2022,3,4,0,2,False,False,False,False,True,10.9873819,-74.7957522,exacta
+2022-02-28T00:00:00.000,07:20:00:am,Solo daños,Choque,VIA 40 # 77-10,,,1.0,2022,February,Mon,2022-02-28,7,2022,2,0,0,2,False,False,True,False,True,,,no ubicada
+2022-06-23T00:00:00.000,03:00:00:pm,Con heridos,Choque,CALLE 44 CON CARRERA 33,1.0,,1.0,2022,June,Thu,2022-06-23,15,2022,6,3,1,2,False,True,False,False,False,10.9747914,-74.7875037,exacta
+2022-05-09T00:00:00.000,09:20:00:am,Con heridos,Choque,CALLE 31 CARRERA 22,1.0,,1.0,2022,May,Mon,2022-05-09,9,2022,5,0,1,2,False,True,False,False,False,10.9613577,-74.7850785,exacta
+2022-05-21T00:00:00.000,10:00:00:am,Solo daños,Choque,CARRERA 38 ENTRE CALLE 81 Y 83,,,1.0,2022,May,Sat,2022-05-21,10,2022,5,5,0,2,False,False,False,False,False,10.98558345,-74.82208875,exacta
+2022-02-25T00:00:00.000,11:20:00:pm,Con heridos,Choque,CALLE 94 CRA 56,2.0,,1.0,2022,February,Fri,2022-02-25,23,2022,2,4,1,2,False,False,False,False,False,11.0144544,-74.8216149,exacta
+2022-05-21T00:00:00.000,11:05:00:am,Solo daños,Choque,AVENIDA CORDIALIDAD CON CALLE 56,,,1.0,2022,May,Sat,2022-05-21,11,2022,5,5,0,2,False,False,True,False,True,,,no ubicada
+2022-05-07T00:00:00.000,09:00:00:am,Solo daños,Choque,CALLE 45 CARRERA 1F,,,1.0,2022,May,Sat,2022-05-07,9,2022,5,5,0,2,False,False,False,False,True,10.9322373,-74.7990882,exacta
+2022-03-29T00:00:00.000,05:00:00:pm,Con heridos,Choque,CALLE 40 CON CARRERA 14,1.0,,1.0,2022,March,Tue,2022-03-29,17,2022,3,1,1,2,False,True,False,False,True,10.938525433333334,-74.78907543333334,exacta
+2022-08-16T00:00:00.000,07:10:00:am,Con heridos,Choque,CARRERA 9G CON CALLE 125,1.0,,1.0,2022,August,Tue,2022-08-16,7,2022,8,1,1,2,False,True,False,False,False,,,no ubicada
+2022-05-16T00:00:00.000,08:00:00:am,Con heridos,Choque,CALLE 30 CARRERA 36,1.0,,1.0,2022,May,Mon,2022-05-16,8,2022,5,0,1,2,False,True,False,False,True,10.9750299,-74.77794800000001,exacta
+2022-01-27T00:00:00.000,10:30:00:am,Con heridos,Choque,CALLE 30 CRA 24,1.0,,1.0,2022,January,Thu,2022-01-27,10,2022,1,3,1,2,False,True,False,False,True,10.935264333333334,-74.77865514444446,exacta
+2022-12-02T00:00:00.000,07:15:00:pm,Con heridos,Choque,VIA 40 CON 67,3.0,,1.0,2022,December,Fri,2022-12-02,19,2022,12,4,1,2,False,False,False,False,True,,,no ubicada
+2022-01-17T00:00:00.000,07:40:00:am,Con heridos,Choque,CALLE 110 CON CRA 9G,2.0,,1.0,2022,January,Mon,2022-01-17,7,2022,1,0,1,2,False,True,True,False,True,,,no ubicada
+2022-05-23T00:00:00.000,02:20:00:pm,Solo daños,Choque,CALLE 61 CARRERA 36,,,1.0,2022,May,Mon,2022-05-23,14,2022,5,0,0,2,False,True,False,False,False,10.9820009,-74.7999441,exacta
+2022-05-21T00:00:00.000,02:33:00:pm,Solo daños,Choque,CARRERA 23 CON CALLE 60,,,1.0,2022,May,Sat,2022-05-21,14,2022,5,5,0,2,False,False,True,False,True,10.9699442,-74.8029779,exacta
+2022-03-19T00:00:00.000,12:05:00:am,Solo daños,Choque,CARRERA 55 CALLE 52,,,1.0,2022,March,Sat,2022-03-19,0,2022,3,5,0,2,False,False,False,False,False,10.99410205,-74.78864635,exacta
+2022-07-16T00:00:00.000,06:10:00:pm,Solo daños,Choque,CALLE 56 #8-103,,,1.0,2022,July,Sat,2022-07-16,18,2022,7,5,0,2,False,False,True,False,True,10.9010633,-74.79232805000001,aproximada
+2022-06-06T00:00:00.000,10:00:00:am,Solo daños,Choque,CARRERA 27 CALLE 61,,,1.0,2022,June,Mon,2022-06-06,10,2022,6,0,0,2,False,False,True,False,True,10.9755187,-74.8032584,exacta
+2022-11-16T00:00:00.000,09:45:00:am,Con heridos,Choque,CALLE 75 CRA 49,1.0,,1.0,2022,November,Wed,2022-11-16,9,2022,11,2,1,2,False,True,False,False,False,10.9983419,-74.8077308,exacta
+2022-05-13T00:00:00.000,06:10:00:pm,Solo daños,Choque,CRA 53 CON CALLE 100,,,1.0,2022,May,Fri,2022-05-13,18,2022,5,4,0,1,False,False,False,False,False,11.01490445,-74.83086730000001,aproximada
+2022-06-09T00:00:00.000,07:50:00:pm,Solo daños,Choque,CALLE 30 CARRERA 25,,,1.0,2022,June,Thu,2022-06-09,19,2022,6,3,0,2,True,False,False,False,True,10.964288849999999,-74.78306950000001,exacta
+2022-11-16T00:00:00.000,11:30:00:am,Solo daños,Choque,CARRERA 42F CON CALLE 76,,,1.0,2022,November,Wed,2022-11-16,11,2022,11,2,0,1,True,False,False,False,True,10.9936253,-74.8134895,exacta
+2022-06-11T00:00:00.000,03:30:00:pm,Solo daños,Choque,CARRERA 44 CALLE 45,,,1.0,2022,June,Sat,2022-06-11,15,2022,6,5,0,2,False,False,True,False,True,10.9845762,-74.7856834,exacta
+2022-07-19T00:00:00.000,10:30:00:am,Con heridos,Choque,CARRERA 44 CON CALLE 51,1.0,,1.0,2022,July,Tue,2022-07-19,10,2022,7,1,1,2,False,True,False,False,True,10.9857268,-74.7901634,exacta
+2022-04-06T00:00:00.000,10:30:00:am,Solo daños,Choque,CALLE 90 CARRERA 49C,,,1.0,2022,April,Wed,2022-04-06,10,2022,4,2,0,2,False,True,False,False,False,11.0055369,-74.8235454,exacta
+2022-12-22T00:00:00.000,08:00:00:am,Con heridos,Choque,CALLE 17 CRA 17B,1.0,,1.0,2022,December,Thu,2022-12-22,8,2022,12,3,1,2,False,True,True,False,True,10.956022749999999,-74.77418985,exacta
+2022-09-30T00:00:00.000,04:20:00:pm,Con heridos,Atropello,CRA 7A SUR CALLE 62,2.0,,1.0,2022,September,Fri,2022-09-30,16,2022,9,4,1,1,False,True,False,False,False,,,no ubicada
+2022-11-19T00:00:00.000,08:10:00:am,Con heridos,Choque,CARRERA 46 CON CALLE 75,1.0,,1.0,2022,November,Sat,2022-11-19,8,2022,11,5,1,2,False,True,False,False,False,10.99609195,-74.8088786,exacta
+2022-02-07T00:00:00.000,06:00:00:pm,Con heridos,Choque,CALLE 30 ENTRE CARRERA 4B Y 8,3.0,,1.0,2022,February,Mon,2022-02-07,18,2022,2,0,1,3,True,True,False,False,True,10.9434796,-74.783669,exacta
+2022-04-26T00:00:00.000,01:20:00:pm,Solo daños,Choque,CARRERA 44 #70-219,,,1.0,2022,April,Tue,2022-04-26,13,2022,4,1,0,2,False,False,True,False,True,10.9913274,-74.8043921,exacta
+2022-02-20T00:00:00.000,04:00:00:pm,Con heridos,Choque,CRA 41 CALLE 71,2.0,,1.0,2022,February,Sun,2022-02-20,16,2022,2,6,1,1,False,True,False,False,False,10.9889147,-74.8076911,exacta
+2022-07-08T00:00:00.000,08:00:00:pm,Solo daños,Choque,CALLE 55 # 45-53,,,1.0,2022,July,Fri,2022-07-08,20,2022,7,4,0,2,False,False,False,False,True,10.9883594,-74.7920672,exacta
+2022-05-05T00:00:00.000,08:05:00:am,Solo daños,Choque,VIA JUAN MINA VIA 11 CRA 8,,,1.0,2022,May,Thu,2022-05-05,8,2022,5,3,0,2,True,False,False,False,True,,,no ubicada
+2022-08-29T00:00:00.000,12:11:00:pm,Con heridos,Choque,CALLE 98 CON CARRERA 57,1.0,,1.0,2022,August,Mon,2022-08-29,12,2022,8,0,1,2,False,True,False,False,True,11.0163684,-74.8247731,exacta
+2022-11-12T00:00:00.000,02:20:00:pm,Con heridos,Choque,CALLE 30 # 43-55,1.0,,1.0,2022,November,Sat,2022-11-12,14,2022,11,5,1,3,False,True,True,False,True,10.966855700000002,-74.77515766666667,exacta
+2022-04-03T00:00:00.000,12:00:00:am,Con heridos,Choque,CALLE 30 CRA 3B,1.0,,1.0,2022,April,Sun,2022-04-03,0,2022,4,6,1,2,False,True,False,False,False,,,no ubicada
+2022-09-22T00:00:00.000,04:15:00:pm,Con heridos,Choque,CARRERA 49 CON CALLE 66,1.0,,1.0,2022,September,Thu,2022-09-22,16,2022,9,3,1,2,False,True,False,False,True,10.9940316,-74.7990667,exacta
+2022-08-10T00:00:00.000,08:20:00:am,Con heridos,Choque,CALLE 17 CARRERA 8,1.0,,1.0,2022,August,Wed,2022-08-10,8,2022,8,2,1,1,False,False,True,False,True,10.947082799999999,-74.7716757,exacta
+2022-03-05T00:00:00.000,10:50:00:am,Con heridos,Choque,CALLE 79A CRA 36,2.0,,1.0,2022,March,Sat,2022-03-05,10,2022,3,5,1,2,False,True,False,False,False,10.9863264,-74.8182475,exacta
+2022-01-16T00:00:00.000,03:15:00:am,Con muertos,Choque,CRA 47 CALLE 58,,1.0,1.0,2022,January,Sun,2022-01-16,3,2022,1,6,1,1,False,True,False,False,False,10.9912422,-74.7938741,exacta
+2022-03-08T00:00:00.000,06:00:00:pm,Con heridos,Choque,CARRERA 41 CALLE 66,1.0,,1.0,2022,March,Tue,2022-03-08,18,2022,3,1,1,3,False,True,False,False,True,10.9862155,-74.8017371,exacta
+2022-08-22T00:00:00.000,04:20:00:pm,Con heridos,Caida Ocupante,CALLE 90 # 2-32,1.0,,1.0,2022,August,Mon,2022-08-22,16,2022,8,0,1,1,False,False,True,False,True,10.9363224,-74.8240897,exacta
+2022-05-10T00:00:00.000,06:50:00:pm,Con heridos,Choque,CALLE 79 CARRERA 55,1.0,,1.0,2022,May,Tue,2022-05-10,18,2022,5,1,1,2,False,True,False,False,False,11.0052646,-74.8077428,exacta
+2022-07-12T00:00:00.000,05:45:00:pm,Solo daños,Choque,CARRERA 33 CALLE 42,,,1.0,2022,July,Tue,2022-07-12,17,2022,7,1,0,1,False,False,False,False,False,10.9741067,-74.7856028,exacta
+2022-05-06T00:00:00.000,01:30:00:pm,Solo daños,Choque,CARRERA 38 CON CALLE 110,,,1.0,2022,May,Fri,2022-05-06,13,2022,5,4,0,2,True,False,False,False,True,,,no ubicada
+2022-10-12T00:00:00.000,08:00:00:pm,Con heridos,Caida Ocupante,CALLE 76 CARRERA 26,1.0,,1.0,2022,October,Wed,2022-10-12,20,2022,10,2,1,1,False,True,False,False,False,10.97655345,-74.81789045,exacta
+2022-03-17T00:00:00.000,08:29:00:am,Con heridos,Choque,CARRERA 45 CALLE 40,1.0,,1.0,2022,March,Thu,2022-03-17,8,2022,3,3,1,2,False,False,False,False,False,10.9852312,-74.781223,exacta
+2022-01-31T00:00:00.000,11:00:00:am,Solo daños,Choque,CALLE 110 CRA 26,,,1.0,2022,January,Mon,2022-01-31,11,2022,1,0,0,2,False,False,False,False,True,,,no ubicada
+2022-03-23T00:00:00.000,12:30:00:pm,Solo daños,Choque,CARRERA 54 ENTRE CALLE 72 Y 70,,,1.0,2022,March,Wed,2022-03-23,12,2022,3,2,0,2,False,False,True,False,True,10.9989954,-74.80161550000001,exacta
+2022-03-14T00:00:00.000,04:10:00:pm,Solo daños,Choque,CALLE 34 # 46-161,,,1.0,2022,March,Mon,2022-03-14,16,2022,3,0,0,3,True,False,True,False,True,10.98542705,-74.77677209999999,exacta
+2022-02-13T00:00:00.000,01:15:00:pm,Con heridos,Choque,CRA 51B CON CALLE 84,1.0,,1.0,2022,February,Sun,2022-02-13,13,2022,2,6,1,2,False,True,False,False,False,11.005746349999999,-74.81716575,exacta
+2022-03-08T00:00:00.000,04:00:00:pm,Solo daños,Choque,CALLE 30 CRA 6,,,1.0,2022,March,Tue,2022-03-08,16,2022,3,1,0,2,False,False,True,False,True,10.942991200000002,-74.7754025,aproximada
+2022-08-02T00:00:00.000,01:20:00:pm,Con heridos,Choque,CARRERA 21 CALLE 40B,2.0,,1.0,2022,August,Tue,2022-08-02,13,2022,8,1,1,2,False,True,False,False,False,10.9609323,-74.7912012,exacta
+2022-02-14T00:00:00.000,08:10:00:am,Con heridos,Choque,CALLE 72 CON CRA 43,1.0,,1.0,2022,February,Mon,2022-02-14,8,2022,2,0,1,3,False,False,True,True,True,10.991643499999999,-74.80713175,exacta
+2022-06-07T00:00:00.000,09:30:00:pm,Solo daños,Choque,AVENIDA CIRCUNVALAR CALLE 70,,,1.0,2022,June,Tue,2022-06-07,21,2022,6,1,0,1,False,False,False,False,False,10.9232437,-74.8174169,exacta
+2022-03-26T00:00:00.000,05:20:00:am,Con heridos,Choque,CALLE 110 CRA 27,2.0,,1.0,2022,March,Sat,2022-03-26,5,2022,3,5,1,1,False,True,False,False,False,,,no ubicada
+2022-03-08T00:00:00.000,03:00:00:pm,Solo daños,Choque,CALLE 84 CRA 65,,,1.0,2022,March,Tue,2022-03-08,15,2022,3,1,0,2,False,False,False,False,False,11.0130729,-74.809992,exacta
+2022-07-06T00:00:00.000,08:15:00:am,Solo daños,Choque,CARRERA 43 # 75-144,,,1.0,2022,July,Wed,2022-07-06,8,2022,7,2,0,2,False,False,False,False,True,10.9934299,-74.8102364,exacta
+2022-06-07T00:00:00.000,10:38:00:am,Solo daños,Choque,CARRERA 46 CALLE 75,,,1.0,2022,June,Tue,2022-06-07,10,2022,6,1,0,2,False,False,True,False,True,10.99609195,-74.8088786,exacta
+2022-12-04T00:00:00.000,10:00:00:pm,Con heridos,Choque,CARRERA 58 CALLE 64,4.0,,1.0,2022,December,Sun,2022-12-04,22,2022,12,6,1,2,False,False,False,False,False,10.99595345,-74.79459015,exacta
+2022-04-23T00:00:00.000,12:00:00:pm,Con heridos,Choque,CALLE 17 CARRERA 22,1.0,,1.0,2022,April,Sat,2022-04-23,12,2022,4,5,1,2,False,True,False,False,False,10.945788633333331,-74.77114046666668,exacta
+2022-05-16T00:00:00.000,08:00:00:am,Solo daños,Choque,CALLE 65 CARRERA 39B,,,1.0,2022,May,Mon,2022-05-16,8,2022,5,0,0,1,False,False,False,False,False,10.985150350000001,-74.80107025,aproximada
+2022-08-14T00:00:00.000,11:30:00:pm,Con muertos,Choque,CALLE 84 CRA 26,,1.0,1.0,2022,August,Sun,2022-08-14,23,2022,8,6,1,2,False,True,False,False,False,10.9761857,-74.826954,exacta
+2022-03-02T00:00:00.000,08:45:00:am,Con heridos,Choque,CALLE 73 B CARRERA 41 B,1.0,,1.0,2022,March,Wed,2022-03-02,8,2022,3,2,1,2,False,False,True,False,True,10.9908244,-74.8093855,exacta
+2022-04-27T00:00:00.000,11:30:00:am,Solo daños,Choque,CALLE 77# 74-81,,,1.0,2022,April,Wed,2022-04-27,11,2022,4,2,0,2,True,False,False,False,True,11.0146873,-74.7964278,exacta
+2022-12-14T00:00:00.000,07:50:00:pm,Con heridos,Choque,CALLE 110 CARRERA 9G,1.0,,1.0,2022,December,Wed,2022-12-14,19,2022,12,2,1,2,False,True,True,False,True,,,no ubicada
+2022-05-01T00:00:00.000,09:05:00:pm,Solo daños,Choque,CALLE 70C CARRERA 26,,,1.0,2022,May,Sun,2022-05-01,21,2022,5,6,0,2,True,False,False,False,True,10.9751407,-74.8100613,exacta
+2022-01-17T00:00:00.000,04:00:00:pm,Solo daños,Choque,CRA 38 CALLE 51,,,1.0,2022,January,Mon,2022-01-17,16,2022,1,0,0,2,False,False,False,False,False,10.9808873,-74.7912314,exacta
+2022-04-23T00:00:00.000,09:10:00:pm,Solo daños,Choque,VIA 40 CON 85,,,1.0,2022,April,Sat,2022-04-23,21,2022,4,5,0,2,True,False,False,False,True,,,no ubicada
+2022-04-17T00:00:00.000,07:50:00:pm,Solo daños,Choque,AVENIDA MURILLO CON CRA 11 SUR,,,1.0,2022,April,Sun,2022-04-17,19,2022,4,6,0,1,False,False,False,False,False,10.9256376,-74.7990374,exacta
+2022-07-24T00:00:00.000,09:50:00:pm,Con heridos,Choque,CARRERA 15 SUR CALLE 46,2.0,,1.0,2022,July,Sun,2022-07-24,21,2022,7,6,1,2,False,True,False,False,False,10.9229662,-74.8026641,exacta
+2022-12-26T00:00:00.000,02:30:00:pm,Con heridos,Choque,CALLE 65 CON CRA 27,1.0,,1.0,2022,December,Mon,2022-12-26,14,2022,12,0,1,2,False,True,False,False,True,10.9762357,-74.806212,exacta
+2022-04-09T00:00:00.000,11:00:00:am,Solo daños,Choque,VIA 40 CON CALLE 77,,,1.0,2022,April,Sat,2022-04-09,11,2022,4,5,0,2,False,False,False,False,True,11.01616355,-74.79535204999999,exacta
+2022-12-20T00:00:00.000,01:30:00:pm,Con heridos,Choque,CALLE 40 CRA 33,1.0,,1.0,2022,December,Tue,2022-12-20,13,2022,12,1,1,2,False,True,False,False,False,10.9735998,-74.7843896,exacta
+2022-07-15T00:00:00.000,03:40:00:pm,Solo daños,Choque,CALLE 30 CON CARRERA 6,,,1.0,2022,July,Fri,2022-07-15,15,2022,7,4,0,2,True,False,False,False,True,10.942991200000002,-74.7754025,aproximada
+2022-03-01T00:00:00.000,04:30:00:pm,Solo daños,Choque,CALLE 82 CRA 45 ESQUINA,,,1.0,2022,March,Tue,2022-03-01,16,2022,3,1,0,1,False,False,False,False,False,10.9999025,-74.8170815,exacta
+2022-01-03T00:00:00.000,09:00:00:pm,Solo daños,Choque,CALLE 82 # 59B-06,,,1.0,2022,January,Mon,2022-01-03,21,2022,1,0,0,2,False,True,False,False,False,11.0110429,-74.8109435,exacta
+2022-01-18T00:00:00.000,01:00:00:pm,Solo daños,Choque,CRA 57 # 70-98,,,1.0,2022,January,Tue,2022-01-18,13,2022,1,1,0,3,False,False,False,False,False,10.999468,-74.7983566,exacta
+2022-04-11T00:00:00.000,03:45:00:pm,Solo daños,Choque,CRA 50 # 79-98,,,1.0,2022,April,Mon,2022-04-11,15,2022,4,0,0,2,True,False,False,False,True,11.0009113,-74.8104204,exacta
+2022-03-19T00:00:00.000,08:30:00:am,Con heridos,Choque,CALLE 31 CRA 24,1.0,,1.0,2022,March,Sat,2022-03-19,8,2022,3,5,1,2,False,True,False,False,False,10.9636587,-74.7841577,exacta
+2022-03-08T00:00:00.000,08:00:00:am,Con heridos,Choque,CALLE 68 # 43-64,1.0,,1.0,2022,March,Tue,2022-03-08,8,2022,3,1,1,2,False,True,False,False,True,10.9889184,-74.8021578,exacta
+2022-12-02T00:00:00.000,08:25:00:am,Con heridos,Choque,AV. CIRCUNVALAR CON CARRERA 31,2.0,,1.0,2022,December,Fri,2022-12-02,8,2022,12,4,1,2,False,True,True,False,True,10.9783024,-74.8361433,exacta
+2022-03-24T00:00:00.000,05:15:00:pm,Solo daños,Choque,CIRCUNVALAR CON CRA 37,,,1.0,2022,March,Thu,2022-03-24,17,2022,3,3,0,2,True,False,False,False,False,10.9278962,-74.78647484999999,aproximada
+2022-07-09T00:00:00.000,01:00:00:pm,Solo daños,Choque,CARRERA 44 CALLE 35,,,1.0,2022,July,Sat,2022-07-09,13,2022,7,5,0,2,False,False,True,False,True,10.9830724,-74.7787384,exacta
+2022-03-04T00:00:00.000,08:40:00:pm,Con heridos,Choque,CRA 10 POR CALLE 119 EL PUEBLITO,2.0,,1.0,2022,March,Fri,2022-03-04,20,2022,3,4,1,2,False,True,True,False,True,10.9583031,-74.8417648,exacta
+2022-08-14T00:00:00.000,06:30:00:am,Con heridos,Choque,CALLE 110 CRA 6F,1.0,,1.0,2022,August,Sun,2022-08-14,6,2022,8,6,1,2,False,False,False,False,False,10.94746605,-74.83327835,aproximada
+2022-02-01T00:00:00.000,07:40:00:am,Solo daños,Choque,CRA 38 CALLE 74-179,,,1.0,2022,February,Tue,2022-02-01,7,2022,2,1,0,1,False,False,False,False,False,10.985607850000001,-74.81266645,exacta
+2022-08-27T00:00:00.000,07:00:00:am,Con heridos,Choque,CALLE 17 CARRERA 10 C,2.0,,1.0,2022,August,Sat,2022-08-27,7,2022,8,5,1,2,False,True,False,True,False,,,no ubicada
+2022-03-04T00:00:00.000,07:00:00:am,Con heridos,Choque,CALLE 110  CARRERA 6,1.0,,1.0,2022,March,Fri,2022-03-04,7,2022,3,4,1,2,False,False,True,True,True,,,no ubicada
+2022-05-10T00:00:00.000,05:20:00:pm,Con heridos,Choque,CALLE 98 ENTRE CARRERA 51B Y 52,1.0,,1.0,2022,May,Tue,2022-05-10,17,2022,5,1,1,2,False,True,False,False,False,11.01106835,-74.828652775,exacta
+2022-07-06T00:00:00.000,06:00:00:pm,Solo daños,Choque,CALLE 110 CARRERA 19,,,1.0,2022,July,Wed,2022-07-06,18,2022,7,2,0,2,True,False,False,False,True,,,no ubicada
+2022-06-08T00:00:00.000,05:50:00:pm,Solo daños,Choque,CALLE 45 AV. CIRCUNVALAR,,,1.0,2022,June,Wed,2022-06-08,17,2022,6,2,0,2,True,False,False,False,True,10.928703,-74.7861769,exacta
+2022-06-06T00:00:00.000,10:50:00:am,Solo daños,Choque,CARRERA 50 CALLE 84,,,1.0,2022,June,Mon,2022-06-06,10,2022,6,0,0,2,False,False,True,False,True,11.0040524,-74.8179737,exacta
+2022-02-23T00:00:00.000,03:00:00:pm,Solo daños,Choque,CALLE 72 FRENTE AL # 65-166,,,1.0,2022,February,Wed,2022-02-23,15,2022,2,2,0,2,True,False,False,False,True,,,no ubicada
+2022-06-17T00:00:00.000,09:00:00:am,Solo daños,Choque,CALLE 110 CARRERA 36,,,1.0,2022,June,Fri,2022-06-17,9,2022,6,4,0,2,True,False,False,False,True,,,no ubicada
+2022-06-29T00:00:00.000,06:46:00:am,Solo daños,Choque,CARRERA 38 CALLE 80B,,,1.0,2022,June,Wed,2022-06-29,6,2022,6,2,0,2,False,False,True,False,True,10.986276033333334,-74.82104836666667,exacta
+2022-06-19T00:00:00.000,09:40:00:am,Solo daños,Choque,CALLE 93 # 49C-218,,,1.0,2022,June,Sun,2022-06-19,9,2022,6,6,0,2,False,False,False,False,True,11.0067498,-74.8261781,exacta
+2022-04-11T00:00:00.000,05:00:00:pm,Solo daños,Choque,CALLE 6 CON CARRERA 38,,,1.0,2022,April,Mon,2022-04-11,17,2022,4,0,0,1,True,False,False,False,True,10.974568099999999,-74.76956895000001,aproximada
+2022-01-31T00:00:00.000,07:40:00:pm,Solo daños,Choque,CALLE 58 CRA 67,,,1.0,2022,January,Mon,2022-01-31,19,2022,1,0,0,2,False,False,True,False,True,11.00073434,-74.78825092,exacta
+2022-04-29T00:00:00.000,10:40:00:am,Solo daños,Choque,CARRERA 59B# 79-251,,,1.0,2022,April,Fri,2022-04-29,10,2022,4,4,0,2,False,False,False,False,False,11.0088754,-74.804956,exacta
+2022-03-08T00:00:00.000,09:50:00:am,Solo daños,Choque,CARRERA 44 CALLE 59,,,1.0,2022,March,Tue,2022-03-08,9,2022,3,1,0,2,False,False,False,False,True,10.9873819,-74.7957522,exacta
+2022-07-07T00:00:00.000,02:40:00:pm,Solo daños,Choque,CALLE 84 CON CARRERA 50,,,1.0,2022,July,Thu,2022-07-07,14,2022,7,3,0,3,True,False,True,False,True,11.0040524,-74.8179737,exacta
+2022-10-26T00:00:00.000,07:30:00:am,Con heridos,Choque,CALLE 72 CARRERA 29,1.0,,1.0,2022,October,Wed,2022-10-26,7,2022,10,2,1,2,False,True,False,False,False,10.9786698,-74.8118338,exacta
+2022-03-06T00:00:00.000,01:06:00:am,Solo daños,Choque,CALLE 85 CRA 58,,,1.0,2022,March,Sun,2022-03-06,1,2022,3,6,0,2,False,False,False,False,False,11.0108486,-74.814654,exacta
+2022-05-12T00:00:00.000,09:00:00:am,Con heridos,Caida Ocupante,CALLE 30 CRA 39,1.0,,1.0,2022,May,Thu,2022-05-12,9,2022,5,3,1,1,False,False,True,False,True,10.963267199999999,-74.77647699999999,exacta
+2022-07-14T00:00:00.000,02:00:00:pm,Solo daños,Choque,CALLE 19 CARRERA 1 F,,,1.0,2022,July,Thu,2022-07-14,14,2022,7,3,0,2,False,False,True,False,True,,,no ubicada
+2022-05-03T00:00:00.000,02:30:00:pm,Con heridos,Choque,CALLE 41C CRA 1,1.0,,1.0,2022,May,Tue,2022-05-03,14,2022,5,1,1,2,False,True,False,False,False,,,no ubicada
+2022-07-12T00:00:00.000,12:00:00:pm,Solo daños,Choque,CALLE 79 CON CARRERA 43,,,1.0,2022,July,Tue,2022-07-12,12,2022,7,1,0,2,False,False,True,False,True,10.9953239,-74.8136511,exacta
+2022-06-18T00:00:00.000,02:20:00:pm,Con heridos,Choque,CALLE 84 CON CRA 43B,1.0,,1.0,2022,June,Sat,2022-06-18,14,2022,6,5,1,2,False,True,False,False,False,10.9993247,-74.8197624,exacta
+2022-03-23T00:00:00.000,06:00:00:pm,Solo daños,Choque,CALLE 72 CARRERA 43,,,1.0,2022,March,Wed,2022-03-23,18,2022,3,2,0,2,False,False,True,False,True,10.991643499999999,-74.80713175,exacta
+2022-03-29T00:00:00.000,03:20:00:am,Con heridos,Choque,CALLE 53 CARRERA 36,1.0,,1.0,2022,March,Tue,2022-03-29,3,2022,3,1,1,2,False,True,False,False,False,10.9795052,-74.7938756,exacta
+2022-01-19T00:00:00.000,03:15:00:pm,Solo daños,Choque,CALLE 53  CARRERA 21,,,1.0,2022,January,Wed,2022-01-19,15,2022,1,2,0,2,False,False,False,False,True,10.9668954,-74.7989646,exacta
+2022-09-22T00:00:00.000,06:50:00:pm,Con heridos,Caida Ocupante,CARRERA 43 CALLE 47B,10.0,,1.0,2022,September,Thu,2022-09-22,18,2022,9,3,1,1,False,False,True,False,True,,,no ubicada
+2022-07-20T00:00:00.000,11:15:00:am,Solo daños,Choque,CALLE 82 CON CARRERA 59B,,,1.0,2022,July,Wed,2022-07-20,11,2022,7,2,0,1,False,False,False,False,False,11.0110429,-74.8109435,exacta
+2023-06-22T00:00:00.000,11:40:00:am,Con heridos,Choque,CARRERA 46 #96-20,2.0,,1.0,2023,June,Thu,2023-06-22,11,2023,6,3,1,2,False,False,True,False,True,11.005766300000001,-74.8293281,exacta
+2023-04-12T00:00:00.000,09:50:00:pm,Con heridos,Choque,CALLE 45 CARRERA 8,2.0,,1.0,2023,April,Wed,2023-04-12,21,2023,4,2,1,2,False,False,False,False,False,10.9315133,-74.797489,exacta
+2023-06-09T00:00:00.000,08:50:00:pm,Con heridos,Choque,CARRERA 38 CALLE 80,1.0,,1.0,2023,June,Fri,2023-06-09,20,2023,6,4,1,2,False,True,False,False,False,10.98693455,-74.82002944999999,exacta
+2023-08-11T00:00:00.000,08:00:00:am,Con heridos,Choque,VIA 40 CON 76,4.0,,1.0,2023,August,Fri,2023-08-11,8,2023,8,4,1,2,False,False,False,False,False,,,no ubicada
+2023-02-15T00:00:00.000,09:10:00:am,Con heridos,Choque,CALLE 35 CARRERA 27,2.0,,1.0,2023,February,Wed,2023-02-15,9,2023,2,2,1,2,True,True,False,False,False,10.9668895,-74.7839281,exacta
+2023-04-09T00:00:00.000,10:40:00:am,Con heridos,Choque,CARRERA 38 CALLE 36,1.0,,1.0,2023,April,Sun,2023-04-09,10,2023,4,6,1,2,False,False,False,False,True,10.9776256,-74.7806349,exacta
+2023-05-12T00:00:00.000,02:00:00:pm,Con heridos,Choque,VIA 40 CALLE 85,1.0,,1.0,2023,May,Fri,2023-05-12,14,2023,5,4,1,2,True,True,False,False,True,11.02635555,-74.80381395,exacta
+2023-01-05T00:00:00.000,07:45:00:am,Con heridos,Choque,CALLE 75 CARRERA 60,1.0,,1.0,2023,January,Thu,2023-01-05,7,2023,1,3,1,2,False,True,False,False,False,11.0053234,-74.7990468,exacta
+2023-03-30T00:00:00.000,08:10:00:am,Con heridos,Choque,CARRERA 6 CON CALLE 110,2.0,,1.0,2023,March,Thu,2023-03-30,8,2023,3,3,1,2,True,False,True,False,True,,,no ubicada
+2023-02-16T00:00:00.000,12:00:00:pm,Con heridos,Choque,CARRERA 20 CALLE 31,2.0,,1.0,2023,February,Thu,2023-02-16,12,2023,2,3,1,1,False,False,False,False,False,10.9571055,-74.7869712,exacta
+2023-12-21T00:00:00.000,08:20:00:pm,Con heridos,Choque,DIAGONAL 140 CARRERA 38,2.0,,1.0,2023,December,Thu,2023-12-21,20,2023,12,3,1,2,False,True,False,False,True,,,no ubicada
+2023-02-10T00:00:00.000,02:30:00:pm,Con heridos,Choque,CALLE 60 CRA 13B,1.0,,1.0,2023,February,Fri,2023-02-10,14,2023,2,4,1,2,False,True,False,False,True,10.9597678,-74.8070692,exacta
+2023-02-08T00:00:00.000,07:40:00:am,Con heridos,Volcamiento,CALLE 39 CARRERA 26,1.0,,1.0,2023,February,Wed,2023-02-08,7,2023,2,2,1,1,False,True,False,False,False,10.9669898,-74.78686,exacta
+2023-10-28T00:00:00.000,02:00:00:pm,Con heridos,Choque,CARRERA 30 CON CALLE 42,1.0,,1.0,2023,October,Sat,2023-10-28,14,2023,10,5,1,2,False,True,False,False,False,10.9711194,-74.7870327,exacta
+2023-06-14T00:00:00.000,03:00:00:pm,Con heridos,Choque,CALLE 96 CON CARRERA 59B,1.0,,1.0,2023,June,Wed,2023-06-14,15,2023,6,2,1,2,False,True,False,False,False,11.0175437,-74.8213357,exacta
+2023-03-08T00:00:00.000,07:00:00:am,Con heridos,Choque,CALLE 110 CARRERA 38A,1.0,,1.0,2023,March,Wed,2023-03-08,7,2023,3,2,1,2,False,True,False,False,False,,,no ubicada
+2023-03-06T00:00:00.000,03:00:00:am,Con heridos,Choque,CORDIALIDAD CRA 20,1.0,,1.0,2023,March,Mon,2023-03-06,3,2023,3,0,1,1,False,False,False,False,False,10.9621308,-74.79676950000001,exacta
+2023-01-26T00:00:00.000,08:05:00:am,Con heridos,Choque,CALLE 94 CON CARRERA 15 SUR,1.0,,1.0,2023,January,Thu,2023-01-26,8,2023,1,3,1,2,False,True,False,False,False,,,no ubicada
+2023-08-27T00:00:00.000,11:15:00:am,Con heridos,Choque,CARRERA 15 CON CALLE 26,1.0,,1.0,2023,August,Sun,2023-08-27,11,2023,8,6,1,2,False,True,True,False,True,10.9526565,-74.7802136,exacta
+2023-05-14T00:00:00.000,10:30:00:am,Con heridos,Choque,CALLE 85 CARRERA 47,1.0,,1.0,2023,May,Sun,2023-05-14,10,2023,5,6,1,2,False,True,False,False,False,11.00306,-74.8207531,exacta
+2023-07-12T00:00:00.000,12:40:00:pm,Con heridos,Choque,CALLE 90 CON CARRERA 3B,4.0,,1.0,2023,July,Wed,2023-07-12,12,2023,7,2,1,1,False,True,False,False,False,10.9395091,-74.8240965,exacta
+2023-04-14T00:00:00.000,02:30:00:pm,Con heridos,Choque,CARRERA 8 CALLE 35,1.0,,1.0,2023,April,Fri,2023-04-14,14,2023,4,4,1,2,False,True,False,False,True,10.946283175000001,-74.79008499999999,exacta
+2023-09-05T00:00:00.000,04:30:00:pm,Con heridos,Choque,CALLE 74 CON CRA 49,1.0,,1.0,2023,September,Tue,2023-09-05,16,2023,9,1,1,2,False,False,False,False,True,10.9976175,-74.8060214,exacta
+2023-05-16T00:00:00.000,01:40:00:pm,Con heridos,Choque,CALLE 19 CON RETORNO CALLE 30,2.0,,1.0,2023,May,Tue,2023-05-16,13,2023,5,1,1,2,False,True,True,False,True,10.897144749999999,-74.76952595,aproximada
+2023-03-11T00:00:00.000,08:00:00:am,Con heridos,Caida Ocupante,CALLE 30 CARRERA 43,1.0,,1.0,2023,March,Sat,2023-03-11,8,2023,3,5,1,1,False,False,True,False,True,10.966855700000002,-74.77515766666667,exacta
+2023-05-03T00:00:00.000,05:50:00:pm,Con heridos,Choque,CARRERA 4 CALLE 45B,1.0,,1.0,2023,May,Wed,2023-05-03,17,2023,5,2,1,2,False,True,False,False,False,10.938323149999999,-74.80018945,exacta
+2023-03-14T00:00:00.000,07:10:00:am,Con heridos,Atropello,CALLE 54 CARRERA 41,1.0,,1.0,2023,March,Tue,2023-03-14,7,2023,3,1,1,1,False,False,False,False,False,10.9828247,-74.7936626,exacta
+2023-04-21T00:00:00.000,07:00:00:am,Con heridos,Choque,CARRERA 21B DIAGONAL 77,1.0,,1.0,2023,April,Fri,2023-04-21,7,2023,4,4,1,1,False,False,True,False,True,,,no ubicada
+2023-07-02T00:00:00.000,01:00:00:pm,Con heridos,Choque,CARRERA 49D ENTRE CALLES 100 Y 99,2.0,,1.0,2023,July,Sun,2023-07-02,13,2023,7,6,1,1,False,False,False,False,False,,,no ubicada
+2023-03-11T00:00:00.000,07:40:00:am,Con heridos,Choque,VIA 40 CON CALLE 68,1.0,,1.0,2023,March,Sat,2023-03-11,7,2023,3,5,1,2,False,True,False,False,False,,,no ubicada
+2023-02-05T00:00:00.000,05:20:00:pm,Con heridos,Choque,CARRERA 21 CON CALLE 47D,1.0,,1.0,2023,February,Sun,2023-02-05,17,2023,2,6,1,2,False,True,False,False,False,,,no ubicada
+2023-02-04T00:00:00.000,05:50:00:pm,Con heridos,Atropello,CARRERA 14 SUR CALLE 47 NORTE SUR,1.0,,1.0,2023,February,Sat,2023-02-04,17,2023,2,5,1,1,False,True,False,False,False,10.9233404,-74.8050695,exacta
+2023-11-10T00:00:00.000,01:20:00:pm,Con heridos,Choque,CALLE 80 CARRERA 51B,1.0,,1.0,2023,November,Fri,2023-11-10,13,2023,11,4,1,2,False,True,False,False,True,11.0039353,-74.8126743,exacta
+2023-02-28T00:00:00.000,07:20:00:am,Con heridos,Choque,CARRERA 8 CON CALLE 35,2.0,,1.0,2023,February,Tue,2023-02-28,7,2023,2,1,1,2,False,True,False,False,False,10.946283175000001,-74.79008499999999,exacta
+2023-06-07T00:00:00.000,10:00:00:am,Con heridos,Atropello,CALLE 50 ENTRE CRA 31 Y 32,2.0,,1.0,2023,June,Wed,2023-06-07,10,2023,6,2,1,1,False,True,False,False,False,10.974572,-74.7922506,exacta
+2023-03-31T00:00:00.000,05:45:00:pm,Con heridos,Choque,AVENIDA CIRCUNVALAR CON CALLE 73,2.0,,1.0,2023,March,Fri,2023-03-31,17,2023,3,4,1,2,False,True,False,False,True,10.9242151,-74.8194203,exacta
+2023-01-26T00:00:00.000,08:00:00:pm,Con heridos,Choque,CALLE 51 CARRERA 37,1.0,,1.0,2023,January,Thu,2023-01-26,20,2023,1,3,1,2,False,True,False,False,False,10.9798742,-74.7914299,exacta
+2023-06-27T00:00:00.000,05:20:00:pm,Con heridos,Choque,CALLE 91 CARRERA 65,2.0,,1.0,2023,June,Tue,2023-06-27,17,2023,6,1,1,2,False,True,False,False,False,11.0182281,-74.8156591,exacta
+2023-06-14T00:00:00.000,12:40:00:pm,Con heridos,Choque,CALLE 80 CON  CARRERA 42H,2.0,,1.0,2023,June,Wed,2023-06-14,12,2023,6,2,1,2,False,False,False,False,True,10.9957051,-74.8163031,exacta
+2023-11-26T00:00:00.000,04:30:00:am,Con heridos,Choque,CALLE 91 CARRERA 5C,3.0,,1.0,2023,November,Sun,2023-11-26,4,2023,11,6,1,2,False,True,False,False,True,10.9437683,-74.8245625,exacta
+2023-08-17T00:00:00.000,07:00:00:am,Con heridos,Choque,CARRERA 43 CALLE 65B,1.0,,1.0,2023,August,Thu,2023-08-17,7,2023,8,3,1,2,False,True,False,False,False,10.9878869,-74.8002388,exacta
+2023-10-01T00:00:00.000,03:45:00:pm,Con heridos,Choque,CALLE 38 CON CARRERA 22,2.0,,1.0,2023,October,Sun,2023-10-01,15,2023,10,6,1,2,False,True,True,False,True,10.9625023,-74.78786,exacta
+2023-02-06T00:00:00.000,06:05:00:am,Con heridos,Choque,CALLE 84 CARRERA 57,1.0,,1.0,2023,February,Mon,2023-02-06,6,2023,2,0,1,2,False,True,False,False,False,11.0093448,-74.8132199,exacta
+2023-07-24T00:00:00.000,06:20:00:pm,Con heridos,Choque,MALECOM DEL RIO CALLE 78,2.0,,1.0,2023,July,Mon,2023-07-24,18,2023,7,0,1,2,False,True,False,False,False,,,no ubicada
+2023-05-26T00:00:00.000,12:20:00:am,Con heridos,Choque,CALLE 82 CARRERA 59B,4.0,,1.0,2023,May,Fri,2023-05-26,0,2023,5,4,1,2,False,False,False,False,False,11.0110429,-74.8109435,exacta
+2023-12-13T00:00:00.000,08:30:00:am,Con heridos,Choque,CARRERA 4 CALLE 33E,4.0,,1.0,2023,December,Wed,2023-12-13,8,2023,12,2,1,1,False,True,False,False,False,10.9394382,-74.7873484,exacta
+2023-04-24T00:00:00.000,10:20:00:pm,Con heridos,Choque,CALLE 82 CRA 57,2.0,,1.0,2023,April,Mon,2023-04-24,22,2023,4,0,1,2,False,False,False,False,False,11.0086647,-74.811701,exacta
+2023-04-11T00:00:00.000,12:50:00:pm,Con heridos,Choque,CRA 64E CALLE 91,1.0,,1.0,2023,April,Tue,2023-04-11,12,2023,4,1,1,2,False,True,False,False,False,11.0180565,-74.8157513,exacta
+2023-06-18T00:00:00.000,10:30:00:pm,Con heridos,Atropello,CALLE 19 CON CARRERA 6,2.0,,1.0,2023,June,Sun,2023-06-18,22,2023,6,6,1,1,False,True,False,False,False,,,no ubicada
+2023-11-14T00:00:00.000,06:00:00:pm,Con heridos,Choque,CARRERA 38 # 79A-41,1.0,,1.0,2023,November,Tue,2023-11-14,18,2023,11,1,1,2,False,True,False,False,False,10.987136549999999,-74.8181929,exacta
+2023-12-18T00:00:00.000,11:15:00:am,Con heridos,Choque,CARRERA 53 CALLE 80,1.0,,1.0,2023,December,Mon,2023-12-18,11,2023,12,0,1,2,False,True,False,False,False,11.0053293,-74.81071333333334,exacta
+2023-05-25T00:00:00.000,10:40:00:am,Con heridos,Choque,CARRERA 51B #98 - 150,1.0,,1.0,2023,May,Thu,2023-05-25,10,2023,5,3,1,2,True,False,True,False,True,11.01106835,-74.828652775,exacta
+2023-09-23T00:00:00.000,07:00:00:am,Con heridos,Choque,CALLE 17 CRA 8,1.0,,1.0,2023,September,Sat,2023-09-23,7,2023,9,5,1,1,False,True,False,False,False,10.947082799999999,-74.7716757,exacta
+2023-06-15T00:00:00.000,05:45:00:pm,Con heridos,Choque,CALLE 84 CARRERA 65,1.0,,1.0,2023,June,Thu,2023-06-15,17,2023,6,3,1,2,False,True,False,False,True,11.0130729,-74.809992,exacta
+2023-09-05T00:00:00.000,07:00:00:am,Con heridos,Choque,CALLE 53D CARRERA 23,1.0,,1.0,2023,September,Tue,2023-09-05,7,2023,9,1,1,2,False,True,False,False,False,10.96985335,-74.79921974999999,exacta
+2023-04-24T00:00:00.000,06:00:00:pm,Con heridos,Choque,CALLE 6 CON CARRERA 43B,2.0,,1.0,2023,April,Mon,2023-04-24,18,2023,4,0,1,2,False,True,True,False,True,10.9828306,-74.76982720000001,exacta
+2023-07-04T00:00:00.000,05:40:00:am,Con heridos,Choque,CARRERA 45 CALLE 10,1.0,,1.0,2023,July,Tue,2023-07-04,5,2023,7,1,1,2,False,True,True,False,True,10.983567,-74.7753589,exacta
+2023-01-10T00:00:00.000,03:40:00:pm,Con heridos,Choque,CARRERA 9G CON CALLE 131,1.0,,1.0,2023,January,Tue,2023-01-10,15,2023,1,1,1,2,False,True,True,False,True,10.9589256,-74.85549184999999,exacta
+2023-02-07T00:00:00.000,09:00:00:am,Con heridos,Choque,CARRERA 42F CALLE 79B,1.0,,1.0,2023,February,Tue,2023-02-07,9,2023,2,1,1,2,False,False,False,False,False,10.9939954,-74.81571,exacta
+2023-10-01T00:00:00.000,01:15:00:pm,Con heridos,Choque,CALLE 45B CARRERA 22,2.0,,1.0,2023,October,Sun,2023-10-01,13,2023,10,6,1,2,False,True,False,False,False,10.9644896,-74.7925793,exacta
+2024-12-12T00:00:00.000,09:50:00:am,Con heridos,Choque,CARRERA 72 CALLE 75,1.0,,1.0,2024,December,Thu,2024-12-12,9,2024,12,3,1,2,False,True,False,False,False,11.0110455,-74.7944328,exacta
+2024-07-20T00:00:00.000,06:50:00:pm,Con heridos,Choque,VIA 40 CON CALLE 77 -  BARRANQUILLA,2.0,,1.0,2024,July,Sat,2024-07-20,18,2024,7,5,1,2,False,True,False,False,False,11.01616355,-74.79535204999999,exacta
+2024-06-22T00:00:00.000,09:30:00:am,Con heridos,Choque,CALLE 30 CARRERA 24,1.0,,1.0,2024,June,Sat,2024-06-22,9,2024,6,5,1,2,False,True,False,False,True,10.935264333333334,-74.77865514444446,exacta
+2024-06-23T00:00:00.000,04:30:00:pm,Con heridos,Choque,CARRERA 21 # 35 - 55,1.0,,1.0,2024,June,Sun,2024-06-23,16,2024,6,6,1,2,False,True,False,False,True,10.9595295,-74.7869172,exacta
+2024-11-26T00:00:00.000,09:00:00:pm,Con heridos,Choque,CALLE 45 # 7G - 48,1.0,,1.0,2024,November,Tue,2024-11-26,21,2024,11,1,1,1,False,False,False,False,False,10.94501005,-74.7996732,exacta
+2024-06-20T00:00:00.000,11:50:00:am,Con heridos,Choque,CALLE 68 CON CARRERA 15 SUR,1.0,,1.0,2024,June,Thu,2024-06-20,11,2024,6,3,1,2,True,True,False,False,True,,,no ubicada
+2024-12-11T00:00:00.000,05:15:00:pm,Con heridos,Choque,CRA 44 CON CALLE 72,1.0,,1.0,2024,December,Wed,2024-12-11,17,2024,12,2,1,2,False,True,False,False,True,10.99256045,-74.80659645,exacta
+2024-03-19T00:00:00.000,03:30:00:pm,Con heridos,Choque,CALLE 110 FRENTE AL # 4-76,2.0,,1.0,2024,March,Tue,2024-03-19,15,2024,3,1,1,2,False,True,False,False,False,,,no ubicada
+2024-01-24T00:00:00.000,05:50:00:am,Con heridos,Choque,AVENIDA MURILLO CON CARRERA 11,1.0,,1.0,2024,January,Wed,2024-01-24,5,2024,1,2,1,2,False,False,True,True,True,10.9532901,-74.7970894,exacta
+2024-06-29T00:00:00.000,06:30:00:am,Con heridos,Choque,CALLE 30 CRA 14,1.0,,1.0,2024,June,Sat,2024-06-29,6,2024,6,5,1,2,False,True,False,False,True,10.931299775,-74.77907325,exacta
+2024-01-14T00:00:00.000,08:00:00:am,Con heridos,Choque,CALLE 117 CARRERA 42B,1.0,,1.0,2024,January,Sun,2024-01-14,8,2024,1,6,1,2,False,True,False,False,False,10.9923282,-74.84709355,exacta
+2024-12-27T00:00:00.000,10:05:00:pm,Con heridos,Choque,CALLE 80 CARRERA 51B,5.0,,1.0,2024,December,Fri,2024-12-27,22,2024,12,4,1,2,False,False,True,False,True,11.0039353,-74.8126743,exacta
+2024-03-29T00:00:00.000,01:00:00:pm,Con heridos,Choque,CALLE 17 CON CRA 15,1.0,,1.0,2024,March,Fri,2024-03-29,13,2024,3,4,1,2,False,True,False,False,True,10.953959000000001,-74.77390855,exacta
+2024-12-25T00:00:00.000,11:30:00:pm,Con heridos,Choque,CARRERA 8 CALLE 35,1.0,,1.0,2024,December,Wed,2024-12-25,23,2024,12,2,1,1,False,True,False,False,False,10.946283175000001,-74.79008499999999,exacta
+2024-10-11T00:00:00.000,04:10:00:pm,Con heridos,Atropello,CALLE 72 CRA 44,2.0,,1.0,2024,October,Fri,2024-10-11,16,2024,10,4,1,1,False,True,False,False,False,10.99256045,-74.80659645,exacta
+2024-07-13T00:00:00.000,02:00:00:pm,Con heridos,Choque,CRA 46 ENTRE CALLE 70 Y 72,2.0,,1.0,2024,July,Sat,2024-07-13,14,2024,7,5,1,3,False,False,False,False,True,10.9931479,-74.8034355,exacta
+2024-08-30T00:00:00.000,04:50:00:pm,Con heridos,Choque,VIA CORDIALIDAD KILOMETRO 1,6.0,,1.0,2024,August,Fri,2024-08-30,16,2024,8,4,1,2,True,False,True,False,True,,,no ubicada
+2024-08-20T00:00:00.000,08:30:00:am,Con heridos,Atropello,CARRERA 14 CON CALLE 45,1.0,,1.0,2024,August,Tue,2024-08-20,8,2024,8,1,1,1,False,False,True,False,True,10.920400525,-74.79443867499998,exacta
+2024-04-10T00:00:00.000,08:40:00:pm,Con heridos,Choque,CALLE 86 CARRERA 52,1.0,,1.0,2024,April,Wed,2024-04-10,20,2024,4,2,1,2,False,False,False,True,False,11.0077615,-74.8193348,exacta
+2024-04-27T00:00:00.000,05:00:00:pm,Con heridos,Choque,CALLE 110 A 100 METRO DE LA VIA 40 FRENTE.,4.0,,1.0,2024,April,Sat,2024-04-27,17,2024,4,5,1,2,False,False,False,False,False,,,no ubicada
+2024-05-22T00:00:00.000,08:00:00:pm,Con heridos,Choque,CALLE 26 CARRERA 23,1.0,,1.0,2024,May,Wed,2024-05-22,20,2024,5,2,1,2,False,True,True,False,True,10.9412085,-74.7764454,exacta
+2024-01-09T00:00:00.000,08:15:00:pm,Con heridos,Choque,CALLE 30 CON CRA 13C,1.0,,1.0,2024,January,Tue,2024-01-09,20,2024,1,1,1,2,False,True,False,False,False,10.9515583,-74.7862049,exacta
+2024-10-16T00:00:00.000,06:00:00:pm,Con heridos,Caida Ocupante,CARRERA 38 CALLE 81 - 58,1.0,,1.0,2024,October,Wed,2024-10-16,18,2024,10,2,1,1,False,False,True,False,True,10.98558345,-74.82208875,exacta
+2024-07-11T00:00:00.000,08:40:00:am,Con heridos,Choque,VIA 40 CALLE 85,2.0,,1.0,2024,July,Thu,2024-07-11,8,2024,7,3,1,2,False,False,False,False,True,11.02635555,-74.80381395,exacta
+2024-12-12T00:00:00.000,07:40:00:pm,Con heridos,Atropello,CALLE 110 CON CARRERA 9G,2.0,,1.0,2024,December,Thu,2024-12-12,19,2024,12,3,1,1,False,True,False,False,False,,,no ubicada
+2024-09-06T00:00:00.000,09:30:00:am,Con heridos,Choque,AV VIA 40 CALLE 75,1.0,,1.0,2024,September,Fri,2024-09-06,9,2024,9,4,1,2,False,True,False,False,False,11.01284565,-74.7931265,exacta
+2024-10-25T00:00:00.000,02:50:00:pm,Con heridos,Atropello,CALLE 92 CON CARRERA 71,1.0,,1.0,2024,October,Fri,2024-10-25,14,2024,10,4,1,1,False,False,False,False,False,11.0202794,-74.8159435,exacta
+2024-04-14T00:00:00.000,11:50:00:am,Con heridos,Choque,CRA 9 CON CALLE 24,2.0,,1.0,2024,April,Sun,2024-04-14,11,2024,4,6,1,2,False,True,False,True,False,10.9490103,-74.7777432,exacta
+2024-07-30T00:00:00.000,05:30:00:pm,Con heridos,Choque,VIA 40 # 85 - 999,3.0,,1.0,2024,July,Tue,2024-07-30,17,2024,7,1,1,1,False,True,False,False,False,,,no ubicada
+2024-01-06T00:00:00.000,04:20:00:pm,Con heridos,Choque,CARRERA 42F CALLE 85,2.0,,1.0,2024,January,Sat,2024-01-06,16,2024,1,5,1,2,False,True,False,False,False,10.997389049999999,-74.82363745,aproximada
+2024-06-13T00:00:00.000,09:45:00:am,Con heridos,Choque,CALLE 49 CARRERA 1E,1.0,,1.0,2024,June,Thu,2024-06-13,9,2024,6,3,1,2,False,True,False,False,False,10.9349967,-74.8046506,exacta
+2024-10-02T00:00:00.000,08:20:00:am,Con heridos,Choque,CALLE 47 CON CRA 19,1.0,,1.0,2024,October,Wed,2024-10-02,8,2024,10,2,1,2,False,True,False,False,False,10.9158394,-74.7839789,exacta
+2024-05-11T00:00:00.000,03:00:00:pm,Con heridos,Choque,CALLE 53D CRA 25C,1.0,,1.0,2024,May,Sat,2024-05-11,15,2024,5,5,1,2,False,True,False,False,False,10.9742072,-74.7974869,exacta
+2024-09-06T00:00:00.000,08:30:00:am,Con heridos,Choque,CALLE 19 CON CRA 1B,2.0,,1.0,2024,September,Fri,2024-09-06,8,2024,9,4,1,2,True,True,False,False,True,,,no ubicada
+2024-05-18T00:00:00.000,06:00:00:pm,Con heridos,Choque,CALLE 75 CRA 49,1.0,,1.0,2024,May,Sat,2024-05-18,18,2024,5,5,1,2,False,False,False,False,True,10.9983419,-74.8077308,exacta
+2024-11-23T00:00:00.000,09:40:00:am,Con heridos,Choque,CARRERA 43 CALLE 66,2.0,,1.0,2024,November,Sat,2024-11-23,9,2024,11,5,1,2,False,True,False,False,True,10.9882107,-74.8008505,exacta
+2024-09-09T00:00:00.000,01:20:00:pm,Con heridos,Choque,CARRERA 8 CALLE 34,1.0,,1.0,2024,September,Mon,2024-09-09,13,2024,9,0,1,2,False,True,False,False,True,10.9465065,-74.78833355,exacta
+2024-04-19T00:00:00.000,10:00:00:am,Con heridos,Choque,CALLE 23 CRA 11,2.0,,1.0,2024,April,Fri,2024-04-19,10,2024,4,4,1,2,False,True,False,False,True,10.9505956,-74.7768403,exacta
+2024-08-02T00:00:00.000,12:10:00:am,Con heridos,Choque,CALLE 40 CON CARRERA 33,2.0,,1.0,2024,August,Fri,2024-08-02,0,2024,8,4,1,2,False,True,False,False,True,10.9735998,-74.7843896,exacta
+2024-02-14T00:00:00.000,01:20:00:am,Con heridos,Choque,CALLE 80 CARRERA 2,2.0,,1.0,2024,February,Wed,2024-02-14,1,2024,2,2,1,2,False,False,False,False,False,10.9362929,-74.8209126,exacta
+2024-05-22T00:00:00.000,07:00:00:pm,Con heridos,Choque,VIA 40 CALLE 58,3.0,,1.0,2024,May,Wed,2024-05-22,19,2024,5,2,1,2,False,False,True,False,True,11.003281325,-74.78620972499999,exacta
+2024-08-27T00:00:00.000,08:30:00:pm,Con heridos,Choque,CALLE  82 CARRERA 46,1.0,,1.0,2024,August,Tue,2024-08-27,20,2024,8,1,1,2,False,True,False,False,False,11.0006248,-74.8167462,exacta
+2024-08-30T00:00:00.000,07:00:00:am,Con heridos,Choque,CIRCUNVALAR CALLE 71,2.0,,1.0,2024,August,Fri,2024-08-30,7,2024,8,4,1,2,False,True,False,False,True,10.9236549,-74.81794350000001,aproximada
+2024-06-06T00:00:00.000,04:00:00:pm,Con heridos,Choque,CARRERA 57 # 96 - 139,1.0,,1.0,2024,June,Thu,2024-06-06,16,2024,6,3,1,3,False,False,False,False,False,11.0156539,-74.822892,exacta
+2024-05-30T00:00:00.000,03:45:00:am,Con heridos,Volcamiento,CALLE 84 CON CARRERA 53,2.0,,1.0,2024,May,Thu,2024-05-30,3,2024,5,3,1,1,False,True,False,False,False,11.0073714,-74.8159854,exacta
+2024-04-07T00:00:00.000,02:40:00:am,Con muertos,Choque,CALLE 17 ENTRE CRA 13 Y 14,,1.0,1.0,2024,April,Sun,2024-04-07,2,2024,4,6,1,1,False,True,False,False,False,10.9525966,-74.773914,exacta
+2024-04-08T00:00:00.000,02:52:00:pm,Con heridos,Choque,CALLE 85 CON CARRERA 55,1.0,,1.0,2024,April,Mon,2024-04-08,14,2024,4,0,1,2,False,False,False,False,True,11.0089402,-74.8160875,exacta
+2024-03-05T00:00:00.000,01:15:00:pm,Con heridos,Choque,CALLE 53D CARRERA 20,2.0,,1.0,2024,March,Tue,2024-03-05,13,2024,3,1,1,2,False,True,False,False,False,10.9658378,-74.8015814,exacta
+2024-09-05T00:00:00.000,08:00:00:am,Con heridos,Choque,CALLE 48 CRA 14 SUR,2.0,,1.0,2024,September,Thu,2024-09-05,8,2024,9,3,1,2,False,False,False,False,True,10.9232548,-74.8069037,exacta
+2024-08-29T00:00:00.000,10:39:00:pm,Con heridos,Atropello,CALLE 45 CARRERA 39,1.0,,1.0,2024,August,Thu,2024-08-29,22,2024,8,3,1,1,False,False,False,False,False,10.9802781,-74.78692674999999,exacta
+2024-04-29T00:00:00.000,06:10:00:am,Con heridos,Choque,CARRERA 59 CALLE 64,1.0,,1.0,2024,April,Mon,2024-04-29,6,2024,4,0,1,2,True,True,False,False,True,10.9965125,-74.7936545,exacta
+2024-01-19T00:00:00.000,05:40:00:pm,Con heridos,Atropello,CALLE 48 ENTRE CARRERA 45 Y 46,1.0,,1.0,2024,January,Fri,2024-01-19,17,2024,1,4,1,1,False,False,False,False,False,10.9869996,-74.7871155,exacta
+2024-04-16T00:00:00.000,12:10:00:pm,Con heridos,Choque,CALLE 71 CRA 33,2.0,,1.0,2024,April,Tue,2024-04-16,12,2024,4,1,1,2,False,True,False,False,False,10.9817236,-74.8107616,exacta
+2025-07-30T00:00:00.000,09:00:00:pm,Con heridos,Choque,CALLE 30 CARRERA 25,2.0,,1.0,2025,July,Wed,2025-07-30,21,2025,7,2,1,2,False,True,False,False,False,10.964288849999999,-74.78306950000001,exacta
+2025-05-16T00:00:00.000,12:15:00:pm,Con heridos,Choque,CARRERA 50 CON CALLE 45,1.0,,1.0,2025,May,Fri,2025-05-16,12,2025,5,4,1,2,False,True,False,False,False,10.989722975,-74.78396910000001,exacta
+2025-09-07T00:00:00.000,02:30:00:am,Con heridos,Choque,CALLE 44 CARRERA 39,3.0,,1.0,2025,September,Sun,2025-09-07,2,2025,9,6,1,1,False,False,False,False,False,10.9800631,-74.7859454,exacta
+2025-08-10T00:00:00.000,05:40:00:pm,Con heridos,Choque,CALLE 75B CARREA 44,1.0,,1.0,2025,August,Sun,2025-08-10,17,2025,8,6,1,2,False,True,False,False,False,,,no ubicada
+2025-04-06T00:00:00.000,02:55:00:pm,Con heridos,Choque,CARRERA 43 CALLE 85,1.0,,1.0,2025,April,Sun,2025-04-06,14,2025,4,6,1,1,False,True,False,False,False,10.9991344,-74.8222503,exacta
+2025-02-13T00:00:00.000,05:10:00:pm,Con heridos,Choque,CALLE 117 CARRERA 42B,2.0,,1.0,2025,February,Thu,2025-02-13,17,2025,2,3,1,2,False,True,False,False,True,10.9923282,-74.84709355,exacta
+2025-09-06T00:00:00.000,03:30:00:pm,Con heridos,Choque,CALLE 74 CARRERA 2A,1.0,,1.0,2025,September,Sat,2025-09-06,15,2025,9,5,1,2,False,True,False,False,False,,,no ubicada
+2025-12-07T00:00:00.000,10:10:00:am,Con heridos,Choque,CARRERA 65 CON CALLE 81,1.0,,1.0,2025,December,Sun,2025-12-07,10,2025,12,6,1,2,False,True,False,False,False,11.0122131,-74.8079778,exacta
+2025-02-24T00:00:00.000,06:00:00:pm,Con heridos,Choque,CARRERA 23 CON CALLE 61,1.0,,1.0,2025,February,Mon,2025-02-24,18,2025,2,0,1,2,False,True,False,False,False,10.9699396,-74.8035619,exacta
+2025-05-23T00:00:00.000,04:40:00:pm,Con heridos,Choque,CALLE 110 CON CARRERA 75A,2.0,,1.0,2025,May,Fri,2025-05-23,16,2025,5,4,1,2,False,True,True,False,True,,,no ubicada
+2025-08-20T00:00:00.000,11:20:00:pm,Con heridos,Choque,CARRERA 8 CALLE 33,3.0,,1.0,2025,August,Wed,2025-08-20,23,2025,8,2,1,1,False,True,False,False,False,10.94662925,-74.78732145000001,exacta
+2025-04-26T00:00:00.000,02:55:00:pm,Con heridos,Atropello,AVENIDA DEL RIO CALLE 78,1.0,,1.0,2025,April,Sat,2025-04-26,14,2025,4,5,1,1,False,False,False,False,True,,,no ubicada
+2025-04-11T00:00:00.000,07:50:00:pm,Con heridos,Choque,VIA 40 ENTRE CRA 65 Y CALLE 45,2.0,,1.0,2025,April,Fri,2025-04-11,19,2025,4,4,1,2,False,True,False,False,False,10.99956895,-74.78387814999999,exacta
+2025-07-27T00:00:00.000,04:30:00:am,Con heridos,Atropello,CARRERA 7G # 34-119,5.0,,1.0,2025,July,Sun,2025-07-27,4,2025,7,6,1,1,False,False,False,False,False,10.9455754,-74.7884119,exacta
+2025-11-25T00:00:00.000,01:55:00:pm,Con heridos,Choque,VIA 40 CON CALLE 109A,3.0,,1.0,2025,November,Tue,2025-11-25,13,2025,11,1,1,2,False,False,True,False,True,11.039001500000001,-74.82662585,exacta
+2025-07-11T00:00:00.000,09:15:00:pm,Con heridos,Choque,CALLE 90 CON CARRERA 4,4.0,,1.0,2025,July,Fri,2025-07-11,21,2025,7,4,1,1,False,True,False,False,False,10.9405878,-74.8241008,exacta
+2025-08-10T00:00:00.000,09:00:00:am,Con heridos,Choque,VIA 40 CON CALLE 72,2.0,,1.0,2025,August,Sun,2025-08-10,9,2025,8,6,1,2,False,True,False,False,False,11.009450833333332,-74.7888436,exacta
+2025-08-30T00:00:00.000,10:50:00:pm,Con heridos,Choque,CARRERA 6 CALLE 76,1.0,,1.0,2025,August,Sat,2025-08-30,22,2025,8,5,1,2,False,True,False,False,True,,,no ubicada
+2025-11-06T00:00:00.000,07:20:00:am,Con heridos,Choque,CARRERA 8 CALLE 76,1.0,,1.0,2025,November,Thu,2025-11-06,7,2025,11,3,1,2,False,True,True,False,True,10.9522586,-74.82174035,exacta
+2025-03-29T00:00:00.000,03:35:00:pm,Con heridos,Choque,CARRERA 14 SUR CON CALLE 49,1.0,,1.0,2025,March,Sat,2025-03-29,15,2025,3,5,1,2,False,True,False,False,False,,,no ubicada
+2025-06-14T00:00:00.000,12:35:00:pm,Con heridos,Choque,CARRERA 51B CALLE 86,4.0,,1.0,2025,June,Sat,2025-06-14,12,2025,6,5,1,1,False,False,False,False,False,11.00705855,-74.8199711,exacta
+2025-09-21T00:00:00.000,05:30:00:pm,Con heridos,Choque,CALLE 68 CON CARRERA 31,1.0,,1.0,2025,September,Sun,2025-09-21,17,2025,9,6,1,2,False,True,False,False,False,10.9795717,-74.8051936,exacta
+2025-03-12T00:00:00.000,06:30:00:am,Con heridos,Atropello,CARRERA 9G CALLE 135,1.0,,1.0,2025,March,Wed,2025-03-12,6,2025,3,2,1,1,False,True,False,False,False,,,no ubicada
+2025-06-14T00:00:00.000,09:30:00:am,Con heridos,Choque,CALLE 31 CARRERA 25,1.0,,1.0,2025,June,Sat,2025-06-14,9,2025,6,5,1,2,False,True,True,False,True,10.9645861,-74.7837276,exacta
+2025-11-27T00:00:00.000,06:55:00:pm,Con heridos,Choque,CARRERA 38 # 109 - 29,1.0,,1.0,2025,November,Thu,2025-11-27,18,2025,11,3,1,2,False,True,False,False,False,10.98273285,-74.83532715000001,exacta
+2025-11-21T00:00:00.000,10:30:00:am,Con heridos,Choque,CARRERA 60 CALLE 75,1.0,,1.0,2025,November,Fri,2025-11-21,10,2025,11,4,1,2,False,False,False,False,True,11.0053234,-74.7990468,exacta
+2025-07-26T00:00:00.000,05:30:00:am,Con heridos,Choque,CRA 47 CON CALLE 14,1.0,,1.0,2025,July,Sat,2025-07-26,5,2025,7,5,1,2,False,True,False,False,False,,,no ubicada
+2025-05-13T00:00:00.000,09:15:00:am,Con heridos,Atropello,CALLE 6 CARRERA 43,1.0,,1.0,2025,May,Tue,2025-05-13,9,2025,5,1,1,1,False,False,False,False,False,10.982012566666667,-74.76974266666667,exacta
+2025-12-20T00:00:00.000,05:00:00:pm,Con heridos,Choque,CALLE 30 CRA 6B,1.0,,1.0,2025,December,Sat,2025-12-20,17,2025,12,5,1,2,False,True,False,False,False,10.9434464,-74.78374980000001,exacta
+2025-05-01T00:00:00.000,03:30:00:pm,Con heridos,Atropello,CALLE 11 CARRERA 35,1.0,,1.0,2025,May,Thu,2025-05-01,15,2025,5,3,1,1,False,True,False,False,False,10.9723698,-74.7739253,exacta
+2025-12-17T00:00:00.000,03:00:00:am,Con heridos,Choque,CALLE 117 CARRERA 43,1.0,,1.0,2025,December,Wed,2025-12-17,3,2025,12,2,1,2,False,False,False,False,False,10.994729249999999,-74.847347575,exacta
+2025-11-02T00:00:00.000,12:05:00:pm,Con heridos,Choque,CALLE 110 VENTANA DEL MUNDO,1.0,,1.0,2025,November,Sun,2025-11-02,12,2025,11,6,1,2,False,False,False,True,True,,,no ubicada
+2025-05-25T00:00:00.000,04:40:00:pm,Con heridos,Choque,CALLE 30 CARRERA 26,1.0,,1.0,2025,May,Sun,2025-05-25,16,2025,5,6,1,2,False,False,False,True,False,10.9441624,-74.7794219,exacta
+2025-08-23T00:00:00.000,09:30:00:am,Con heridos,Choque,CALLE 85 CARRERA 78B,1.0,,1.0,2025,August,Sat,2025-08-23,9,2025,8,5,1,2,False,False,True,False,True,11.023935,-74.8065565,exacta
+2025-10-26T00:00:00.000,09:23:00:pm,Con heridos,Choque,AV CIRCUNVALAR CRA 9G,1.0,,1.0,2025,October,Sun,2025-10-26,21,2025,10,6,1,2,False,False,False,False,False,10.956302999999998,-74.8360084,exacta
+2025-03-15T00:00:00.000,11:00:00:pm,Con muertos,Atropello,CALLE 53D # 16 - 65,2.0,1.0,1.0,2025,March,Sat,2025-03-15,23,2025,3,5,1,1,False,True,False,False,False,10.9619836,-74.80329125,exacta
+2025-12-03T00:00:00.000,02:20:00:pm,Con heridos,Choque,CALLE 94 CON CRA 59,2.0,,1.0,2025,December,Wed,2025-12-03,14,2025,12,2,1,1,False,False,False,False,False,11.0162086,-74.8200928,exacta
+2025-12-11T00:00:00.000,08:50:00:am,Con heridos,Choque,CALLE 8 CARRERA 11,2.0,,1.0,2025,December,Thu,2025-12-11,8,2025,12,3,1,2,False,True,False,False,True,,,no ubicada
+2025-09-27T00:00:00.000,07:30:00:am,Con heridos,Choque,CRA 60 CALLE 74,1.0,,1.0,2025,September,Sat,2025-09-27,7,2025,9,5,1,2,False,True,True,False,True,11.0035907,-74.7977637,exacta
+2025-07-03T00:00:00.000,05:00:00:pm,Con heridos,Atropello,CARRERA 53 # 79-301,1.0,,1.0,2025,July,Thu,2025-07-03,17,2025,7,3,1,1,False,False,False,False,False,11.0043129,-74.8081159,exacta
+2025-01-18T00:00:00.000,05:00:00:pm,Con heridos,Choque,CARRERA 46 CALLE 76,2.0,,1.0,2025,January,Sat,2025-01-18,17,2025,1,5,1,1,False,False,False,False,False,10.996780699999999,-74.8100819,exacta
+2025-10-16T00:00:00.000,05:00:00:am,Con heridos,Atropello,CALLE 19 CARRERA 1,1.0,,1.0,2025,October,Thu,2025-10-16,5,2025,10,3,1,1,False,False,True,False,True,,,no ubicada
+2025-01-23T00:00:00.000,08:30:00:pm,Con heridos,Choque,CALLE 110 CARRERA 13,2.0,,1.0,2025,January,Thu,2025-01-23,20,2025,1,3,1,2,False,True,False,False,False,,,no ubicada
+2025-07-17T00:00:00.000,08:30:00:pm,Con heridos,Choque,CALLE 78 CRA 83 AVENIDA MALECON DEL RIO,2.0,,1.0,2025,July,Thu,2025-07-17,20,2025,7,3,1,2,False,False,False,True,False,,,no ubicada
+2025-04-08T00:00:00.000,04:15:00:pm,Con heridos,Choque,CARRERA 17 DIAGONAL 5,2.0,,1.0,2025,April,Tue,2025-04-08,16,2025,4,1,1,1,False,True,False,False,False,10.9556317,-74.7723787,exacta
+2025-02-01T00:00:00.000,02:20:00:pm,Con heridos,Choque,CARRERA 41D CALLE 75,1.0,,1.0,2025,February,Sat,2025-02-01,14,2025,2,5,1,2,False,True,False,False,False,10.9916262,-74.8108553,exacta
+2025-11-04T00:00:00.000,07:20:00:pm,Con heridos,Choque,CALLE 30 CARRERA 40,1.0,,1.0,2025,November,Tue,2025-11-04,19,2025,11,1,1,2,False,False,False,True,True,10.963879466666667,-74.77614206666667,exacta
+2025-12-24T00:00:00.000,02:00:00:am,Con heridos,Atropello,AV CORDIALIDAD CRA 9,1.0,,1.0,2025,December,Wed,2025-12-24,2,2025,12,2,1,1,False,False,False,False,False,10.951611,-74.8107541,exacta
+2025-12-16T00:00:00.000,10:00:00:am,Con heridos,Choque,CARRERA 14 CALLE 60,1.0,,1.0,2025,December,Tue,2025-12-16,10,2025,12,1,1,1,False,False,False,False,False,10.934693750000001,-74.80181495,exacta
+2025-11-27T00:00:00.000,10:30:00:pm,Con heridos,Choque,CALLE 90 CON CARRERA 49C,1.0,,1.0,2025,November,Thu,2025-11-27,22,2025,11,3,1,1,False,False,False,False,False,11.0055369,-74.8235454,exacta
+2025-04-02T00:00:00.000,09:30:00:pm,Con heridos,Choque,CRA 4B CON CALLE 49E,3.0,,1.0,2025,April,Wed,2025-04-02,21,2025,4,2,1,2,False,True,False,False,False,10.939438,-74.8037381,exacta
+2025-06-01T00:00:00.000,05:30:00:pm,Con heridos,Choque,CALLE 77 CARRERA 15 SUR,1.0,,1.0,2025,June,Sun,2025-06-01,17,2025,6,6,1,2,False,True,False,False,False,10.92249995,-74.81112775,aproximada
+2025-01-18T00:00:00.000,01:20:00:pm,Con muertos,Choque,CALLE 17 CARRERA 8,,2.0,1.0,2025,January,Sat,2025-01-18,13,2025,1,5,1,2,True,True,False,False,True,10.947082799999999,-74.7716757,exacta
+2025-04-28T00:00:00.000,01:20:00:pm,Con heridos,Choque,CARRERA 53 CALLE 55,1.0,,1.0,2025,April,Mon,2025-04-28,13,2025,4,0,1,2,False,True,False,False,False,10.9917913,-74.7911418,exacta
+2025-01-19T00:00:00.000,07:20:00:pm,Con heridos,Atropello,CARRERA 1F #  50C - 14,2.0,,1.0,2025,January,Sun,2025-01-19,19,2025,1,6,1,1,False,True,False,False,False,10.933991,-74.8091011,exacta
+2025-10-15T00:00:00.000,05:20:00:am,Con heridos,Choque,CALLE 110 CON CRA 43C,1.0,,1.0,2025,October,Wed,2025-10-15,5,2025,10,2,1,2,False,False,True,True,True,,,no ubicada
+2025-10-07T00:00:00.000,08:50:00:am,Con heridos,Choque,CRA 15 SUR 74 - 170,2.0,,1.0,2025,October,Tue,2025-10-07,8,2025,10,1,1,3,True,False,True,False,True,10.92229435,-74.8069259,aproximada
+2025-02-17T00:00:00.000,12:30:00:pm,Con heridos,Choque,CRA 38 CON CALLE 84,2.0,,1.0,2025,February,Mon,2025-02-17,12,2025,2,0,1,2,False,True,False,False,True,10.9855763,-74.8305366,aproximada
+2025-11-06T00:00:00.000,06:15:00:pm,Con heridos,Choque,CALLE 110 CON CRA 43,1.0,,1.0,2025,November,Thu,2025-11-06,18,2025,11,3,1,2,False,False,False,False,True,,,no ubicada
+2026-02-02T00:00:00.000,04:30:00:pm,Con heridos,Choque,CALLE 53B CON CARRERA 19,1.0,,1.0,2026,February,Mon,2026-02-02,16,2026,2,0,1,2,False,True,False,False,False,10.9652405,-74.80159805,aproximada
+2026-04-27T00:00:00.000,11:30:00:am,Con heridos,Choque,CALLE 84 CARRERA 40,2.0,,1.0,2026,April,Mon,2026-04-27,11,2026,4,0,1,2,False,True,False,False,False,10.985109,-74.8311392,exacta
+2026-01-26T00:00:00.000,03:15:00:pm,Con heridos,Choque,CALLE 45 CON CARRERA 2E,1.0,,1.0,2026,January,Mon,2026-01-26,15,2026,1,0,1,2,False,True,False,False,False,10.9348908,-74.79921999999999,exacta
+2026-01-31T00:00:00.000,02:30:00:am,Con heridos,Volcamiento,CALLE 45 CR 15 SUR,1.0,,1.0,2026,January,Sat,2026-01-31,2,2026,1,5,1,1,False,True,False,False,False,,,no ubicada
+2026-06-21T00:00:00.000,12:40:00:pm,Con heridos,Choque,AVENIDA CIRCUNVALAR FRENTE CALLENAS,1.0,,1.0,2026,June,Sun,2026-06-21,12,2026,6,6,1,2,False,True,False,False,False,,,no ubicada
+2026-05-09T00:00:00.000,04:25:00:pm,Con heridos,Choque,AV CIRCUNVALAR PUERTA DORADA,1.0,,1.0,2026,May,Sat,2026-05-09,16,2026,5,5,1,2,False,False,False,False,True,,,no ubicada
+2026-01-21T00:00:00.000,10:00:00:am,Con heridos,Choque,CALLE 106 VIA PUERTO MOCHO,2.0,,1.0,2026,January,Wed,2026-01-21,10,2026,1,2,1,2,False,True,False,False,False,,,no ubicada
+2026-02-03T00:00:00.000,01:50:00:am,Con heridos,Caida Ocupante,CARRERA 45B CON CALLE 90,2.0,,1.0,2026,February,Tue,2026-02-03,1,2026,2,1,1,1,False,True,False,False,False,11.0030835,-74.8246579,exacta
+2026-05-18T00:00:00.000,04:50:00:am,Con heridos,Atropello,AV 110 CIECUNVALAR CARRERA 2 SUR,3.0,,1.0,2026,May,Mon,2026-05-18,4,2026,5,0,1,1,False,True,False,False,False,,,no ubicada
+2026-02-17T00:00:00.000,09:50:00:pm,Con heridos,Choque,CALLE 30 CARRERA 33,1.0,,1.0,2026,February,Tue,2026-02-17,21,2026,2,1,1,2,False,True,False,False,True,10.9718099,-74.7796062,exacta
+2026-01-11T00:00:00.000,08:50:00:pm,Con heridos,Choque,CRA 42H CALLE 82,5.0,,1.0,2026,January,Sun,2026-01-11,20,2026,1,6,1,2,False,False,False,False,False,10.9969074,-74.8183394,exacta
+2026-02-25T00:00:00.000,09:35:00:pm,Con heridos,Choque,CARRERA 2 CALLE 80-52,1.0,,1.0,2026,February,Wed,2026-02-25,21,2026,2,2,1,2,False,True,True,False,True,10.9362929,-74.8209126,exacta
+2026-05-24T00:00:00.000,09:35:00:am,Con heridos,Choque,CRA 51B CALLE 90,1.0,,1.0,2026,May,Sun,2026-05-24,9,2026,5,6,1,2,False,True,False,False,False,11.008085066666666,-74.82217940000001,exacta
+2026-09-20T00:00:00.000,07:00:00:pm,Con heridos,Choque,CARRERA 41 CALLE 65,4.0,,1.0,2026,September,Sun,2026-09-20,19,2026,9,6,1,2,False,False,False,False,True,10.9856968,-74.79998545000001,aproximada
+2026-01-26T00:00:00.000,10:00:00:pm,Con muertos,Choque,CARRERA 8 CON CALLE 47,,1.0,1.0,2026,January,Mon,2026-01-26,22,2026,1,0,1,1,False,True,False,False,False,10.946147100000001,-74.8021008,exacta
+2026-03-20T00:00:00.000,08:30:00:pm,Con heridos,Atropello,CALLE 110 No 6R-400,1.0,,1.0,2026,March,Fri,2026-03-20,20,2026,3,4,1,1,False,False,True,False,True,,,no ubicada
+2026-07-03T00:00:00.000,09:00:00:am,Con heridos,Choque,VIA 40 CALLE 70 -29,1.0,,1.0,2026,July,Fri,2026-07-03,9,2026,7,4,1,2,False,True,True,False,True,11.0069328,-74.7899728,exacta
+2026-08-08T00:00:00.000,04:40:00:pm,Con heridos,Choque,CALLE 64 CARRERA 24,1.0,,1.0,2026,August,Sat,2026-08-08,16,2026,8,5,1,2,False,True,False,False,False,10.97154545,-74.80575855000001,exacta
+2026-04-10T00:00:00.000,07:55:00:am,Con heridos,Choque,CARRERA 65 CALLE 90,1.0,,1.0,2026,April,Fri,2026-04-10,7,2026,4,4,1,2,False,True,False,False,False,11.0182282,-74.8147857,exacta
+2026-05-02T00:00:00.000,08:00:00:pm,Con muertos,Choque,CALLE 47 Nª 21B-191,,1.0,1.0,2026,May,Sat,2026-05-02,20,2026,5,5,1,2,False,True,True,False,True,,,no ubicada
+2026-07-07T00:00:00.000,03:00:00:pm,Con heridos,Choque,CALLE 76 CRA 48,1.0,,1.0,2026,July,Tue,2026-07-07,15,2026,7,1,1,2,False,True,False,False,False,10.9982306,-74.8092377,exacta
+2026-05-19T00:00:00.000,10:20:00:am,Con heridos,Choque,VIA 40 Nª 85-340,3.0,,1.0,2026,May,Tue,2026-05-19,10,2026,5,1,1,1,False,True,False,False,False,,,no ubicada
+2026-08-30T00:00:00.000,11:40:00:am,Con heridos,Choque,CALLE 96 CARRERA 45,2.0,,1.0,2026,August,Sun,2026-08-30,11,2026,8,6,1,2,False,True,False,False,False,11.00518825,-74.82998945,aproximada
+2026-08-20T00:00:00.000,12:45:00:pm,Con heridos,Choque,CALLE 76 CARRERA 57,1.0,,1.0,2026,August,Thu,2026-08-20,12,2026,8,3,1,1,False,False,False,False,False,11.0050766,-74.8025645,exacta
+2026-02-04T00:00:00.000,08:00:00:pm,Con heridos,Choque,CALLE 68 CARRERA 24C,1.0,,1.0,2026,February,Wed,2026-02-04,20,2026,2,2,1,2,False,True,False,False,False,10.9734839,-74.8085417,exacta
+2026-02-15T00:00:00.000,02:30:00:am,Con muertos,Choque,CALLE 130 #9-87,,1.0,1.0,2026,February,Sun,2026-02-15,2,2026,2,6,1,2,False,True,False,False,False,10.956115,-74.8543251,exacta
+2026-06-25T00:00:00.000,04:00:00:pm,Con heridos,Choque,AVENIDA CIRCUNVALAR CRA 15 SUR,1.0,,1.0,2026,June,Thu,2026-06-25,16,2026,6,3,1,2,False,True,False,False,False,10.924804333333332,-74.81674629999999,exacta
+2026-05-27T00:00:00.000,02:19:00:pm,Con heridos,Choque,CARRERA 42G CALLE 84B,1.0,,1.0,2026,May,Wed,2026-05-27,14,2026,5,2,1,2,False,True,False,False,False,10.9972977,-74.8221049,exacta
+2026-05-10T00:00:00.000,12:20:00:pm,Con heridos,Choque,VIA 40 CALLE 68B,5.0,,1.0,2026,May,Sun,2026-05-10,12,2026,5,6,1,2,False,True,False,False,False,11.00508325,-74.78863425,exacta
+2026-07-26T00:00:00.000,11:50:00:am,Con heridos,Choque,AVENIDA CIRCUNVALAR 5 SUR FRENTE PUERTA DORADA,2.0,,1.0,2026,July,Sun,2026-07-26,11,2026,7,6,1,1,False,True,False,False,False,,,no ubicada

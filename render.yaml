@@ -1,0 +1,9 @@
+# Blueprint de Render: New → Blueprint → elegir este repositorio → Apply.
+services:
+  - type: web
+    name: green-route
+    runtime: docker
+    plan: free
+    dockerfilePath: ./Dockerfile
+    healthCheckPath: /api/estado
+    autoDeploy: true

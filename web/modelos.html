@@ -1,0 +1,233 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Modelos de Machine Learning · Green Route</title>
+  <meta name="description" content="Regresión, clasificación, pronóstico y agrupamiento con datos reales de Barranquilla, y su integración con el motor de rutas.">
+  <link rel="icon" href="img/favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Geist:wght@300..700&family=Geist+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/estilos.css?v=3d4">
+</head>
+<body>
+<header class="cab-pagina">
+  <div class="contenedor">
+    <div class="miga"><a href="index.html">Inicio</a> / Modelos de Machine Learning</div>
+    <h1>Modelos de Machine Learning</h1>
+    <p>Cuatro modelos entrenados con scikit-learn sobre los datos reales del estudio. Cada uno responde una pregunta concreta
+      y uno de ellos, el perfil horario de tráfico, alimenta directamente al motor de rutas escrito en Java.</p>
+  </div>
+</header>
+
+<main class="contenedor seccion" style="padding-top:48px">
+  <div class="con-indice">
+    <nav class="indice-pagina" aria-label="Contenido de la página">
+      <h4>En esta página</h4>
+      <a href="#metodologia">Metodología</a>
+      <a href="#m1">M1 · Tráfico y CO</a>
+      <a href="#m2">M2 · Severidad</a>
+      <a href="#m3">M3 · Pronóstico</a>
+      <a href="#m4">M4 · Puntos críticos</a>
+      <a href="#integracion">Integración con Java</a>
+      <a href="#limitaciones">Limitaciones</a>
+    </nav>
+    <div>
+      <section class="subseccion" id="metodologia">
+        <div class="etiqueta">Metodología</div>
+        <h2>Resumen de los modelos</h2>
+        <p>Se compararon siempre al menos tres algoritmos por problema, con un esquema de validación adecuado a la naturaleza de los datos:
+          validación temporal para series de tiempo (nunca se entrena con el futuro) y validación cruzada estratificada para clasificación.</p>
+        <div class="tabla-env">
+          <table>
+            <thead><tr><th>Modelo</th><th>Pregunta</th><th>Tipo</th><th>Algoritmos comparados</th><th>Validación</th><th class="num">Resultado</th></tr></thead>
+            <tbody id="tabla-resumen"></tbody>
+          </table>
+        </div>
+      </section>
+
+      <section class="subseccion" id="m1">
+        <div class="etiqueta">M1 · Regresión</div>
+        <h2>Actividad vehicular a partir del CO</h2>
+        <p>El monóxido de carbono (CO) proviene principalmente de la combustión de los motores, por lo que su concentración horaria es un
+          trazador de la intensidad del tráfico. Se cruzaron las mediciones de CO de la EPA Barranquilla Verde con el clima horario
+          (temperatura, humedad, lluvia y viento) para separar el efecto del tráfico del de la meteorología.</p>
+        <div class="rejilla rejilla-2" style="align-items:start">
+          <div class="tarjeta tarjeta--plana">
+            <h4>Variables de entrada</h4>
+            <p style="font-size:.92rem"><b>Calendario:</b> hora, día de la semana, mes, fin de semana, año.<br>
+              <b>Meteorología:</b> temperatura, humedad relativa, lluvia, velocidad y dirección del viento (seno/coseno).<br>
+              <b>Estación:</b> codificación one-hot.<br><b>Rezagos</b> (solo variante pronóstico): CO de la hora anterior y del mismo momento del día anterior.</p>
+          </div>
+          <div class="tarjeta tarjeta--plana">
+            <h4>Dos variantes, dos propósitos</h4>
+            <p style="font-size:.92rem"><b>Explicativo:</b> sin rezagos, para aislar el patrón horario. Validación cruzada agrupada por semana ISO
+              (ninguna semana queda partida entre entrenamiento y prueba).<br>
+              <b>Pronóstico:</b> con rezagos, entrenado en 2020-2024 y evaluado en 2025 completo, datos que el modelo nunca vio.</p>
+          </div>
+        </div>
+        <div class="tabla-env" style="margin-top:20px">
+          <table><thead><tr><th>Variante</th><th>Algoritmo</th><th>Validación</th><th class="num">MAE (µg/m³)</th><th class="num">RMSE</th><th class="num">R²</th></tr></thead>
+            <tbody id="tabla-m1"></tbody></table>
+        </div>
+        <div class="rejilla rejilla-2" style="margin-top:20px">
+          <div class="grafica-tarjeta"><div class="grafica grafica--alta" data-id="m1_real_vs_pred"></div></div>
+          <div class="grafica-tarjeta"><div class="grafica grafica--alta" data-id="m1_importancia"></div></div>
+        </div>
+        <div class="grafica-tarjeta" style="margin-top:20px"><div class="grafica" data-id="m1_semana"></div></div>
+        <div class="nota nota--aviso" style="margin-top:18px"><strong>Interpretación honesta.</strong> Con solo calendario y clima el R² es bajo
+          (≈ 0,23): el CO horario depende de fuentes puntuales y de la dispersión local. Al agregar la memoria de la serie (rezagos) el modelo explica
+          más del 60 % de la variabilidad en un año nunca visto. Para el ruteo no se necesita predecir el valor exacto, sino la <b>forma del perfil
+          horario</b>, que el modelo explicativo captura de forma estable.</div>
+      </section>
+
+      <section class="subseccion" id="integracion">
+        <div class="etiqueta">Del modelo al motor de rutas</div>
+        <h2>Perfil horario de congestión</h2>
+        <p>Con el modelo explicativo se calculó la <b>dependencia parcial</b> respecto a la hora: se fija la hora en cada valor de 0 a 23 para toda
+          la muestra y se promedia la predicción, lo que elimina el efecto del clima. Esa curva se combina con la distribución horaria de los
+          accidentes (exposición al tráfico) y se normaliza a un índice de actividad entre 0 y 1.</p>
+        <div class="formula">velocidad efectiva = límite de la vía × (1 − 0,45 × índice de actividad<sub>hora</sub>)</div>
+        <div class="rejilla rejilla-2">
+          <div class="grafica-tarjeta"><div class="grafica" data-id="m1_perfil_horario"></div></div>
+          <div class="grafica-tarjeta"><div class="grafica" data-id="m1_factor_velocidad"></div></div>
+        </div>
+        <p style="margin-top:18px">El script exporta <code>perfil_horario.csv</code> y la clase Java <code>PerfilHorario</code> lo carga al iniciar. Cuando el usuario
+          cambia la hora de salida en el mapa, todas las velocidades, tiempos y emisiones se recalculan con este factor (en trancón el consumo de
+          los motores de combustión sube hasta un 50 %).</p>
+<pre><code><span class="tok-c">// TramoVial.java — la velocidad real depende del factor aprendido por el modelo ML</span>
+<span class="tok-a">@Override</span>
+<span class="tok-k">public double</span> <span class="tok-t">velocidadEfectivaKmh</span>(ContextoViaje contexto) {
+    <span class="tok-k">double</span> factor = contexto.factorVelocidad();      <span class="tok-c">// perfil_horario.csv</span>
+    <span class="tok-k">boolean</span> arteria = tipoVia == TipoVia.TRONCAL || tipoVia == TipoVia.PRIMARIA
+            || tipoVia == TipoVia.SECUNDARIA || tipoVia == TipoVia.AUTOPISTA;
+    <span class="tok-k">double</span> efecto = arteria ? factor : <span class="tok-s">1</span> - (<span class="tok-s">1</span> - factor) * <span class="tok-s">0.6</span>;
+    <span class="tok-k">return</span> Math.max(<span class="tok-s">5.0</span>, velocidadLimiteKmh * efecto);
+}</code></pre>
+
+        <div class="explorador" id="sim-trafico">
+          <div class="explorador__cab">
+            <div><h4>Simulador · mismo trayecto, distinta hora</h4><h3 id="st-titulo">10 km por una avenida arteria (límite 50 km/h)</h3></div>
+            <span class="pastilla">Pasa el cursor o haz clic en una hora</span>
+          </div>
+          <div class="trayecto" id="st-barras" aria-label="Tiempo de viaje por hora"></div>
+          <div class="explorador__kpis" style="margin:12px 0 0">
+            <div><b id="st-hora">—</b><small>hora de salida</small></div>
+            <div><b id="st-vel">—</b><small>km/h efectivos</small></div>
+            <div><b id="st-min">—</b><small>minutos</small></div>
+            <div><b id="st-co2">—</b><small>kg CO₂ camión diésel</small></div>
+            <div><b id="st-extra">—</b><small>vs. salir de madrugada</small></div>
+          </div>
+        </div>
+      </section>
+
+      <section class="subseccion" id="m2">
+        <div class="etiqueta">M2 · Clasificación</div>
+        <h2>¿El accidente dejará víctimas?</h2>
+        <p>Clasificación binaria: <i>solo daños</i> frente a <i>con heridos o muertos</i>. Variables: hora, día, mes, clase de accidente,
+          número y tipo de vehículos involucrados (moto, bus, bicicleta, carga, servicio público) y ubicación geocodificada.
+          En el periodo de entrenamiento el <span id="balance">—</span> % de los accidentes tiene víctimas, por lo que se usó <code>class_weight="balanced"</code>.</p>
+        <div class="nota nota--aviso"><strong>Control de fuga de información.</strong> Una primera versión incluía el año y alcanzaba AUC 0,94, pero
+          porque desde 2023 casi todos los registros tienen víctimas: el año «delataba» la respuesta. El modelo final se entrena solo con
+          2018-2022 (registro consistente de ambas clases) y sin el año. Su AUC es menor, pero refleja la capacidad predictiva real.</div>
+
+        <div class="tabla-env">
+          <table><thead><tr><th>Algoritmo</th><th class="num">Exactitud</th><th class="num">Precisión</th><th class="num">Sensibilidad</th><th class="num">F1</th><th class="num">AUC prueba</th><th class="num">AUC CV (5)</th></tr></thead>
+            <tbody id="tabla-m2"></tbody></table>
+        </div>
+        <div class="rejilla rejilla-2" style="margin-top:20px">
+          <div class="grafica-tarjeta"><div class="grafica grafica--alta" data-id="m2_roc"></div></div>
+          <div class="grafica-tarjeta"><div class="grafica grafica--alta" data-id="m2_confusion"></div></div>
+        </div>
+        <div class="grafica-tarjeta" style="margin-top:20px"><div class="grafica grafica--alta" data-id="m2_importancia"></div></div>
+        <div class="nota" style="margin-top:18px" id="nota-m2"></div>
+      </section>
+
+      <section class="subseccion" id="m3">
+        <div class="etiqueta">M3 · Series de tiempo</div>
+        <h2>Pronóstico mensual de accidentes con víctimas</h2>
+        <p>Se pronostican los accidentes <b>con víctimas</b>, la única serie registrada con el mismo criterio en todo el periodo
+          (el total está distorsionado por el cambio de registro de 2023).
+          Modelo autorregresivo con regularización Ridge sobre el logaritmo del conteo mensual. Variables: rezagos de 1, 2 y 12 meses,
+          estacionalidad (mes) y una variable indicadora del confinamiento de 2020. Se pronostica un mes hacia adelante, que es el horizonte útil
+          para la planeación operativa, y se compara contra dos líneas base clásicas.</p>
+        <div class="tabla-env">
+          <table><thead><tr><th>Modelo</th><th class="num">MAPE 2025</th><th class="num">MAPE ene 2025 – sep 2026</th><th class="num">MAE (accidentes)</th></tr></thead>
+            <tbody id="tabla-m3"></tbody></table>
+        </div>
+        <div class="grafica-tarjeta" style="margin-top:20px"><div class="grafica grafica--alta" data-id="m3_pronostico"></div></div>
+        <div class="nota nota--aviso" style="margin-top:18px" id="nota-m3"></div>
+      </section>
+
+      <section class="subseccion" id="m4">
+        <div class="etiqueta">M4 · Aprendizaje no supervisado</div>
+        <h2>Puntos críticos con DBSCAN</h2>
+        <p>DBSCAN agrupa puntos densos sin necesidad de fijar de antemano el número de grupos y marca como ruido los accidentes aislados,
+          algo que K-means no puede hacer. Se usó distancia de Haversine sobre coordenadas en radianes.</p>
+        <div class="kpis">
+          <div class="kpi"><div class="kpi__valor"><span data-dato="eps_m">—</span> m</div><div class="kpi__etq">radio de vecindad (ε)</div></div>
+          <div class="kpi"><div class="kpi__valor" data-dato="min_samples">—</div><div class="kpi__etq">accidentes mínimos por núcleo</div></div>
+          <div class="kpi"><div class="kpi__valor" data-dato="total_clusters">—</div><div class="kpi__etq">puntos críticos detectados</div></div>
+          <div class="kpi"><div class="kpi__valor" data-dato="accidentes_en_clusters">—</div><div class="kpi__etq">accidentes dentro de un punto crítico</div></div>
+        </div>
+        <p style="margin-top:18px">Además de los clusters, cada uno de los 52.000 tramos de la red recibe un <b>índice de riesgo</b> (0 a 1): la suma
+          ponderada de los accidentes en un radio de 150 m (solo daños = 1, heridos = 3, muertos = 10), en escala logarítmica y normalizada al
+          percentil 99. El criterio «Más segura» del motor Java multiplica el tiempo de cada tramo por (1 + 4 × riesgo).
+          <a href="mapa.html">Activa la capa «Puntos críticos» en el mapa →</a></p>
+      </section>
+
+      <section class="subseccion" id="limitaciones">
+        <div class="etiqueta">Alcance</div>
+        <h2>Limitaciones y trabajo futuro</h2>
+        <ul class="lista-check">
+          <li><strong>Consumo de energía:</strong> las curvas de consumo por vehículo son paramétricas (tipo COPERT) y deberían calibrarse con telemetría real de flotas locales.</li>
+          <li><strong>Tráfico:</strong> el perfil horario es común a toda la ciudad; con datos de velocidad por corredor (GPS de flotas o aforos) podría estimarse por tramo.</li>
+          <li><strong>Cambios de registro:</strong> desde 2023 no se registran choques de solo daños, y los conteos de 2026 son atípicamente bajos (probablemente registros aún no consolidados).</li>
+          <li><strong>Geocodificación:</strong> el 19,6 % de las direcciones no pudo ubicarse (vías sin nombre en OSM o formatos ambiguos).</li>
+          <li><strong>Intermodalidad:</strong> la barcaza solo opera entre puntos ribereños; un siguiente paso es la ruta combinada camión + río.</li>
+        </ul>
+      </section>
+    </div>
+  </div>
+</main>
+
+<script src="vendor/plotly.min.js"></script>
+<script src="js/comun.js?v=3d4"></script>
+<script src="js/graficas.js?v=3d4"></script>
+<script src="js/simulador.js?v=3d4"></script>
+<script>
+  (async () => {
+    const m = await GR.json("data/modelos.json");
+    const f = GR.fmt;
+    const mejorM1 = m.m1.mejor, mejorM2 = m.m2.mejor, m3 = m.m3.comparacion[0];
+    document.getElementById("tabla-resumen").innerHTML = [
+      ["M1", "¿Cómo varía el tráfico por hora?", "Regresión", "Lineal · Random Forest · Gradient Boosting", "Hold-out temporal 2025 + GroupKFold", `R² = ${f(mejorM1.R2, 3)}`],
+      ["M2", "¿El accidente deja víctimas?", "Clasificación", "Logística · Random Forest · Gradient Boosting", "Estratificada 75/25 + CV 5 pliegues", `AUC = ${f(mejorM2.auc, 3)}`],
+      ["M3", "¿Cuántos accidentes con víctimas habrá el próximo mes?", "Series de tiempo", "Ridge AR · ingenuo estacional · media móvil", "Hold-out temporal 2025-2026", `MAPE = ${f(m3.MAPE_2025, 1)} %`],
+      ["M4", "¿Dónde se concentran los accidentes?", "Agrupamiento", "DBSCAN (Haversine)", "Densidad / inspección espacial", `${f(m.m4.total_clusters)} clusters`],
+    ].map((r) => `<tr><td><b>${r[0]}</b></td><td>${r[1]}</td><td>${r[2]}</td><td>${r[3]}</td><td>${r[4]}</td><td class="num"><b>${r[5]}</b></td></tr>`).join("");
+
+    document.getElementById("tabla-m1").innerHTML = m.m1.resultados.map((r) => {
+      const best = r.variante === mejorM1.variante && r.modelo === mejorM1.modelo;
+      return `<tr class="${best ? "destacada" : ""}"><td>${r.variante}</td><td>${r.modelo}</td><td><small>${r.validacion}</small></td>
+        <td class="num">${f(r.MAE, 1)}</td><td class="num">${f(r.RMSE, 1)}</td><td class="num"><b>${f(r.R2, 3)}</b></td></tr>`; }).join("");
+
+    document.getElementById("balance").textContent = f(m.m2.balance_clases * 100, 1);
+    document.getElementById("tabla-m2").innerHTML = m.m2.resultados.map((r) => `<tr class="${r.modelo === mejorM2.modelo ? "destacada" : ""}">
+      <td>${r.modelo}</td><td class="num">${f(r.accuracy, 3)}</td><td class="num">${f(r.precision, 3)}</td><td class="num">${f(r.recall, 3)}</td>
+      <td class="num">${f(r.f1, 3)}</td><td class="num"><b>${f(r.auc, 3)}</b></td><td class="num">${f(r.auc_cv_media, 3)} ± ${f(r.auc_cv_std, 3)}</td></tr>`).join("");
+    document.getElementById("nota-m2").innerHTML = `<strong>Lectura.</strong> El mejor modelo (${mejorM2.modelo}) discrimina con AUC ${f(mejorM2.auc, 3)}
+      sobre ${f(m.m2.n_test)} accidentes de prueba (${m.m2.periodo}). Las variables más influyentes son: ${m.m2.importancia_top.join(", ").toLowerCase()}.
+      El ${f(m.m2.pct_victimas_con_moto, 1)} % de los accidentes con motocicleta deja víctimas, frente al ${f(m.m2.pct_victimas_sin_moto, 1)} % de los demás;
+      en los accidentes con vehículo de carga la proporción es del ${f(m.m2.pct_victimas_con_carga, 1)} %: suelen ser choques de solo daños materiales.`;
+
+    document.getElementById("tabla-m3").innerHTML = m.m3.comparacion.map((r, i) => `<tr class="${i === 0 ? "destacada" : ""}">
+      <td>${r.modelo}</td><td class="num"><b>${f(r.MAPE_2025, 1)} %</b></td><td class="num">${f(r.MAPE_total, 1)} %</td><td class="num">${f(r.MAE, 1)}</td></tr>`).join("");
+    document.getElementById("nota-m3").innerHTML = `<strong>Subregistro reciente.</strong> En 2025 el promedio fue de ${f(m.m3.promedio_mensual_2025)} accidentes con víctimas por mes,
+      pero en 2026 cae a ${f(m.m3.promedio_mensual_2026)}, un descenso abrupto que ningún modelo anticipa y que sugiere subregistro en los datos más recientes.
+      Por eso el error se reporta por separado para 2025, donde el modelo Ridge supera a ambas líneas base.`;
+    GR.rellenar(m.m4, document.getElementById("m4"));
+  })();
+</script>
+</body>
+</html>

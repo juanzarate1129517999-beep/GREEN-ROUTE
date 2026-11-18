@@ -1,0 +1,180 @@
+{
+ "muestreo": {
+  "N": 28865,
+  "z": 1.96,
+  "p": 0.5,
+  "error": 0.03,
+  "n0": 1067.1,
+  "n": 1030,
+  "estratos": [
+   {
+    "anio": 2018,
+    "N_h": 5898,
+    "n_h": 211
+   },
+   {
+    "anio": 2019,
+    "N_h": 5645,
+    "n_h": 201
+   },
+   {
+    "anio": 2020,
+    "N_h": 3281,
+    "n_h": 117
+   },
+   {
+    "anio": 2021,
+    "N_h": 4700,
+    "n_h": 168
+   },
+   {
+    "anio": 2022,
+    "N_h": 3683,
+    "n_h": 131
+   },
+   {
+    "anio": 2023,
+    "N_h": 1674,
+    "n_h": 60
+   },
+   {
+    "anio": 2024,
+    "N_h": 1482,
+    "n_h": 53
+   },
+   {
+    "anio": 2025,
+    "N_h": 1656,
+    "n_h": 59
+   },
+   {
+    "anio": 2026,
+    "N_h": 846,
+    "n_h": 30
+   }
+  ],
+  "pruebas": [
+   {
+    "variable": "Gravedad",
+    "chi2": 0.153,
+    "gl": 2,
+    "p_valor": 0.9262,
+    "representativa": true
+   },
+   {
+    "variable": "Clase de accidente",
+    "chi2": 0.55,
+    "gl": 4,
+    "p_valor": 0.9685,
+    "representativa": true
+   },
+   {
+    "variable": "Día de la semana",
+    "chi2": 7.062,
+    "gl": 6,
+    "p_valor": 0.3152,
+    "representativa": true
+   }
+  ],
+  "estimacion": {
+   "parametro": "Proporción de accidentes con víctimas",
+   "muestra": 0.4631,
+   "ic95": [
+    0.4332,
+    0.493
+   ],
+   "poblacion": 0.4641
+  }
+ },
+ "accidentalidad": {
+  "accidentes": 28865,
+  "victimas_heridos": 13040,
+  "con_muertos": 355,
+  "vehiculos": 52102,
+  "vehiculos_carga": 3662,
+  "pct_con_carga": 12.4,
+  "hora_pico": 12,
+  "anio_max": 2018,
+  "pct_victimas_2018_2021": 30.5,
+  "pct_victimas_2023_2026": 99.6,
+  "victimas_mes_2018_2022": 129.3,
+  "victimas_mes_2023_2025": 133.1
+ },
+ "aire": {
+  "mediciones": 249540,
+  "estaciones": 7,
+  "pm25_media": 11.4,
+  "pm10_media": 30.8,
+  "pm25_dias_sobre_oms_pct": 21.1,
+  "cobertura": {
+   "cobertura_media": {
+    "PM2.5": 58.7,
+    "PM10": 75.8,
+    "CO": 73.0,
+    "O3": 57.1
+   },
+   "tramos_sin_pm25": [
+    {
+     "desde": "2023-06",
+     "hasta": "2025-02",
+     "meses": 21,
+     "texto": "jun 2023 – feb 2025",
+     "otros_con_dato": [
+      "PM10",
+      "CO",
+      "O3"
+     ],
+     "meses_sin_ningun_dato": [
+      "2023-11",
+      "2023-12",
+      "2024-01",
+      "2024-02",
+      "2024-04",
+      "2024-11",
+      "2024-12"
+     ]
+    }
+   ],
+   "meses_sin_ningun_contaminante": [
+    "2023-11",
+    "2023-12",
+    "2024-01",
+    "2024-02",
+    "2024-04",
+    "2024-11",
+    "2024-12"
+   ],
+   "texto_meses_sin_ningun_contaminante": "nov 2023, dic 2023, ene 2024, feb 2024, abr 2024, nov 2024, dic 2024"
+  }
+ },
+ "red": {
+  "nodos": 18050,
+  "aristas": 51964,
+  "km_totales": 4110.7,
+  "km_por_tipo": {
+   "residential": 3256.6,
+   "tertiary": 443.7,
+   "secondary": 148.0,
+   "unclassified": 81.9,
+   "trunk": 77.8,
+   "primary": 52.0,
+   "busway": 26.4,
+   "trunk_link": 18.9,
+   "secondary_link": 2.1,
+   "tertiary_link": 1.8,
+   "primary_link": 1.4,
+   "ladder": 0.1
+  },
+  "grado_medio": 5.76,
+  "vias_con_nombre_pct": 94.5
+ },
+ "geocodificacion": {
+  "total": 28865,
+  "ubicados": 23209,
+  "tasa_pct": 80.4,
+  "direcciones_unicas": 17275,
+  "exacta": 21604,
+  "aproximada": 1605,
+  "no_ubicada": 5656
+ }
+}

@@ -1,0 +1,487 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Arquitectura POO · Green Route</title>
+  <meta name="description" content="Diagrama de clases, conceptos de programación orientada a objetos y patrones de diseño del motor de rutas en Java.">
+  <link rel="icon" href="img/favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Geist:wght@300..700&family=Geist+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/estilos.css?v=3d4">
+  <style>
+    .capas { display: grid; gap: 10px; }
+    .capa { display: grid; grid-template-columns: 180px minmax(0, 1fr); gap: 18px; align-items: center; background: var(--surface); border: 1px solid var(--border); border-radius: var(--radius); padding: 16px 20px; }
+    .capa h3 { font: 600 .95rem/1.3 var(--font-sans); margin: 0; }
+    .capa h3 small { display: block; color: var(--muted); font-weight: 500; font-size: .76rem; margin-top: 2px; }
+    .capa__items { display: flex; flex-wrap: wrap; gap: 6px; }
+    .capa__items code { font-size: .78rem; }
+    .flecha { text-align: center; color: var(--muted); font-size: .78rem; line-height: 1; }
+    .capa--java { border-color: var(--ink); box-shadow: inset 3px 0 0 var(--accent); }
+    .capa { background: var(--panel) !important; border-radius: var(--radius) !important; }
+    .capa h3 { font-family: var(--font-sans) !important; font-style: normal !important; text-transform: none !important; }
+    @media (max-width: 680px) { .capa { grid-template-columns: 1fr; gap: 8px; } }
+    .uml { background: var(--surface); border: 1px solid var(--border); border-radius: var(--radius); padding: 16px; overflow-x: auto; }
+    .uml .mermaid { min-width: 720px; display: flex; justify-content: center; background: none; border: 0; padding: 0; color: inherit; margin: 0; }
+    .concepto { display: grid; grid-template-columns: minmax(0, .9fr) minmax(0, 1.1fr); gap: 24px; padding: 28px 0; border-top: 1px solid var(--border); align-items: start; }
+    .concepto:first-of-type { border-top: 0; padding-top: 8px; }
+    .concepto h3 { margin-bottom: 6px; }
+    .concepto p { color: var(--ink-2); font-size: .95rem; }
+    .concepto pre { margin: 0; }
+    .archivos { display: flex; flex-wrap: wrap; gap: 6px; margin-top: 10px; }
+    @media (max-width: 900px) { .concepto { grid-template-columns: 1fr; } }
+    .arbol { font: 500 .84rem/1.75 var(--font-mono); background: var(--surface); border: 1px solid var(--border); border-radius: var(--radius); padding: 18px 22px; overflow-x: auto; white-space: pre; color: var(--ink-2); }
+    .arbol b { color: var(--accent-ink); font-weight: 600; }
+  </style>
+</head>
+<body>
+<header class="cab-pagina">
+  <div class="contenedor">
+    <div class="miga"><a href="index.html">Inicio</a> / Arquitectura POO</div>
+    <h1>Arquitectura y Programación Orientada a Objetos</h1>
+    <p>El motor de rutas está escrito en Java 21 puro, sin librerías externas: 70 clases organizadas en 10 paquetes (incluida una <a href="codigo.html#co/edu/greenroute/escritorio/AsistenteJOptionPane.java">app de escritorio con Swing y JOptionPane</a>), donde cada concepto
+      de POO visto en el curso cumple una función real dentro del sistema.</p>
+  </div>
+</header>
+
+<main class="contenedor seccion" style="padding-top:48px">
+  <div class="con-indice">
+    <nav class="indice-pagina" aria-label="Contenido de la página">
+      <h4>En esta página</h4>
+      <a href="#capas">Arquitectura por capas</a>
+      <a href="#uml">Diagrama de clases</a>
+      <a href="#conceptos">Conceptos de POO</a>
+      <a href="#patrones">Patrones de diseño</a>
+      <a href="#paquetes">Estructura de paquetes</a>
+      <a href="#api">API REST</a>
+      <a href="#ejecucion">Cómo ejecutarlo</a>
+    </nav>
+    <div>
+      <section class="subseccion" id="capas">
+        <div class="etiqueta">Visión general</div>
+        <h2>Arquitectura por capas</h2>
+        <p>Python se encarga de lo que mejor hace (ciencia de datos y ML) y Java de lo que exige el curso (el diseño orientado a objetos del
+          dominio y el algoritmo). Ambos mundos se comunican por archivos CSV con un contrato fijo, y el navegador habla con Java por HTTP.</p>
+        <div class="capas">
+          <div class="capa"><h3>Fuentes<small>Datos abiertos</small></h3><div class="capa__items"><code>datos.gov.co</code><code>OpenStreetMap</code><code>Open-Meteo</code><code>UPME · IPCC</code></div></div>
+          <div class="flecha">▼ descarga automática</div>
+          <div class="capa"><h3>Pipeline analítico<small>Python · pandas · scikit-learn</small></h3><div class="capa__items"><code>01_descargar</code><code>02_red_vial</code><code>03_geocodificar</code><code>04_estudio</code><code>05_modelos_ml</code></div></div>
+          <div class="flecha">▼ nodos.csv · aristas.csv · fluvial.csv · riesgo_aristas.csv · perfil_horario.csv</div>
+          <div class="capa capa--java"><h3>Núcleo de dominio<small>Java 21 · POO</small></h3><div class="capa__items"><code>vehiculos</code><code>red</code><code>ruteo</code><code>servicio</code><code>analitica</code><code>excepciones</code><code>modelo</code></div></div>
+          <div class="flecha">▼ API REST JSON (com.sun.net.httpserver)</div>
+          <div class="capa"><h3>Presentación<small>HTML · CSS · JavaScript</small></h3><div class="capa__items"><code>Leaflet (mapa)</code><code>Plotly (gráficas)</code><code>Mermaid (UML)</code></div></div>
+        </div>
+      </section>
+
+      <section class="subseccion" id="uml">
+        <div class="etiqueta">UML</div>
+        <h2>Diagrama de clases</h2>
+        <p>Vista simplificada de las clases principales. Las flechas con triángulo indican herencia (<i>extends</i>), las punteadas implementación
+          de interfaz (<i>implements</i>), el rombo relleno composición y el rombo vacío agregación.</p>
+        <h3 style="font-family:var(--font-sans);font-size:1rem;margin:8px 0 10px">a) Jerarquía de vehículos</h3>
+        <div class="uml"><pre class="mermaid">
+classDiagram
+direction TB
+class Emisor {
+  &lt;&lt;interface&gt;&gt;
+  +calcularEmisionKgCO2(Tramo, ContextoViaje) double
+}
+class Recargable {
+  &lt;&lt;interface&gt;&gt;
+  +getCapacidadBateriaKWh() double
+  +consumoReferenciaKWhKm(carga) double
+  +autonomiaKm(carga) double
+}
+class Vehiculo {
+  &lt;&lt;abstract&gt;&gt;
+  -String id
+  -String nombre
+  -double capacidadKg
+  -double pesoVacioKg
+  +getTipoEnergia()* TipoEnergia
+  #consumoPorKm(vel, carga)* double
+  +puedeCircularPor(Tramo)* boolean
+  +calcularEmisionKgCO2(Tramo, ContextoViaje) double
+  +validarCarga(kg) void
+}
+class VehiculoTerrestre {
+  &lt;&lt;abstract&gt;&gt;
+  +esPesado() boolean
+  +penalizacionVia(Tramo) double
+}
+class Flota {
+  -List~Vehiculo~ vehiculos
+  +agregar(Vehiculo) void
+  +buscar(id) Optional
+}
+Emisor &lt;|.. Vehiculo
+Vehiculo &lt;|-- VehiculoTerrestre
+Vehiculo &lt;|-- Barcaza
+VehiculoTerrestre &lt;|-- CamionDiesel
+CamionDiesel &lt;|-- Tractocamion
+VehiculoTerrestre &lt;|-- CamionGNV
+VehiculoTerrestre &lt;|-- CamionElectrico
+VehiculoTerrestre &lt;|-- FurgonetaGasolina
+VehiculoTerrestre &lt;|-- FurgonetaElectrica
+Recargable &lt;|.. CamionElectrico
+Recargable &lt;|.. FurgonetaElectrica
+Flota "1" *-- "1..*" Vehiculo
+</pre></div>
+
+        <h3 style="font-family:var(--font-sans);font-size:1rem;margin:28px 0 10px">b) Red de transporte y algoritmos de ruteo</h3>
+        <div class="uml"><pre class="mermaid">
+classDiagram
+direction LR
+class RedTransporte {
+  -List~Nodo~ nodos
+  +nodoMasCercano(Coordenada, Medio) Nodo
+}
+class Nodo {
+  -Coordenada coordenada
+  -List~Tramo~ salientes
+}
+class Tramo {
+  &lt;&lt;abstract&gt;&gt;
+  -double longitudM
+  +velocidadEfectivaKmh(ctx)* double
+  +esFluvial()* boolean
+}
+class TramoVial {
+  -TipoVia tipoVia
+  -double riesgo
+}
+class TramoFluvial {
+  -boolean aguasAbajo
+}
+class AlgoritmoRuta {
+  &lt;&lt;interface&gt;&gt;
+  +buscar(red, o, d, v, criterio, ctx) Ruta
+}
+class BusquedaCaminoMinimo {
+  &lt;&lt;abstract&gt;&gt;
+  #heuristica(n, destino, cota)* double
+  +buscar(...) Ruta
+}
+class FuncionCosto {
+  &lt;&lt;interface&gt;&gt;
+  +costo(Tramo, Vehiculo, ctx) double
+  +cotaInferiorPorMetro(v, ctx) double
+}
+class Ruta {
+  -List~Tramo~ tramos
+  +getEmisionKgCO2() double
+  +indicaciones() List
+}
+RedTransporte "1" *-- "*" Nodo
+Nodo "1" *-- "*" Tramo
+Tramo &lt;|-- TramoVial
+Tramo &lt;|-- TramoFluvial
+AlgoritmoRuta &lt;|.. BusquedaCaminoMinimo
+BusquedaCaminoMinimo &lt;|-- Dijkstra
+BusquedaCaminoMinimo &lt;|-- AEstrella
+BusquedaCaminoMinimo ..&gt; FuncionCosto : usa
+FuncionCosto &lt;|.. CriterioEmisiones
+FuncionCosto &lt;|.. CriterioTiempo
+FuncionCosto &lt;|.. CriterioDistancia
+FuncionCosto &lt;|.. CriterioRiesgo
+FuncionCosto &lt;|.. CriterioEcoBalanceado
+BusquedaCaminoMinimo ..&gt; Ruta : crea
+Ruta o-- Tramo
+</pre></div>
+
+        <h3 style="font-family:var(--font-sans);font-size:1rem;margin:28px 0 10px">c) Servicio, modelo de dominio y excepciones</h3>
+        <div class="uml"><pre class="mermaid">
+classDiagram
+direction LR
+class PlanificadorRutas {
+  -RedTransporte red
+  -Flota flota
+  -PerfilHorario perfil
+  -AlgoritmoRuta algoritmo
+  +planificar(Envio, Vehiculo, Criterio) Ruta
+  +alternativas(...) Map
+  +compararFlota(...) List
+  +recomendar(List) Optional
+}
+class Envio {
+  -Mercancia mercancia
+  -Coordenada origen
+  -Coordenada destino
+  -int horaSalida
+}
+class Mercancia {
+  -TipoMercancia tipo
+  -double pesoKg
+}
+class PerfilHorario {
+  -double[] factorVelocidad
+  +factorVelocidad(hora) double
+}
+class GreenRouteException {
+  -String codigo
+}
+PlanificadorRutas o-- RedTransporte
+PlanificadorRutas o-- Flota
+PlanificadorRutas o-- PerfilHorario
+PlanificadorRutas --&gt; AlgoritmoRuta
+PlanificadorRutas ..&gt; Envio : recibe
+Envio o-- Mercancia
+Envio o-- Coordenada
+PlanificadorRutas ..&gt; OpcionTransporte : produce
+Exception &lt;|-- GreenRouteException
+GreenRouteException &lt;|-- CapacidadExcedidaException
+GreenRouteException &lt;|-- AutonomiaInsuficienteException
+GreenRouteException &lt;|-- VehiculoIncompatibleException
+GreenRouteException &lt;|-- RutaNoEncontradaException
+GreenRouteException &lt;|-- DatosInvalidosException
+</pre></div>
+      </section>
+
+      <section class="subseccion" id="conceptos">
+        <div class="etiqueta">Conceptos del curso</div>
+        <h2>Cada concepto de POO, en el código</h2>
+
+        <article class="concepto">
+          <div><h4>1 · Clases y objetos · encapsulamiento</h4><h3>Datos privados, acceso controlado</h3>
+            <p>Todos los atributos son <code>private final</code> y se validan en el constructor: no es posible crear un vehículo con capacidad negativa
+              ni una coordenada fuera de rango. El exterior solo lee mediante <i>getters</i>; el riesgo de un tramo solo se modifica por un
+              <i>setter</i> que acota el valor entre 0 y 1.</p>
+            <div class="archivos"><code>Vehiculo.java</code><code>Coordenada.java</code><code>TramoVial.java</code></div></div>
+<pre><code><span class="tok-k">public abstract class</span> <span class="tok-t">Vehiculo</span> <span class="tok-k">implements</span> <span class="tok-t">Emisor</span> {
+    <span class="tok-k">private final</span> String id;
+    <span class="tok-k">private final double</span> capacidadKg;
+
+    <span class="tok-k">protected</span> <span class="tok-t">Vehiculo</span>(String id, ..., <span class="tok-k">double</span> capacidadKg, ...) {
+        <span class="tok-k">if</span> (capacidadKg &lt;= <span class="tok-s">0</span>) {
+            <span class="tok-k">throw new</span> IllegalArgumentException(<span class="tok-s">"Parámetros físicos inválidos"</span>);
+        }
+        <span class="tok-k">this</span>.capacidadKg = capacidadKg;
+    }
+    <span class="tok-k">public double</span> <span class="tok-t">getCapacidadKg</span>() { <span class="tok-k">return</span> capacidadKg; }
+}</code></pre>
+        </article>
+
+        <article class="concepto">
+          <div><h4>2 · Herencia</h4><h3>Jerarquía de vehículos de tres niveles</h3>
+            <p><code>Vehiculo → VehiculoTerrestre → CamionDiesel → Tractocamion</code>. El tractocamión reutiliza todo el modelo de consumo del camión
+              diésel y solo cambia sus parámetros a través de <code>super(...)</code>. Lo mismo ocurre con los tramos:
+              <code>Tramo → TramoVial / TramoFluvial</code>.</p>
+            <div class="archivos"><code>Tractocamion.java</code><code>CamionDiesel.java</code><code>VehiculoTerrestre.java</code></div></div>
+<pre><code><span class="tok-c">/** Hereda el modelo de consumo del camión diésel: solo cambia parámetros. */</span>
+<span class="tok-k">public class</span> <span class="tok-t">Tractocamion</span> <span class="tok-k">extends</span> <span class="tok-t">CamionDiesel</span> {
+    <span class="tok-k">public</span> <span class="tok-t">Tractocamion</span>(String id, String nombre) {
+        <span class="tok-k">super</span>(id, nombre, <span class="tok-s">34_000</span>, <span class="tok-s">15_000</span>, <span class="tok-s">70</span>, <span class="tok-s">33.0</span>, <span class="tok-s">0.30</span>, <span class="tok-s">1_100</span>);
+    }
+    <span class="tok-a">@Override</span>
+    <span class="tok-k">public</span> String <span class="tok-t">getTecnologia</span>() {
+        <span class="tok-k">return</span> <span class="tok-s">"Tractocamión articulado diésel (contenedores)"</span>;
+    }
+}</code></pre>
+        </article>
+
+        <article class="concepto">
+          <div><h4>3 · Polimorfismo</h4><h3>Una misma llamada, siete respuestas</h3>
+            <p>El optimizador invoca <code>vehiculo.calcularEmisionKgCO2(tramo, ctx)</code> sin saber qué vehículo es. Java despacha en tiempo de
+              ejecución al <code>consumoPorKm</code> de la clase concreta: litros de diésel, m³ de gas o kWh. La barcaza redefine
+              <code>puedeCircularPor</code> para aceptar solo el río; los terrestres lo redefinen para evitar el río y los carriles del Transmetro.</p>
+            <div class="archivos"><code>CriterioEmisiones.java</code><code>Barcaza.java</code><code>CamionElectrico.java</code></div></div>
+<pre><code><span class="tok-c">// CriterioEmisiones.java — no conoce la clase concreta</span>
+<span class="tok-k">public double</span> <span class="tok-t">costo</span>(Tramo t, Vehiculo v, ContextoViaje c) {
+    <span class="tok-k">return</span> v.calcularEmisionKgCO2(t, c);   <span class="tok-c">// enlace dinámico</span>
+}
+
+<span class="tok-c">// CamionElectrico.java</span>
+<span class="tok-a">@Override</span>
+<span class="tok-k">protected double</span> <span class="tok-t">consumoPorKm</span>(<span class="tok-k">double</span> v, <span class="tok-k">double</span> carga) {
+    <span class="tok-k">return</span> consumoReferenciaKWhKm(carga) * curvaVelocidad(v, <span class="tok-s">0.85</span>, <span class="tok-s">5.0</span>, <span class="tok-s">0.00009</span>);
+}</code></pre>
+        </article>
+
+        <article class="concepto">
+          <div><h4>4 · Abstracción</h4><h3>Clases abstractas con métodos plantilla</h3>
+            <p><code>Vehiculo</code>, <code>VehiculoTerrestre</code>, <code>Tramo</code> y <code>BusquedaCaminoMinimo</code> son abstractas: no se pueden
+              instanciar y declaran métodos sin cuerpo que las subclases están obligadas a implementar. En <code>BusquedaCaminoMinimo</code> todo el
+              algoritmo es común; Dijkstra y A* solo difieren en <code>heuristica()</code>.</p>
+            <div class="archivos"><code>BusquedaCaminoMinimo.java</code><code>Dijkstra.java</code><code>AEstrella.java</code></div></div>
+<pre><code><span class="tok-k">public abstract class</span> <span class="tok-t">BusquedaCaminoMinimo</span> <span class="tok-k">implements</span> <span class="tok-t">AlgoritmoRuta</span> {
+    <span class="tok-k">protected abstract double</span> <span class="tok-t">heuristica</span>(Nodo n, Nodo destino, <span class="tok-k">double</span> cota);
+    <span class="tok-k">public final</span> Ruta <span class="tok-t">buscar</span>(...) { <span class="tok-c">/* cola de prioridad común */</span> }
+}
+<span class="tok-k">public class</span> <span class="tok-t">Dijkstra</span> <span class="tok-k">extends</span> <span class="tok-t">BusquedaCaminoMinimo</span> {
+    <span class="tok-k">protected double</span> <span class="tok-t">heuristica</span>(...) { <span class="tok-k">return</span> <span class="tok-s">0.0</span>; }
+}
+<span class="tok-k">public class</span> <span class="tok-t">AEstrella</span> <span class="tok-k">extends</span> <span class="tok-t">BusquedaCaminoMinimo</span> {
+    <span class="tok-k">protected double</span> <span class="tok-t">heuristica</span>(Nodo n, Nodo d, <span class="tok-k">double</span> cota) {
+        <span class="tok-k">return</span> n.getCoordenada().distanciaMetros(d.getCoordenada()) * cota;
+    }
+}</code></pre>
+        </article>
+
+        <article class="concepto">
+          <div><h4>5 · Interfaces</h4><h3>Contratos con métodos por defecto</h3>
+            <p><code>Emisor</code>, <code>Recargable</code>, <code>FuncionCosto</code> y <code>AlgoritmoRuta</code> definen capacidades. Un camión eléctrico
+              es a la vez <i>Vehiculo</i> (herencia) y <i>Recargable</i> (interfaz). <code>Recargable</code> trae métodos <code>default</code> que calculan la
+              autonomía a partir de los métodos abstractos que cada clase implementa.</p>
+            <div class="archivos"><code>Recargable.java</code><code>Emisor.java</code><code>FuncionCosto.java</code></div></div>
+<pre><code><span class="tok-k">public interface</span> <span class="tok-t">Recargable</span> {
+    <span class="tok-k">double</span> <span class="tok-t">getCapacidadBateriaKWh</span>();
+    <span class="tok-k">double</span> <span class="tok-t">consumoReferenciaKWhKm</span>(<span class="tok-k">double</span> cargaKg);
+
+    <span class="tok-k">default double</span> <span class="tok-t">autonomiaKm</span>(<span class="tok-k">double</span> cargaKg) {
+        <span class="tok-k">return</span> getCapacidadBateriaKWh() * <span class="tok-s">0.90</span> / consumoReferenciaKWhKm(cargaKg);
+    }
+}
+<span class="tok-k">public class</span> <span class="tok-t">CamionElectrico</span> <span class="tok-k">extends</span> <span class="tok-t">VehiculoTerrestre</span> <span class="tok-k">implements</span> <span class="tok-t">Recargable</span> { ... }</code></pre>
+        </article>
+
+        <article class="concepto">
+          <div><h4>6 · Composición y agregación</h4><h3>Objetos formados por otros objetos</h3>
+            <p><b>Composición</b> (el todo crea y es dueño de sus partes): <code>RedTransporte</code> crea sus <code>Nodo</code>, cada nodo posee su lista de
+              <code>Tramo</code> salientes y <code>Flota</code> controla su lista de vehículos sin exponerla modificable. <b>Agregación</b> (las partes existen
+              por sí solas): un <code>Envio</code> referencia una <code>Mercancia</code> y dos <code>Coordenada</code>; el <code>PlanificadorRutas</code> recibe la red,
+              la flota y el perfil ya construidos.</p>
+            <div class="archivos"><code>Flota.java</code><code>RedTransporte.java</code><code>Envio.java</code></div></div>
+<pre><code><span class="tok-k">public class</span> <span class="tok-t">Flota</span> {
+    <span class="tok-k">private final</span> List&lt;Vehiculo&gt; vehiculos = <span class="tok-k">new</span> ArrayList&lt;&gt;();
+
+    <span class="tok-k">public void</span> <span class="tok-t">agregar</span>(Vehiculo v) {
+        <span class="tok-k">if</span> (vehiculos.contains(v)) <span class="tok-k">throw new</span> IllegalArgumentException(<span class="tok-s">"Duplicado"</span>);
+        vehiculos.add(v);
+    }
+    <span class="tok-k">public</span> List&lt;Vehiculo&gt; <span class="tok-t">getVehiculos</span>() {
+        <span class="tok-k">return</span> Collections.unmodifiableList(vehiculos);   <span class="tok-c">// nadie la altera desde fuera</span>
+    }
+}</code></pre>
+        </article>
+
+        <article class="concepto">
+          <div><h4>7 · Excepciones propias</h4><h3>Errores del negocio con jerarquía</h3>
+            <p><code>GreenRouteException</code> es la excepción verificada base, con un código de error. De ella heredan
+              <code>CapacidadExcedidaException</code>, <code>AutonomiaInsuficienteException</code>, <code>VehiculoIncompatibleException</code>,
+              <code>RutaNoEncontradaException</code> y <code>DatosInvalidosException</code>. El servidor las captura en un solo punto y las convierte en
+              mensajes claros para el usuario (por ejemplo, «la barcaza solo opera entre puntos ribereños»).</p>
+            <div class="archivos"><code>excepciones/</code><code>PlanificadorRutas.java</code><code>ServidorWeb.java</code></div></div>
+<pre><code><span class="tok-k">public void</span> <span class="tok-t">validarCarga</span>(<span class="tok-k">double</span> cargaKg) <span class="tok-k">throws</span> CapacidadExcedidaException {
+    <span class="tok-k">if</span> (cargaKg &gt; capacidadKg) {
+        <span class="tok-k">throw new</span> CapacidadExcedidaException(nombre, cargaKg, capacidadKg);
+    }
+}
+<span class="tok-c">// En compararFlota(): cada vehículo que falla se reporta, no detiene el resto</span>
+<span class="tok-k">try</span> {
+    opciones.add(OpcionTransporte.factible(v, planificar(o, d, v, criterio, hora, carga)));
+} <span class="tok-k">catch</span> (GreenRouteException e) {
+    opciones.add(OpcionTransporte.noFactible(v, e));
+}</code></pre>
+        </article>
+      </section>
+
+      <section class="subseccion" id="patrones">
+        <div class="etiqueta">Diseño</div>
+        <h2>Patrones de diseño aplicados</h2>
+        <div class="rejilla rejilla-2">
+          <div class="tarjeta tarjeta--plana"><h4>Strategy</h4><h3>Criterios intercambiables</h3><p>Cinco implementaciones de <code>FuncionCosto</code>
+            (emisiones, tiempo, distancia, riesgo, eco-balanceado). El algoritmo de búsqueda no cambia al cambiar de criterio.</p></div>
+          <div class="tarjeta tarjeta--plana"><h4>Template Method</h4><h3>Algoritmo con pasos variables</h3><p><code>BusquedaCaminoMinimo.buscar()</code> fija el
+            esqueleto y delega la heurística; <code>Vehiculo.calcularEmisionKgCO2()</code> fija la fórmula y delega el consumo.</p></div>
+          <div class="tarjeta tarjeta--plana"><h4>Facade</h4><h3>Un punto de entrada</h3><p><code>PlanificadorRutas</code> oculta la red, la flota, el perfil
+            horario y el algoritmo detrás de métodos simples: <code>planificar</code>, <code>alternativas</code> y <code>compararFlota</code>.</p></div>
+          <div class="tarjeta tarjeta--plana"><h4>Factory</h4><h3>Creación centralizada</h3><p><code>Criterio</code> fabrica la estrategia de cada criterio
+            (<code>crearFuncion()</code>) y <code>Flota.flotaDeReferencia()</code> construye la flota de demostración.</p></div>
+        </div>
+      </section>
+
+      <section class="subseccion" id="paquetes">
+        <div class="etiqueta">Código fuente</div>
+        <h2>Estructura del proyecto</h2>
+<div class="arbol"><b>Proyecto Integrador/</b>
+├── <b>analisis/</b>                   Pipeline de datos y ML (Python)
+│   ├── config.py              rutas, fuentes y factores de emisión
+│   ├── graficas.py            exportación PNG (informe) + JSON (web)
+│   ├── 01_descargar_datos.py  datos.gov.co + Open-Meteo
+│   ├── 02_red_vial.py         OpenStreetMap → grafo vial y fluvial
+│   ├── 03_geocodificar_accidentes.py   direcciones → cruces, DBSCAN, riesgo
+│   ├── 04_estudio_exploratorio.py      limpieza, muestreo, EDA
+│   └── 05_modelos_ml.py       M1 regresión · M2 clasificación · M3 pronóstico
+├── <b>greenroute-java/</b>            Motor de rutas (Java 21, POO)
+│   ├── src/co/edu/greenroute/
+│   │   ├── <b>modelo/</b>             Coordenada, Mercancia, Envio, TipoMercancia
+│   │   ├── <b>vehiculos/</b>          Vehiculo, VehiculoTerrestre, CamionDiesel, Tractocamion,
+│   │   │                      CamionGNV, CamionElectrico, Furgoneta…, Barcaza,
+│   │   │                      Emisor, Recargable, TipoEnergia, Flota
+│   │   ├── <b>red/</b>                Nodo, Tramo, TramoVial, TramoFluvial, TipoVia,
+│   │   │                      RedTransporte, IndiceEspacial, CargadorRed
+│   │   ├── <b>ruteo/</b>              AlgoritmoRuta, BusquedaCaminoMinimo, Dijkstra, AEstrella,
+│   │   │                      FuncionCosto, Criterio*, ContextoViaje, Ruta
+│   │   ├── <b>analitica/</b>          PerfilHorario (puente con el modelo ML)
+│   │   ├── <b>servicio/</b>           PlanificadorRutas, OpcionTransporte
+│   │   ├── <b>excepciones/</b>        GreenRouteException y subclases
+│   │   ├── <b>api/</b>                ServidorWeb (HTTP + REST)
+│   │   ├── <b>util/</b>               LectorCSV, Json
+│   │   └── App.java           punto de entrada (servidor o --demo)
+│   ├── datos/                 CSV generados por el pipeline
+│   ├── compilar.ps1 · ejecutar.ps1
+├── <b>web/</b>                        Sitio y mapa (HTML · CSS · JS)
+├── <b>data/</b>                       raw/ (descargas) · processed/ (limpios)
+└── <b>docs/</b>                       Proyecto-integrador.pdf (formato diligenciado)</div>
+      </section>
+
+      <section class="subseccion" id="api">
+        <div class="etiqueta">Integración</div>
+        <h2>API REST del motor</h2>
+        <p>Parámetros comunes: <code>olat, olon, dlat, dlon</code> (origen y destino), <code>vehiculo</code>, <code>criterio</code>, <code>hora</code> (0-23) y
+          <code>carga</code> (kg). Los errores del dominio responden con HTTP 422 y un JSON con <code>error</code> y <code>mensaje</code>.</p>
+        <div class="tabla-env">
+          <table><thead><tr><th>Método y ruta</th><th>Descripción</th></tr></thead>
+            <tbody>
+              <tr><td><code>GET /api/estado</code></td><td>Tamaño de la red, algoritmo activo y perfil horario de tráfico.</td></tr>
+              <tr><td><code>GET /api/vehiculos</code></td><td>Flota con clase, superclase, energía, capacidad y batería.</td></tr>
+              <tr><td><code>GET /api/puntos</code></td><td>Puntos logísticos geocodificados (puerto, zona franca, aeropuerto…).</td></tr>
+              <tr><td><code>GET /api/ruta</code></td><td>Ruta óptima para un vehículo y un criterio, con geometría e indicaciones.</td></tr>
+              <tr><td><code>GET /api/alternativas</code></td><td>La mejor ruta del vehículo bajo cada uno de los cinco criterios.</td></tr>
+              <tr><td><code>GET /api/comparar</code></td><td>Evalúa toda la flota y recomienda el vehículo de menor emisión.</td></tr>
+              <tr><td><code>GET /api/algoritmos</code></td><td>Compara Dijkstra y A* (nodos explorados y tiempo de cálculo).</td></tr>
+            </tbody></table>
+        </div>
+      </section>
+
+      <section class="subseccion" id="ejecucion">
+        <div class="etiqueta">Reproducibilidad</div>
+        <h2>Cómo ejecutarlo</h2>
+<pre><code><span class="tok-c"># 1. (Opcional) Regenerar datos y modelos — Python 3.11+</span>
+pip install -r analisis/requirements.txt
+python analisis/01_descargar_datos.py
+python analisis/02_red_vial.py
+python analisis/03_geocodificar_accidentes.py
+python analisis/04_estudio_exploratorio.py
+python analisis/05_modelos_ml.py
+
+<span class="tok-c"># 2. Compilar e iniciar el motor Java (JDK 17+)</span>
+.\greenroute-java\compilar.ps1
+.\greenroute-java\ejecutar.ps1          <span class="tok-c"># → http://localhost:8080</span>
+.\greenroute-java\ejecutar.ps1 --demo   <span class="tok-c"># demostración de polimorfismo en consola</span></code></pre>
+      </section>
+    </div>
+  </div>
+</main>
+
+<script src="js/comun.js?v=3d4"></script>
+<script src="https://cdn.jsdelivr.net/npm/mermaid@10.9.1/dist/mermaid.min.js"></script>
+<script>
+  (function () {
+    const nodos = [...document.querySelectorAll(".mermaid")];
+    const fuentes = nodos.map((n) => n.textContent);
+    function pintar() {
+      const oscuro = GR.temaActual() === "dark";
+      nodos.forEach((el, i) => { el.removeAttribute("data-processed"); el.textContent = fuentes[i]; });
+      mermaid.initialize({ startOnLoad: false, theme: "base", securityLevel: "strict",
+        class: { useMaxWidth: false },
+        themeVariables: oscuro
+          ? { primaryColor: "#0f0f0f", primaryBorderColor: "#fafafa", primaryTextColor: "#fafafa", lineColor: "#8a8a8a", fontFamily: "Geist, Inter, sans-serif", fontSize: "14px" }
+          : { primaryColor: "#ffffff", primaryBorderColor: "#0a0a0a", primaryTextColor: "#0a0a0a", lineColor: "#777777", fontFamily: "Geist, Inter, sans-serif", fontSize: "14px" } });
+      mermaid.run({ nodes: nodos });
+    }
+    if (window.mermaid) { pintar(); document.addEventListener("gr:tema", pintar); }
+  })();
+</script>
+</body>
+</html>

@@ -1,0 +1,25 @@
+# JDK portátil (330 MB): se descarga aparte, ver README
+.tools/
+
+# Clases compiladas de Java (se generan con greenroute-java/compilar.ps1)
+greenroute-java/out/
+
+# Datos crudos y archivos procesados muy grandes (se regeneran con analisis/01..05)
+data/raw/aire_epa.csv
+data/processed/aire_limpio.csv
+data/processed/red_vial.graphml
+
+# Python, Node y editores
+__pycache__/
+*.pyc
+.venv/
+node_modules/
+video/node_modules/
+video/out/
+.DS_Store
+Thumbs.db
+desktop.ini
+*.zip
+
+# Compilación temporal de compilar.ps1
+greenroute-java/out_nuevo/

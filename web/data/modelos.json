@@ -1,0 +1,181 @@
+{
+ "m1": {
+  "resultados": [
+   {
+    "variante": "Explicativo (sin rezagos)",
+    "modelo": "Regresión lineal",
+    "validacion": "GroupKFold (5) por semana",
+    "n_train": 56067,
+    "n_test": 14016,
+    "MAE": 137.59,
+    "RMSE": 175.48,
+    "R2": 0.124
+   },
+   {
+    "variante": "Explicativo (sin rezagos)",
+    "modelo": "Random Forest",
+    "validacion": "GroupKFold (5) por semana",
+    "n_train": 56067,
+    "n_test": 14016,
+    "MAE": 127.16,
+    "RMSE": 168.06,
+    "R2": 0.196
+   },
+   {
+    "variante": "Explicativo (sin rezagos)",
+    "modelo": "Gradient Boosting",
+    "validacion": "GroupKFold (5) por semana",
+    "n_train": 56067,
+    "n_test": 14016,
+    "MAE": 125.39,
+    "RMSE": 164.43,
+    "R2": 0.231
+   },
+   {
+    "variante": "Pronóstico (con rezagos t-1, t-24)",
+    "modelo": "Regresión lineal",
+    "validacion": "Hold-out temporal (prueba 2025)",
+    "n_train": 54814,
+    "n_test": 15174,
+    "MAE": 107.3,
+    "RMSE": 142.69,
+    "R2": 0.572
+   },
+   {
+    "variante": "Pronóstico (con rezagos t-1, t-24)",
+    "modelo": "Random Forest",
+    "validacion": "Hold-out temporal (prueba 2025)",
+    "n_train": 54814,
+    "n_test": 15174,
+    "MAE": 89.15,
+    "RMSE": 134.67,
+    "R2": 0.619
+   },
+   {
+    "variante": "Pronóstico (con rezagos t-1, t-24)",
+    "modelo": "Gradient Boosting",
+    "validacion": "Hold-out temporal (prueba 2025)",
+    "n_train": 54814,
+    "n_test": 15174,
+    "MAE": 88.92,
+    "RMSE": 132.84,
+    "R2": 0.629
+   }
+  ],
+  "mejor": {
+   "variante": "Pronóstico (con rezagos t-1, t-24)",
+   "modelo": "Gradient Boosting",
+   "validacion": "Hold-out temporal (prueba 2025)",
+   "n_train": 54814,
+   "n_test": 15174,
+   "MAE": 88.92,
+   "RMSE": 132.84,
+   "R2": 0.629
+  },
+  "perfil": {
+   "hora_pico": 8,
+   "hora_valle": 3,
+   "factor_min": 0.55
+  },
+  "periodo_train": "2020-2024",
+  "periodo_test": "2025"
+ },
+ "m2": {
+  "resultados": [
+   {
+    "modelo": "Regresión logística",
+    "accuracy": 0.866,
+    "precision": 0.805,
+    "recall": 0.789,
+    "f1": 0.797,
+    "auc": 0.885,
+    "auc_cv_media": 0.874,
+    "auc_cv_std": 0.005
+   },
+   {
+    "modelo": "Random Forest",
+    "accuracy": 0.864,
+    "precision": 0.798,
+    "recall": 0.794,
+    "f1": 0.796,
+    "auc": 0.891,
+    "auc_cv_media": 0.884,
+    "auc_cv_std": 0.003
+   },
+   {
+    "modelo": "Gradient Boosting",
+    "accuracy": 0.865,
+    "precision": 0.802,
+    "recall": 0.792,
+    "f1": 0.797,
+    "auc": 0.896,
+    "auc_cv_media": 0.886,
+    "auc_cv_std": 0.002
+   }
+  ],
+  "mejor": {
+   "modelo": "Gradient Boosting",
+   "accuracy": 0.865,
+   "precision": 0.802,
+   "recall": 0.792,
+   "f1": 0.797,
+   "auc": 0.896,
+   "auc_cv_media": 0.886,
+   "auc_cv_std": 0.002
+  },
+  "n_train": 17405,
+  "n_test": 5802,
+  "periodo": "2018-2022",
+  "importancia_top": [
+   "Involucra motocicleta",
+   "Clase de accidente",
+   "Involucra bicicleta"
+  ],
+  "confusion": [
+   [
+    3482,
+    380
+   ],
+   [
+    403,
+    1537
+   ]
+  ],
+  "balance_clases": 0.334,
+  "pct_victimas_con_moto": 77.6,
+  "pct_victimas_sin_moto": 17.1,
+  "pct_victimas_con_carga": 15.6
+ },
+ "m3": {
+  "modelo": "Ridge autorregresivo en escala log (rezagos 1, 2 y 12 + estacionalidad + COVID)",
+  "comparacion": [
+   {
+    "modelo": "Ridge autorregresivo (log)",
+    "MAPE_total": 22.4,
+    "MAPE_2025": 11.3,
+    "MAE": 18.3
+   },
+   {
+    "modelo": "Ingenuo estacional (mismo mes año anterior)",
+    "MAPE_total": 33.0,
+    "MAPE_2025": 15.5,
+    "MAE": 31.3
+   },
+   {
+    "modelo": "Media móvil 12 meses",
+    "MAPE_total": 32.1,
+    "MAPE_2025": 13.1,
+    "MAE": 27.6
+   }
+  ],
+  "meses_test": 21,
+  "promedio_mensual_2025": 137.2,
+  "promedio_mensual_2026": 93.9
+ },
+ "m4": {
+  "total_clusters": 195,
+  "accidentes_en_clusters": 10008,
+  "eps_m": 90,
+  "min_samples": 30
+ }
+}

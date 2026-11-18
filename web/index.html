@@ -1,0 +1,244 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Green Route · Rutas de carga de baja huella de carbono en Barranquilla</title>
+  <meta name="description" content="Proyecto integrador: análisis de datos, Machine Learning y un motor de rutas en Java para mover carga en Barranquilla emitiendo menos CO₂ (ODS 9).">
+  <link rel="icon" href="img/favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Geist:wght@300..700&family=Geist+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/estilos.css?v=3d4">
+  <link rel="stylesheet" href="css/panel.css?v=3d4">
+</head>
+<body class="pagina-inicio">
+<div class="escena3d" id="escena3d" aria-hidden="true"><div class="escena3d__etiquetas" id="etiquetas3d"></div></div>
+<nav class="capitulos" id="capitulos" aria-label="Capítulos del recorrido">
+  <button data-cap="0"><span>Inicio</span></button>
+  <button data-cap="1"><span>01 · La malla</span></button>
+  <button data-cap="2"><span>02 · El riesgo</span></button>
+  <button data-cap="3"><span>03 · La ruta</span></button>
+  <button data-cap="4"><span>04 · Cinco criterios</span></button>
+  <button data-cap="5"><span>Explorar</span></button>
+</nav>
+<main>
+ <div class="historia" id="historia">
+  <section class="heroe capitulo" data-cap="0">
+    <div class="heroe__red" id="heroe-red" aria-hidden="true"></div>
+    <div class="contenedor heroe__contenido">
+      <div class="etiqueta">Proyecto integrador · Ingeniería de Datos e IA · ODS 9</div>
+      <h1 class="heroe__titulo">Mover la carga de Barranquilla <span class="tenue">emitiendo</span> <span class="rotativo" id="rotativo">menos CO₂.</span></h1>
+      <p class="heroe__lead">Datos abiertos, Machine Learning y un motor de rutas orientado a objetos en Java que, sobre la malla vial real
+        de la ciudad, elige la ruta y el vehículo con la menor huella de carbono.</p>
+      <div class="acciones">
+        <a class="btn btn--primario" href="mapa.html">Planificar una ruta
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+        <a class="btn btn--secundario" href="estudio.html">Ver el estudio de datos</a>
+      </div>
+      <div class="heroe__ruta" id="heroe-ruta"><span class="punto-vivo"></span><span id="heroe-ruta-txt">Calculando la ruta Puerto → Aeropuerto en vivo…</span></div>
+    </div>
+    <a class="indicio-scroll" href="#cap-malla" aria-label="Bajar al primer capítulo"><span>Desliza para recorrer la ciudad en 3D</span><i></i></a>
+  </section>
+
+  <section class="capitulo capitulo--izq" data-cap="1" id="cap-malla">
+    <div class="contenedor"><div class="capitulo__bloque">
+      <div class="capitulo__num">01 · La malla</div>
+      <h2><span class="acento" id="h-nodos">18.050</span> intersecciones y <span class="acento" id="h-km">4.111</span> km de calles.</h2>
+      <p>Descargamos la malla vial completa de OpenStreetMap y la convertimos en un grafo dirigido. Cada línea que ves es una calle real de Barranquilla y Soledad; el río Magdalena entra como red fluvial para la barcaza.</p>
+      <ul class="leyenda3d">
+        <li><i class="l-troncal"></i>Troncales</li><li><i class="l-primaria"></i>Primarias</li>
+        <li><i class="l-secundaria"></i>Secundarias</li><li><i class="l-terciaria"></i>Residenciales</li><li><i class="l-rio"></i>Río Magdalena</li>
+      </ul>
+    </div></div>
+  </section>
+
+  <section class="capitulo capitulo--der" data-cap="2" id="cap-riesgo">
+    <div class="contenedor"><div class="capitulo__bloque">
+      <div class="capitulo__num">02 · El riesgo</div>
+      <h2><span class="acento acento--mal" id="h-acc">3.927</span> puntos de accidentes se levantan del mapa.</h2>
+      <p>Cada partícula es un accidente geocodificado; las columnas crecen con el número de casos en el mismo cruce. Las torres rojas son los puntos críticos que encontró DBSCAN.</p>
+      <ol class="top-riesgo" id="top-riesgo"></ol>
+    </div></div>
+  </section>
+
+  <section class="capitulo capitulo--izq" data-cap="3" id="cap-ruta">
+    <div class="contenedor"><div class="capitulo__bloque">
+      <div class="capitulo__num">03 · La ruta</div>
+      <h2>Del Puerto al Aeropuerto en <span class="acento" id="h-ms">—</span> ms.</h2>
+      <p>El motor Java recorre el grafo con A* y una función de costo que mezcla distancia, tráfico por hora, riesgo vial y emisiones del vehículo. <span id="h-vivo">Esta ruta se calcula en vivo cada vez que abres la página.</span></p>
+      <div class="cifras3d">
+        <div><b id="h-dist">—</b><small>km</small></div>
+        <div><b id="h-co2">—</b><small>kg CO₂</small></div>
+        <div><b id="h-nodosexp">—</b><small>nodos explorados</small></div>
+      </div>
+    </div></div>
+  </section>
+
+  <section class="capitulo capitulo--der" data-cap="4" id="cap-criterios">
+    <div class="contenedor"><div class="capitulo__bloque">
+      <div class="capitulo__num">04 · Cinco criterios</div>
+      <h2>Cada criterio traza otra ruta. La altura del muro es su CO₂.</h2>
+      <p>Mismo envío, mismo camión diésel: optimizar por tiempo, distancia o seguridad cambia el recorrido, y con él la huella de carbono.</p>
+      <ul class="criterios3d" id="criterios3d"><li class="vacio">Conectando con el motor…</li></ul>
+    </div></div>
+  </section>
+
+  <section class="capitulo capitulo--centro" data-cap="5" id="cap-explorar">
+    <div class="contenedor"><div class="capitulo__bloque">
+      <div class="capitulo__num">Tu turno</div>
+      <h2>Planifica tu envío y recórrelo en 3D.</h2>
+      <p>Edificios en relieve, columnas de accidentalidad, muros de CO₂ y un vuelo de cámara que sigue la ruta calle por calle.</p>
+      <div class="acciones acciones--centro">
+        <a class="btn btn--primario btn--brillo" href="mapa.html#3d">Abrir el mapa 3D
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+        <a class="btn btn--secundario" href="#panel">Ver el panel de datos</a>
+      </div>
+    </div></div>
+  </section>
+ </div>
+
+  <div class="cinta" aria-label="Cifras del proyecto">
+    <div class="cinta__pista" id="cinta"></div>
+  </div>
+
+  <section class="seccion" id="panel">
+    <div class="contenedor">
+      <div class="panel-cab">
+        <div>
+          <div class="etiqueta">Panel · datos reales de Barranquilla</div>
+          <h2>La ciudad en números</h2>
+        </div>
+        <div class="chips-filtro" id="filtro-anio" role="group" aria-label="Filtrar por año"></div>
+      </div>
+
+      <div class="bento">
+        <article class="b b--grande">
+          <h4>Accidentes registrados</h4>
+          <div class="b__numero" id="b-acc">—</div>
+          <div class="b__fila">
+            <div><span class="b__mini" id="b-vic">—</span><small>con víctimas</small></div>
+            <div><span class="b__mini" id="b-mue">—</span><small>con muertos</small></div>
+            <div><span class="b__mini" id="b-geo">—</span><small>ubicados en el mapa</small></div>
+          </div>
+          <div class="barras-hora" id="barras-hora" aria-label="Accidentes por hora del día"></div>
+          <div class="eje-hora"><span>0 h</span><span>6 h</span><span>12 h</span><span>18 h</span><span>23 h</span></div>
+        </article>
+
+        <article class="b">
+          <h4>Con vehículo de carga</h4>
+          <div class="b__numero b__numero--m"><span id="b-carga">—</span><span class="unidad">%</span></div>
+          <div class="anillo"><svg viewBox="0 0 36 36"><circle cx="18" cy="18" r="15.9" class="anillo__fondo"/><circle cx="18" cy="18" r="15.9" class="anillo__valor" id="anillo-valor"/></svg></div>
+          <p class="b__texto">de los accidentes involucran camión, tractocamión o volqueta.</p>
+        </article>
+
+        <article class="b">
+          <h4>Hora y día pico</h4>
+          <div class="b__numero b__numero--m"><span id="b-hora">—</span><span class="unidad">h</span></div>
+          <p class="b__texto">El día con más accidentes es el <b id="b-dia">—</b>. La moto participa en el <b id="b-moto">—</b> % de los casos.</p>
+        </article>
+
+        <article class="b b--ancho">
+          <div class="b__cab"><h4>Mapa de calor · hora × día</h4><span class="b__ayuda">pasa el cursor por las celdas</span></div>
+          <div class="calor" id="calor" role="img" aria-label="Accidentes por hora y día de la semana"></div>
+          <div class="calor__info" id="calor-info">—</div>
+        </article>
+
+        <article class="b">
+          <h4>Calidad del aire</h4>
+          <div class="b__numero b__numero--m"><span id="b-pm25">—</span><span class="unidad">µg/m³</span></div>
+          <p class="b__texto" id="b-aire-txt">PM2.5 promedio. El <b id="b-oms">—</b> de los días supera la guía diaria de la OMS.</p>
+        </article>
+
+        <article class="b">
+          <h4>Sitios con más accidentes</h4>
+          <ol class="sitios" id="sitios"></ol>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section class="seccion seccion--borde" id="simulador">
+    <div class="contenedor">
+      <div class="panel-cab">
+        <div>
+          <div class="etiqueta">Simulador en vivo · motor Java</div>
+          <h2>¿Qué vehículo contamina menos?</h2>
+          <p class="sub">Elige un envío real y una carga. El motor recorre la malla vial completa con A* para cada vehículo de la flota.</p>
+        </div>
+      </div>
+      <div class="simulador">
+        <div class="simulador__controles">
+          <h4>Envío</h4>
+          <div class="envios" id="envios"></div>
+          <h4 style="margin-top:22px">Carga · <span id="lbl-carga">900 kg</span></h4>
+          <input type="range" id="sim-carga" min="100" max="9000" step="100" value="900" aria-label="Carga en kilogramos">
+          <h4 style="margin-top:22px">Salida · <span id="lbl-hora">07:00</span></h4>
+          <input type="range" id="sim-hora" min="0" max="23" step="1" value="7" aria-label="Hora de salida">
+          <a class="btn btn--secundario btn--bloque" id="sim-abrir" href="mapa.html" style="margin-top:22px">Ver estas rutas en el mapa →</a>
+        </div>
+        <div class="simulador__resultado">
+          <div class="podio" id="podio"></div>
+          <div class="ranking" id="ranking"><p class="vacio">Conectando con el motor…</p></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="seccion seccion--borde">
+    <div class="contenedor">
+      <div class="seccion__cab"><div class="etiqueta">Lecturas clave</div><h2>Lo que encontramos</h2></div>
+      <div class="lecturas">
+        <a class="lectura" href="modelos.html#m1"><div class="lectura__cab"><b>01</b><span>Tráfico</span></div>
+          <h3>A las 8:00 la ciudad va al 55 %</h3><p>El modelo M1 aprende del CO y de los accidentes que la velocidad cae casi a la mitad en la hora pico.</p><span class="flecha">Ver modelo →</span></a>
+        <a class="lectura" href="estudio.html#accidentalidad"><div class="lectura__cab"><b>02</b><span>Calidad de datos</span></div>
+          <h3>La «caída» de accidentes no es real</h3><p>Desde 2023 solo se registran accidentes con víctimas; esos se mantienen en unos 130 por mes.</p><span class="flecha">Ver estudio →</span></a>
+        <a class="lectura" href="mapa.html"><div class="lectura__cab"><b>03</b><span>Tecnología</span></div>
+          <h3>Hasta 96 % menos CO₂</h3><p>Una furgoneta eléctrica frente a un tractocamión diésel para el mismo envío urbano.</p><span class="flecha">Probar en el mapa →</span></a>
+        <a class="lectura" href="arquitectura.html#conceptos"><div class="lectura__cab"><b>04</b><span>Algoritmo</span></div>
+          <h3>A* explora 73 % menos nodos</h3><p>Su heurística admisible encuentra la misma ruta óptima que Dijkstra en milisegundos.</p><span class="flecha">Ver arquitectura →</span></a>
+        <a class="lectura" href="modelos.html#m2"><div class="lectura__cab"><b>05</b><span>Seguridad vial</span></div>
+          <h3>La moto multiplica el riesgo</h3><p>Más de tres de cada cuatro accidentes con moto dejan víctimas, frente a uno de cada seis del resto.</p><span class="flecha">Ver modelo →</span></a>
+        <a class="lectura" href="estudio.html#aire"><div class="lectura__cab"><b>06</b><span>Aire</span></div>
+          <h3>1 de cada 5 días sobre la guía OMS</h3><p>El PM2.5 cumple la norma colombiana, pero no la guía diaria de la Organización Mundial de la Salud.</p><span class="flecha">Ver estudio →</span></a>
+      </div>
+    </div>
+  </section>
+
+  <section class="seccion seccion--borde">
+    <div class="contenedor">
+      <div class="seccion__cab"><div class="etiqueta">Metodología</div><h2>De los datos abiertos a una ruta recomendada</h2></div>
+      <div class="proceso">
+        <div class="paso"><strong>Recolección</strong><span>datos.gov.co, OpenStreetMap y Open-Meteo vía API.</span><em>01_descargar_datos.py</em></div>
+        <div class="paso"><strong>Red vial</strong><span>Grafo dirigido de calles, avenidas y el río Magdalena.</span><em>02_red_vial.py</em></div>
+        <div class="paso"><strong>Geocodificación</strong><span>Direcciones → cruces reales y puntos críticos.</span><em>03_geocodificar.py</em></div>
+        <div class="paso"><strong>Muestreo y EDA</strong><span>Muestra estratificada, limpieza y análisis.</span><em>04_estudio.py</em></div>
+        <div class="paso"><strong>Machine Learning</strong><span>Regresión, clasificación, pronóstico y clustering.</span><em>05_modelos_ml.py</em></div>
+        <div class="paso"><strong>Motor y mapa</strong><span>Núcleo POO en Java, API REST y mapa interactivo.</span><em>greenroute-java/</em></div>
+      </div>
+      <div class="rejilla rejilla-2" style="margin-top:16px">
+        <div class="ficha">
+          <div class="ficha__cab"><h4 style="margin:0">Ficha del proyecto</h4><span class="pastilla pastilla--ok">Integrador</span></div>
+          <dl>
+            <dt>Programa</dt><dd>Ingeniería de Datos e Inteligencia Artificial · Facultad de Ingeniería</dd>
+            <dt>Curso</dt><dd>T04 · Segundo semestre</dd>
+            <dt>Profesor</dt><dd>Fabio Enrique Mendoza Palechor</dd>
+            <dt>Palabras clave</dt><dd>ODS 9, huella de carbono, optimización de rutas, vehículos eléctricos, simulación</dd>
+          </dl>
+        </div>
+        <div class="ficha">
+          <div class="ficha__cab"><h4 style="margin:0">Autor</h4><span class="pastilla">Estudiante</span></div>
+          <ul class="equipo">
+            <li><span>JZ</span>Juan Sebastián Zárate Camargo</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+</main>
+
+<script src="js/comun.js?v=3d4"></script>
+<script src="js/panel.js?v=3d4"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+<script src="js/historia3d.js?v=3d4"></script>
+</body>
+</html>
